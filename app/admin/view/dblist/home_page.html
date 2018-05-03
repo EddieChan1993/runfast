@@ -1,0 +1,150 @@
+{extend name='public:content'/}
+{block name='title'}数据库备份{/block}
+{block name='content'}
+<div class="row animated fadeIn">
+    <div class="row">
+        <div class="col-md-8">
+            <form id="export_more" method="post" action="{:url('admin/Dblist/export_more')}">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">数据库列表</h3>
+                    <ul class="panel-controls">
+                        <li><button type="submit" class="btn btn-info">选中表备份</button></li>
+                    </ul>
+                </div>
+                <div class="panel-body tab-content">
+                        <table class="table table-hover">
+                            <thead>
+                            <tr>
+                                <th></th>
+                                <th>table名</th>
+                                <th>备注</th>
+                                <th>创建时间</th>
+                                <th>更新时间</th>
+                                <th>字符集</th>
+                                <th>引擎</th>
+                                <th>单表备份</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            {volist name='sql_list' id='v'}
+                            <tr>
+                                <td>
+                                    <label class="check"><input type="checkbox" name="tables[]" class="icheckbox" value="{$v.name}" checked="checked"/></label>
+                                </td>
+                                <td>{$v.name}</td>
+                                <td>{$v.comment}</td>
+                                <td>{$v.create_time}</td>
+                                <td>{$v.update_time}</td>
+                                <td>{$v.collation}</td>
+                                <td>{$v.engine}</td>
+                                <td>
+                                    <a data-url="{:url('admin/Dblist/export_one',['table_name'=>$v.name])}" onclick="copy_sql(this)" class="btn btn-warning btn-xs">备份</a>
+                                </td>
+                            </tr>
+                            {/volist}
+                            </tbody>
+                        </table>
+                </div>
+            </div>
+        </form>
+    </div>
+        <div class="col-md-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">现有备份文件</h3>
+                </div>
+                <div class="panel-body tab-content">
+                        <table class="table table-hover">
+                            <thead>
+                            <tr>
+                                <th>文件名</th>
+                                <th>大小</th>
+                                <th>备份时间</th>
+                                <th></th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            {volist name='sql_file' id='v'}
+                            <tr class="del_tr">
+                                <td>{$v.filename}</td>
+                                <td>{:getFileSize($v.size)}</td>
+                                <td>{$v.ctime|tranTime}</td>
+                                <td>
+                                    <a title="下载该sql文件" href="{:url('admin/Dblist/download',['fileName'=>$v.filename])}"  class="btn btn-default btn-rounded btn-sm" ><span class="fa fa-cloud-download"></span></a>
+                                    <button title="执行该sql文件" data-url="{:url('admin/Dblist/restore',['fileName'=>$v.filename])}" onClick="copy_sql(this);" class="btn btn-info btn-rounded btn-sm" ><span class="fa fa-retweet"></span></button>
+                                    <button data-url="{:url('admin/Dblist/del',['fileName'=>$v.filename])}" onClick="delete_row(this);" class="btn btn-danger btn-rounded btn-sm" ><span class="fa fa-trash-o"></span></button>
+                                </td>
+                            </tr>
+                            {/volist}
+                            </tbody>
+                        </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    //还原数据
+    function restore(dom) {
+        $.get($(dom).attr('data-url'),function (data) {
+            if(data.code==1) {
+                success2(data);
+            }else{
+                error(data)
+            }
+        })
+    }
+    //单个数据表的备份
+    function copy_sql(dom) {
+        $.ajax({
+            type:'POST',
+            url:$(dom).attr('data-url'),
+            dataType:'JSON',
+            beforeSend:function () {
+                m_loading('请求响应中,请稍等^_^',{
+                    time:-1
+                });
+            },
+            success:function (res) {
+                destory();
+                if(res.code) {
+                    m_success(res.msg,{
+                        time:800
+                    },function () {
+                        window.location.href = res.url;
+                    });
+
+                }else{
+                    m_error(res.msg);
+                }
+            }
+        })
+    }
+
+    //导出多份数据库
+    $('#export_more').ajaxForm({
+        beforeSubmit: showRequest,
+        success: showResponse
+    });
+
+    function showRequest() {
+        m_loading('数据备份中,请稍等^_^',{
+            time:-1
+        });
+    }
+
+    function showResponse(res) {
+        destory();
+        if(res.code) {
+            m_success(res.msg,{
+                time:500
+            },function () {
+                window.location.href = res.url;
+            });
+        }else{
+            m_error(res.msg);
+        }
+    }
+</script>
+{/block}

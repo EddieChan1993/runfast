@@ -1,0 +1,61 @@
+{extend name='public:content'/}
+{block name='title'}留言板{/block}
+{block name='content'}
+<div class="animated fadeIn col-md-9">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">留言列表</h3>
+            <ul class="panel-controls">
+                <label class="label label-info">12</label>
+            </ul>
+        </div>
+            <div class="panel-body">
+                <table class="table table-hover">
+                    <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Position</th>
+                        <th>Office</th>
+                        <th>Age</th>
+                        <th>Start date</th>
+                        <th>Salary</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr class="del_tr">
+                        <td>Tiger Nixon</td>
+                        <td>System Architect</td>
+                        <td>Edinburgh</td>
+                        <td>61</td>
+                        <td>2011/04/25</td>
+                        <td>
+                            <a title="【编辑】" data-url="" onclick="edit_row(this)"  class="btn btn-default btn-rounded btn-sm"><span class="fa fa-pencil"></span></a>
+                            <button onClick="delete_row(this);" class="btn btn-danger btn-rounded btn-sm" ><span class="fa fa-trash-o"></span></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Garrett Winters</td>
+                        <td>Accountant</td>
+                        <td>Tokyo</td>
+                        <td>63</td>
+                        <td>2011/07/25</td>
+                        <td>$170,750</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="panel-footer">
+                <ul class="pagination pagination-sm pull-right">
+                    <li><a href="#">«</a></li>
+                    <li><a href="#">6</a></li>
+                    <li><a href="#">7</a></li>
+                    <li class="active"><a href="#">8</a></li>
+                    <li class="disabled"><a href="#">»</a></li>
+                </ul>
+            </div>
+    </div>
+</div>
+<script type="text/javascript">
+
+</script>
+{/block}

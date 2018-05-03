@@ -1,0 +1,51 @@
+<div class="page-sidebar mCustomScrollbar _mCS_1 mCS-autoHide mCS_no_scrollbar page-sidebar-fixed scroll">
+    <!-- START X-NAVIGATION -->
+    <ul class="x-navigation x-navigation-custom">
+        <li class="xn-logo">
+            <a href="#">{$Think.config.title}</a>
+            <a href="#" class="x-navigation-control"></a>
+        </li>
+
+        <li class="xn-profile">
+            <div class="profile">
+                    <img style="border-radius: 4px" width="200px" height="150px" src="{:is_img($self.avatar)}" alt="John Doe"/>
+                <div class="profile-data">
+                    <div class="profile-data-name">{$self.user_login}</div>
+                    <div style="margin-bottom: 3px" class="profile-data-title"><span class="label label-info">{$role_name}</span></div>
+                    <div class="profile-data-title">{$self.user_email}</div>
+                </div>
+            </div>
+        </li>
+        {foreach name='menuAuth' item='v'}
+            {empty name='v.child'}
+                <li  class="{in name='$v.id' value=':menu_nav_list()' }active{/in} active_li">
+                    <a href="#" data-url="{:url($v['module'].'/'.$v['controller'].'/'.$v['method'])}" onclick="turn_url(this)"><span class="{$v.icon}"></span> <span class="xn-text">{$v.name}</span></a>
+                </li>
+            {else/}
+                <li class="{in name='$v.id' value=':menu_nav_list()' }active{/in} xn-openable">
+                    <a href="#"><span class="{$v.icon}"></span> <span class="xn-text">{$v.name}</span></a>
+                    <ul>
+                        {foreach name='v.child' item='v1'}
+                           {empty name='v1.child'}
+                            <li class="{in name='$v1.id' value=':menu_nav_list()' }active{/in} active_li"><a href="#" data-url="{:url($v1['module'].'/'.$v1['controller'].'/'.$v1['method'])}" onclick="turn_url(this)"><span class="{$v1.icon}"></span>{$v1.name}</a></li>
+                           {else/}
+                             <li><a href="#"><span class="{$v1.icon}"></span>{$v1.name}</a>
+                                <ul>
+                                    {foreach name='v1.child' item='v2'}
+                                    <li  class="{in name='$v1.id' value=':menu_nav_list()' }active{/in} active_li"><a href="#" data-url="{:url($v['module'].'/'.$v['controller'].'/'.$v['method'])}" onclick="turn_url(this)"><span class="{$v2.icon}"></span>{$v2.name}</a></li>
+                                    {/foreach}
+                                </ul>
+                             </li>
+                         {/empty}
+                        {/foreach}
+                    </ul>
+                </li>
+            {/empty}
+        {/foreach}
+    </ul>
+    <!-- END X-NAVIGATION -->
+</div>
+<script src="__PUBLIC__/admin/controller/silder.js"></script>
+<script type="text/javascript">
+
+</script>

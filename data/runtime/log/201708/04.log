@@ -1,0 +1,315 @@
+---------------------------------------------------------------
+[ 2017-08-04T09:16:46+08:00 ] 127.0.0.40 127.0.0.1 GET /
+[ info ] 127.0.0.40/ [运行时间：0.587800s][吞吐率：1.70req/s] [内存消耗：1,572.06kb] [文件加载：53]
+[ info ] [ LANG ] C:\code_edd\201708\runfast\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.40',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-08-04T09:16:47+08:00 ] 127.0.0.40 127.0.0.1 GET /admin/login/show_login.html
+[ info ] 127.0.0.40/admin/login/show_login.html [运行时间：1.078917s][吞吐率：0.93req/s] [内存消耗：2,158.20kb] [文件加载：59]
+[ info ] [ LANG ] C:\code_edd\201708\runfast\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'show_login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=4fm23lpsgipt1o56va3tq0b4r5',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.40',
+)
+[ info ] [ PARAM ] array (
+  '/admin/login/show_login_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Login->show_login[ C:\code_edd\201708\runfast\app\admin\controller\Login.php ]
+[ info ] [ VIEW ] C:\code_edd\201708\runfast/app/admin\view\login\login_page.html [ array (
+) ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.417451s ] mysql:dbname=card;host=card.oumaikeji.com;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_options` [ RunTime:0.136410s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.129427s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.127082s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.131390s ]
+---------------------------------------------------------------
+[ 2017-08-04T09:16:48+08:00 ] 127.0.0.40 127.0.0.1 GET /admin/login/favicon.ico
+[ info ] 127.0.0.40/admin/login/favicon.ico [运行时间：0.105986s][吞吐率：9.44req/s] [内存消耗：1,529.38kb] [文件加载：52]
+[ info ] [ LANG ] C:\code_edd\201708\runfast\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'favicon.ico',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=4fm23lpsgipt1o56va3tq0b4r5',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.40/admin/login/show_login.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'connection' => 'close',
+  'host' => '127.0.0.40',
+)
+[ info ] [ PARAM ] array (
+  '/admin/login/favicon_ico' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-08-04T09:17:06+08:00 ] 127.0.0.40 127.0.0.1 GET /home/game/page
+[ info ] 127.0.0.40/home/game/page [运行时间：0.592241s][吞吐率：1.69req/s] [内存消耗：2,315.45kb] [文件加载：61]
+[ info ] [ LANG ] C:\code_edd\201708\runfast\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'game',
+    2 => 'page',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=4fm23lpsgipt1o56va3tq0b4r5',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.40',
+)
+[ info ] [ PARAM ] array (
+  '/home/game/page' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Game->page[ C:\code_edd\201708\runfast\app\home\controller\Game.php ]
+[ info ] [ VIEW ] C:\code_edd\201708\runfast/app/home\view\game\page.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.192606s ] mysql:dbname=card;host=card.oumaikeji.com;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_options` [ RunTime:0.128973s ]
+[ sql ] [ SQL ] SELECT `is_close` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.124868s ]
+---------------------------------------------------------------
+[ 2017-08-04T09:17:06+08:00 ] 127.0.0.40 127.0.0.1 GET /favicon.ico
+[ info ] 127.0.0.40/favicon.ico [运行时间：0.014836s][吞吐率：67.40req/s] [内存消耗：1,240.16kb] [文件加载：41]
+[ info ] [ LANG ] C:\code_edd\201708\runfast\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon.ico',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=4fm23lpsgipt1o56va3tq0b4r5',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.40/home/game/page',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'connection' => 'close',
+  'host' => '127.0.0.40',
+)
+[ info ] [ PARAM ] array (
+  '/favicon_ico' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-08-04T09:17:08+08:00 ] 127.0.0.40 127.0.0.1 POST /home/game/connect.html
+[ info ] 127.0.0.40/home/game/connect.html [运行时间：1.532439s][吞吐率：0.65req/s] [内存消耗：2,173.87kb] [文件加载：60]
+[ info ] [ LANG ] C:\code_edd\201708\runfast\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'game',
+    2 => 'connect',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=4fm23lpsgipt1o56va3tq0b4r5',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.40/home/game/page',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'origin' => 'http://127.0.0.40',
+  'content-length' => '62',
+  'connection' => 'close',
+  'host' => '127.0.0.40',
+)
+[ info ] [ PARAM ] array (
+  '/home/game/connect_html' => '',
+  'room_id' => '25',
+  'client_id' => '7f0000010fa000000005',
+  'cid' => 'nyFVd',
+  'type' => 'inner',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Game->connect[ C:\code_edd\201708\runfast\app\home\controller\Game.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.192274s ] mysql:dbname=card;host=card.oumaikeji.com;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_options` [ RunTime:0.133144s ]
+[ sql ] [ SQL ] SELECT `is_close` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.127758s ]
+[ error ] [2]stream_socket_client(): [C:\code_edd\201708\runfast\vendor\gateway\gatewayclient\Gateway.php:739]
+---------------------------------------------------------------
+[ 2017-08-04T09:18:34+08:00 ] 127.0.0.40 127.0.0.1 GET /home/game/page
+[ info ] 127.0.0.40/home/game/page [运行时间：0.510669s][吞吐率：1.96req/s] [内存消耗：2,267.92kb] [文件加载：60]
+[ info ] [ LANG ] C:\code_edd\201708\runfast\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'game',
+    2 => 'page',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=4fm23lpsgipt1o56va3tq0b4r5',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.40',
+)
+[ info ] [ PARAM ] array (
+  '/home/game/page' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Game->page[ C:\code_edd\201708\runfast\app\home\controller\Game.php ]
+[ info ] [ VIEW ] C:\code_edd\201708\runfast/app/home\view\game\page.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.234816s ] mysql:dbname=card;host=card.oumaikeji.com;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_options` [ RunTime:0.116820s ]
+[ sql ] [ SQL ] SELECT `is_close` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.107462s ]
+---------------------------------------------------------------
+[ 2017-08-04T09:18:41+08:00 ] 127.0.0.40 127.0.0.1 GET /home/game/page
+[ info ] 127.0.0.40/home/game/page [运行时间：0.481193s][吞吐率：2.08req/s] [内存消耗：2,152.09kb] [文件加载：58]
+[ info ] [ LANG ] C:\code_edd\201708\runfast\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'game',
+    2 => 'page',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=4fm23lpsgipt1o56va3tq0b4r5',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.40',
+)
+[ info ] [ PARAM ] array (
+  '/home/game/page' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Game->page[ C:\code_edd\201708\runfast\app\home\controller\Game.php ]
+[ info ] [ VIEW ] C:\code_edd\201708\runfast/app/home\view\game\page.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.196779s ] mysql:dbname=card;host=card.oumaikeji.com;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_options` [ RunTime:0.127772s ]
+[ sql ] [ SQL ] SELECT `is_close` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.123305s ]
+---------------------------------------------------------------
+[ 2017-08-04T09:18:51+08:00 ] 127.0.0.40 127.0.0.1 GET /home/game/page
+[ info ] 127.0.0.40/home/game/page [运行时间：0.476165s][吞吐率：2.10req/s] [内存消耗：2,151.80kb] [文件加载：58]
+[ info ] [ LANG ] C:\code_edd\201708\runfast\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'game',
+    2 => 'page',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=4fm23lpsgipt1o56va3tq0b4r5',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.40',
+)
+[ info ] [ PARAM ] array (
+  '/home/game/page' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Game->page[ C:\code_edd\201708\runfast\app\home\controller\Game.php ]
+[ info ] [ VIEW ] C:\code_edd\201708\runfast/app/home\view\game\page.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.192769s ] mysql:dbname=card;host=card.oumaikeji.com;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_options` [ RunTime:0.128726s ]
+[ sql ] [ SQL ] SELECT `is_close` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.125325s ]

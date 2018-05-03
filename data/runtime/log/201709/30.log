@@ -1,0 +1,158 @@
+---------------------------------------------------------------
+[ 2017-09-30T19:02:36+08:00 ] 172.16.0.5 119.4.175.7 POST /player_info
+[ info ] card.dcwen.top/player_info [运行时间：0.005533s][吞吐率：180.73req/s] [内存消耗：715.08kb] [文件加载：55]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'controller',
+  'controller' => 'home/Player/get_player_info',
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 5.0.2; vivo Y35 Build/LRX21M) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/37.0.0.0 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'card.dcwen.top',
+  'content-length' => '9',
+)
+[ info ] [ PARAM ] array (
+  '/player_info' => '',
+  'cid' => 'W8dBr',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Player->get_player_info[ /var/www/card/app/home/controller/Player.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000249s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_options` [ RunTime:0.000710s ]
+[ sql ] [ SQL ] SELECT `is_close` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.000150s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_player` [ RunTime:0.000501s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_player` WHERE  `player_id` = 16 LIMIT 1 [ RunTime:0.000126s ]
+---------------------------------------------------------------
+[ 2017-09-30T19:02:41+08:00 ] 172.16.0.5 119.4.175.7 POST /room_page
+[ info ] card.dcwen.top/room_page [运行时间：0.005870s][吞吐率：170.36req/s] [内存消耗：742.19kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'controller',
+  'controller' => 'home/Room/room_page',
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 5.0.2; vivo Y35 Build/LRX21M) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/37.0.0.0 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'card.dcwen.top',
+  'content-length' => '9',
+)
+[ info ] [ PARAM ] array (
+  '/room_page' => '',
+  'cid' => '2mtFN',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Room->room_page[ /var/www/card/app/home/controller/Room.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000213s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_options` [ RunTime:0.000658s ]
+[ sql ] [ SQL ] SELECT `is_close` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.000140s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_room` [ RunTime:0.000568s ]
+[ sql ] [ SQL ] SELECT `room_id`,`round_times`,`room_code` FROM `edd_room` WHERE  `room_owner` = 16  AND `del_time` = '0' [ RunTime:0.000130s ]
+---------------------------------------------------------------
+[ 2017-09-30T19:02:44+08:00 ] 172.16.0.5 119.4.175.7 POST /player_info
+[ info ] card.dcwen.top/player_info [运行时间：0.012055s][吞吐率：82.95req/s] [内存消耗：715.32kb] [文件加载：55]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'controller',
+  'controller' => 'home/Player/get_player_info',
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 5.0.2; vivo Y35 Build/LRX21M) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/37.0.0.0 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'card.dcwen.top',
+  'content-length' => '9',
+)
+[ info ] [ PARAM ] array (
+  '/player_info' => '',
+  'cid' => '2mtFN',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Player->get_player_info[ /var/www/card/app/home/controller/Player.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001376s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_options` [ RunTime:0.000751s ]
+[ sql ] [ SQL ] SELECT `is_close` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.000163s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_player` [ RunTime:0.000516s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_player` WHERE  `player_id` = 16 LIMIT 1 [ RunTime:0.000166s ]
+---------------------------------------------------------------
+[ 2017-09-30T19:02:44+08:00 ] 172.16.0.5 119.4.175.7 POST /news_show
+[ info ] card.dcwen.top/news_show [运行时间：0.003197s][吞吐率：312.80req/s] [内存消耗：548.46kb] [文件加载：48]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'controller',
+  'controller' => 'home/Home/home_page',
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 5.0.2; vivo Y35 Build/LRX21M) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/37.0.0.0 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'host' => 'card.dcwen.top',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '0',
+)
+[ info ] [ PARAM ] array (
+  '/news_show' => '',
+)
+[ info ] [ RUN ] app\home\controller\Home->home_page[ /var/www/card/app/home/controller/Home.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-30T19:02:47+08:00 ] 172.16.0.5 119.4.175.7 POST /connect
+[ info ] card.dcwen.top/connect [运行时间：0.004968s][吞吐率：201.29req/s] [内存消耗：732.81kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'controller',
+  'controller' => 'home/Game/connect',
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 5.0.2; vivo Y35 Build/LRX21M) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/37.0.0.0 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'card.dcwen.top',
+  'content-length' => '52',
+)
+[ info ] [ PARAM ] array (
+  '/connect' => '',
+  'client_id' => '7f0000010fa300000015',
+  'cid' => 'bjMJI',
+  'type' => 'outter',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Game->connect[ /var/www/card/app/home/controller/Game.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000227s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_options` [ RunTime:0.000706s ]
+[ sql ] [ SQL ] SELECT `is_close` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.000140s ]

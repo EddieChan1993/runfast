@@ -1,0 +1,113 @@
+---------------------------------------------------------------
+[ 2017-10-05T16:57:02+08:00 ] 172.16.0.5 110.188.251.253 GET /
+[ info ] card.dcwen.top/ [运行时间：0.017888s][吞吐率：55.90req/s] [内存消耗：544.87kb] [文件加载：53]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'UM_distinctid=15ebdf07542788-006a6b0762d84c-e313761-144000-15ebdf07543cf3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-05T16:57:02+08:00 ] 172.16.0.5 110.188.251.253 GET /admin/login/show_login.html
+[ info ] card.dcwen.top/admin/login/show_login.html [运行时间：0.009937s][吞吐率：100.63req/s] [内存消耗：1,732.84kb] [文件加载：59]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'show_login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'UM_distinctid=15ebdf07542788-006a6b0762d84c-e313761-144000-15ebdf07543cf3; PHPSESSID=0p7koptup8pm1t9u2uhjsep7a0',
+)
+[ info ] [ PARAM ] array (
+  '/admin/login/show_login_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Login->show_login[ /var/www/card/app/admin/controller/Login.php ]
+[ info ] [ VIEW ] /var/www/card/app/admin/view/login/login_page.html [ array (
+) ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001705s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_options` [ RunTime:0.000762s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.000170s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.000108s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.000115s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_widgets` [ RunTime:0.000523s ]
+[ sql ] [ SQL ] SELECT `wid_params` FROM `edd_widgets` WHERE  `wid_key` = 'lsm_verify' LIMIT 1 [ RunTime:0.000122s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.000116s ]
+---------------------------------------------------------------
+[ 2017-10-05T16:57:07+08:00 ] 172.16.0.5 110.188.251.253 GET /admin/login/favicon.ico
+[ info ] card.dcwen.top/admin/login/favicon.ico [运行时间：0.010558s][吞吐率：94.72req/s] [内存消耗：517.90kb] [文件加载：52]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'favicon.ico',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://card.dcwen.top/admin/login/show_login.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'UM_distinctid=15ebdf07542788-006a6b0762d84c-e313761-144000-15ebdf07543cf3; PHPSESSID=0p7koptup8pm1t9u2uhjsep7a0',
+)
+[ info ] [ PARAM ] array (
+  '/admin/login/favicon_ico' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File

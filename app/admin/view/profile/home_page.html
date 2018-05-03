@@ -1,0 +1,54 @@
+{extend name='public:content'/}
+{block name='title'}下线返利记录{/block}
+{block name='content'}
+<div class="animated fadeIn col-md-9">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">下线返利列表</h3>
+            <ul class="panel-controls">
+                <label class="label label-info">{$profileNums}</label>
+            </ul>
+        </div>
+        <div class="panel-body">
+            <table class="table table-hover">
+                <thead>
+                <tr>
+                    <th>返利ID</th>
+                    <th>获利代理</th>
+                    <th>代理当前余额</th>
+                    <th>返利金额</th>
+                    <th>返利时间</th>
+                    <th>返利玩家姓名</th>
+                    <th>玩家充值金额</th>
+                    <th>该笔返利比例%</th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody>
+                {volist name='profileList' id='v'}
+                <tr class="del_tr">
+                    <td><strong>{$v.profile_id}</strong></td>
+                    <td><span class="label label-warning">{:get_agency($v.user_id,'user_login')}</span></td>
+                    <td><strong>{:get_money($v.user_id)}</strong></td>
+                    <td><strong>{$v.money}</strong></td>
+                    <td>{$v.date|tranTime}</td>
+                    <td><span class="label label-info">{:get_player($v.from_player_id,'name')}</span></td>
+                    <td><strong>{:get_order($v.pay_log_id,'pay_money')}</strong></td>
+                    <td><strong>{$v.percent*100}%</strong></td>
+                    <td>
+                        <button data-url="{:url('admin/profile/del_think',['profile_id'=>$v.profile_id])}" onClick="delete_row(this);" class="btn btn-danger btn-rounded btn-sm" ><span class="fa fa-trash-o"></span></button>
+                    </td>
+                </tr>
+                {/volist}
+                </tbody>
+            </table>
+        </div>
+        <div class="panel-footer">
+           {$pages}
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+
+</script>
+{/block}

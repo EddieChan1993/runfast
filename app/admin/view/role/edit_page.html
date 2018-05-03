@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    {include file='public:head_in' /}
+    <link rel="stylesheet" type="text/css" href="__ADMIN__/plugins/check-tree/checktree.css" />
+    <script type="text/javascript" src="__ADMIN__/plugins/check-tree/tree.js"></script>
+</head>
+<body>
+<div class="panel panel-default">
+    <form id="edit_form" action="{:url('admin/Role/edit_think')}" method="post" class="form-horizontal">
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-xs-5">
+                    <input type="hidden" name="id" value="{$id}">
+                    <div class="form-group">
+                        <label class="col-xs-3 control-label">角色名称</label>
+                        <div class="col-xs-9">
+                            <div class="input-group">
+                                <span class="input-group-addon"><span class="fa fa-pencil"></span></span>
+                                <input type="text" value="{$name}" name="name" class="form-control"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-xs-3 control-label">该角色首页</label>
+                        <div class="col-xs-9">
+                            <select name="nav_list" class="form-control select">
+                                {volist name='menus' id='v'}
+                                <option {:is_selected($nav_list,$v.nav_list)} value="{$v.nav_list}">{$v.lefthtml}{$v.name}</option>
+                                {/volist}
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-xs-3 control-label">备注</label>
+                        <div class="col-xs-9 col-xs-12">
+                            <textarea class="form-control" name="remark" rows="5">{$remark}</textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-xs-3  control-label">是否通过</label>
+                        <div class="col-xs-9">
+                            <label class="switch">
+                                <input type="checkbox" name="status" {:is_checked($status)} value="1"/>
+                                <span class="help-block"></span>
+                            </label>
+                            <span class="help-block">默认正常</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-5">
+                    <div class="form-group">
+                        <div class="col-md-3">
+                            <div class="btn-group">
+                                <a id="zk" class="btn btn-info">展开</a>
+                                <a id="gb" class="btn btn-default">全选</a>
+                            </div>
+                        </div>
+                        <div class="col-xs-9">
+                            <ul id="tree-checkmenu" class="checktree showtime" style="display:block">
+                                {foreach name='menuList' key='k' item='v'}
+                                <li id="show-explorer{$k}" class="plus">
+                                    <i id="bjgl" class="plus"></i>
+                                    <input {in name="$v.id" value="$rules"}checked{/in} id="check-explorer{$k}" name="rules[]" value="{$v.id}" type="checkbox" />{$v.name}
+                                    <ul id="tree-explorer{$k}" class="showtime">
+                                        {foreach name='v.child' key='k1' item='v1'}
+                                        <li id="show-iemac{$k}{$k1}">
+                                            <i id="bjgl" class="plus"></i>
+                                            <input {in name="$v1.id" value="$rules"}checked{/in} id="check-iemac{$k}{$k1}" name="rules[]" value="{$v1.id}" type="checkbox" />{$v1.name}
+                                            <ul id="tree-iemac{$k}{$k1}" class="showtime">
+                                                {foreach name='v1.child' key='k2' item='v2'}
+                                                <li>
+                                                    <i id="bjgl" class="plus"></i>
+                                                    <input {in name="$v2.id" value="$rules"}checked{/in}  name="rules[]" value="{$v2.id}" type="checkbox" />{$v2.name}
+                                                    <ul class="showtime">
+                                                        {foreach name='v2.child' key='k3' item='v3'}
+                                                        <i id="bjgl" class="plus"></i>
+                                                        <li><input {in name="$v3.id" value="$rules"}checked{/in}  name="rules[]" value="{$v3.id}" type="checkbox" />{$v3.name}</li>
+                                                        {/foreach}
+                                                    </ul>
+                                                </li>
+                                                {/foreach}
+                                            </ul>
+                                        </li>
+                                        {/foreach}
+                                    </ul>
+                                </li>
+                                {/foreach}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel-footer">
+            <button class="btn btn-info pull-right">保存修改<span class="fa fa-floppy-o fa-right"></span></button>
+        </div>
+    </form>
+</div>
+</body>
+</html>

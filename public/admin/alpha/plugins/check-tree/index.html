@@ -1,0 +1,124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>CheckTree Demonstration</title>
+  <link rel="stylesheet" type="text/css" href="checktree.css" />
+  <!-- <script type="text/javascript" src="checktree.js"></script> -->
+  <script type="text/javascript" src="jquery-1.8.3.min.js"></script>
+<!--   <script type="text/javascript">
+    var checkmenu = new CheckTree('checkmenu');
+  </script> -->
+
+</head>
+<body style="font: 0.8em/1.6 sans-serif; background-color: #FFF">
+<div id="zk">展开</div><div id="gb">全选</div>
+<form action="javascript:void(0)">
+  <ul id="tree-checkmenu" class="checktree showtime" style="display:block">
+   <li id="show-explorer" class="plus">
+      <i id="bjgl" class="plus"></i>
+      <input id="check-explorer" type="checkbox" />Internet
+      <ul id="tree-explorer" class="showtime">
+        <li id="show-iemac">
+        <i id="bjgl" class="plus"></i>
+        <input id="check-iemac" type="checkbox" />Macintosh
+        <ul id="tree-iemac" class="showtime">
+          <li>
+              <i id="bjgl" class="plus"></i>
+              <input type="checkbox" />v4.0
+              <ul class="showtime">
+                <i id="bjgl" class="plus"></i>
+                <li> <input type="checkbox" />v4</li>
+              </ul>
+          </li>
+          <li><i id="bjgl" class="plus"></i><input type="checkbox" />v5.0</li>
+        </ul>
+       </li>
+       <li id="show-iewin" class="last">
+        <i id="bjgl" class="plus"></i>
+        <input id="check-iewin" type="checkbox" />Windows
+        <ul id="tree-iewin" class="showtime">
+         <li><i id="bjgl" class="plus"></i><input type="checkbox" />v4.0</li>
+         <li><i id="bjgl" class="plus"></i><input type="checkbox" />v5.0</li>
+        </ul>
+       </li>
+      </ul>
+   </li>
+   <li id="show-netscape" class="plus">
+      <i id="bjgl" class="plus"></i>
+      <input id="check-netscape" type="checkbox" />Netscape
+      <ul id="tree-netscape" class="showtime">
+       <li><i id="bjgl" class="plus"></i><input type="checkbox" />v4.0x</li>
+       <li><i id="bjgl" class="plus"></i><input type="checkbox" />v4.5-v4.7</li>
+       <li><i id="bjgl" class="plus"></i><input type="checkbox" />v6.x</li>
+       <li><i id="bjgl" class="plus"></i><input type="checkbox" />v7.x</li>
+       <li id="show-mozilla" class="last">
+          <i id="bjgl" class="plus"></i>
+          <input id="check-mozilla" type="checkbox" />Mozilla
+          <ul id="tree-mozilla" class="showtime">
+           <li><i id="bjgl" class="plus"></i><input type="checkbox" />pre-v1.0</li>
+           <li><i id="bjgl" class="plus"></i><input type="checkbox" />v1.0</li>
+           <li><i id="bjgl" class="plus"></i><input type="checkbox" />v1.1+</li>
+           <li class="last"><i id="bjgl" class="plus"></i><input type="checkbox" />Firebird</li>
+          </ul>
+       </li>
+      </ul>
+   </li>
+   
+  </ul>
+</form>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+
+  	  $("#zk").click(function() {
+      console.log(1);
+      if ($(this).text() == "展开") {
+        $("#tree-checkmenu").children().find("ul").show();
+        $(this).text("收起");
+      }else{
+        $("#tree-checkmenu").children().find("ul").hide();
+        $(this).text("展开"); 
+      }
+    })
+    $("#gb").click(function() {
+      if ($(this).text() == "全选") {
+        $("#tree-checkmenu").children().find("input").prop('checked', true);
+        $(this).text("取消");
+      }else{
+        $("#tree-checkmenu").children().find("input").prop('checked', false);
+        $(this).text("全选");
+      }
+    })
+        $(".showtime li i").click(function () {
+            if ($(this).next().next("ul").is(":hidden")) {
+                $(this).next().next("ul").show();
+                $(this).addClass("minus").removeClass("plus");
+                return false;
+            } else {
+                $(this).next().next("ul").hide();
+                $(this).addClass("plus").removeClass("minus");
+                //不用toggle()的原因是为了在收缩菜单的时候同时也将该菜单的下级菜单以后的所有元素都隐藏
+
+                $(this).next().next("ul").children("li").find("ul").fadeOut("normal");
+                $(this).next().next("ul").children("li").find("i").addClass("plus").removeClass("minus");
+                return false;
+            }
+        });
+        $('input:checkbox').click(function() {
+            if($(this).prop('checked') == true){
+                console.log($(this).parent("li").children().find("input").prop('checked', true));
+                $(this).parent("li").children().find("input").prop('checked', true);
+                $(this).parent().parent().parent().children("input").prop('checked', true);
+                $(this).parent().parent().parent().parent().parent().children("input").prop('checked', true);
+                $(this).parent().parent().parent().parent().parent().parent().parent().children("input").prop('checked', true);
+            }else{
+                $(this).parent("li").find("input").prop('checked', false);
+                return true;
+
+            }
+        });
+    })
+</script>
+</body>
+</html>

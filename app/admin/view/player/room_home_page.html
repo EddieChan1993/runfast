@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    {include file='public:head_in' /}
+</head>
+<body>
+<div class="animated fadeIn col-md-12">
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <table class="table table-hover">
+                <thead>
+                <tr>
+                    <th>房间号</th>
+                    <th>参与玩家</th>
+                    <th>已打/局数</th>
+                    <th>房间费(钻石个数)</th>
+                    <th>是否翻倍</th>
+                    <th>房间类型</th>
+                    <th>房间创建时间</th>
+                    <th>房间解散时间</th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody>
+                {volist name='room' id='v'}
+                <tr class="del_tr">
+                    <td>{$v.room_code}</td>
+                    <td><strong>{$v.room_id|join_player}</strong></td>
+                    <td><strong>{$v.room_id|complete_round}/{$v.round_times}</strong></td>
+                    <td><strong>{$v.room_charge}</strong></td>
+                    <td><strong>{$v.double?'翻倍':'不翻倍'}</strong></td>
+                    <td><strong>{:get_room_type($v.room_type)}</strong></td>
+                    <td>{$v.room_date|tranTime}</td>
+                    <td>{$v.del_time|tranTime}</td>
+                    <td>
+                        <button data-url="{:url('admin/player/rounds',['room_id'=>$v.room_id])}" title="查看{$v.room_code}房间详情" onClick="show_round(this);" class="btn btn-default btn-rounded btn-sm" ><span class="fa fa-search-plus"></span></button>
+                        <button data-url="{:url('admin/player/del_room',['room_id'=>$v.room_id])}" onClick="delete_row(this);" class="btn btn-danger btn-rounded btn-sm" ><span class="fa fa-trash-o"></span></button>
+                    </td>
+                </tr>
+                {/volist}
+                </tbody>
+            </table>
+        </div>
+        <div class="panel-footer">
+           {$pages}
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    function show_round(dom) {
+        parent.layer.open({
+            title:$(dom).attr('title'),
+            type: 2,
+            offset: '40px',
+            closeBtn: 0,
+            area:'869px',
+            shadeClose: true,
+            content: $(dom).attr('data-url'),
+            success: function(layero, index) {
+                parent.layer.iframeAuto(index);
+            }
+        });
+    }
+</script>
+</body>
+</html>

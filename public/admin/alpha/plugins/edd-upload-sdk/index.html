@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>上传SDK</title>
+</head>
+<body>
+<input placeholder="单文件上传" type="text" id="single_file">
+<hr/>
+<input placeholder="多文件上传" type="text" id="more_files">
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+<script type="text/javascript" src="layer/layer.js"></script>
+<script type="text/javascript">
+
+    $('#single_file').click(function () {
+        var dom = $(this);
+        layer.open({
+            title:dom.attr('placeholder'),
+            type: 2,
+            area: ['614px', '281px'],
+            skin: 'layui-layer-rim', //加上边框
+            content: './examples/single_file/index.html'
+        });
+    });
+
+    $('#more_files').click(function () {
+        var dom = $(this);
+        layer.open({
+            title:dom.attr('placeholder'),
+            type: 2,
+            area: ['614px', '281px'],
+            skin: 'layui-layer-rim', //加上边框
+            content: './examples/more_files/index.html'
+        });
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Bootstrap 模板</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<script src="js/jquery-1.11.1.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	
+		<!--编辑器的js和css-->
+		<link rel="stylesheet" type="text/css" href="css/bootstrap-editable.css" />
+		<script src="js/bootstrap-editable.min.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$(".name").editable({
+					//    			type:文本样式
+					//					 text（默认)文字
+					//					 date选日期
+					//					 datetime选时间
+					//					 select下拉菜单
+					//					 checklist复选框
+					type: 'select',
+					//				source:调用资源
+					//						url valueArray jsonArray
+//											数组类型就会使得value和text相同
+//											['aa','bb','cc']
+//											text为显示的内容
+//											value为真正传入数据库值
+//											json类型
+					//				source:[{'value':1,'text':'aaa'},{},{}]
+					source: 'php/data.php',
+//					
+					//				mode:弹出内外
+					//					 popup(默认) inline
+//										outline
+					mode: 'outline',
+					//				placement哪个方向弹出
+					placement: 'right',
+					//				保存值到服务器
+					url: 'php/save.php',
+//					name是对应当前表格，必须写上
+					name: 'a',
+					//					验证不通过返回true或者字符串消息提示
+					//					value是代表表单里的值
+					validate: function(value) {
+						console.log(value);
+						return false;
+					},
+					error: function(e) {
+						//						这里我把47行改了一下php1
+						console.log(e);
+						//						return e.responseText;
+						return "服务器错误";
+					}
+				});
+					$(".school").editable({
+					
+					type: 'select',
+				
+					mode: 'inline',
+					
+					source:['红红小学','弟弟小学'],
+					
+					placement: 'right',
+
+					url: 'php/save.php',
+
+					name: 'b'
+			
+				});
+			})
+		</script>
+	</head>
+
+	<body>
+		<div class="container" style="padding-top: 40px;">
+			<table class="table table-bordered">
+				<tr>
+					<th>ID</th>
+					<th>名称</th>
+					<th>学校</th>
+				</tr>
+				<tr>
+					<td>1</td>
+					<!--要体现出编辑效果,必须用span包起来
+					data-pk-->
+					<td><span data-pk="1" class="name">张XX</span></td>
+					<td><span data-pk="1" class="school">某某小学</span></td>					
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>李XX</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>刘XX</td>
+				</tr>
+			</table>
+		</div>
+		
+	</body>
+
+</html>

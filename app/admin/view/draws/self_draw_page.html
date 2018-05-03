@@ -1,0 +1,116 @@
+{extend name='public:content'/}
+{block name='title'}我的提现申请{/block}
+{block name='content'}
+<link rel="stylesheet" type="text/css" href="__ADMIN__/p-extra/edit-boot/css/bootstrap-editable.css" />
+<script src="__ADMIN__/p-extra/edit-boot/js/bootstrap-editable.min.js"></script>
+<div class="col-md-3 animated fadeIn">
+    <div class="widget widget-info widget-item-icon">
+        <div class="widget-item-left">
+            <span class="fa fa-envelope-o"></span>
+        </div>
+        <div class="widget-data">
+            <div class="widget-int num-count">您的邀请码</div>
+            <div class="widget-title">{:createCode($id)}</div>
+            <div class="widget-subtitle"></div>
+        </div>
+        <div class="widget-controls">
+            <!--<a href="#" class="widget-control-right"><span class="fa fa-times"></span></a>-->
+        </div>
+    </div>
+    <div class="widget widget-warning widget-item-icon">
+        <div class="widget-item-left">
+            <span class="fa fa-money"></span>
+        </div>
+        <div class="widget-data">
+            <div class="widget-int num-count">当前余额</div>
+            <div class="widget-title">{:get_money($id)}</div>
+            <div class="widget-subtitle"></div>
+        </div>
+        <div class="widget-controls">
+            <!--<a href="#" class="widget-control-right"><span class="fa fa-times"></span></a>-->
+        </div>
+    </div>
+    <div class="widget widget-primary widget-item-icon">
+        <div class="widget-item-left">
+            <span class="fa fa-usd"></span>
+        </div>
+        <div class="widget-data">
+            <div class="widget-int num-count">总收益</div>
+            <div class="widget-title">{:get_profile($id)}</div>
+            <div class="widget-subtitle"></div>
+        </div>
+        <div class="widget-controls">
+            <!--<a href="#" class="widget-control-right"><span class="fa fa-times"></span></a>-->
+        </div>
+    </div>
+    <div class="widget widget-danger widget-item-icon">
+        <div class="widget-item-left">
+            <span class="fa fa-users"></span>
+        </div>
+        <div class="widget-data">
+            <div class="widget-int num-count">我的下线人数</div>
+            <div class="widget-title">{$childs_nums}</div>
+            <div class="widget-subtitle"></div>
+        </div>
+        <div class="widget-controls">
+            <!--<a href="#" class="widget-control-right"><span class="fa fa-times"></span></a>-->
+        </div>
+    </div>
+</div>
+<div class="animated fadeIn col-md-5">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title"><span class="draw" data-pk="{:user_id()}">申请提现</span></h3>
+            <ul class="panel-controls">
+                <label class="label label-info">{$nums}</label>
+            </ul>
+        </div>
+        <div class="panel-body">
+            <div class="alert alert-info" role="alert">
+                <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <strong>温馨提醒！</strong>点击【申请提现】可提交提现申请
+            </div>
+            <table class="table table-hover">
+                <thead>
+                <tr>
+                    <th>提现金额</th>
+                    <th>提现时间</th>
+                    <th>提现状态</th>
+                </tr>
+                </thead>
+                <tbody>
+                {volist name='selfDrawsList' id='v'}
+                <tr class="del_tr">
+                    <td><strong>{$v.draw_money}</strong></td>
+                    <td>{$v.draw_date|tranTime}</td>
+                    <td>{:draw_type_encode($v.draw_type)}</td>
+                </tr>
+                {/volist}
+                </tbody>
+            </table>
+        </div>
+        <div class="panel-footer">
+            {$pages}
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+
+    $(".draw").editable({
+        type: 'select',
+        mode: 'outline',
+        source:[50,100,200,500,1000],
+        placement: 'right',
+        url: '{:url("admin/Draws/add_draw_think")}',
+        name: 'b',
+        success:function (res) {
+            if(res.code) {
+                m_success(res.msg);
+            }else{
+                m_error(res.msg);
+            }
+        }
+    });
+
+</script>
+{/block}

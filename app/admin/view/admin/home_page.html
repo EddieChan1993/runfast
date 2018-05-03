@@ -1,0 +1,307 @@
+{extend name='public:content'/}
+{block name='title'}管理员管理{/block}
+{block name='content'}
+<div class="row animated fadeIn">
+    <div class="row">
+        <div class="col-md-9">
+            <div class="panel panel-default tabs">
+                <ul class="nav nav-tabs" role="tablist">
+                    <li><a href="#tab-first" role="tab" data-toggle="tab">管理员列表
+                        <button class="btn btn-success btn-rounded btn-sm">{$admin_nums}</button>
+                    </a></li>
+                    <li class="active"><a href="#tab-four" role="tab" data-toggle="tab">代理列表
+                        <button class="btn btn-info btn-rounded btn-sm">{$admin_agency_nums}</button>
+                    </a></li>
+                    <li><a href="#tab-second" role="tab" data-toggle="tab">添加管理员</a></li>
+                    <li><a href="#tab-third" role="tab" data-toggle="tab">添加代理</a></li>
+                </ul>
+                <div class="panel-body tab-content">
+                    <div class="tab-pane" id="tab-first">
+                        <table class="table table-hover">
+                            <thead>
+                            <tr>
+                                <th>登陆名</th>
+                                <th>头像</th>
+                                <th>登录次数</th>
+                                <th>角色</th>
+                                <th>注册时间</th>
+                                <th>最近登录IP</th>
+                                <th>最近登录时间</th>
+                                <th>状态</th>
+                                <th></th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            {volist name='admin_list' id='v'}
+                            <tr class="del_tr">
+                                <td>{$v.user_login}</td>
+                                <td  style="background: url('{$v.avatar|is_img}');background-size: contain;background-repeat: no-repeat;"></td>
+                                <td><span class="label label-danger">{$v.user_hits}</span></td>
+                                <td><span class="label label-info">{$v.id|get_role}</span></td>
+                                <td>{$v.create_time|tranTime}</td>
+                                <td>{$v.last_login_ip}</td>
+                                <td>{$v.last_login_time|tranTime}</td>
+                                <td>{$v.user_status|is_stop}</td>
+                                <td>
+                                    {if condition='$v.id eq 1'}
+                                    {if condition='open_secret($Think.cookie.UID) neq 1'}
+                                        <a disabled title="{$v.user_login}【编辑】"  class="btn btn-default btn-rounded btn-sm"><span class="fa fa-pencil"></span></a>
+                                        {else/}
+                                        <a title="{$v.user_login}【编辑】" data-url="{:url('admin/Admin/edit_page',['id'=>$v.id])}" onclick="edit_row(this)"  class="btn btn-default btn-rounded btn-sm"><span class="fa fa-pencil"></span></a>
+                                    {/if}
+                                      <button disabled class="btn btn-danger btn-rounded btn-sm" ><span class="fa fa-trash-o"></span></button>
+                                    {else/}
+                                    <a title="{$v.user_login}【编辑】" data-url="{:url('admin/Admin/edit_page',['id'=>$v.id])}" onclick="edit_row(this)"  class="btn btn-default btn-rounded btn-sm"><span class="fa fa-pencil"></span></a>
+                                    <button data-url="{:url('admin/Admin/del_think',['id'=>$v.id])}" onClick="delete_row(this);" class="btn btn-danger btn-rounded btn-sm" ><span class="fa fa-trash-o"></span></button>
+                                    {/if}
+                                </td>
+                            </tr>
+                            {/volist}
+                            </tbody>
+                        </table>
+                        {$pages}
+                    </div>
+                    <div class="tab-pane active" id="tab-four">
+                        <table class="table table-hover">
+                            <thead>
+                            <tr>
+                                <th>登陆名</th>
+                                <th>代理级别</th>
+                                <th>绑定玩家账号</th>
+                                <th>邀请码</th>
+                                <!--<th>下级人数</th>-->
+                                <th>当前金额</th>
+                                <th>头像</th>
+                                <th>登录次数</th>
+                                <!--<th>角色</th>-->
+                                <th>注册时间</th>
+                                <th>最近登录IP</th>
+                                <th>最近登录时间</th>
+                                <th>状态</th>
+                                <th></th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            {volist name='admin_agency' id='v'}
+                            <tr class="del_tr">
+                                <td>{$v.user_login}</td>
+                                <td><strong>{:get_rank($v.user_rank)}</strong></td>
+                                <td><strong>{:userTextEncode(get_player($v['player_id'],'name'))}</strong></td>
+                                <td><strong>{:createCode($v.id)}</strong></td>
+                                <!--<td><strong>{$v.childs_nums}</strong></td>-->
+                                <td><strong>{:get_money($v.id)}</strong></td>
+                                <td  style="background: url('{$v.avatar|is_img}');background-size: contain;background-repeat: no-repeat;"></td>
+                                <td><span class="label label-danger">{$v.user_hits}</span></td>
+                                <!--<td><span class="label label-info">{$v.id|get_role}</span></td>-->
+                                <td>{$v.create_time|tranTime}</td>
+                                <td>{$v.last_login_ip}</td>
+                                <td>{$v.last_login_time|tranTime}</td>
+                                <td>{$v.user_status|is_stop}</td>
+                                <td>
+                                    {if condition='$v.id eq 1'}
+                                    {if condition='open_secret($Think.cookie.UID) neq 1'}
+                                    <a disabled title="{$v.user_login}【编辑】"  class="btn btn-default btn-rounded btn-sm"><span class="fa fa-pencil"></span></a>
+                                    {else/}
+                                    <a title="{$v.user_login}【编辑】" data-url="{:url('admin/Admin/edit_agency',['id'=>$v.id])}" onclick="edit_row(this)"  class="btn btn-default btn-rounded btn-sm"><span class="fa fa-pencil"></span></a>
+                                    {/if}
+                                    <button disabled class="btn btn-danger btn-rounded btn-sm" ><span class="fa fa-trash-o"></span></button>
+                                    {else/}
+                                    <a title="{$v.user_login}【编辑】" data-url="{:url('admin/Admin/edit_agency',['id'=>$v.id])}" onclick="edit_row(this)"  class="btn btn-default btn-rounded btn-sm"><span class="fa fa-pencil"></span></a>
+                                    <button data-url="{:url('admin/Admin/del_think',['id'=>$v.id])}" onClick="delete_row(this);" class="btn btn-danger btn-rounded btn-sm" ><span class="fa fa-trash-o"></span></button>
+                                    {/if}
+                                </td>
+                            </tr>
+                            {/volist}
+                            </tbody>
+                        </table>
+                        {$agencyPage}
+                    </div>
+                    <div class="tab-pane" id="tab-second">
+                        <form id="add_form" action="{:url('admin/Admin/add_think')}" method="post" class="form-horizontal">
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-md-10">
+                                        <div class="form-group">
+                                            <label class="col-md-3 control-label">头像</label>
+                                            <div class="col-md-7">
+                                                <div class="gallery">
+                                                    <a class="gallery-item"  href="javascript:void('')" title="Space picture 2" data-gallery>
+                                                        <div class="image" >
+                                                            <input hidden name="avatar" type="text" id="inp">
+                                                            <img src="__UPLOAD__/admin/common/upload.svg" alt="Space picture 2"/>
+                                                            <ul class="gallery-item-controls">
+                                                                <li onclick="upload_single('inp','avatar')"><i class="fa fa-cloud-upload"></i></li>
+                                                                <li onclick="del_pic('inp')"><i class="fa fa-times"></i></li>
+                                                            </ul>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-md-3 control-label">登录名</label>
+                                            <div class="col-md-9">
+                                                <input name="user_login" type="text" class="form-control"/>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-md-3 control-label">密码</label>
+                                            <div class="col-md-9">
+                                                <input name="user_pass" type="password" class="form-control"/>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-md-3 control-label">确认密码</label>
+                                            <div class="col-md-9">
+                                                <input name="confirm_pass" type="password" class="form-control"/>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-md-3 control-label">邮箱</label>
+                                            <div class="col-md-9">
+                                                <input name="user_email" type="text" class="form-control"/>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-md-3 control-label">角色</label>
+                                            <div class="col-md-9">
+                                                <select name="role_id" class="form-control select">
+                                                    {volist name='role_list' id='v'}
+                                                    <option value="{$v.id}">{$v.name}</option>
+                                                    {/volist}
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-md-3  control-label">管理员状态</label>
+                                            <div class="col-md-9">
+                                                <label class="switch">
+                                                    <input name="user_status" type="checkbox" checked value="1"/>
+                                                    <span></span>
+                                                </label>
+                                                <span class="help-block">默认正常</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel-footer">
+                                <button class="btn btn-info pull-right">保存添加<span class="fa fa-floppy-o fa-right"></span></button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="tab-pane" id="tab-third">
+                        <form id="add_rank" action="{:url('admin/Admin/add_rank_think')}" method="post" class="form-horizontal">
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-md-10">
+                                        <div class="form-group">
+                                            <label class="col-md-3 control-label">头像</label>
+                                            <div class="col-md-7">
+                                                <div class="gallery">
+                                                    <a class="gallery-item"  href="javascript:void('')" title="Space picture 2" data-gallery>
+                                                        <div class="image" >
+                                                            <input hidden name="avatar" type="text" id="inp2">
+                                                            <img src="__UPLOAD__/admin/common/upload.svg" alt="Space picture 2"/>
+                                                            <ul class="gallery-item-controls">
+                                                                <li onclick="upload_single('inp2','avatar')"><i class="fa fa-cloud-upload"></i></li>
+                                                                <li onclick="del_pic('inp2')"><i class="fa fa-times"></i></li>
+                                                            </ul>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-md-3 control-label">登录名</label>
+                                            <div class="col-md-9">
+                                                <input name="user_login" type="text" class="form-control"/>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-md-3 control-label">绑定玩家ID</label>
+                                            <div class="col-md-9">
+                                                <input name="player_id" type="text" class="form-control"/>
+                                                <span class="help-block">没有玩家ID可不填</span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-md-3 control-label">密码</label>
+                                            <div class="col-md-9">
+                                                <input name="user_pass" type="password" class="form-control"/>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-md-3 control-label">确认密码</label>
+                                            <div class="col-md-9">
+                                                <input name="confirm_pass" type="password" class="form-control"/>
+                                            </div>
+                                        </div>
+                                        <!--<div class="form-group">
+                                            <label class="col-md-3 control-label">邮箱</label>
+                                            <div class="col-md-9">
+                                                <input name="user_email" type="text" class="form-control"/>
+                                            </div>
+                                        </div>-->
+                                        <div hidden class="form-group">
+                                            <label class="col-md-3 control-label">角色</label>
+                                            <div class="col-md-9">
+                                                <input type="text"  value="2" name="role_id">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-md-3 control-label">代理等级</label>
+                                            <div class="col-md-9">
+                                                 <select name="user_rank" class="form-control select">
+                                                     {volist name='rank_list' id='v'}
+                                                     <option value="{$v.rank_id}">{$v.rank_name}</option>
+                                                     {/volist}
+                                                 </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-md-3  control-label">管理员状态</label>
+                                            <div class="col-md-9">
+                                                <label class="switch">
+                                                    <input name="user_status" type="checkbox" checked value="1"/>
+                                                    <span></span>
+                                                </label>
+                                                <span class="help-block">默认正常</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel-footer">
+                                <button class="btn btn-info pull-right">保存添加<span class="fa fa-floppy-o fa-right"></span></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    $('#add_rank').ajaxForm({
+        beforeSubmit: showRequest,
+        success: showResponse
+    });
+
+    function showRequest() {
+        m_loading('数据上传中,请稍等^_^',{
+            time:-1
+        });
+    }
+
+    function showResponse(res) {
+        destory();
+        if(res.code) {
+            m_success(res.msg);
+        }else{
+            m_error(res.msg);
+        }
+    }
+</script>
+{/block}

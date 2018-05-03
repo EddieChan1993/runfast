@@ -1,0 +1,141 @@
+/* input & thumbnails size */
+.fileuploader-theme-thumbnails .fileuploader-thumbnails-input,
+.fileuploader-theme-thumbnails .fileuploader-items-list li.fileuploader-item {
+	display: inline-block;
+	width: 25%;
+	height: 115px;
+    line-height: 95px;
+	padding: 10px;
+	vertical-align: top;
+}
+/* input-inner */
+.fileuploader-theme-thumbnails .fileuploader-thumbnails-input-inner {
+	width: 100%;
+	height: 100%;
+    border: 2px dashed #c2cdda;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 30px;
+    color: #acb9c7;
+	vertical-align: top;
+	cursor: pointer;
+	-webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+	-webkit-transition: all 0.1s ease;
+	        transition: all 0.1s ease;
+}
+.fileuploader-theme-thumbnails .fileuploader-thumbnails-input-inner:hover {
+	border-color: #92a7bf;
+	color: #899baf;
+}
+.fileuploader-theme-thumbnails .fileuploader-thumbnails-input-inner:active,
+.fileuploader-theme-thumbnails .fileuploader-dragging .fileuploader-thumbnails-input-inner {
+	background: #fff;
+}
+/* thumbnails */
+.fileuploader-theme-thumbnails .fileuploader-items-list {
+	margin: -5px -10px;
+}
+.fileuploader-theme-thumbnails li.fileuploader-item {
+	-webkit-animation: fileuploaderScaleIn 0.2s ease;
+			animation: fileuploaderScaleIn 0.2s ease;
+	border-bottom: 0;
+}
+.fileuploader-theme-thumbnails .fileuploader-item-inner {
+	position: relative;
+	border-radius: 4px;
+	background: rgba(255,255,255,0.6);
+	overflow: hidden;
+}
+.fileuploader-theme-thumbnails .fileuploader-item-inner,
+.fileuploader-theme-thumbnails .fileuploader-item-inner .thumbnail-holder,
+.fileuploader-theme-thumbnails .fileuploader-items-list .fileuploader-item-image {
+    width: 100%;
+	height: 100%;
+}
+.fileuploader-theme-thumbnails .fileuploader-items-list .fileuploader-item-image {
+	position: relative;
+	text-align: center;
+	overflow: hidden;
+}
+.fileuploader-theme-thumbnails .fileuploader-item .fileuploader-item-image img,
+.fileuploader-theme-thumbnails .fileuploader-item .fileuploader-item-image canvas {
+    border-radius: 0;
+}
+.fileuploader-theme-thumbnails .fileuploader-items-list .fileuploader-item-image img {
+	max-height: 100%;
+	min-height: 100%;
+    max-width: none;
+}
+.fileuploader-theme-thumbnails .fileuploader-item .fileuploader-item-image.fileuploader-loading:after {
+	top: 50%;
+    left: 50%;
+    width: 30px;
+    height: 30px;
+    margin-left: -15px;
+    margin-top: -15px;
+    opacity: 0.2;
+}
+.fileuploader-theme-thumbnails .fileuploader-items-list .actions-holder {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 4px;
+	background: rgba(33, 33, 33, 0.55);
+	text-align: right;
+	-webkit-transition: opacity 0.2s ease;
+			transition: opacity 0.2s ease;
+	opacity: 0;
+	z-index: 3;
+}
+.fileuploader-theme-thumbnails .fileuploader-items-list li.fileuploader-item:hover .actions-holder {
+	opacity: 1;
+}
+.fileuploader-theme-thumbnails .fileuploader-action-remove {
+	background: none;
+	border: 0;
+	width: 24px;
+	height: 24px;
+	margin: 3px;
+}
+.fileuploader-theme-thumbnails .fileuploader-action-remove i:before,
+.fileuploader-theme-thumbnails .fileuploader-action-remove i:after {
+	top: 4px;
+	left: 10px;
+	height: 14px;
+	width: 3px;
+	background: #fff;
+}
+
+/* uploading */
+.fileuploader-theme-thumbnails .fileuploader-item.upload-failed {
+	background: none;
+}
+.fileuploader-theme-thumbnails .fileuploader-items-list li.fileuploader-item.upload-failed .fileuploader-item-icon {
+	display: block !important;
+	background: #db6868 !important;
+	color: #fff;
+}
+.fileuploader-theme-thumbnails .fileuploader-item.upload-pending .fileuploader-action-remove:after {
+	right: 0;
+	margin-top: -14px;
+}
+.fileuploader-theme-thumbnails .fileuploader-item .progress-holder {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.fileuploader-theme-thumbnails .fileuploader-item .progress-holder .fileuploader-progressbar {
+	position: relative;
+    top: 50%;
+	width: 80%;
+    height: 6px;
+	margin: 0 auto;
+	background: #dde4f6;
+}

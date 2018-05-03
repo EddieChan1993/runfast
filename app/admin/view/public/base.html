@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- META SECTION -->
+    <title>{:get_options('site_name')}|后台管理系统</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    {include file='public:head_out' /}
+     <style type="text/css">
+         html, body{
+             overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+<!-- START PAGE CONTAINER -->
+<div class="animated fadeIn page-container page-navigation-top-fixed">
+    <!-- START PAGE SIDEBAR -->
+    {include file='public:sidebar'/}
+    <!-- END PAGE SIDEBAR -->
+
+    <!-- PAGE CONTENT -->
+    <div class="page-content">
+        <!-- START X-NAVIGATION VERTICAL -->
+        {include file='public:nav'/}
+        <!-- END X-NAVIGATION VERTICAL -->
+        <iframe id="frame" width="100%" height="99%" src="{$url}" frameborder="0"></iframe>
+    </div>
+    <!-- END PAGE CONTENT -->
+</div>
+<!-- END PAGE CONTAINER -->
+
+<!-- MESSAGE BOX-->
+{include file='public:alert'/}
+<!-- END MESSAGE BOX-->
+
+<!-- START PRELOADS -->
+<!--<audio id="audio-alert" src="__ADMIN__/audio/alert.mp3" preload="auto"></audio>-->
+<!--<audio id="audio-fail" src="__ADMIN__/audio/fail.mp3" preload="auto"></audio>-->
+<!-- END PRELOADS -->
+
+<!-- START SCRIPTS -->
+<!-- START PLUGINS -->
+<script type="text/javascript" src="__ADMIN__/js/plugins/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="__ADMIN__/js/plugins/jquery/jquery-ui.min.js"></script>
+<script type="text/javascript" src="__ADMIN__/js/plugins/bootstrap/bootstrap.min.js"></script>
+<!-- END PLUGINS -->
+
+<!-- THIS PAGE PLUGINS -->
+<script type='text/javascript' src='__ADMIN__/js/plugins/icheck/icheck.min.js'></script>
+<script type="text/javascript" src="__ADMIN__/js/plugins/mcustomscrollbar/jquery.mCustomScrollbar.min.js"></script>
+<!-- END PAGE PLUGINS -->
+
+<!-- START TEMPLATE -->
+<script type="text/javascript" src="__ADMIN__/js/plugins.js"></script>
+<script type="text/javascript" src="__ADMIN__/js/actions.js"></script>
+<!-- END TEMPLATE -->
+<!-- END SCRIPTS -->
+<script type="text/javascript">
+    $.getJSON("{:url('admin/Index/get_php_ext')}",function (res) {
+        if(res.code) {
+            m_success(res.msg);
+        }else{
+            m_error(res.msg,{
+                time:-1
+            })
+        }
+    })
+</script>
+</body>
+</html>
+
+
+
+
+
+

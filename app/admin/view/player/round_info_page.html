@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    {include file='public:head_in' /}
+</head>
+<body>
+<div class="animated fadeIn col-md-9">
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <table class="table table-hover">
+                <thead>
+                <tr>
+                    <th>局数</th>
+                    <th>第一个出完牌的玩家</th>
+                    <th>本局压的牌</th>
+                    <th>本局开始时间</th>
+                    <th>本局结束时间</th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody>
+                {volist name='round_info' id='v'}
+                <tr class="del_tr">
+                    <td>{$v.round_id}</td>
+                    <td><strong>{:get_player($v.card_over_player_id,'name')}</strong></td>
+                    <td><strong>{$v.press_card|get_card_info}</strong></td>
+                    <td>{$v.round_start|tranTime}</td>
+                    <td>{$v.round_edd|tranTime}</td>
+                    <td>
+                        <button data-url="{:url('admin/player/round_info',['round_id'=>$v.round_id,'room_id'=>$v.room_id])}" title="查看{:str_pad($v.room_id,6,'0',STR_PAD_LEFT)}房间,第{$v.round_id}局详情" onClick="show_round(this);" class="btn btn-default btn-rounded btn-sm" ><span class="fa fa-search-plus"></span></button>
+                        <button data-url="{:url('admin/player/del_room_round',['relate_id'=>$v.relate_id])}" onClick="delete_row(this);" class="btn btn-danger btn-rounded btn-sm" ><span class="fa fa-trash-o"></span></button>
+                    </td>
+                </tr>
+                {/volist}
+                </tbody>
+            </table>
+        </div>
+        <div class="panel-footer">
+            {$pages}
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    function show_round(dom) {
+        parent.layer.open({
+            title:$(dom).attr('title'),
+            type: 2,
+            offset: '40px',
+            closeBtn: 0,
+            area:'869px',
+            shadeClose: true,
+            content: $(dom).attr('data-url'),
+            success: function(layero, index) {
+                parent.layer.iframeAuto(index);
+            }
+        });
+    }
+</script>
+</body>
+</html>

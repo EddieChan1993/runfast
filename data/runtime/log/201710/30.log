@@ -1,0 +1,833 @@
+---------------------------------------------------------------
+[ 2017-10-30T09:45:57+08:00 ] 172.16.0.5 139.205.239.120 GET /
+[ info ] card.dcwen.top/ [运行时间：0.065457s][吞吐率：15.28req/s] [内存消耗：562.15kb] [文件加载：53]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.81 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-30T09:45:57+08:00 ] 172.16.0.5 139.205.239.120 GET /admin/login/show_login.html
+[ info ] card.dcwen.top/admin/login/show_login.html [运行时间：0.026132s][吞吐率：38.27req/s] [内存消耗：1,741.76kb] [文件加载：59]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'show_login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.81 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=690if7sdklq5k3etpplaspdf64',
+)
+[ info ] [ PARAM ] array (
+  '/admin/login/show_login_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Login->show_login[ /var/www/card/app/admin/controller/Login.php ]
+[ info ] [ VIEW ] /var/www/card/app/admin/view/login/login_page.html [ array (
+) ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001441s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_options` [ RunTime:0.000687s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.000159s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.000125s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.000162s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_widgets` [ RunTime:0.000515s ]
+[ sql ] [ SQL ] SELECT `wid_params` FROM `edd_widgets` WHERE  `wid_key` = 'lsm_verify' LIMIT 1 [ RunTime:0.000116s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.000119s ]
+---------------------------------------------------------------
+[ 2017-10-30T09:46:07+08:00 ] 172.16.0.5 139.205.239.120 GET /
+[ info ] card.dcwen.top/ [运行时间：0.008168s][吞吐率：122.43req/s] [内存消耗：546.88kb] [文件加载：53]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.81 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=690if7sdklq5k3etpplaspdf64',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-30T09:46:07+08:00 ] 172.16.0.5 139.205.239.120 GET /admin/login/show_login.html
+[ info ] card.dcwen.top/admin/login/show_login.html [运行时间：0.009256s][吞吐率：108.04req/s] [内存消耗：1,734.98kb] [文件加载：59]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'show_login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.81 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=690if7sdklq5k3etpplaspdf64',
+)
+[ info ] [ PARAM ] array (
+  '/admin/login/show_login_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Login->show_login[ /var/www/card/app/admin/controller/Login.php ]
+[ info ] [ VIEW ] /var/www/card/app/admin/view/login/login_page.html [ array (
+) ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001539s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_options` [ RunTime:0.000763s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.000175s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.000113s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.000130s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_widgets` [ RunTime:0.000535s ]
+[ sql ] [ SQL ] SELECT `wid_params` FROM `edd_widgets` WHERE  `wid_key` = 'lsm_verify' LIMIT 1 [ RunTime:0.000135s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.000132s ]
+---------------------------------------------------------------
+[ 2017-10-30T09:46:10+08:00 ] 172.16.0.5 139.205.239.120 GET /admin/login/favicon.ico
+[ info ] card.dcwen.top/admin/login/favicon.ico [运行时间：0.009336s][吞吐率：107.11req/s] [内存消耗：523.88kb] [文件加载：52]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'favicon.ico',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.81 Safari/537.36',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'referer' => 'http://card.dcwen.top/admin/login/show_login.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=690if7sdklq5k3etpplaspdf64',
+)
+[ info ] [ PARAM ] array (
+  '/admin/login/favicon_ico' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-10-30T09:46:20+08:00 ] 172.16.0.5 139.205.239.120 POST /admin/login/login_in.html
+[ info ] card.dcwen.top/admin/login/login_in.html [运行时间：0.082219s][吞吐率：12.16req/s] [内存消耗：769.64kb] [文件加载：62]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'login_in',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top',
+  'connection' => 'keep-alive',
+  'content-length' => '349',
+  'accept' => '*/*',
+  'origin' => 'http://card.dcwen.top',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.81 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://card.dcwen.top/admin/login/show_login.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=690if7sdklq5k3etpplaspdf64',
+)
+[ info ] [ PARAM ] array (
+  '/admin/login/login_in_html' => '',
+  'username' => 'admin',
+  'password' => 'admin123',
+  'luotest_response' => 'shZbwGY7ZP2GG_3MbY1e6PF5ZoPmRKKv2T6Q35lAsqJdcaa0P0DkGOTtYMQXdu53YFN3Kb8XE1xpa3olaIgUR-yFYfG5SAXd0RbNYlw09cn95mLHLEPJBfaK5TdlbKZE27j37FYpG6eG1aZwjaHu07JFN8b2aZm_qnlA32_RQVh73p5Fu4mgmRxy6INnK1_ew3pwtNbeHuPkI6pkF4VfjNBm6vxMOTz97GsAH2wzVEjauBp_hy9mXy1Or93eWcqDzFYegNUhnlPVqqJVes563Zjl9hfpBrZAulxl-k5q3Jg',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Login->login_in[ /var/www/card/app/admin/controller/Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001667s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_widgets` [ RunTime:0.000967s ]
+[ sql ] [ SQL ] SELECT `wid_params` FROM `edd_widgets` WHERE  `wid_key` = 'lsm_verify' LIMIT 1 [ RunTime:0.000204s ]
+[ sql ] [ SQL ] SELECT `wid_params` FROM `edd_widgets` WHERE  `wid_key` = 'lsm_verify' LIMIT 1 [ RunTime:0.000132s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_users` [ RunTime:0.000735s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `user_login` = 'admin' LIMIT 1 [ RunTime:0.000567s ]
+[ sql ] [ SQL ] UPDATE `edd_users`  SET `last_login_time`='1509327980',`last_login_ip`='139.205.239.120',`user_hits`=133  WHERE  `id` = 1 [ RunTime:0.000613s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000200s ]
+---------------------------------------------------------------
+[ 2017-10-30T09:46:21+08:00 ] 172.16.0.5 139.205.239.120 GET /admin/index/index.html
+[ info ] card.dcwen.top/admin/index/index.html [运行时间：0.042644s][吞吐率：23.45req/s] [内存消耗：975.12kb] [文件加载：63]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.81 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://card.dcwen.top/admin/login/show_login.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=690if7sdklq5k3etpplaspdf64; UID=E67sq',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/index_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->index[ /var/www/card/app/admin/controller/Index.php ]
+[ info ] [ VIEW ] /var/www/card/app/admin/view/public/base.html [ array (
+  0 => 'self',
+  1 => 'role_name',
+  2 => 'menuAuth',
+  3 => 'url',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000249s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_users` [ RunTime:0.000802s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000193s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_menu` [ RunTime:0.000709s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_menu` WHERE  `module` = 'admin'  AND `controller` = 'Index'  AND `method` = 'index' LIMIT 1 [ RunTime:0.000204s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000151s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000787s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000255s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_role_user` [ RunTime:0.000483s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000126s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_role` [ RunTime:0.000510s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000145s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_menu` WHERE  `id` IN (216,305,218,310,309,308,217,307,306,249,346,331,304,322,252,330,329,321,320,319,250,312,311,211,318,317,316,265,267,325,324,323,266,315,314,313,347,336,337,344,345,328,327,326,334)  AND `status` = 1  AND `type` = 0 ORDER BY listorder desc [ RunTime:0.000305s ]
+[ sql ] [ SQL ] SELECT `module`,`controller`,`method` FROM `edd_menu` WHERE  `id` = 345 LIMIT 1 [ RunTime:0.000192s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_options` [ RunTime:0.000515s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.000155s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.000121s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000130s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000125s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000122s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000178s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000124s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000143s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000125s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000124s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000125s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000124s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000126s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000121s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000130s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000123s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000126s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000131s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000134s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000123s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000124s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000124s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000128s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000129s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000131s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000129s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000124s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000160s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000125s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000121s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000124s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000142s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000133s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000123s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000134s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000126s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000126s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000123s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000133s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000124s ]
+---------------------------------------------------------------
+[ 2017-10-30T09:46:21+08:00 ] 172.16.0.5 139.205.239.120 GET /admin/alldata/show_page.html
+[ info ] card.dcwen.top/admin/alldata/show_page.html [运行时间：0.027006s][吞吐率：37.03req/s] [内存消耗：885.01kb] [文件加载：63]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'alldata',
+    2 => 'show_page',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.81 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://card.dcwen.top/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=690if7sdklq5k3etpplaspdf64; UID=z2L6k',
+)
+[ info ] [ PARAM ] array (
+  '/admin/alldata/show_page_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Alldata->show_page[ /var/www/card/app/admin/controller/Alldata.php ]
+[ info ] [ VIEW ] /var/www/card/app/admin/view/alldata/all_data_page.html [ array (
+  0 => 'all_player',
+  1 => 'today_room_nums',
+  2 => 'now_week_pay',
+  3 => 'now_week_draw',
+  4 => 'now_week_profile',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001404s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_users` [ RunTime:0.000690s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000183s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_menu` [ RunTime:0.000532s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_menu` WHERE  `module` = 'admin'  AND `controller` = 'Alldata'  AND `method` = 'show_page' LIMIT 1 [ RunTime:0.000169s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_player` [ RunTime:0.000520s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_player` LIMIT 1 [ RunTime:0.000132s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_room` [ RunTime:0.000540s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  ( `room_date` > '1509292800' and `room_date` < '1509379200' ) LIMIT 1 [ RunTime:0.000441s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_pay_log` [ RunTime:0.000463s ]
+[ sql ] [ SQL ] SELECT SUM(pay_money) AS tp_sum FROM `edd_pay_log` WHERE  ( `pay_date` > '1509292800' and `pay_date` < '1509897599' ) LIMIT 1 [ RunTime:0.000732s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_draw` [ RunTime:0.000507s ]
+[ sql ] [ SQL ] SELECT SUM(draw_money) AS tp_sum FROM `edd_draw` WHERE  ( `draw_date` > '1509292800' and `draw_date` < '1509897599' ) LIMIT 1 [ RunTime:0.000457s ]
+[ sql ] [ SQL ] SELECT SUM(pay_money) AS tp_sum FROM `edd_pay_log` LIMIT 1 [ RunTime:0.000493s ]
+[ sql ] [ SQL ] SELECT SUM(draw_money) AS tp_sum FROM `edd_draw` LIMIT 1 [ RunTime:0.000108s ]
+[ sql ] [ SQL ] SELECT SUM(pay_money) AS tp_sum FROM `edd_pay_log` LIMIT 1 [ RunTime:0.000134s ]
+[ sql ] [ SQL ] SELECT SUM(draw_money) AS tp_sum FROM `edd_draw` LIMIT 1 [ RunTime:0.000116s ]
+---------------------------------------------------------------
+[ 2017-10-30T09:46:22+08:00 ] 172.16.0.5 139.205.239.120 GET /admin/index/get_php_ext.html
+[ info ] card.dcwen.top/admin/index/get_php_ext.html [运行时间：0.006255s][吞吐率：159.87req/s] [内存消耗：820.71kb] [文件加载：61]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'get_php_ext',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.81 Safari/537.36',
+  'referer' => 'http://card.dcwen.top/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=690if7sdklq5k3etpplaspdf64; UID=ksM99',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/get_php_ext_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->get_php_ext[ /var/www/card/app/admin/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000214s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_users` [ RunTime:0.000762s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000183s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_menu` [ RunTime:0.000583s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_menu` WHERE  `module` = 'admin'  AND `controller` = 'Index'  AND `method` = 'get_php_ext' LIMIT 1 [ RunTime:0.000157s ]
+---------------------------------------------------------------
+[ 2017-10-30T09:46:23+08:00 ] 172.16.0.5 139.205.239.120 POST /admin/alldata/data_chat.html
+[ info ] card.dcwen.top/admin/alldata/data_chat.html [运行时间：0.014728s][吞吐率：67.90req/s] [内存消耗：832.45kb] [文件加载：60]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'alldata',
+    2 => 'data_chat',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://card.dcwen.top',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.81 Safari/537.36',
+  'referer' => 'http://card.dcwen.top/admin/alldata/show_page.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=690if7sdklq5k3etpplaspdf64; UID=9gDIW',
+)
+[ info ] [ PARAM ] array (
+  '/admin/alldata/data_chat_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Alldata->data_chat[ /var/www/card/app/admin/controller/Alldata.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001373s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_users` [ RunTime:0.000806s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000269s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_menu` [ RunTime:0.000569s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_menu` WHERE  `module` = 'admin'  AND `controller` = 'Alldata'  AND `method` = 'data_chat' LIMIT 1 [ RunTime:0.000205s ]
+[ sql ] [ SQL ] SELECT FROM_UNIXTIME(room_date,'%Y-%u') week,COUNT(room_id) room_nums  FROM edd_room GROUP BY week [ RunTime:0.000786s ]
+[ sql ] [ SQL ] SELECT FROM_UNIXTIME(pay_date,'%Y-%m') month,sum(pay_money) pay_money  FROM edd_pay_log GROUP BY month [ RunTime:0.000649s ]
+[ sql ] [ SQL ] SELECT FROM_UNIXTIME(draw_date,'%Y-%m') month,sum(draw_money) draw_money  FROM edd_draw GROUP BY month [ RunTime:0.000131s ]
+---------------------------------------------------------------
+[ 2017-10-30T09:46:23+08:00 ] 172.16.0.5 139.205.239.120 POST /admin/alldata/connect.html
+[ info ] card.dcwen.top/admin/alldata/connect.html [运行时间：0.015893s][吞吐率：62.92req/s] [内存消耗：840.91kb] [文件加载：60]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'alldata',
+    2 => 'connect',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top',
+  'connection' => 'keep-alive',
+  'content-length' => '41',
+  'accept' => '*/*',
+  'origin' => 'http://card.dcwen.top',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.81 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://card.dcwen.top/admin/alldata/show_page.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=690if7sdklq5k3etpplaspdf64; UID=IPWch',
+)
+[ info ] [ PARAM ] array (
+  '/admin/alldata/connect_html' => '',
+  'name' => 'admin',
+  'client_id' => '7f0000010fa30000007f',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Alldata->connect[ /var/www/card/app/admin/controller/Alldata.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001333s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_users` [ RunTime:0.000848s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000257s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_menu` [ RunTime:0.000518s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_menu` WHERE  `module` = 'admin'  AND `controller` = 'Alldata'  AND `method` = 'connect' LIMIT 1 [ RunTime:0.000177s ]
+---------------------------------------------------------------
+[ 2017-10-30T11:36:21+08:00 ] 172.16.0.5 139.205.239.120 GET /admin/index/index.html
+[ info ] card.dcwen.top/admin/index/index.html [运行时间：0.038273s][吞吐率：26.13req/s] [内存消耗：969.19kb] [文件加载：63]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.81 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://card.dcwen.top/admin/login/show_login.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=690if7sdklq5k3etpplaspdf64; UID=AJ76s',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/index_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->index[ /var/www/card/app/admin/controller/Index.php ]
+[ info ] [ VIEW ] /var/www/card/app/admin/view/public/base.html [ array (
+  0 => 'self',
+  1 => 'role_name',
+  2 => 'menuAuth',
+  3 => 'url',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001423s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_users` [ RunTime:0.000730s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000203s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_menu` [ RunTime:0.000557s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_menu` WHERE  `module` = 'admin'  AND `controller` = 'Index'  AND `method` = 'index' LIMIT 1 [ RunTime:0.000144s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000158s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000175s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000118s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_role_user` [ RunTime:0.000495s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000137s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_role` [ RunTime:0.000527s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000129s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_menu` WHERE  `id` IN (216,305,218,310,309,308,217,307,306,249,346,331,304,322,252,330,329,321,320,319,250,312,311,211,318,317,316,265,267,325,324,323,266,315,314,313,347,336,337,344,345,328,327,326,334)  AND `status` = 1  AND `type` = 0 ORDER BY listorder desc [ RunTime:0.000311s ]
+[ sql ] [ SQL ] SELECT `module`,`controller`,`method` FROM `edd_menu` WHERE  `id` = 345 LIMIT 1 [ RunTime:0.000119s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_options` [ RunTime:0.000606s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.000119s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.000111s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000119s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000121s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000147s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000131s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000114s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000131s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000114s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000119s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000134s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000118s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000136s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000111s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000145s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000112s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000139s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000113s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000135s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000117s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000112s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000162s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000132s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000113s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000112s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000110s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000129s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000112s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000115s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000114s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000111s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000136s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000113s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000112s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000113s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000114s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000113s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000121s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000120s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000129s ]
+---------------------------------------------------------------
+[ 2017-10-30T11:36:22+08:00 ] 172.16.0.5 139.205.239.120 GET /admin/index/get_php_ext.html
+[ info ] card.dcwen.top/admin/index/get_php_ext.html [运行时间：0.006058s][吞吐率：165.07req/s] [内存消耗：819.90kb] [文件加载：61]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'get_php_ext',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.81 Safari/537.36',
+  'referer' => 'http://card.dcwen.top/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=690if7sdklq5k3etpplaspdf64; UID=ksM99',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/get_php_ext_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->get_php_ext[ /var/www/card/app/admin/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000216s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_users` [ RunTime:0.000699s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000181s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_menu` [ RunTime:0.000528s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_menu` WHERE  `module` = 'admin'  AND `controller` = 'Index'  AND `method` = 'get_php_ext' LIMIT 1 [ RunTime:0.000194s ]
+---------------------------------------------------------------
+[ 2017-10-30T11:36:22+08:00 ] 172.16.0.5 139.205.239.120 GET /admin/alldata/show_page.html
+[ info ] card.dcwen.top/admin/alldata/show_page.html [运行时间：0.011431s][吞吐率：87.48req/s] [内存消耗：880.13kb] [文件加载：63]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'alldata',
+    2 => 'show_page',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.81 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://card.dcwen.top/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=690if7sdklq5k3etpplaspdf64; UID=ksM99',
+)
+[ info ] [ PARAM ] array (
+  '/admin/alldata/show_page_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Alldata->show_page[ /var/www/card/app/admin/controller/Alldata.php ]
+[ info ] [ VIEW ] /var/www/card/app/admin/view/alldata/all_data_page.html [ array (
+  0 => 'all_player',
+  1 => 'today_room_nums',
+  2 => 'now_week_pay',
+  3 => 'now_week_draw',
+  4 => 'now_week_profile',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000145s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_users` [ RunTime:0.000607s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000165s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_menu` [ RunTime:0.000509s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_menu` WHERE  `module` = 'admin'  AND `controller` = 'Alldata'  AND `method` = 'show_page' LIMIT 1 [ RunTime:0.000176s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_player` [ RunTime:0.000502s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_player` LIMIT 1 [ RunTime:0.000097s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_room` [ RunTime:0.000556s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  ( `room_date` > '1509292800' and `room_date` < '1509379200' ) LIMIT 1 [ RunTime:0.000128s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_pay_log` [ RunTime:0.000545s ]
+[ sql ] [ SQL ] SELECT SUM(pay_money) AS tp_sum FROM `edd_pay_log` WHERE  ( `pay_date` > '1509292800' and `pay_date` < '1509897599' ) LIMIT 1 [ RunTime:0.000251s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_draw` [ RunTime:0.000528s ]
+[ sql ] [ SQL ] SELECT SUM(draw_money) AS tp_sum FROM `edd_draw` WHERE  ( `draw_date` > '1509292800' and `draw_date` < '1509897599' ) LIMIT 1 [ RunTime:0.000135s ]
+[ sql ] [ SQL ] SELECT SUM(pay_money) AS tp_sum FROM `edd_pay_log` LIMIT 1 [ RunTime:0.000093s ]
+[ sql ] [ SQL ] SELECT SUM(draw_money) AS tp_sum FROM `edd_draw` LIMIT 1 [ RunTime:0.000098s ]
+[ sql ] [ SQL ] SELECT SUM(pay_money) AS tp_sum FROM `edd_pay_log` LIMIT 1 [ RunTime:0.000088s ]
+[ sql ] [ SQL ] SELECT SUM(draw_money) AS tp_sum FROM `edd_draw` LIMIT 1 [ RunTime:0.000096s ]
+---------------------------------------------------------------
+[ 2017-10-30T11:36:22+08:00 ] 172.16.0.5 139.205.239.120 POST /admin/alldata/data_chat.html
+[ info ] card.dcwen.top/admin/alldata/data_chat.html [运行时间：0.007125s][吞吐率：140.35req/s] [内存消耗：831.59kb] [文件加载：60]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'alldata',
+    2 => 'data_chat',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://card.dcwen.top',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.81 Safari/537.36',
+  'referer' => 'http://card.dcwen.top/admin/alldata/show_page.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=690if7sdklq5k3etpplaspdf64; UID=J6YAh',
+)
+[ info ] [ PARAM ] array (
+  '/admin/alldata/data_chat_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Alldata->data_chat[ /var/www/card/app/admin/controller/Alldata.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000212s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_users` [ RunTime:0.000775s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000215s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_menu` [ RunTime:0.000541s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_menu` WHERE  `module` = 'admin'  AND `controller` = 'Alldata'  AND `method` = 'data_chat' LIMIT 1 [ RunTime:0.000152s ]
+[ sql ] [ SQL ] SELECT FROM_UNIXTIME(room_date,'%Y-%u') week,COUNT(room_id) room_nums  FROM edd_room GROUP BY week [ RunTime:0.000119s ]
+[ sql ] [ SQL ] SELECT FROM_UNIXTIME(pay_date,'%Y-%m') month,sum(pay_money) pay_money  FROM edd_pay_log GROUP BY month [ RunTime:0.000106s ]
+[ sql ] [ SQL ] SELECT FROM_UNIXTIME(draw_date,'%Y-%m') month,sum(draw_money) draw_money  FROM edd_draw GROUP BY month [ RunTime:0.000135s ]
+---------------------------------------------------------------
+[ 2017-10-30T11:36:22+08:00 ] 172.16.0.5 139.205.239.120 POST /admin/alldata/connect.html
+[ info ] card.dcwen.top/admin/alldata/connect.html [运行时间：0.009485s][吞吐率：105.43req/s] [内存消耗：840.09kb] [文件加载：60]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'alldata',
+    2 => 'connect',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top',
+  'connection' => 'keep-alive',
+  'content-length' => '41',
+  'accept' => '*/*',
+  'origin' => 'http://card.dcwen.top',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.81 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://card.dcwen.top/admin/alldata/show_page.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=690if7sdklq5k3etpplaspdf64; UID=LVfyv',
+)
+[ info ] [ PARAM ] array (
+  '/admin/alldata/connect_html' => '',
+  'name' => 'admin',
+  'client_id' => '7f0000010fa200000090',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Alldata->connect[ /var/www/card/app/admin/controller/Alldata.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000207s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_users` [ RunTime:0.000715s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000186s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_menu` [ RunTime:0.000538s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_menu` WHERE  `module` = 'admin'  AND `controller` = 'Alldata'  AND `method` = 'connect' LIMIT 1 [ RunTime:0.000161s ]

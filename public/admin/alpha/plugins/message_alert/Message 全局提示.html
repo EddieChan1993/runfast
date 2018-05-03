@@ -1,0 +1,30 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Message</title>
+	<link rel="stylesheet" href="css/m_css.css">
+	<script src="js/m_js.js"></script>
+</head>
+
+<body>
+
+	<div class="m_tip">
+		<div>
+			<img class="m_icon m_normal" src="img/tip.svg">
+			<img class="m_icon m_error" src="img/error.svg">
+			<img class="m_icon m_success" src="img/success.svg">
+			<img class="m_icon m_warning" src="img/warning.svg">
+			<img class="m_icon m_loading" src="img/loading.svg">
+			<span>提示内容</span>
+		</div>
+			<img class="m_icon m_close" src="img/close.svg" onclick=close_tip(this)>
+	</div>
+
+	<button onclick=m_normal()>普通提示</button>
+	<button onclick=m_error()>错误提示</button>
+	<button onclick=m_success()>成功提示</button>
+	<button onclick=m_warning()>警告提示</button>
+	<button onclick=m_loading()>加载提示</button>
+</body>
+
+</html>

@@ -1,0 +1,1956 @@
+---------------------------------------------------------------
+[ 2018-01-14T11:03:59+08:00 ] 172.16.0.6 117.174.27.184 GET /home/game/page
+[ info ] card.dcwen.top/home/game/page [运行时间：0.009302s][吞吐率：107.50req/s] [内存消耗：709.13kb] [文件加载：56]
+[ info ] [ LANG ] /eddftp/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'game',
+    2 => 'page',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'UM_distinctid=15ebdf07542788-006a6b0762d84c-e313761-144000-15ebdf07543cf3; UID=%3DzoUI',
+)
+[ info ] [ PARAM ] array (
+  '/home/game/page' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Game->page[ /eddftp/card/app/home/controller/Game.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000263s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_options` [ RunTime:0.000957s ]
+[ sql ] [ SQL ] SELECT `is_close` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.000188s ]
+---------------------------------------------------------------
+[ 2018-01-14T11:03:59+08:00 ] 172.16.0.6 117.174.27.184 GET /favicon.ico
+[ info ] card.dcwen.top/favicon.ico [运行时间：0.002731s][吞吐率：366.15req/s] [内存消耗：444.80kb] [文件加载：41]
+[ info ] [ LANG ] /eddftp/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon.ico',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://card.dcwen.top/home/game/page',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'UM_distinctid=15ebdf07542788-006a6b0762d84c-e313761-144000-15ebdf07543cf3; UID=%3DzoUI',
+)
+[ info ] [ PARAM ] array (
+  '/favicon_ico' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-14T11:08:09+08:00 ] 172.16.0.6 117.174.27.184 GET /
+[ info ] card.dcwen.top/ [运行时间：0.030825s][吞吐率：32.44req/s] [内存消耗：963.65kb] [文件加载：63]
+[ info ] [ LANG ] /eddftp/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'UM_distinctid=15ebdf07542788-006a6b0762d84c-e313761-144000-15ebdf07543cf3; UID=%3DzoUI',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->index[ /eddftp/card/app/admin/controller/Index.php ]
+[ info ] [ VIEW ] /eddftp/card/app/admin/view/public/base.html [ array (
+  0 => 'self',
+  1 => 'role_name',
+  2 => 'menuAuth',
+  3 => 'url',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000228s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_users` [ RunTime:0.000737s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000187s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_menu` [ RunTime:0.000536s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_menu` WHERE  `module` = 'admin'  AND `controller` = 'Index'  AND `method` = 'index' LIMIT 1 [ RunTime:0.000169s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000138s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000154s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000114s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_role_user` [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000112s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_role` [ RunTime:0.000573s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000137s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_menu` WHERE  `id` IN (216,305,218,310,309,308,217,307,306,249,346,331,304,322,252,330,329,321,320,319,250,312,311,211,318,317,316,265,267,325,324,323,266,315,314,313,347,336,337,344,345,328,327,326,334)  AND `status` = 1  AND `type` = 0 ORDER BY listorder desc [ RunTime:0.000315s ]
+[ sql ] [ SQL ] SELECT `module`,`controller`,`method` FROM `edd_menu` WHERE  `id` = 345 LIMIT 1 [ RunTime:0.000142s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_options` [ RunTime:0.000581s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.000112s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.000126s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000122s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000128s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000112s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000113s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000120s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000117s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000137s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000114s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000113s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000111s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000130s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000112s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000129s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000113s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000113s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000135s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000116s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000116s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000112s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000136s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000112s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000117s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000112s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000115s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000113s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000127s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000112s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000110s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000114s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000112s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000141s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000111s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000152s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000112s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000114s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000120s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000137s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000112s ]
+---------------------------------------------------------------
+[ 2018-01-14T11:08:11+08:00 ] 172.16.0.6 117.174.27.184 GET /
+[ info ] card.dcwen.top/ [运行时间：0.032634s][吞吐率：30.64req/s] [内存消耗：963.66kb] [文件加载：63]
+[ info ] [ LANG ] /eddftp/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'UM_distinctid=15ebdf07542788-006a6b0762d84c-e313761-144000-15ebdf07543cf3; PHPSESSID=cro4hb3q6iiv80vkc3pq32hm24; UID=juy%3DQ',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->index[ /eddftp/card/app/admin/controller/Index.php ]
+[ info ] [ VIEW ] /eddftp/card/app/admin/view/public/base.html [ array (
+  0 => 'self',
+  1 => 'role_name',
+  2 => 'menuAuth',
+  3 => 'url',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000323s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_users` [ RunTime:0.000883s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000177s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_menu` [ RunTime:0.000550s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_menu` WHERE  `module` = 'admin'  AND `controller` = 'Index'  AND `method` = 'index' LIMIT 1 [ RunTime:0.000163s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000131s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000188s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000115s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_role_user` [ RunTime:0.000507s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000122s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_role` [ RunTime:0.000536s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000135s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_menu` WHERE  `id` IN (216,305,218,310,309,308,217,307,306,249,346,331,304,322,252,330,329,321,320,319,250,312,311,211,318,317,316,265,267,325,324,323,266,315,314,313,347,336,337,344,345,328,327,326,334)  AND `status` = 1  AND `type` = 0 ORDER BY listorder desc [ RunTime:0.000319s ]
+[ sql ] [ SQL ] SELECT `module`,`controller`,`method` FROM `edd_menu` WHERE  `id` = 345 LIMIT 1 [ RunTime:0.000133s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_options` [ RunTime:0.000537s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.000111s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.000138s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000213s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000127s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000113s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000181s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000114s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000140s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000118s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000128s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000121s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000127s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000115s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000127s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000120s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000126s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000128s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000116s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000128s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000114s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000113s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000114s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000132s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000116s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000132s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000121s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000129s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000122s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000117s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000114s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000131s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000128s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000127s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000113s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000128s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000126s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000125s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000128s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000113s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000117s ]
+---------------------------------------------------------------
+[ 2018-01-14T11:08:11+08:00 ] 172.16.0.6 117.174.27.184 GET /admin/alldata/show_page.html
+[ info ] card.dcwen.top/admin/alldata/show_page.html [运行时间：0.012217s][吞吐率：81.85req/s] [内存消耗：880.07kb] [文件加载：63]
+[ info ] [ LANG ] /eddftp/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'alldata',
+    2 => 'show_page',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://card.dcwen.top/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'UM_distinctid=15ebdf07542788-006a6b0762d84c-e313761-144000-15ebdf07543cf3; PHPSESSID=cro4hb3q6iiv80vkc3pq32hm24; UID=LVfyv',
+)
+[ info ] [ PARAM ] array (
+  '/admin/alldata/show_page_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Alldata->show_page[ /eddftp/card/app/admin/controller/Alldata.php ]
+[ info ] [ VIEW ] /eddftp/card/app/admin/view/alldata/all_data_page.html [ array (
+  0 => 'all_player',
+  1 => 'today_room_nums',
+  2 => 'now_week_pay',
+  3 => 'now_week_draw',
+  4 => 'now_week_profile',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000230s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_users` [ RunTime:0.000751s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000194s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_menu` [ RunTime:0.000660s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_menu` WHERE  `module` = 'admin'  AND `controller` = 'Alldata'  AND `method` = 'show_page' LIMIT 1 [ RunTime:0.000154s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_player` [ RunTime:0.000529s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_player` LIMIT 1 [ RunTime:0.000145s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_room` [ RunTime:0.000532s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  ( `room_date` > '1515859200' and `room_date` < '1515945600' ) LIMIT 1 [ RunTime:0.000207s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_pay_log` [ RunTime:0.000487s ]
+[ sql ] [ SQL ] SELECT SUM(pay_money) AS tp_sum FROM `edd_pay_log` WHERE  ( `pay_date` > '1515945600' and `pay_date` < '1516550399' ) LIMIT 1 [ RunTime:0.000270s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_draw` [ RunTime:0.000488s ]
+[ sql ] [ SQL ] SELECT SUM(draw_money) AS tp_sum FROM `edd_draw` WHERE  ( `draw_date` > '1515945600' and `draw_date` < '1516550399' ) LIMIT 1 [ RunTime:0.000180s ]
+[ sql ] [ SQL ] SELECT SUM(pay_money) AS tp_sum FROM `edd_pay_log` LIMIT 1 [ RunTime:0.000202s ]
+[ sql ] [ SQL ] SELECT SUM(draw_money) AS tp_sum FROM `edd_draw` LIMIT 1 [ RunTime:0.000092s ]
+[ sql ] [ SQL ] SELECT SUM(pay_money) AS tp_sum FROM `edd_pay_log` LIMIT 1 [ RunTime:0.000106s ]
+[ sql ] [ SQL ] SELECT SUM(draw_money) AS tp_sum FROM `edd_draw` LIMIT 1 [ RunTime:0.000096s ]
+---------------------------------------------------------------
+[ 2018-01-14T11:08:11+08:00 ] 172.16.0.6 117.174.27.184 GET /admin/index/get_php_ext.html
+[ info ] card.dcwen.top/admin/index/get_php_ext.html [运行时间：0.006279s][吞吐率：159.26req/s] [内存消耗：819.78kb] [文件加载：61]
+[ info ] [ LANG ] /eddftp/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'get_php_ext',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'referer' => 'http://card.dcwen.top/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'UM_distinctid=15ebdf07542788-006a6b0762d84c-e313761-144000-15ebdf07543cf3; PHPSESSID=cro4hb3q6iiv80vkc3pq32hm24; UID=LVfyv',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/get_php_ext_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->get_php_ext[ /eddftp/card/app/admin/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000195s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_users` [ RunTime:0.000687s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000170s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_menu` [ RunTime:0.000582s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_menu` WHERE  `module` = 'admin'  AND `controller` = 'Index'  AND `method` = 'get_php_ext' LIMIT 1 [ RunTime:0.000179s ]
+---------------------------------------------------------------
+[ 2018-01-14T11:08:11+08:00 ] 172.16.0.6 117.174.27.184 POST /admin/alldata/data_chat.html
+[ info ] card.dcwen.top/admin/alldata/data_chat.html [运行时间：0.007375s][吞吐率：135.59req/s] [内存消耗：831.65kb] [文件加载：60]
+[ info ] [ LANG ] /eddftp/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'alldata',
+    2 => 'data_chat',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://card.dcwen.top',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'referer' => 'http://card.dcwen.top/admin/alldata/show_page.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'UM_distinctid=15ebdf07542788-006a6b0762d84c-e313761-144000-15ebdf07543cf3; PHPSESSID=cro4hb3q6iiv80vkc3pq32hm24; UID=uSF2j',
+)
+[ info ] [ PARAM ] array (
+  '/admin/alldata/data_chat_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Alldata->data_chat[ /eddftp/card/app/admin/controller/Alldata.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000210s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_users` [ RunTime:0.000729s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000169s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_menu` [ RunTime:0.000543s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_menu` WHERE  `module` = 'admin'  AND `controller` = 'Alldata'  AND `method` = 'data_chat' LIMIT 1 [ RunTime:0.000168s ]
+[ sql ] [ SQL ] SELECT FROM_UNIXTIME(room_date,'%Y-%u') week,COUNT(room_id) room_nums  FROM edd_room GROUP BY week [ RunTime:0.000325s ]
+[ sql ] [ SQL ] SELECT FROM_UNIXTIME(pay_date,'%Y-%m') month,sum(pay_money) pay_money  FROM edd_pay_log GROUP BY month [ RunTime:0.000592s ]
+[ sql ] [ SQL ] SELECT FROM_UNIXTIME(draw_date,'%Y-%m') month,sum(draw_money) draw_money  FROM edd_draw GROUP BY month [ RunTime:0.000122s ]
+---------------------------------------------------------------
+[ 2018-01-14T11:08:12+08:00 ] 172.16.0.6 117.174.27.184 POST /admin/alldata/connect.html
+[ info ] card.dcwen.top/admin/alldata/connect.html [运行时间：0.009305s][吞吐率：107.47req/s] [内存消耗：840.09kb] [文件加载：60]
+[ info ] [ LANG ] /eddftp/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'alldata',
+    2 => 'connect',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top',
+  'connection' => 'keep-alive',
+  'content-length' => '41',
+  'accept' => '*/*',
+  'origin' => 'http://card.dcwen.top',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://card.dcwen.top/admin/alldata/show_page.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'UM_distinctid=15ebdf07542788-006a6b0762d84c-e313761-144000-15ebdf07543cf3; PHPSESSID=cro4hb3q6iiv80vkc3pq32hm24; UID=H3Xbe',
+)
+[ info ] [ PARAM ] array (
+  '/admin/alldata/connect_html' => '',
+  'name' => 'admin',
+  'client_id' => '7f0000010fa000000033',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Alldata->connect[ /eddftp/card/app/admin/controller/Alldata.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000220s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_users` [ RunTime:0.000726s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000201s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_menu` [ RunTime:0.000528s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_menu` WHERE  `module` = 'admin'  AND `controller` = 'Alldata'  AND `method` = 'connect' LIMIT 1 [ RunTime:0.000226s ]
+---------------------------------------------------------------
+[ 2018-01-14T11:08:14+08:00 ] 172.16.0.6 117.174.27.184 GET /admin/player/player_home_page.html
+[ info ] card.dcwen.top/admin/player/player_home_page.html [运行时间：0.042976s][吞吐率：23.27req/s] [内存消耗：1,015.73kb] [文件加载：63]
+[ info ] [ LANG ] /eddftp/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'player',
+    2 => 'player_home_page',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://card.dcwen.top/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'UM_distinctid=15ebdf07542788-006a6b0762d84c-e313761-144000-15ebdf07543cf3; PHPSESSID=cro4hb3q6iiv80vkc3pq32hm24; UID=SilGG',
+)
+[ info ] [ PARAM ] array (
+  '/admin/player/player_home_page_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Player->player_home_page[ /eddftp/card/app/admin/controller/Player.php ]
+[ info ] [ VIEW ] /eddftp/card/app/admin/view/player/player_home_page.html [ array (
+  0 => 'playersNums',
+  1 => 'playersList',
+  2 => 'pages',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000216s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_users` [ RunTime:0.000742s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000188s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_menu` [ RunTime:0.000612s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_menu` WHERE  `module` = 'admin'  AND `controller` = 'Player'  AND `method` = 'player_home_page' LIMIT 1 [ RunTime:0.000165s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_player` [ RunTime:0.000523s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_player` LIMIT 1 [ RunTime:0.000116s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_player` ORDER BY player_id desc [ RunTime:0.000258s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = null  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000143s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = 27 LIMIT 1 [ RunTime:0.000232s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_room` [ RunTime:0.000529s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  `room_owner` = 27 LIMIT 1 [ RunTime:0.000194s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = null  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000141s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = 26 LIMIT 1 [ RunTime:0.000195s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  `room_owner` = 26 LIMIT 1 [ RunTime:0.000180s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = null  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000124s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = 25 LIMIT 1 [ RunTime:0.000196s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  `room_owner` = 25 LIMIT 1 [ RunTime:0.000182s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = null  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000123s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = 24 LIMIT 1 [ RunTime:0.000243s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  `room_owner` = 24 LIMIT 1 [ RunTime:0.000178s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = null  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000154s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = 23 LIMIT 1 [ RunTime:0.000199s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  `room_owner` = 23 LIMIT 1 [ RunTime:0.000181s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = null  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000133s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = 22 LIMIT 1 [ RunTime:0.000145s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  `room_owner` = 22 LIMIT 1 [ RunTime:0.000172s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = null  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000137s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = 21 LIMIT 1 [ RunTime:0.000139s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  `room_owner` = 21 LIMIT 1 [ RunTime:0.000178s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = null  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000142s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = 20 LIMIT 1 [ RunTime:0.000139s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  `room_owner` = 20 LIMIT 1 [ RunTime:0.000180s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = null  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000122s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = 19 LIMIT 1 [ RunTime:0.000141s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  `room_owner` = 19 LIMIT 1 [ RunTime:0.000188s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = null  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000123s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = 18 LIMIT 1 [ RunTime:0.000177s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  `room_owner` = 18 LIMIT 1 [ RunTime:0.000179s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = null  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000137s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = 17 LIMIT 1 [ RunTime:0.000146s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  `room_owner` = 17 LIMIT 1 [ RunTime:0.000182s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = null  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000133s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = 16 LIMIT 1 [ RunTime:0.000143s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  `room_owner` = 16 LIMIT 1 [ RunTime:0.000198s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = null  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000123s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = 15 LIMIT 1 [ RunTime:0.000133s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  `room_owner` = 15 LIMIT 1 [ RunTime:0.000178s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = null  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000126s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = 14 LIMIT 1 [ RunTime:0.000139s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  `room_owner` = 14 LIMIT 1 [ RunTime:0.000171s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = '0'  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000140s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = 13 LIMIT 1 [ RunTime:0.000143s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  `room_owner` = 13 LIMIT 1 [ RunTime:0.000168s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = '0'  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000140s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = 12 LIMIT 1 [ RunTime:0.000130s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  `room_owner` = 12 LIMIT 1 [ RunTime:0.000183s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = null  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000136s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = 11 LIMIT 1 [ RunTime:0.000160s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  `room_owner` = 11 LIMIT 1 [ RunTime:0.000190s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = null  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000133s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = 10 LIMIT 1 [ RunTime:0.000147s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  `room_owner` = 10 LIMIT 1 [ RunTime:0.000168s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = '0'  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000143s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = 9 LIMIT 1 [ RunTime:0.000133s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  `room_owner` = 9 LIMIT 1 [ RunTime:0.000176s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = null  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000139s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = 8 LIMIT 1 [ RunTime:0.000138s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  `room_owner` = 8 LIMIT 1 [ RunTime:0.000183s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = '0'  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000132s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = 7 LIMIT 1 [ RunTime:0.000145s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  `room_owner` = 7 LIMIT 1 [ RunTime:0.000185s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = '0'  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000123s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = 4 LIMIT 1 [ RunTime:0.000184s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  `room_owner` = 4 LIMIT 1 [ RunTime:0.000177s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = '0'  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000137s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = 3 LIMIT 1 [ RunTime:0.000138s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  `room_owner` = 3 LIMIT 1 [ RunTime:0.000186s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = '0'  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000131s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = 2 LIMIT 1 [ RunTime:0.000145s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  `room_owner` = 2 LIMIT 1 [ RunTime:0.000179s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = '0'  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000152s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = 1 LIMIT 1 [ RunTime:0.000175s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  `room_owner` = 1 LIMIT 1 [ RunTime:0.000183s ]
+---------------------------------------------------------------
+[ 2018-01-14T11:08:30+08:00 ] 172.16.0.6 117.174.27.184 GET /admin/player/player_home_page.html?page=2
+[ info ] card.dcwen.top/admin/player/player_home_page.html?page=2 [运行时间：0.041459s][吞吐率：24.12req/s] [内存消耗：1,016.38kb] [文件加载：63]
+[ info ] [ LANG ] /eddftp/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'player',
+    2 => 'player_home_page',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://card.dcwen.top/admin/player/player_home_page.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'UM_distinctid=15ebdf07542788-006a6b0762d84c-e313761-144000-15ebdf07543cf3; PHPSESSID=cro4hb3q6iiv80vkc3pq32hm24; UID=TdmCs',
+)
+[ info ] [ PARAM ] array (
+  '/admin/player/player_home_page_html' => '',
+  'page' => '2',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Player->player_home_page[ /eddftp/card/app/admin/controller/Player.php ]
+[ info ] [ VIEW ] /eddftp/card/app/admin/view/player/player_home_page.html [ array (
+  0 => 'playersNums',
+  1 => 'playersList',
+  2 => 'pages',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000210s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_users` [ RunTime:0.000773s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000176s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_menu` [ RunTime:0.000573s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_menu` WHERE  `module` = 'admin'  AND `controller` = 'Player'  AND `method` = 'player_home_page' LIMIT 1 [ RunTime:0.000179s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_player` [ RunTime:0.000598s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_player` LIMIT 1 [ RunTime:0.000112s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_player` ORDER BY player_id desc [ RunTime:0.000117s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = null  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000146s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = 27 LIMIT 1 [ RunTime:0.000159s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_room` [ RunTime:0.000526s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  `room_owner` = 27 LIMIT 1 [ RunTime:0.000127s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = null  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000140s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = 26 LIMIT 1 [ RunTime:0.000129s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  `room_owner` = 26 LIMIT 1 [ RunTime:0.000124s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = null  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000160s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = 25 LIMIT 1 [ RunTime:0.000138s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  `room_owner` = 25 LIMIT 1 [ RunTime:0.000132s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = null  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000122s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = 24 LIMIT 1 [ RunTime:0.000125s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  `room_owner` = 24 LIMIT 1 [ RunTime:0.000126s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = null  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000164s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = 23 LIMIT 1 [ RunTime:0.000138s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  `room_owner` = 23 LIMIT 1 [ RunTime:0.000112s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = null  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000125s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = 22 LIMIT 1 [ RunTime:0.000140s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  `room_owner` = 22 LIMIT 1 [ RunTime:0.000110s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = null  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000124s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = 21 LIMIT 1 [ RunTime:0.000128s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  `room_owner` = 21 LIMIT 1 [ RunTime:0.000125s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = null  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000123s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = 20 LIMIT 1 [ RunTime:0.000148s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  `room_owner` = 20 LIMIT 1 [ RunTime:0.000119s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = null  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000132s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = 19 LIMIT 1 [ RunTime:0.000144s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  `room_owner` = 19 LIMIT 1 [ RunTime:0.000109s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = null  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000128s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = 18 LIMIT 1 [ RunTime:0.000134s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  `room_owner` = 18 LIMIT 1 [ RunTime:0.000117s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = null  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000133s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = 17 LIMIT 1 [ RunTime:0.000171s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  `room_owner` = 17 LIMIT 1 [ RunTime:0.000114s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = null  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000121s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = 16 LIMIT 1 [ RunTime:0.000152s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  `room_owner` = 16 LIMIT 1 [ RunTime:0.000120s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = null  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000136s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = 15 LIMIT 1 [ RunTime:0.000139s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  `room_owner` = 15 LIMIT 1 [ RunTime:0.000114s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = null  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000172s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = 14 LIMIT 1 [ RunTime:0.000226s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  `room_owner` = 14 LIMIT 1 [ RunTime:0.000115s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = '0'  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000127s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = 13 LIMIT 1 [ RunTime:0.000131s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  `room_owner` = 13 LIMIT 1 [ RunTime:0.000120s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = '0'  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000142s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = 12 LIMIT 1 [ RunTime:0.000137s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  `room_owner` = 12 LIMIT 1 [ RunTime:0.000112s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = null  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000165s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = 11 LIMIT 1 [ RunTime:0.000133s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  `room_owner` = 11 LIMIT 1 [ RunTime:0.000127s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = null  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000123s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = 10 LIMIT 1 [ RunTime:0.000168s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  `room_owner` = 10 LIMIT 1 [ RunTime:0.000116s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = '0'  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000123s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = 9 LIMIT 1 [ RunTime:0.000149s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  `room_owner` = 9 LIMIT 1 [ RunTime:0.000111s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = null  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000136s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = 8 LIMIT 1 [ RunTime:0.000135s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  `room_owner` = 8 LIMIT 1 [ RunTime:0.000110s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = '0'  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000132s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = 7 LIMIT 1 [ RunTime:0.000128s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  `room_owner` = 7 LIMIT 1 [ RunTime:0.000112s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = '0'  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000125s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = 4 LIMIT 1 [ RunTime:0.000141s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  `room_owner` = 4 LIMIT 1 [ RunTime:0.000124s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = '0'  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000137s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = 3 LIMIT 1 [ RunTime:0.000158s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  `room_owner` = 3 LIMIT 1 [ RunTime:0.000144s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = '0'  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000143s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = 2 LIMIT 1 [ RunTime:0.000159s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  `room_owner` = 2 LIMIT 1 [ RunTime:0.000125s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = '0'  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000123s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = 1 LIMIT 1 [ RunTime:0.000149s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  `room_owner` = 1 LIMIT 1 [ RunTime:0.000122s ]
+---------------------------------------------------------------
+[ 2018-01-14T11:08:37+08:00 ] 172.16.0.6 117.174.27.184 POST /admin/player/del_player_think/player_id/4.html
+[ info ] card.dcwen.top/admin/player/del_player_think/player_id/4.html [运行时间：0.014094s][吞吐率：70.95req/s] [内存消耗：849.05kb] [文件加载：64]
+[ info ] [ LANG ] /eddftp/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'player',
+    2 => 'del_player_think',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => '*/*',
+  'origin' => 'http://card.dcwen.top',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'referer' => 'http://card.dcwen.top/admin/player/player_home_page.html?page=2',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'UM_distinctid=15ebdf07542788-006a6b0762d84c-e313761-144000-15ebdf07543cf3; PHPSESSID=cro4hb3q6iiv80vkc3pq32hm24; UID=7ckRS',
+)
+[ info ] [ PARAM ] array (
+  '/admin/player/del_player_think/player_id/4_html' => '',
+  'player_id' => '4',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Player->del_player_think[ /eddftp/card/app/admin/controller/Player.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001427s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_users` [ RunTime:0.000788s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000190s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_menu` [ RunTime:0.000561s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_menu` WHERE  `module` = 'admin'  AND `controller` = 'Player'  AND `method` = 'del_player_think' LIMIT 1 [ RunTime:0.000281s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_player` [ RunTime:0.000536s ]
+[ sql ] [ SQL ] DELETE FROM `edd_player`    WHERE  `player_id` = 4 [ RunTime:0.000196s ]
+---------------------------------------------------------------
+[ 2018-01-14T11:08:40+08:00 ] 172.16.0.6 117.174.27.184 POST /admin/player/del_player_think/player_id/3.html
+[ info ] card.dcwen.top/admin/player/del_player_think/player_id/3.html [运行时间：0.008615s][吞吐率：116.08req/s] [内存消耗：849.05kb] [文件加载：64]
+[ info ] [ LANG ] /eddftp/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'player',
+    2 => 'del_player_think',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => '*/*',
+  'origin' => 'http://card.dcwen.top',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'referer' => 'http://card.dcwen.top/admin/player/player_home_page.html?page=2',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'UM_distinctid=15ebdf07542788-006a6b0762d84c-e313761-144000-15ebdf07543cf3; PHPSESSID=cro4hb3q6iiv80vkc3pq32hm24; UID=uSF2j',
+)
+[ info ] [ PARAM ] array (
+  '/admin/player/del_player_think/player_id/3_html' => '',
+  'player_id' => '3',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Player->del_player_think[ /eddftp/card/app/admin/controller/Player.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000273s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_users` [ RunTime:0.000884s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000196s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_menu` [ RunTime:0.000594s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_menu` WHERE  `module` = 'admin'  AND `controller` = 'Player'  AND `method` = 'del_player_think' LIMIT 1 [ RunTime:0.000166s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_player` [ RunTime:0.000559s ]
+[ sql ] [ SQL ] DELETE FROM `edd_player`    WHERE  `player_id` = 3 [ RunTime:0.000209s ]
+---------------------------------------------------------------
+[ 2018-01-14T11:08:43+08:00 ] 172.16.0.6 117.174.27.184 POST /admin/player/del_player_think/player_id/2.html
+[ info ] card.dcwen.top/admin/player/del_player_think/player_id/2.html [运行时间：0.007962s][吞吐率：125.60req/s] [内存消耗：849.05kb] [文件加载：64]
+[ info ] [ LANG ] /eddftp/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'player',
+    2 => 'del_player_think',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => '*/*',
+  'origin' => 'http://card.dcwen.top',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'referer' => 'http://card.dcwen.top/admin/player/player_home_page.html?page=2',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'UM_distinctid=15ebdf07542788-006a6b0762d84c-e313761-144000-15ebdf07543cf3; PHPSESSID=cro4hb3q6iiv80vkc3pq32hm24; UID=19vLz',
+)
+[ info ] [ PARAM ] array (
+  '/admin/player/del_player_think/player_id/2_html' => '',
+  'player_id' => '2',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Player->del_player_think[ /eddftp/card/app/admin/controller/Player.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000221s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_users` [ RunTime:0.000827s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000175s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_menu` [ RunTime:0.000593s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_menu` WHERE  `module` = 'admin'  AND `controller` = 'Player'  AND `method` = 'del_player_think' LIMIT 1 [ RunTime:0.000169s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_player` [ RunTime:0.000572s ]
+[ sql ] [ SQL ] DELETE FROM `edd_player`    WHERE  `player_id` = 2 [ RunTime:0.000210s ]
+---------------------------------------------------------------
+[ 2018-01-14T11:08:45+08:00 ] 172.16.0.6 117.174.27.184 POST /admin/player/del_player_think/player_id/1.html
+[ info ] card.dcwen.top/admin/player/del_player_think/player_id/1.html [运行时间：0.007420s][吞吐率：134.77req/s] [内存消耗：849.09kb] [文件加载：64]
+[ info ] [ LANG ] /eddftp/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'player',
+    2 => 'del_player_think',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => '*/*',
+  'origin' => 'http://card.dcwen.top',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'referer' => 'http://card.dcwen.top/admin/player/player_home_page.html?page=2',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'UM_distinctid=15ebdf07542788-006a6b0762d84c-e313761-144000-15ebdf07543cf3; PHPSESSID=cro4hb3q6iiv80vkc3pq32hm24; UID=iFP5S',
+)
+[ info ] [ PARAM ] array (
+  '/admin/player/del_player_think/player_id/1_html' => '',
+  'player_id' => '1',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Player->del_player_think[ /eddftp/card/app/admin/controller/Player.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000224s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_users` [ RunTime:0.000770s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000176s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_menu` [ RunTime:0.000567s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_menu` WHERE  `module` = 'admin'  AND `controller` = 'Player'  AND `method` = 'del_player_think' LIMIT 1 [ RunTime:0.000165s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_player` [ RunTime:0.000532s ]
+[ sql ] [ SQL ] DELETE FROM `edd_player`    WHERE  `player_id` = 1 [ RunTime:0.000195s ]
+---------------------------------------------------------------
+[ 2018-01-14T11:08:57+08:00 ] 172.16.0.6 117.174.27.184 GET /admin/player/player_home_page.html?page=3
+[ info ] card.dcwen.top/admin/player/player_home_page.html?page=3 [运行时间：0.036229s][吞吐率：27.60req/s] [内存消耗：988.74kb] [文件加载：63]
+[ info ] [ LANG ] /eddftp/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'player',
+    2 => 'player_home_page',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://card.dcwen.top/admin/player/player_home_page.html?page=2',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'UM_distinctid=15ebdf07542788-006a6b0762d84c-e313761-144000-15ebdf07543cf3; PHPSESSID=cro4hb3q6iiv80vkc3pq32hm24; UID=YqpQv',
+)
+[ info ] [ PARAM ] array (
+  '/admin/player/player_home_page_html' => '',
+  'page' => '3',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Player->player_home_page[ /eddftp/card/app/admin/controller/Player.php ]
+[ info ] [ VIEW ] /eddftp/card/app/admin/view/player/player_home_page.html [ array (
+  0 => 'playersNums',
+  1 => 'playersList',
+  2 => 'pages',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000222s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_users` [ RunTime:0.000826s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000174s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_menu` [ RunTime:0.000597s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_menu` WHERE  `module` = 'admin'  AND `controller` = 'Player'  AND `method` = 'player_home_page' LIMIT 1 [ RunTime:0.000150s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_player` [ RunTime:0.000558s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_player` LIMIT 1 [ RunTime:0.000127s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_player` ORDER BY player_id desc [ RunTime:0.000224s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = null  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000151s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = 27 LIMIT 1 [ RunTime:0.000165s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_room` [ RunTime:0.000537s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  `room_owner` = 27 LIMIT 1 [ RunTime:0.000147s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = null  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000138s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = 26 LIMIT 1 [ RunTime:0.000146s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  `room_owner` = 26 LIMIT 1 [ RunTime:0.000118s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = null  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000143s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = 25 LIMIT 1 [ RunTime:0.000128s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  `room_owner` = 25 LIMIT 1 [ RunTime:0.000116s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = null  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000142s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = 24 LIMIT 1 [ RunTime:0.000136s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  `room_owner` = 24 LIMIT 1 [ RunTime:0.000126s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = null  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000138s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = 23 LIMIT 1 [ RunTime:0.000146s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  `room_owner` = 23 LIMIT 1 [ RunTime:0.000117s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = null  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000145s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = 22 LIMIT 1 [ RunTime:0.000135s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  `room_owner` = 22 LIMIT 1 [ RunTime:0.000114s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = null  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000136s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = 21 LIMIT 1 [ RunTime:0.000144s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  `room_owner` = 21 LIMIT 1 [ RunTime:0.000118s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = null  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000123s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = 20 LIMIT 1 [ RunTime:0.000133s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  `room_owner` = 20 LIMIT 1 [ RunTime:0.000136s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = null  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000122s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = 19 LIMIT 1 [ RunTime:0.000134s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  `room_owner` = 19 LIMIT 1 [ RunTime:0.000110s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = null  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000140s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = 18 LIMIT 1 [ RunTime:0.000130s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  `room_owner` = 18 LIMIT 1 [ RunTime:0.000110s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = null  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000142s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = 17 LIMIT 1 [ RunTime:0.000138s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  `room_owner` = 17 LIMIT 1 [ RunTime:0.000124s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = null  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000122s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = 16 LIMIT 1 [ RunTime:0.000134s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  `room_owner` = 16 LIMIT 1 [ RunTime:0.000129s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = null  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000122s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = 15 LIMIT 1 [ RunTime:0.000128s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  `room_owner` = 15 LIMIT 1 [ RunTime:0.000113s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = null  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000141s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = 14 LIMIT 1 [ RunTime:0.000128s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  `room_owner` = 14 LIMIT 1 [ RunTime:0.000110s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = '0'  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000146s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = 13 LIMIT 1 [ RunTime:0.000139s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  `room_owner` = 13 LIMIT 1 [ RunTime:0.000124s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = '0'  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000137s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = 12 LIMIT 1 [ RunTime:0.000127s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  `room_owner` = 12 LIMIT 1 [ RunTime:0.000129s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = null  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000121s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = 11 LIMIT 1 [ RunTime:0.000128s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  `room_owner` = 11 LIMIT 1 [ RunTime:0.000114s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = null  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000139s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = 10 LIMIT 1 [ RunTime:0.000128s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  `room_owner` = 10 LIMIT 1 [ RunTime:0.000114s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = '0'  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000144s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = 9 LIMIT 1 [ RunTime:0.000144s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  `room_owner` = 9 LIMIT 1 [ RunTime:0.000125s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = null  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000132s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = 8 LIMIT 1 [ RunTime:0.000139s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  `room_owner` = 8 LIMIT 1 [ RunTime:0.000125s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = '0'  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000127s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = 7 LIMIT 1 [ RunTime:0.000157s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  `room_owner` = 7 LIMIT 1 [ RunTime:0.000115s ]
+---------------------------------------------------------------
+[ 2018-01-14T11:09:00+08:00 ] 172.16.0.6 117.174.27.184 GET /admin/player/player_home_page.html?page=1
+[ info ] card.dcwen.top/admin/player/player_home_page.html?page=1 [运行时间：0.038301s][吞吐率：26.11req/s] [内存消耗：988.76kb] [文件加载：63]
+[ info ] [ LANG ] /eddftp/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'player',
+    2 => 'player_home_page',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://card.dcwen.top/admin/player/player_home_page.html?page=3',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'UM_distinctid=15ebdf07542788-006a6b0762d84c-e313761-144000-15ebdf07543cf3; PHPSESSID=cro4hb3q6iiv80vkc3pq32hm24; UID=RdgEC',
+)
+[ info ] [ PARAM ] array (
+  '/admin/player/player_home_page_html' => '',
+  'page' => '1',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Player->player_home_page[ /eddftp/card/app/admin/controller/Player.php ]
+[ info ] [ VIEW ] /eddftp/card/app/admin/view/player/player_home_page.html [ array (
+  0 => 'playersNums',
+  1 => 'playersList',
+  2 => 'pages',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000256s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_users` [ RunTime:0.000838s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000217s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_menu` [ RunTime:0.000574s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_menu` WHERE  `module` = 'admin'  AND `controller` = 'Player'  AND `method` = 'player_home_page' LIMIT 1 [ RunTime:0.000160s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_player` [ RunTime:0.000525s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_player` LIMIT 1 [ RunTime:0.000098s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_player` ORDER BY player_id desc [ RunTime:0.000123s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = null  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000133s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = 27 LIMIT 1 [ RunTime:0.000136s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_room` [ RunTime:0.000541s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  `room_owner` = 27 LIMIT 1 [ RunTime:0.000139s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = null  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000123s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = 26 LIMIT 1 [ RunTime:0.000146s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  `room_owner` = 26 LIMIT 1 [ RunTime:0.000111s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = null  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000159s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = 25 LIMIT 1 [ RunTime:0.000127s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  `room_owner` = 25 LIMIT 1 [ RunTime:0.000124s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = null  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000132s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = 24 LIMIT 1 [ RunTime:0.000130s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  `room_owner` = 24 LIMIT 1 [ RunTime:0.000130s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = null  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000130s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = 23 LIMIT 1 [ RunTime:0.000145s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  `room_owner` = 23 LIMIT 1 [ RunTime:0.000115s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = null  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000122s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = 22 LIMIT 1 [ RunTime:0.000131s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  `room_owner` = 22 LIMIT 1 [ RunTime:0.000108s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = null  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000143s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = 21 LIMIT 1 [ RunTime:0.000310s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  `room_owner` = 21 LIMIT 1 [ RunTime:0.000203s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = null  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000171s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = 20 LIMIT 1 [ RunTime:0.000173s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  `room_owner` = 20 LIMIT 1 [ RunTime:0.000133s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = null  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000144s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = 19 LIMIT 1 [ RunTime:0.000167s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  `room_owner` = 19 LIMIT 1 [ RunTime:0.000147s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = null  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000159s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = 18 LIMIT 1 [ RunTime:0.000162s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  `room_owner` = 18 LIMIT 1 [ RunTime:0.000131s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = null  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000153s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = 17 LIMIT 1 [ RunTime:0.000149s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  `room_owner` = 17 LIMIT 1 [ RunTime:0.000124s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = null  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000141s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = 16 LIMIT 1 [ RunTime:0.000142s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  `room_owner` = 16 LIMIT 1 [ RunTime:0.000161s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = null  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000135s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = 15 LIMIT 1 [ RunTime:0.000162s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  `room_owner` = 15 LIMIT 1 [ RunTime:0.000180s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = null  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000154s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = 14 LIMIT 1 [ RunTime:0.000164s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  `room_owner` = 14 LIMIT 1 [ RunTime:0.000139s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = '0'  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000144s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = 13 LIMIT 1 [ RunTime:0.000169s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  `room_owner` = 13 LIMIT 1 [ RunTime:0.000123s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = '0'  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000157s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = 12 LIMIT 1 [ RunTime:0.000142s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  `room_owner` = 12 LIMIT 1 [ RunTime:0.000125s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = null  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000134s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = 11 LIMIT 1 [ RunTime:0.000152s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  `room_owner` = 11 LIMIT 1 [ RunTime:0.000131s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = null  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000143s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = 10 LIMIT 1 [ RunTime:0.000149s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  `room_owner` = 10 LIMIT 1 [ RunTime:0.000123s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = '0'  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000153s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = 9 LIMIT 1 [ RunTime:0.000154s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  `room_owner` = 9 LIMIT 1 [ RunTime:0.000141s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = null  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000139s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = 8 LIMIT 1 [ RunTime:0.000139s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  `room_owner` = 8 LIMIT 1 [ RunTime:0.000142s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = '0'  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000134s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = 7 LIMIT 1 [ RunTime:0.000186s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  `room_owner` = 7 LIMIT 1 [ RunTime:0.000124s ]
+---------------------------------------------------------------
+[ 2018-01-14T11:09:01+08:00 ] 172.16.0.6 117.174.27.184 GET /admin/alldata/show_page.html
+[ info ] card.dcwen.top/admin/alldata/show_page.html [运行时间：0.012268s][吞吐率：81.51req/s] [内存消耗：880.05kb] [文件加载：63]
+[ info ] [ LANG ] /eddftp/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'alldata',
+    2 => 'show_page',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://card.dcwen.top/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'UM_distinctid=15ebdf07542788-006a6b0762d84c-e313761-144000-15ebdf07543cf3; PHPSESSID=cro4hb3q6iiv80vkc3pq32hm24; UID=F37tq',
+)
+[ info ] [ PARAM ] array (
+  '/admin/alldata/show_page_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Alldata->show_page[ /eddftp/card/app/admin/controller/Alldata.php ]
+[ info ] [ VIEW ] /eddftp/card/app/admin/view/alldata/all_data_page.html [ array (
+  0 => 'all_player',
+  1 => 'today_room_nums',
+  2 => 'now_week_pay',
+  3 => 'now_week_draw',
+  4 => 'now_week_profile',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000300s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_users` [ RunTime:0.000814s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000239s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_menu` [ RunTime:0.000612s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_menu` WHERE  `module` = 'admin'  AND `controller` = 'Alldata'  AND `method` = 'show_page' LIMIT 1 [ RunTime:0.000177s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_player` [ RunTime:0.000559s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_player` LIMIT 1 [ RunTime:0.000110s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_room` [ RunTime:0.000586s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  ( `room_date` > '1515859200' and `room_date` < '1515945600' ) LIMIT 1 [ RunTime:0.000138s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_pay_log` [ RunTime:0.000554s ]
+[ sql ] [ SQL ] SELECT SUM(pay_money) AS tp_sum FROM `edd_pay_log` WHERE  ( `pay_date` > '1515945600' and `pay_date` < '1516550399' ) LIMIT 1 [ RunTime:0.000154s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_draw` [ RunTime:0.000535s ]
+[ sql ] [ SQL ] SELECT SUM(draw_money) AS tp_sum FROM `edd_draw` WHERE  ( `draw_date` > '1515945600' and `draw_date` < '1516550399' ) LIMIT 1 [ RunTime:0.000133s ]
+[ sql ] [ SQL ] SELECT SUM(pay_money) AS tp_sum FROM `edd_pay_log` LIMIT 1 [ RunTime:0.000101s ]
+[ sql ] [ SQL ] SELECT SUM(draw_money) AS tp_sum FROM `edd_draw` LIMIT 1 [ RunTime:0.000128s ]
+[ sql ] [ SQL ] SELECT SUM(pay_money) AS tp_sum FROM `edd_pay_log` LIMIT 1 [ RunTime:0.000097s ]
+[ sql ] [ SQL ] SELECT SUM(draw_money) AS tp_sum FROM `edd_draw` LIMIT 1 [ RunTime:0.000137s ]
+---------------------------------------------------------------
+[ 2018-01-14T11:09:02+08:00 ] 172.16.0.6 117.174.27.184 POST /admin/alldata/data_chat.html
+[ info ] card.dcwen.top/admin/alldata/data_chat.html [运行时间：0.007188s][吞吐率：139.12req/s] [内存消耗：831.65kb] [文件加载：60]
+[ info ] [ LANG ] /eddftp/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'alldata',
+    2 => 'data_chat',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://card.dcwen.top',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'referer' => 'http://card.dcwen.top/admin/alldata/show_page.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'UM_distinctid=15ebdf07542788-006a6b0762d84c-e313761-144000-15ebdf07543cf3; PHPSESSID=cro4hb3q6iiv80vkc3pq32hm24; UID=uSF2j',
+)
+[ info ] [ PARAM ] array (
+  '/admin/alldata/data_chat_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Alldata->data_chat[ /eddftp/card/app/admin/controller/Alldata.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000211s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_users` [ RunTime:0.000792s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000193s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_menu` [ RunTime:0.000600s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_menu` WHERE  `module` = 'admin'  AND `controller` = 'Alldata'  AND `method` = 'data_chat' LIMIT 1 [ RunTime:0.000184s ]
+[ sql ] [ SQL ] SELECT FROM_UNIXTIME(room_date,'%Y-%u') week,COUNT(room_id) room_nums  FROM edd_room GROUP BY week [ RunTime:0.000146s ]
+[ sql ] [ SQL ] SELECT FROM_UNIXTIME(pay_date,'%Y-%m') month,sum(pay_money) pay_money  FROM edd_pay_log GROUP BY month [ RunTime:0.000103s ]
+[ sql ] [ SQL ] SELECT FROM_UNIXTIME(draw_date,'%Y-%m') month,sum(draw_money) draw_money  FROM edd_draw GROUP BY month [ RunTime:0.000101s ]
+---------------------------------------------------------------
+[ 2018-01-14T11:09:02+08:00 ] 172.16.0.6 117.174.27.184 POST /admin/alldata/connect.html
+[ info ] card.dcwen.top/admin/alldata/connect.html [运行时间：0.009280s][吞吐率：107.76req/s] [内存消耗：840.09kb] [文件加载：60]
+[ info ] [ LANG ] /eddftp/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'alldata',
+    2 => 'connect',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top',
+  'connection' => 'keep-alive',
+  'content-length' => '41',
+  'accept' => '*/*',
+  'origin' => 'http://card.dcwen.top',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://card.dcwen.top/admin/alldata/show_page.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'UM_distinctid=15ebdf07542788-006a6b0762d84c-e313761-144000-15ebdf07543cf3; PHPSESSID=cro4hb3q6iiv80vkc3pq32hm24; UID=19vLz',
+)
+[ info ] [ PARAM ] array (
+  '/admin/alldata/connect_html' => '',
+  'name' => 'admin',
+  'client_id' => '7f0000010fa100000026',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Alldata->connect[ /eddftp/card/app/admin/controller/Alldata.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000208s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_users` [ RunTime:0.000833s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000222s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_menu` [ RunTime:0.000680s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_menu` WHERE  `module` = 'admin'  AND `controller` = 'Alldata'  AND `method` = 'connect' LIMIT 1 [ RunTime:0.000149s ]
+---------------------------------------------------------------
+[ 2018-01-14T11:09:03+08:00 ] 172.16.0.6 117.174.27.184 GET /admin/pay/home_page.html
+[ info ] card.dcwen.top/admin/pay/home_page.html [运行时间：0.022478s][吞吐率：44.49req/s] [内存消耗：927.94kb] [文件加载：63]
+[ info ] [ LANG ] /eddftp/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'pay',
+    2 => 'home_page',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://card.dcwen.top/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'UM_distinctid=15ebdf07542788-006a6b0762d84c-e313761-144000-15ebdf07543cf3; PHPSESSID=cro4hb3q6iiv80vkc3pq32hm24; UID=bjJWI',
+)
+[ info ] [ PARAM ] array (
+  '/admin/pay/home_page_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Pay->home_page[ /eddftp/card/app/admin/controller/Pay.php ]
+[ info ] [ VIEW ] /eddftp/card/app/admin/view/pay/home_page.html [ array (
+  0 => 'payNums',
+  1 => 'pages',
+  2 => 'payList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000214s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_users` [ RunTime:0.000798s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000175s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_menu` [ RunTime:0.000530s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_menu` WHERE  `module` = 'admin'  AND `controller` = 'Pay'  AND `method` = 'home_page' LIMIT 1 [ RunTime:0.000155s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_pay_log` [ RunTime:0.000496s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_pay_log` LIMIT 1 [ RunTime:0.000129s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_pay_log` ORDER BY pay_date desc LIMIT 0,10 [ RunTime:0.000492s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_player` [ RunTime:0.000508s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 22 LIMIT 1 [ RunTime:0.000192s ]
+[ sql ] [ SQL ] SELECT `diamond` FROM `edd_player` WHERE  `player_id` = 22 LIMIT 1 [ RunTime:0.000168s ]
+[ sql ] [ SQL ] SELECT SUM(diamond_nums) AS tp_sum FROM `edd_pay_log` WHERE  `player_id` = '22' LIMIT 1 [ RunTime:0.000113s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_room` [ RunTime:0.000537s ]
+[ sql ] [ SQL ] SELECT SUM(room_charge) AS tp_sum FROM `edd_room` WHERE  `room_owner` = 22 LIMIT 1 [ RunTime:0.000177s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 22 LIMIT 1 [ RunTime:0.000119s ]
+[ sql ] [ SQL ] SELECT `diamond` FROM `edd_player` WHERE  `player_id` = 22 LIMIT 1 [ RunTime:0.000111s ]
+[ sql ] [ SQL ] SELECT SUM(diamond_nums) AS tp_sum FROM `edd_pay_log` WHERE  `player_id` = '22' LIMIT 1 [ RunTime:0.000153s ]
+[ sql ] [ SQL ] SELECT SUM(room_charge) AS tp_sum FROM `edd_room` WHERE  `room_owner` = 22 LIMIT 1 [ RunTime:0.000125s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 22 LIMIT 1 [ RunTime:0.000112s ]
+[ sql ] [ SQL ] SELECT `diamond` FROM `edd_player` WHERE  `player_id` = 22 LIMIT 1 [ RunTime:0.000103s ]
+[ sql ] [ SQL ] SELECT SUM(diamond_nums) AS tp_sum FROM `edd_pay_log` WHERE  `player_id` = '22' LIMIT 1 [ RunTime:0.000131s ]
+[ sql ] [ SQL ] SELECT SUM(room_charge) AS tp_sum FROM `edd_room` WHERE  `room_owner` = 22 LIMIT 1 [ RunTime:0.000107s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 22 LIMIT 1 [ RunTime:0.000106s ]
+[ sql ] [ SQL ] SELECT `diamond` FROM `edd_player` WHERE  `player_id` = 22 LIMIT 1 [ RunTime:0.000123s ]
+[ sql ] [ SQL ] SELECT SUM(diamond_nums) AS tp_sum FROM `edd_pay_log` WHERE  `player_id` = '22' LIMIT 1 [ RunTime:0.000108s ]
+[ sql ] [ SQL ] SELECT SUM(room_charge) AS tp_sum FROM `edd_room` WHERE  `room_owner` = 22 LIMIT 1 [ RunTime:0.000107s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 22 LIMIT 1 [ RunTime:0.000116s ]
+[ sql ] [ SQL ] SELECT `diamond` FROM `edd_player` WHERE  `player_id` = 22 LIMIT 1 [ RunTime:0.000103s ]
+[ sql ] [ SQL ] SELECT SUM(diamond_nums) AS tp_sum FROM `edd_pay_log` WHERE  `player_id` = '22' LIMIT 1 [ RunTime:0.000138s ]
+[ sql ] [ SQL ] SELECT SUM(room_charge) AS tp_sum FROM `edd_room` WHERE  `room_owner` = 22 LIMIT 1 [ RunTime:0.000107s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 22 LIMIT 1 [ RunTime:0.000108s ]
+[ sql ] [ SQL ] SELECT `diamond` FROM `edd_player` WHERE  `player_id` = 22 LIMIT 1 [ RunTime:0.000108s ]
+[ sql ] [ SQL ] SELECT SUM(diamond_nums) AS tp_sum FROM `edd_pay_log` WHERE  `player_id` = '22' LIMIT 1 [ RunTime:0.000106s ]
+[ sql ] [ SQL ] SELECT SUM(room_charge) AS tp_sum FROM `edd_room` WHERE  `room_owner` = 22 LIMIT 1 [ RunTime:0.000113s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 22 LIMIT 1 [ RunTime:0.000106s ]
+[ sql ] [ SQL ] SELECT `diamond` FROM `edd_player` WHERE  `player_id` = 22 LIMIT 1 [ RunTime:0.000102s ]
+[ sql ] [ SQL ] SELECT SUM(diamond_nums) AS tp_sum FROM `edd_pay_log` WHERE  `player_id` = '22' LIMIT 1 [ RunTime:0.000108s ]
+[ sql ] [ SQL ] SELECT SUM(room_charge) AS tp_sum FROM `edd_room` WHERE  `room_owner` = 22 LIMIT 1 [ RunTime:0.000106s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 22 LIMIT 1 [ RunTime:0.000106s ]
+[ sql ] [ SQL ] SELECT `diamond` FROM `edd_player` WHERE  `player_id` = 22 LIMIT 1 [ RunTime:0.000102s ]
+[ sql ] [ SQL ] SELECT SUM(diamond_nums) AS tp_sum FROM `edd_pay_log` WHERE  `player_id` = '22' LIMIT 1 [ RunTime:0.000111s ]
+[ sql ] [ SQL ] SELECT SUM(room_charge) AS tp_sum FROM `edd_room` WHERE  `room_owner` = 22 LIMIT 1 [ RunTime:0.000106s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 22 LIMIT 1 [ RunTime:0.000105s ]
+[ sql ] [ SQL ] SELECT `diamond` FROM `edd_player` WHERE  `player_id` = 22 LIMIT 1 [ RunTime:0.000113s ]
+[ sql ] [ SQL ] SELECT SUM(diamond_nums) AS tp_sum FROM `edd_pay_log` WHERE  `player_id` = '22' LIMIT 1 [ RunTime:0.000107s ]
+[ sql ] [ SQL ] SELECT SUM(room_charge) AS tp_sum FROM `edd_room` WHERE  `room_owner` = 22 LIMIT 1 [ RunTime:0.000117s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 22 LIMIT 1 [ RunTime:0.000105s ]
+[ sql ] [ SQL ] SELECT `diamond` FROM `edd_player` WHERE  `player_id` = 22 LIMIT 1 [ RunTime:0.000104s ]
+[ sql ] [ SQL ] SELECT SUM(diamond_nums) AS tp_sum FROM `edd_pay_log` WHERE  `player_id` = '22' LIMIT 1 [ RunTime:0.000127s ]
+[ sql ] [ SQL ] SELECT SUM(room_charge) AS tp_sum FROM `edd_room` WHERE  `room_owner` = 22 LIMIT 1 [ RunTime:0.000106s ]
+---------------------------------------------------------------
+[ 2018-01-14T11:09:04+08:00 ] 172.16.0.6 117.174.27.184 GET /admin/draws/all_draw_page.html
+[ info ] card.dcwen.top/admin/draws/all_draw_page.html [运行时间：0.007580s][吞吐率：131.93req/s] [内存消耗：832.26kb] [文件加载：63]
+[ info ] [ LANG ] /eddftp/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'draws',
+    2 => 'all_draw_page',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://card.dcwen.top/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'UM_distinctid=15ebdf07542788-006a6b0762d84c-e313761-144000-15ebdf07543cf3; PHPSESSID=cro4hb3q6iiv80vkc3pq32hm24; UID=J6YAh',
+)
+[ info ] [ PARAM ] array (
+  '/admin/draws/all_draw_page_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Draws->all_draw_page[ /eddftp/card/app/admin/controller/Draws.php ]
+[ info ] [ VIEW ] /eddftp/card/app/admin/view/draws/all_draw_page.html [ array (
+  0 => 'pages',
+  1 => 'allDrawList',
+  2 => 'allDrawNums',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000226s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_users` [ RunTime:0.000749s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000169s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_menu` [ RunTime:0.000592s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_menu` WHERE  `module` = 'admin'  AND `controller` = 'Draws'  AND `method` = 'all_draw_page' LIMIT 1 [ RunTime:0.000150s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_draw` [ RunTime:0.000484s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_draw` LIMIT 1 [ RunTime:0.000096s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_draw` ORDER BY draw_date desc LIMIT 0,10 [ RunTime:0.000112s ]
+---------------------------------------------------------------
+[ 2018-01-14T11:09:04+08:00 ] 172.16.0.6 117.174.27.184 GET /admin/player/show_all_room.html
+[ info ] card.dcwen.top/admin/player/show_all_room.html [运行时间：0.022845s][吞吐率：43.77req/s] [内存消耗：923.04kb] [文件加载：63]
+[ info ] [ LANG ] /eddftp/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'player',
+    2 => 'show_all_room',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://card.dcwen.top/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'UM_distinctid=15ebdf07542788-006a6b0762d84c-e313761-144000-15ebdf07543cf3; PHPSESSID=cro4hb3q6iiv80vkc3pq32hm24; UID=-inTX',
+)
+[ info ] [ PARAM ] array (
+  '/admin/player/show_all_room_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Player->show_all_room[ /eddftp/card/app/admin/controller/Player.php ]
+[ info ] [ VIEW ] /eddftp/card/app/admin/view/player/all_room_page.html [ array (
+  0 => 'room',
+  1 => 'pages',
+  2 => 'roomNums',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000220s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_users` [ RunTime:0.000774s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000178s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_menu` [ RunTime:0.000631s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_menu` WHERE  `module` = 'admin'  AND `controller` = 'Player'  AND `method` = 'show_all_room' LIMIT 1 [ RunTime:0.000151s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_room` [ RunTime:0.000525s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` LIMIT 1 [ RunTime:0.000148s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_room` ORDER BY room_date desc LIMIT 0,10 [ RunTime:0.000213s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_room_round` [ RunTime:0.000505s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_room_round` WHERE  `room_id` = 446 LIMIT 1 [ RunTime:0.000257s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_player` [ RunTime:0.000545s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` IN (21,20,22,23) [ RunTime:0.000219s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room_round` WHERE  `room_id` = 446 LIMIT 1 [ RunTime:0.000205s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_room_round` WHERE  `room_id` = 445 LIMIT 1 [ RunTime:0.000226s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` IN (0) [ RunTime:0.000150s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room_round` WHERE  `room_id` = 445 LIMIT 1 [ RunTime:0.000224s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_room_round` WHERE  `room_id` = 444 LIMIT 1 [ RunTime:0.000212s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` IN (23,20,21,22) [ RunTime:0.000228s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room_round` WHERE  `room_id` = 444 LIMIT 1 [ RunTime:0.000212s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_room_round` WHERE  `room_id` = 442 LIMIT 1 [ RunTime:0.000240s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` IN (0) [ RunTime:0.000108s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room_round` WHERE  `room_id` = 442 LIMIT 1 [ RunTime:0.000203s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_room_round` WHERE  `room_id` = 441 LIMIT 1 [ RunTime:0.000226s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` IN (0) [ RunTime:0.000107s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room_round` WHERE  `room_id` = 441 LIMIT 1 [ RunTime:0.000230s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_room_round` WHERE  `room_id` = 440 LIMIT 1 [ RunTime:0.000252s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` IN (0) [ RunTime:0.000161s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room_round` WHERE  `room_id` = 440 LIMIT 1 [ RunTime:0.000213s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_room_round` WHERE  `room_id` = 439 LIMIT 1 [ RunTime:0.000233s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` IN (0) [ RunTime:0.000108s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room_round` WHERE  `room_id` = 439 LIMIT 1 [ RunTime:0.000199s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_room_round` WHERE  `room_id` = 438 LIMIT 1 [ RunTime:0.000227s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` IN (0) [ RunTime:0.000106s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room_round` WHERE  `room_id` = 438 LIMIT 1 [ RunTime:0.000218s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_room_round` WHERE  `room_id` = 436 LIMIT 1 [ RunTime:0.000344s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` IN (0) [ RunTime:0.000130s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room_round` WHERE  `room_id` = 436 LIMIT 1 [ RunTime:0.000205s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_room_round` WHERE  `room_id` = 435 LIMIT 1 [ RunTime:0.000235s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` IN (0) [ RunTime:0.000112s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room_round` WHERE  `room_id` = 435 LIMIT 1 [ RunTime:0.000199s ]
+---------------------------------------------------------------
+[ 2018-01-14T13:31:18+08:00 ] 172.16.0.6 117.174.27.184 GET /admin/player/show_all_room.html?page=2
+[ info ] card.dcwen.top/admin/player/show_all_room.html?page=2 [运行时间：0.022419s][吞吐率：44.60req/s] [内存消耗：923.73kb] [文件加载：63]
+[ info ] [ LANG ] /eddftp/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'player',
+    2 => 'show_all_room',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://card.dcwen.top/admin/player/show_all_room.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'UM_distinctid=15ebdf07542788-006a6b0762d84c-e313761-144000-15ebdf07543cf3; PHPSESSID=cro4hb3q6iiv80vkc3pq32hm24; UID=O%3D2Gm',
+)
+[ info ] [ PARAM ] array (
+  '/admin/player/show_all_room_html' => '',
+  'page' => '2',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Player->show_all_room[ /eddftp/card/app/admin/controller/Player.php ]
+[ info ] [ VIEW ] /eddftp/card/app/admin/view/player/all_room_page.html [ array (
+  0 => 'room',
+  1 => 'pages',
+  2 => 'roomNums',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000200s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_users` [ RunTime:0.000730s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000186s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_menu` [ RunTime:0.000533s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_menu` WHERE  `module` = 'admin'  AND `controller` = 'Player'  AND `method` = 'show_all_room' LIMIT 1 [ RunTime:0.000166s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_room` [ RunTime:0.000524s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` LIMIT 1 [ RunTime:0.000118s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_room` ORDER BY room_date desc LIMIT 10,10 [ RunTime:0.000245s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_room_round` [ RunTime:0.000528s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_room_round` WHERE  `room_id` = 433 LIMIT 1 [ RunTime:0.000252s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_player` [ RunTime:0.000503s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` IN (0) [ RunTime:0.000130s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room_round` WHERE  `room_id` = 433 LIMIT 1 [ RunTime:0.000214s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_room_round` WHERE  `room_id` = 432 LIMIT 1 [ RunTime:0.000231s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` IN (0) [ RunTime:0.000121s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room_round` WHERE  `room_id` = 432 LIMIT 1 [ RunTime:0.000229s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_room_round` WHERE  `room_id` = 431 LIMIT 1 [ RunTime:0.000219s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` IN (0) [ RunTime:0.000112s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room_round` WHERE  `room_id` = 431 LIMIT 1 [ RunTime:0.000204s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_room_round` WHERE  `room_id` = 430 LIMIT 1 [ RunTime:0.000217s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` IN (0) [ RunTime:0.000127s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room_round` WHERE  `room_id` = 430 LIMIT 1 [ RunTime:0.000218s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_room_round` WHERE  `room_id` = 420 LIMIT 1 [ RunTime:0.000214s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` IN (14,9,7,11) [ RunTime:0.000207s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room_round` WHERE  `room_id` = 420 LIMIT 1 [ RunTime:0.000219s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_room_round` WHERE  `room_id` = 419 LIMIT 1 [ RunTime:0.000220s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` IN (14,11,9,7) [ RunTime:0.000196s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room_round` WHERE  `room_id` = 419 LIMIT 1 [ RunTime:0.000217s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_room_round` WHERE  `room_id` = 404 LIMIT 1 [ RunTime:0.000222s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` IN (9,14,11,7) [ RunTime:0.000203s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room_round` WHERE  `room_id` = 404 LIMIT 1 [ RunTime:0.000216s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_room_round` WHERE  `room_id` = 403 LIMIT 1 [ RunTime:0.000214s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` IN (9,14,7,11) [ RunTime:0.000198s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room_round` WHERE  `room_id` = 403 LIMIT 1 [ RunTime:0.000267s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_room_round` WHERE  `room_id` = 401 LIMIT 1 [ RunTime:0.000243s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` IN (14,9,7,11) [ RunTime:0.000138s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room_round` WHERE  `room_id` = 401 LIMIT 1 [ RunTime:0.000245s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_room_round` WHERE  `room_id` = 393 LIMIT 1 [ RunTime:0.000229s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` IN (11,7,13,9) [ RunTime:0.000216s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room_round` WHERE  `room_id` = 393 LIMIT 1 [ RunTime:0.000228s ]
+---------------------------------------------------------------
+[ 2018-01-14T13:31:21+08:00 ] 172.16.0.6 117.174.27.184 GET /admin/player/show_all_room.html?page=1
+[ info ] card.dcwen.top/admin/player/show_all_room.html?page=1 [运行时间：0.021845s][吞吐率：45.78req/s] [内存消耗：923.53kb] [文件加载：63]
+[ info ] [ LANG ] /eddftp/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'player',
+    2 => 'show_all_room',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://card.dcwen.top/admin/player/show_all_room.html?page=2',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'UM_distinctid=15ebdf07542788-006a6b0762d84c-e313761-144000-15ebdf07543cf3; PHPSESSID=cro4hb3q6iiv80vkc3pq32hm24; UID=pUTWW',
+)
+[ info ] [ PARAM ] array (
+  '/admin/player/show_all_room_html' => '',
+  'page' => '1',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Player->show_all_room[ /eddftp/card/app/admin/controller/Player.php ]
+[ info ] [ VIEW ] /eddftp/card/app/admin/view/player/all_room_page.html [ array (
+  0 => 'room',
+  1 => 'pages',
+  2 => 'roomNums',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000231s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_users` [ RunTime:0.000784s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000196s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_menu` [ RunTime:0.000705s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_menu` WHERE  `module` = 'admin'  AND `controller` = 'Player'  AND `method` = 'show_all_room' LIMIT 1 [ RunTime:0.000173s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_room` [ RunTime:0.000563s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` LIMIT 1 [ RunTime:0.000111s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_room` ORDER BY room_date desc LIMIT 0,10 [ RunTime:0.000132s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_room_round` [ RunTime:0.000560s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_room_round` WHERE  `room_id` = 446 LIMIT 1 [ RunTime:0.000136s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_player` [ RunTime:0.000558s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` IN (21,20,22,23) [ RunTime:0.000139s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room_round` WHERE  `room_id` = 446 LIMIT 1 [ RunTime:0.000144s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_room_round` WHERE  `room_id` = 445 LIMIT 1 [ RunTime:0.000136s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` IN (0) [ RunTime:0.000118s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room_round` WHERE  `room_id` = 445 LIMIT 1 [ RunTime:0.000149s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_room_round` WHERE  `room_id` = 444 LIMIT 1 [ RunTime:0.000134s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` IN (23,20,21,22) [ RunTime:0.000177s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room_round` WHERE  `room_id` = 444 LIMIT 1 [ RunTime:0.000128s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_room_round` WHERE  `room_id` = 442 LIMIT 1 [ RunTime:0.000134s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` IN (0) [ RunTime:0.000122s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room_round` WHERE  `room_id` = 442 LIMIT 1 [ RunTime:0.000130s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_room_round` WHERE  `room_id` = 441 LIMIT 1 [ RunTime:0.000133s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` IN (0) [ RunTime:0.000118s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room_round` WHERE  `room_id` = 441 LIMIT 1 [ RunTime:0.000129s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_room_round` WHERE  `room_id` = 440 LIMIT 1 [ RunTime:0.000131s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` IN (0) [ RunTime:0.000118s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room_round` WHERE  `room_id` = 440 LIMIT 1 [ RunTime:0.000122s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_room_round` WHERE  `room_id` = 439 LIMIT 1 [ RunTime:0.000147s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` IN (0) [ RunTime:0.000143s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room_round` WHERE  `room_id` = 439 LIMIT 1 [ RunTime:0.000122s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_room_round` WHERE  `room_id` = 438 LIMIT 1 [ RunTime:0.000144s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` IN (0) [ RunTime:0.000118s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room_round` WHERE  `room_id` = 438 LIMIT 1 [ RunTime:0.000121s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_room_round` WHERE  `room_id` = 436 LIMIT 1 [ RunTime:0.000137s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` IN (0) [ RunTime:0.000125s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room_round` WHERE  `room_id` = 436 LIMIT 1 [ RunTime:0.000133s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_room_round` WHERE  `room_id` = 435 LIMIT 1 [ RunTime:0.000132s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` IN (0) [ RunTime:0.000118s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room_round` WHERE  `room_id` = 435 LIMIT 1 [ RunTime:0.000122s ]
+---------------------------------------------------------------
+[ 2018-01-14T13:34:54+08:00 ] 172.16.0.6 117.174.27.184 GET /home/game/page
+[ info ] card.dcwen.top/home/game/page [运行时间：0.006426s][吞吐率：155.62req/s] [内存消耗：708.47kb] [文件加载：56]
+[ info ] [ LANG ] /eddftp/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'game',
+    2 => 'page',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'UM_distinctid=15ebdf07542788-006a6b0762d84c-e313761-144000-15ebdf07543cf3; PHPSESSID=cro4hb3q6iiv80vkc3pq32hm24; UID=pUTWW',
+)
+[ info ] [ PARAM ] array (
+  '/home/game/page' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Game->page[ /eddftp/card/app/home/controller/Game.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000203s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_options` [ RunTime:0.000687s ]
+[ sql ] [ SQL ] SELECT `is_close` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.000149s ]
+---------------------------------------------------------------
+[ 2018-01-14T21:41:43+08:00 ] 172.16.0.6 139.207.85.9 POST /player_info
+[ info ] card.dcwen.top/player_info [运行时间：0.006547s][吞吐率：152.74req/s] [内存消耗：717.02kb] [文件加载：55]
+[ info ] [ LANG ] /eddftp/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'controller',
+  'controller' => 'home/Player/get_player_info',
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0.1; SM-G9350 Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/48.0.2564.106 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'card.dcwen.top',
+  'content-length' => '9',
+)
+[ info ] [ PARAM ] array (
+  '/player_info' => '',
+  'cid' => 'J7EAh',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Player->get_player_info[ /eddftp/card/app/home/controller/Player.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000464s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_options` [ RunTime:0.000791s ]
+[ sql ] [ SQL ] SELECT `is_close` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.000148s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_player` [ RunTime:0.000576s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_player` WHERE  `player_id` = 7 LIMIT 1 [ RunTime:0.000209s ]
+---------------------------------------------------------------
+[ 2018-01-14T21:41:44+08:00 ] 172.16.0.6 139.207.85.9 POST /news_show
+[ info ] card.dcwen.top/news_show [运行时间：0.002965s][吞吐率：337.27req/s] [内存消耗：550.77kb] [文件加载：48]
+[ info ] [ LANG ] /eddftp/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'controller',
+  'controller' => 'home/Home/home_page',
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0.1; SM-G9350 Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/48.0.2564.106 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'card.dcwen.top',
+  'content-length' => '0',
+)
+[ info ] [ PARAM ] array (
+  '/news_show' => '',
+)
+[ info ] [ RUN ] app\home\controller\Home->home_page[ /eddftp/card/app/home/controller/Home.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-14T21:41:44+08:00 ] 172.16.0.6 139.207.85.9 POST /player_info
+[ info ] card.dcwen.top/player_info [运行时间：0.006291s][吞吐率：158.95req/s] [内存消耗：717.04kb] [文件加载：55]
+[ info ] [ LANG ] /eddftp/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'controller',
+  'controller' => 'home/Player/get_player_info',
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0.1; SM-G9350 Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/48.0.2564.106 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'card.dcwen.top',
+  'content-length' => '9',
+)
+[ info ] [ PARAM ] array (
+  '/player_info' => '',
+  'cid' => 'B5Mml',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Player->get_player_info[ /eddftp/card/app/home/controller/Player.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000209s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_options` [ RunTime:0.000771s ]
+[ sql ] [ SQL ] SELECT `is_close` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.000153s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_player` [ RunTime:0.000574s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_player` WHERE  `player_id` = 7 LIMIT 1 [ RunTime:0.000188s ]
+---------------------------------------------------------------
+[ 2018-01-14T21:41:44+08:00 ] 172.16.0.6 139.207.85.9 POST /room_page
+[ info ] card.dcwen.top/room_page [运行时间：0.008906s][吞吐率：112.29req/s] [内存消耗：745.62kb] [文件加载：56]
+[ info ] [ LANG ] /eddftp/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'controller',
+  'controller' => 'home/Room/room_page',
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0.1; SM-G9350 Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/48.0.2564.106 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'card.dcwen.top',
+  'content-length' => '9',
+)
+[ info ] [ PARAM ] array (
+  '/room_page' => '',
+  'cid' => 'B5Mml',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Room->room_page[ /eddftp/card/app/home/controller/Room.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000173s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_options` [ RunTime:0.000613s ]
+[ sql ] [ SQL ] SELECT `is_close` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.000145s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_room` [ RunTime:0.000653s ]
+[ sql ] [ SQL ] SELECT `room_id`,`round_times`,`room_code` FROM `edd_room` WHERE  `room_owner` = 7  AND `del_time` = '0' [ RunTime:0.000289s ]
+---------------------------------------------------------------
+[ 2018-01-14T21:41:44+08:00 ] 172.16.0.6 139.207.85.9 POST /connect
+[ info ] card.dcwen.top/connect [运行时间：0.004386s][吞吐率：228.00req/s] [内存消耗：734.78kb] [文件加载：56]
+[ info ] [ LANG ] /eddftp/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'controller',
+  'controller' => 'home/Game/connect',
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0.1; SM-G9350 Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/48.0.2564.106 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'card.dcwen.top',
+  'content-length' => '52',
+)
+[ info ] [ PARAM ] array (
+  '/connect' => '',
+  'client_id' => '7f0000010fa000000034',
+  'cid' => 'B5Mml',
+  'type' => 'outter',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Game->connect[ /eddftp/card/app/home/controller/Game.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000180s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_options` [ RunTime:0.000599s ]
+[ sql ] [ SQL ] SELECT `is_close` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.000135s ]
+---------------------------------------------------------------
+[ 2018-01-14T21:41:56+08:00 ] 172.16.0.6 139.207.85.9 POST /invite_page
+[ info ] card.dcwen.top/invite_page [运行时间：0.005740s][吞吐率：174.21req/s] [内存消耗：681.62kb] [文件加载：53]
+[ info ] [ LANG ] /eddftp/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'controller',
+  'controller' => 'home/Player/invite_page',
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0.1; SM-G9350 Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/48.0.2564.106 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'card.dcwen.top',
+  'content-length' => '9',
+)
+[ info ] [ PARAM ] array (
+  '/invite_page' => '',
+  'cid' => '3aeCT',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Player->invite_page[ /eddftp/card/app/home/controller/Player.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000212s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_options` [ RunTime:0.000727s ]
+[ sql ] [ SQL ] SELECT `is_close` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.000159s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_player` [ RunTime:0.000594s ]
+[ sql ] [ SQL ] SELECT `users_id` FROM `edd_player` WHERE  `player_id` = 7 LIMIT 1 [ RunTime:0.000195s ]
+---------------------------------------------------------------
+[ 2018-01-14T21:41:59+08:00 ] 172.16.0.6 139.207.85.9 POST /joined_room
+[ info ] card.dcwen.top/joined_room [运行时间：0.009869s][吞吐率：101.33req/s] [内存消耗：715.64kb] [文件加载：53]
+[ info ] [ LANG ] /eddftp/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'controller',
+  'controller' => 'home/Home/joined_room',
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0.1; SM-G9350 Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/48.0.2564.106 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'card.dcwen.top',
+  'content-length' => '16',
+)
+[ info ] [ PARAM ] array (
+  '/joined_room' => '',
+  'cid' => '3aeCT',
+  'page' => '1',
+)
+[ info ] [ RUN ] app\home\controller\Home->joined_room[ /eddftp/card/app/home/controller/Home.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000214s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_room_round` [ RunTime:0.000758s ]
+[ sql ] [ SQL ] SELECT `r`.`room_id`,`room_date`,`round_times`,`room_type`,`room_code`,`room_all_type` FROM `edd_room_round` `rr` INNER JOIN `edd_room` `r` ON `r`.`room_id`=`rr`.`room_id` WHERE  `all_player` LIKE '%\\\"7\\\"%' GROUP BY r.room_id ORDER BY room_date desc LIMIT 0,6 [ RunTime:0.000573s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_round` [ RunTime:0.000523s ]
+[ sql ] [ SQL ] SELECT SUM(score) AS tp_sum FROM `edd_round` WHERE  `player_id` = 7  AND `room_id` = 420 LIMIT 1 [ RunTime:0.000463s ]
+[ sql ] [ SQL ] SELECT SUM(score) AS tp_sum FROM `edd_round` WHERE  `player_id` = 7  AND `room_id` = 419 LIMIT 1 [ RunTime:0.000409s ]
+[ sql ] [ SQL ] SELECT SUM(score) AS tp_sum FROM `edd_round` WHERE  `player_id` = 7  AND `room_id` = 404 LIMIT 1 [ RunTime:0.000398s ]
+[ sql ] [ SQL ] SELECT SUM(score) AS tp_sum FROM `edd_round` WHERE  `player_id` = 7  AND `room_id` = 403 LIMIT 1 [ RunTime:0.000372s ]
+[ sql ] [ SQL ] SELECT SUM(score) AS tp_sum FROM `edd_round` WHERE  `player_id` = 7  AND `room_id` = 401 LIMIT 1 [ RunTime:0.000454s ]
+[ sql ] [ SQL ] SELECT SUM(score) AS tp_sum FROM `edd_round` WHERE  `player_id` = 7  AND `room_id` = 393 LIMIT 1 [ RunTime:0.000393s ]
+---------------------------------------------------------------
+[ 2018-01-14T21:42:01+08:00 ] 172.16.0.6 139.207.85.9 POST /news_show
+[ info ] card.dcwen.top/news_show [运行时间：0.003422s][吞吐率：292.22req/s] [内存消耗：550.77kb] [文件加载：48]
+[ info ] [ LANG ] /eddftp/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'controller',
+  'controller' => 'home/Home/home_page',
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0.1; SM-G9350 Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/48.0.2564.106 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'card.dcwen.top',
+  'content-length' => '0',
+)
+[ info ] [ PARAM ] array (
+  '/news_show' => '',
+)
+[ info ] [ RUN ] app\home\controller\Home->home_page[ /eddftp/card/app/home/controller/Home.php ]
+[ info ] [ LOG ] INIT File

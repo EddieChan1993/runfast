@@ -1,0 +1,1462 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Documentation - Fileuploader</title>
+		
+		<!-- metas -->
+        <link rel="shortcut icon" href="http://innostudio.de/fileuploader/images/favicon.ico">
+		<meta name="description" content="Beautiful, powerful and fully customizable jQuery and PHP file uploading tool. It's easy to setup and to configurate it how ever you want.">
+
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+		
+		<!-- styles -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link href="src/jquery.fileuploader.css" media="all" rel="stylesheet">
+		<link href="examples/drag-drop/css/jquery.fileuploader-theme-dragdrop.css" media="all" rel="stylesheet">
+		<link href="examples/more_files/css/jquery.fileuploader-theme-thumbnails.css" media="all" rel="stylesheet">
+
+		<style>
+			body {
+                font-family: 'Roboto', sans-serif;
+				font-size: 14px;
+				color: #5a6170;
+				background-color: #fff;
+			}
+			
+			a,
+			a:visited {
+				color: #687ddb;
+			}
+			a:hover,
+			a:focus {
+				color: #4d61bb;
+			}
+			pre {
+                border: none;
+                padding: 0 20px;
+				word-break: break-word;
+				max-height: 600px;
+            }
+			pre i {
+				color: #888;
+			}
+			.text-danger {
+				color: #F26175;
+			}
+			.text-warning {
+				color: #FFB157;
+			}
+            .button,
+            .button:visited,
+            .button:focus {
+                display: inline-block;
+                background: #687ddb;
+                color: #fff;
+                font-weight: bold;
+                border-radius: 4px;
+                padding: 12px 20px;
+                cursor: pointer;
+                border: none;
+                outline: 0;
+                text-decoration: none;
+                -webkit-transition: all .2s ease-out;
+                transition: all .2s ease-out;
+            }
+            .button:hover {
+                background: #7b90ef;
+                color: #fff;
+                text-decoration: none;
+            }
+            .button:active {
+                background: #687ddb;
+                box-shadow: inset 0 1px 6px rgba(0, 0, 0, 0.1);
+            }
+            .button.outline,
+            .button.outline:focus {
+                color: #687ddb;
+                background: none;
+                font-weight: normal;
+            }
+            .button.outline:hover {
+                color: #7b90ef;
+                text-decoration: underline;
+            }
+            .button.outline:active {
+                 box-shadow: none;
+            }
+            .fileuploader {
+                border: 1px solid #e1e1e1;
+                box-shadow: 0 0 6px rgba(0,0,0,.03);
+            }
+            
+			/* content */
+            .header {
+                position: relative;
+                text-align: center;
+                padding: 100px 0 120px 0;
+                margin-bottom: 40px;
+                overflow: hidden;
+                color: #fff;
+            }
+            .header .row {
+                position: relative;
+                z-index: 2;
+            }
+            .header:after {
+                content: '';
+                position: absolute;
+                top: -100px;
+                left: -50px;
+                width: 2400px;
+                height: 500px;
+                transform: rotate(-2deg);
+                background: #f4f6f9;
+                background: #687ddb;
+            }
+            .header h1 {
+                font-weight: bold;
+            }
+            .header p {
+                color: rgba(255,255,255,0.8);
+            }
+            .header p a {
+                color: #fff;
+                text-decoration: underline;
+            }
+            .header ul.list-inline {
+                margin: 40px 0;
+            }
+            .header .button {
+                color: #687ddb;
+                background: #fff;
+            }
+            .header .button.outline {
+                color: #fff;
+                background: none;
+            }
+            
+            .page-section {
+                padding-top: 50px;
+				padding-bottom: 50px;
+            }
+			.page-section .row + .row {
+				margin-top: 40px;
+			}
+            .page-section h2 {
+                font-weight: bold;
+                color: #373c46;
+            }
+			.text {
+                color: #9b9da2;
+            }
+			
+			.bg-area {
+				padding: 80px 0;
+				background: #f2f4f7;
+			}
+			.bg-area h2 {
+				font-weight: bold;
+			}
+			.bg-area p {
+				margin: 20px 0;	
+			}
+			
+			.footer {
+				padding: 30px 0 20px 0;
+                border-top: 1px solid #e1e1e1;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="header">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-md-offset-6 text-right">
+						<h1>Documentation</h1>
+						<p>Fileuploader - Beautiful and powerful HTML5 file uploading tool. A jQuery and PHP plugin that transforms the standard file input into a revolutionary and fancy field on your page.</p>
+						<ul class="list-inline">
+							<li><a href="#how_to_use" class="button outline">How to use</a></li>
+							<li><a href="#documentation" class="button outline">Options</a></li>
+							<li><a href="#examples" class="button outline">Examples</a></li>
+							<li><a href="http://innostudio.de/fileuploader/" class="button">Home page</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+        
+        <!-- installation -->
+        <div id="installation" class="container page-section">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Installation</h2>
+                    <hr>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-5">
+					<div class="text">
+                    	<p>You can install Fileuploader by linking <b>.css</b> and <b>.js</b> from <b>"src/"</b> folder to your html file. Don't forget also to load the <b>jQuery library</b>.<br>On the right side is a basic HTML template to use as an example:</p>
+						<br>
+						<p><b>Make sure:</b></p>
+						<ul>
+							<li>You've added the jQuery library first</li>
+							<li>If you already have jQuery on your page, you shouldn't include it second time</li>
+							<li>Fileuploader files are on your server and you've adjusted the paths in the script and link tag</li>
+							<li>Do not include both jquery.fileuploader.js and jquery.fileuploader.min.js files</li>
+						</ul>
+					</div>
+                </div>
+                <div class="col-md-7">
+                    <pre>
+						<code>
+&lt;!DOCTYPE html html>
+&lt;html>
+&lt;head>
+	&lt;meta charset="utf-8">
+  	&lt;title>My page&lt;/title>
+
+	<i>&lt;!-- css --></i>
+  	&lt;link href="jquery.fileuploader.css" media="all" rel="stylesheet">
+&lt;/head>
+&lt;body>
+
+  	<i>&lt;!-- HTML content goes here --></i>
+
+  	<i>&lt;!-- js --></i>
+  	&lt;script src="//code.jquery.com/jquery-3.1.1.min.js" type="text/javascript">&lt;/script>
+  	&lt;script src="jquery.fileuploader.min.js" type="text/javascript">&lt;/script>
+&lt;/body>
+&lt;/html></code>
+                    </pre>
+                </div>
+            </div>
+			<div class="row">
+				<div class="col-md-5">
+					<b>PHP instructions</b>
+					<hr>
+					<div class="text">
+						<p>Copy <b>class.fileuploader.php</b> from <b>"src/"</b> folder on your server.</p>
+					</div>
+				</div>
+				<div class="col-md-7">
+					
+				</div>
+			</div>
+        </div>
+		
+		<!-- how to use -->
+        <div id="how_to_use" class="container page-section">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>How to use</h2>
+					<hr>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-5">
+					<div class="text">
+						<p>Create a standard HTML form element. In this form we will have our file input and maybe other fields.</p>
+						<p>If you are not familiar with HTML form element, please, read this <a href="https://www.w3schools.com/tags/tag_form.asp" class="underlined" target="_blank">tutorial for beginners</a>.</p>
+					</div>
+				</div>
+				<div class="col-md-7">
+                    <pre>
+						<code>
+&lt;form action="exmaple.php" method="post" enctype="multipart/form-data">
+    &lt;input type="file" name="files">
+    &lt;input type="submit">
+&lt;/form></code>
+					</pre>
+				</div>
+			</div>
+			<div class="row">
+                <div class="col-md-5">
+					<div class="text">
+						<p>Bind Fileuploader events on an input file element, select with a jQuery selector and call the fileuploader method.</p>
+						<p>If you are not familiar with jQuery, please, read this <a href="http://learn.jquery.com/about-jquery/how-jquery-works/" class="underlined" target="_blank">tutorial for beginners</a>.</p>
+					</div>
+				</div>
+				<div class="col-md-7">
+                    <pre>
+						<code>
+&lt;script type="text/javascript">
+	$('input[name="files"]').fileuploader({
+            <i>// Options will go here</i>
+	});
+&lt;/script></code>
+					</pre>
+					<a href="#documentation">See documentation section</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-5">
+                    <b>PHP instructions</b>
+                    <hr>
+					<div class="text">
+						<p>Include <b>class.fileuploader.php</b> into your php file. Initialize it by writing in arguments the input file name and options.<br>On the right side is a basic example:</p>
+                        <p>If you are not familiar with PHP, please, read this <a href="http://php.net/manual/en/tutorial.forms.php" class="underlined" target="_blank">tutorial for beginners</a>.</p>
+					</div>
+				</div>
+				<div class="col-md-7">
+					<pre>
+						<code>
+&lt;?php
+    include('class.fileuploader.php');
+	
+    <i>// initialize the FileUploader</i>
+    $FileUploader = new FileUploader('files', array(
+        <i>// Options will go here</i>
+    ));
+	
+    <i>// call to upload the files</i>
+    $upload = $FileUploader->upload();
+	
+    if($upload['isSuccess']) {
+        <i>// get the uploaded files</i>
+        $files = $upload['files'];
+    }
+    if($upload['hasWarnings']) {
+        <i>// get the warnings</i>
+        $warnings = $upload['warnings'];
+    };
+?></code>
+					</pre>
+					<a href="#php-documentation">See documentation section</a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="bg-area">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-md-offset-3 text-center">
+						<h2>Cool, yeah?</h2>
+						<div class="text">
+							<p>Here is the default example of Fileuploader plugin. Just try it.</p>
+						</div>
+                        <form action="examples/default/php/form_upload.php" method="post" enctype="multipart/form-data">
+                            <input type="file" name="files" id="fileuploader2">
+                            <input type="submit">
+                        </form>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- examples -->
+        <div id="examples" class="container page-section">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Examples</h2>
+					<hr>
+					<div class="text">
+						<p>In the following examples you can see how can you use the Fileuploader. Please check the <b>.css</b>, <b>.js</b> and <b>.php</b> files from the examples. <b>Recommended!</b> please check also the <a href="https://www.google.de/search?q=Inspect+Element+tool" target="_blank">Inspect Element tool</a> (Network, Sources and Console tab) in your browser to understand the configuration much easier.</p>
+					</div>
+					
+					<br>
+					<b>Modes:</b>
+					<ul class="list-inline">
+						<li><a href="examples/default/" target="_blank">Default mode</a></li>
+						<li><a href="examples/add-more/" target="_blank">Add More mode</a></li>
+						<li><a href="examples/drag-drop/" target="_blank">Upload mode</a></li>
+					</ul>
+					
+					<br>
+					<b>Themes:</b>
+					<ul class="list-inline">
+						<li><a href="examples/default/" target="_blank">Default theme</a></li>
+						<li><a href="examples/one-button/" target="_blank">One-button theme</a></li>
+						<li><a href="examples/drag-drop/" target="_blank">Drag&amp;Drop theme</a></li>
+						<li><a href="examples/more_files/" target="_blank">Thumbnails theme</a></li>
+					</ul>
+					
+					<br>
+					<b>More:</b>
+					<ul class="list-inline">
+						<li><a href="examples/appended-files/" target="_blank">Appended files</a></li>
+						<li><a href="examples/default-upload/" target="_blank">Custom file name</a></li>
+						<li><a href="examples/api/" target="_blank">API methods</a></li>
+						<li><a href="examples/single_file/" target="_blank">Form example</a></li>
+						<li><a href="examples/options/" target="_blank">All available options</a></li>
+						<li><a href="examples/php-generated-input/" target="_blank">Generated input with PHP</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<!-- options -->
+		<div id="documentation" class="container page-section">
+            <div class="row">
+                <div class="col-md-12">
+					<h2>Options</h2>
+					<hr>
+					<div class="text">
+						<p>Available options are listed below. <b>Remember!</b> that in all text options you can use <a href="#variables">Text Variables</a> or functions which are returning text (Ex: captions.button or captions.errors.filesLimit).</p>
+					</div>
+                    <pre>
+						<code>
+{
+	<i>// limit of files {null, Number}</i>
+	<i>// also with the appended files</i>
+	<i>// if null - has no limits</i>
+	<i>// example: 3</i>
+	limit: null,
+	
+	<i>// file's maximal size in MB {null, Number}</i>
+	<i>// also with the appended files</i>
+	<i>// if null - has no limits</i>
+	<i>// example: 2</i>
+	maxSize: null,
+	
+	<i>// each file's maximal size in MB {null, Number}</i>
+	<i>// if null - has no limits</i>
+	<i>// example: 2</i>
+	fileMaxSize: null,
+	
+	<i>// allowed extensions or file types {null, Array}</i>
+	<i>// if null - has no limits</i>
+	<i>// example: ['jpg', 'jpeg', 'png', 'audio/mp3', 'text/plain']</i>
+	extensions: null,
+	
+	<i>// new input {Boolean, String, Function, jQuery Object}</i>
+	<i>// example: true</i>
+	<i>// example: ' ' - no input</i>
+	<i>// example: '&lt;div>Click me&lt;/div>'</i>
+	<i>// example: function(options) { return '&lt;div>Click me&lt;/div>'; }</i>
+	<i>// example: $('.selector')</i>
+	changeInput: true,
+	
+	<i>// add brackets at the end of the input name by multiple files {Boolean}</i>
+	<i>// specially for PHP</i>
+	inputNameBrackets: true,
+	
+	<i>// fileuploader theme {null, String}</i>
+	<i>// it will be only a class name in fileuploader parent element</i>
+	<i>// the class name will be: fileuploader-theme-default</i>
+	theme: 'default',
+	
+	<i>// enable thumbnails for files {null, Object}</i>
+	<i>// set on null to disable the thumbnails</i>
+	thumbnails: {
+		<i>// thumbnails list HTML {String, Function}</i>
+		<i>// example: '&lt;ul>&lt;/ul>'</i>
+		<i>// example: function(options) { return '&lt;ul>&lt;/ul>'; }</i>
+		box: '&lt;div class="fileuploader-items">' +
+			  '&lt;ul class="fileuploader-items-list">&lt;/ul>' +
+		      '&lt;/div>',
+		
+		<i>// append thumbnails list to selector {null, String, jQuery Object}</i>
+		<i>// example: 'body'</i>
+		<i>// example: $('body')</i>
+		boxAppendTo: null,
+		
+		<i>// thumbnails item HTML {String, Function}</i>
+		<i>// example: '&lt;li>${name}&lt;/li>'</i>
+		<i>// example: function(item) { return '&lt;li>' + item.name + '&lt;/li>'; }</i>
+		item: '&lt;li class="fileuploader-item">' +
+			   '&lt;div class="columns">' +
+			   	'&lt;div class="column-thumbnail">${image}&lt;/div>' +
+				'&lt;div class="column-title">' +
+				     '&lt;div title="${name}">${name}&lt;/div>' +
+				     '&lt;span>${size2}&lt;/span>' +
+				'&lt;/div>' +
+				'&lt;div class="column-actions">' +
+				     '&lt;a class="fileuploader-action fileuploader-action-remove" title="Remove">&lt;i>&lt;/i>&lt;/a>' +
+				'&lt;/div>' +
+			    '&lt;/div>' +
+			    '&lt;div class="progress-bar2">${progressBar}&lt;span>&lt;/span>&lt;/div>' +
+			'&lt;/li>',
+		
+		<i>// thumbnails appended item HTML {String, Function}</i>
+		<i>// example: '&lt;li>${name}&lt;/li>'</i>
+		<i>// example: function(item) { return '&lt;li>' + item.name + '&lt;/li>'; }</i>
+		item2: '&lt;li class="fileuploader-item">' +
+			   '&lt;div class="columns">' +
+			   	'&lt;a href="${data.url}" target="_blank">' +
+				     '&lt;div class="column-thumbnail">${image}&lt;/div>' +
+				     '&lt;div class="column-title">' +
+				          '&lt;div title="${name}">${name}&lt;/div>' +
+				          '&lt;span>${size2}&lt;/span>' +
+				     '&lt;/div>' +
+				'&lt;/a>' +
+				'&lt;div class="column-actions">' +
+				     '&lt;a href="${file}" class="fileuploader-action fileuploader-action-download" title="Download" download>&lt;i>&lt;/i>&lt;/a>' +
+				     '&lt;a class="fileuploader-action fileuploader-action-remove" title="Remove">&lt;i>&lt;/i>&lt;/a>' +
+				'&lt;/div>' +
+			    '&lt;/div>' +
+			'&lt;/li>',
+			
+		<i>// insert the thumbnail's item at the beginning of the list? {Boolean}</i>
+		itemPrepend: false,
+		
+		<i>// show a confirmation dialog by removing a file? {Boolean}</i>
+		<i>// it will not be shown in upload mode by canceling an upload</i>
+		removeConfirmation: true,
+		
+		<i>// render the image thumbnail? {Boolean}</i>
+		<i>// if it will be false, it will generate an icon(you can also hide it with css)</i>
+		<i>// if it will be false, you can use the API method (item.renderImage()) to render it (check thumbnails example)</i>
+		startImageRenderer: true,
+		
+		<i>// render the images synchron {Boolean}</i>
+		<i>// made to improve the browser speed</i>
+		synchronImages: true,
+		
+		<i>// render the image in a canvas element {Boolea, Object}</i>
+		<i>// if it will be true, it will generate an image with the css sizes from the parent element (.column-thumbnail)</i>
+		<i>// you can also set the width and the height in the object</i>
+		<i>// by default - true</i>
+		canvasImage: {
+			width: null,
+			height: null
+		},
+		
+		<i>// thumbnails selectors</i>
+		_selectors: {
+			list: '.fileuploader-items-list',
+			item: '.fileuploader-item',
+			start: '.fileuploader-action-start',
+			retry: '.fileuploader-action-retry',
+			remove: '.fileuploader-action-remove'
+		},
+		
+		<i>// Callback fired before adding the list element</i>
+		beforeShow: function(parentEl, newInputEl, inputEl) {
+			<i>// callback will go here</i>
+		},
+		
+		<i>// Callback fired after adding the item element</i>
+		onItemShow: function(item, listEl, parentEl, newInputEl, inputEl) {
+			<i>// callback will go here</i>
+		},
+		
+		<i>// Callback fired after removing the item element</i>
+		<i>// by default we will animate the removing action</i>
+		onItemRemove: function(itemEl, listEl, parentEl, newInputEl, inputEl) {
+			itemEl.children().animate({'opacity': 0}, 200, function() {
+				setTimeout(function() {
+					itemEl.slideUp(200, function() {
+						itemEl.remove(); 
+					});
+				}, 100);
+			});
+		},
+		
+		<i>// Callback fired after the item image was loaded</i>
+		onImageLoaded: function(itemEl, listEl, parentEl, newInputEl, inputEl) {
+			<i>// callback will go here</i>
+		},
+	},
+	
+	<i>// enable the upload mode {null, Object}</i>
+	<i>// each file will be separately uploaded to server</i>
+	<i>// if you want to send all files, you don't even need this option. Just use the standard HTML &lt;form> to do this.</i>
+	<i>// by default - null</i>
+	upload: {
+		<i>// upload URL {String}</i>
+		url: 'index.php',
+		
+		<i>// upload data {null, Object}</i>
+		<i>// you can also change this Object in beforeSend callback</i>
+		<i>// example: { option_1: 'yes', option_2: 'ok' }</i>
+		data: null,
+		
+		<i>// upload type {String}</i>
+		<i>// for more details http://api.jquery.com/jquery.ajax/</i>
+		type: 'POST',
+		
+		<i>// upload enctype {String}</i>
+		<i>// for more details http://api.jquery.com/jquery.ajax/</i>
+		enctype: 'multipart/form-data',
+		
+		<i>// auto-start file uploading {Boolean}</i>
+		<i>// if it will be false, you can use the API methods to start it (check options example)</i>
+		start: false,
+		
+		<i>// upload the files synchron {Boolean}</i>
+		synchron: true,
+		
+		<i>// Callback fired before uploading a file</i>
+		<i>// by returning false, you can prevent the upload</i>
+		beforeSend: function(item, listEl, parentEl, newInputEl, inputEl) {
+			<i>// example:</i>
+			<i>// here you can extend the uploading data</i>
+			item.upload.data.new_data_attribute = 'nice';
+
+			return true;
+		},
+		
+		<i>// Callback fired if the uploading succeeds</i>
+		<i>// by default we will add a success icon and fadeOut the progressbar</i>
+		<i>// Remember that if you want so show the PHP errors, you will need to process them also here. To prevent it you will need to respond on the upload url with error code in header.</i>
+		onSuccess: function(data, item, listEl, parentEl, newInputEl, inputEl, textStatus, jqXHR) {
+			item.html.find('.column-actions').append(
+				'&lt;a class="fileuploader-action fileuploader-action-remove fileuploader-action-success" title="Remove">&lt;i>&lt;/i>&lt;/a>'
+			);
+
+			setTimeout(function() {
+				item.html.find('.progress-bar2').fadeOut(400);
+			}, 400);
+		},
+		
+		<i>// Callback fired if the uploading failed</i>
+		<i>// by default we will set the progressbar to 0% and if it wasn't cancelled, we will add a retry button</i>
+		<i>// Remember that the PHP errors will be sent in the onSuccess function. To prevent this you will need to respond on the upload url with error code in header.</i>
+		onError: function(item, listEl, parentEl, newInputEl, inputEl, jqXHR, textStatus, errorThrown) {
+			var progressBar = item.html.find('.progress-bar2');
+
+			if(progressBar.length > 0) {
+				progressBar.find('span').html(0 + "%");
+				progressBar.find('.fileuploader-progressbar .bar').width(0 + "%");
+				item.html.find('.progress-bar2').fadeOut(400);
+			}
+
+			item.upload.status != 'cancelled' && item.html.find('.fileuploader-action-retry').length == 0 ? item.html.find('.column-actions').prepend(
+				'&lt;a class="fileuploader-action fileuploader-action-retry" title="Retry">&lt;i>&lt;/i>&lt;/a>'
+			) : null;
+		},
+		
+		<i>// Callback fired while uploading the file</i>
+		<i>// by default we will set the progressbar width and percentage</i>
+		<i>// data = {
+			loaded: ...,
+			loadedInFormat: ...,
+			total: ...,
+			totalInFormat: ...,
+			percentage: ...,
+			secondsElapsed: ...,
+			secondsElapsedInFormat:...,
+			bytesPerSecond: ...,
+			bytesPerSecondInFormat: ...,
+			remainingBytes: ...,
+			remainingBytesInFormat: ...,
+			secondsRemaining: ...,
+			secondsRemainingInFormat: ...
+		}</i>
+		onProgress: function(data, item, listEl, parentEl, newInputEl, inputEl) {
+			var progressBar = item.html.find('.progress-bar2');
+
+			if(progressBar.length > 0) {
+				progressBar.show();
+				progressBar.find('span').html(data.percentage + "%");
+				progressBar.find('.fileuploader-progressbar .bar').width(data.percentage + "%");
+			}
+		},
+		
+		<i>// Callback fired after all files were uploaded</i>
+		onComplete: function(listEl, parentEl, newInputEl, inputEl, jqXHR, textStatus) {
+			<i>// callback will go here</i>
+		},
+	},
+	
+	<i>// enable the drag&amp;drop feature {Boolean, Object}</i>
+	<i>// this feature is available only in upload mode</i>
+	<i>// by default - true</i>
+	dragDrop: {
+		<i>// set drag&amp;drop container {null, String, jQuery Object}</i>
+		<i>// example: 'body'</i>
+		<i>// example: $('body')</i>
+		container: null,
+		
+		<i>// Callback fired on entering with dragged files the drop container</i>
+		onDragEnter: function(event, listEl, parentEl, newInputEl, inputEl) {
+			<i>// callback will go here</i>
+		},
+		
+		<i>// Callback fired on leaving with dragged files the drop container</i>
+		onDragLeave: function(event, listEl, parentEl, newInputEl, inputEl) {
+			<i>// callback will go here</i>
+		},
+		
+		<i>// Callback fired on dropping the dragged files in drop container</i>
+		onDrop: function(event, listEl, parentEl, newInputEl, inputEl) {
+			<i>// callback will go here</i>
+		},
+
+	},
+	
+	<i>// enable the addMore mode {Boolean}</i>
+	<i>// choose more files from different folders; can be used in the standard HTML &lt;form></i>
+	addMore: false,
+	
+	<i>// appended files {null, Array of Objects}</i>
+	<i>// useful for REST API in javascript</i>
+	<i>// please follow this structure for each file:</i>
+	<i>{
+		name: 'filename1.txt',
+		size: 1024,
+		type: 'text/plain',
+		file: 'uploads/filename1.txt',
+		data: {
+			url: 'http://your_link.com/',
+			another_attribute: 'ok',
+			you_can_use_it_later: 'hehe',
+			also_in_templates: 'perfect'
+		}
+	}</i>
+	files: null,
+	
+	<i>// upload an image from clipboard {Boolean, Number in ms}</i>
+	<i>// the input should be completely into view by pasting</i>
+	<i>// this feature is available only in upload mode</i>
+	<i>// compatible only for Chrome</i>
+	clipboardPaste: 2000,
+	
+	<i>// input with the listed files {Boolean, String}</i>
+	<i>// this list is an input[type="hidden"]</i>
+	<i>// this list will be generated from each choosed/appended file name in a JSON format. You can use the onListInput callback to mainpulate this list</i>
+	<i>// files in this list that are "0://file_name.ext" are showing to PHP that they are choosed and should be uploaded</i>
+	<i>// if you've appended some files on the server-side, PHP will check if each appended file is in this list, if not, PHP will set it as removed. Also, it is very important if you have appended files</i>
+	<i>// example: true</i>
+	<i>// example: 'custom_listInput_name'</i>
+	listInput: true,
+	
+	<i>// enable API methods {Boolean}</i>
+	<i>// if it will be true, you can use API methods like writing this code:</i>
+	<i>// var api = $.fileuploader.getInstance(input_element); (check api example to see all available methods)</i>
+	enableApi: false,
+	
+	<i>// standard input events {null, Object}</i>
+	<i>// bind standard Javascript input events</i>
+	<i>// example: {
+		click: function(event) {
+			// input was clicked
+		}
+	}</i>
+	listeners: null,
+	
+	<i>// Callback fired when fileuploader is not supported in your browser</i>
+	onSupportError: function(parentEl, inputEl) {
+		<i>// callback will go here</i>
+	},
+	
+	<i>// Callback fired before rendering the fileuploader elements</i>
+	<i>// by returning false, you will prevent the rendering</i>
+	beforeRender: function(parentEl, inputEl) {
+		<i>// callback will go here</i>
+		
+		return true;
+	},
+	
+	<i>// Callback fired after rendering the fileuploader elements</i>
+	afterRender: function(listEl, parentEl, newInputEl, inputEl) {
+		<i>// callback will go here</i>
+	},
+	
+	<i>// Callback fired after selecting the files from computer but only before processing them</i>
+	<i>// by returning false, you will prevent the processing of the files but they will remain in the input</i>
+	beforeSelect: function(files, listEl, parentEl, newInputEl, inputEl) {
+		<i>// callback will go here</i>
+		
+		return true;
+	},
+	
+	<i>// Callback fired on checking for warnings the choosed files</i>
+	<i>// by returning false, you will prevent the files from adding/uploading</i>
+	onFilesCheck: function(files, options, listEl, parentEl, newInputEl, inputEl) {
+		<i>// callback will go here</i>
+		
+		return true;
+	},
+	
+	<i>// Callback fired on selecting and processing a file</i>
+	onSelect: function(item, listEl, parentEl, newInputEl, inputEl) {
+		<i>// callback will go here</i>
+	},
+	
+	<i>// Callback fired after selecting and processing of all files</i>
+	afterSelect: function(listEl, parentEl, newInputEl, inputEl) {
+		<i>// callback will go here</i>
+	},
+	
+	<i>// Callback fired after generating a list input. Needs to return an array!</i>
+	<i>// by default - null</i>
+	onListInput: function(fileList, listInputEl, listEl, parentEl, newInputEl, inputEl) {
+		var list = [];
+
+		$.each(fileList, function(index, value) {
+			list.push(value.name);
+		});
+
+		return list;
+	},
+	
+	<i>// Callback fired after deleting a file</i>
+	<i>// by returning false, you can prevent a file from removing</i>
+	onRemove: function(item, listEl, parentEl, newInputEl, inputEl) {
+		<i>// callback will go here</i>
+		
+		return true;
+	},
+	
+	<i>// Callback fired when fileuploader has no files</i>
+	onEmpty: function(listEl, parentEl, newInputEl, inputEl) {
+		<i>// callback will go here</i>
+	},
+	
+	<i>// dialogs</i>
+	<i>// made to let you customizing the standard Javascript dialogs</i>
+	<i>// this dialogs are used by showing a file warning or confirming a file removing</i>
+	dialogs: {
+	
+		<i>// alert dialog</i>
+		alert: function(text) {
+			return alert(text);
+		},
+		
+		<i>// confirm dialog</i>
+		confirm: function(text, callback) {
+			confirm(text) ? callback() : null;
+		}
+	},
+	
+	<i>// captions</i>
+	captions: {
+		button: function(options) { return 'Choose ' + (options.limit == 1 ? 'File' : 'Files'); },
+		feedback: function(options) { return 'Choose ' + (options.limit == 1 ? 'file' : 'files') + ' to upload'; },
+		feedback2: function(options) { return options.length + ' ' + (options.length > 1 ? ' files were' : ' file was') + ' chosen'; },
+		drop: 'Drop the files here to Upload',
+		paste: '&lt;div class="fileuploader-pending-loader">&lt;div class="left-half" style="animation-duration: ${ms}s">&lt;/div>&lt;div class="spinner" style="animation-duration: ${ms}s">&lt;/div>&lt;div class="right-half" style="animation-duration: ${ms}s">&lt;/div>&lt;/div> Pasting a file, click here to cancel.',
+		removeConfirmation: 'Are you sure you want to remove this file?',
+		errors: {
+			filesLimit: 'Only ${limit} files are allowed to be uploaded.',
+			filesType: 'Only ${extensions} files are allowed to be uploaded.',
+			fileSize: '${name} is too large! Please choose a file up to ${fileMaxSize}MB.',
+			filesSizeAll: 'Files that you choosed are too large! Please upload files up to ${maxSize} MB.',
+			fileName: 'File with the name ${name} is already selected.',
+			folderUpload: 'You are not allowed to upload folders.'
+		}
+	}
+}</code>
+					</pre>
+					<a href="javascript:;" class="expand-pre">+ Expand code</a>
+				</div>
+			</div>
+			<div id="php-documentation" class="row">
+                <div class="col-md-12">
+					<b>PHP Options</b>
+					<hr>
+					<div class="text">
+						<p>Available options are listed below.</p>
+					</div>
+                    <pre>
+						<code>
+array (
+	<i>// limit of files {null, Number}</i>
+	<i>// also with the appended files</i>
+	<i>// if null - has no limits</i>
+	<i>// example: 3</i>
+	'limit' => null,
+	
+	<i>// file's maximal size in MB {null, Number}</i>
+	<i>// also with the appended files</i>
+	<i>// if null - has no limits</i>
+	<i>// example: 2</i>
+	'maxSize' => null,
+	
+	<i>// each file's maximal size in MB {null, Number}</i>
+	<i>// if null - has no limits</i>
+	<i>// example: 2</i>
+	'fileMaxSize' => null,
+	
+	<i>// allowed extensions or file types {null, Array}</i>
+	<i>// if null - has no limits</i>
+	<i>// example: ['jpg', 'jpeg', 'png', 'audio/mp3', 'text/plain']</i>
+	'extensions' => null,
+	
+	<i>// check if file input exists ($_FILES[ file_input_name ]) {Boolean}</i>
+	<i>// check if files were choosed (minimum 1 file should be choosed)</i>
+	'required' => false,
+	
+	<i>// upload directory {String}</i>
+	<i>// note that main directory is the directory where you are initializing the FileUploader class</i>
+	<i>// example: '../uploads/'</i>
+	'uploadDir' => 'uploads/',
+	
+	<i>// file title {String, Array}</i>
+	<i>// example: 'name' - original file name</i>
+	<i>// example: 'auto' - random text from 12 letters</i>
+	<i>// example: 'my_custom_filename' - custom file name</i>
+	<i>// example: 'my_custom_filename_{random}' - my_custom_filename_(+ random text from 12 letters)</i>
+	<i>// '{random} {file_name} {file_size} {timestamp} {date} {extension}' - variables that can be used to generate a new file name</i>
+	<i>// example: array('auto', 24) - [0] is a string as in the examples above, [1] is the length of the random string</i>
+	'title' => 'name',
+	
+	<i>// replace the file with the same name? {Boolean}</i>
+	<i>// if it will be false - will automatically generate a new file name with (1,2,3...) at the end of the file name</i>
+	'replace' => false,
+	
+	<i>// input with the listed files {Boolean, String}</i>
+	<i>// this list is an input[type="hidden"]</i>
+	<i>// this list is important to check which files shouldn't be uploaded or need to be removed</i>
+	<i>// example: true</i>
+	<i>// example: 'custom_listInput_name'</i>
+	'listInput' => true,
+	
+	<i>// appended files {null, Array with arrays}</i>
+	<i>// it is important to declare them if you want to check the right limit and maxSize options; by appended files; by generating an input</i>
+	<i>// please follow this structure for each file:</i>
+	<i>array(
+		"name" => 'filename1.txt',
+		"type" => FileUploader::mime_content_type('uploads/filename1.txt'),
+		"size" => filesize('uploads/filename1.txt'),
+		"file" => 'uploads/filename1.txt',
+		"data" => array(
+			"url" => 'http://localhost/example/uploads/filename1.txt',
+			"another_attribute" => "ok"
+		)
+	)</i>
+	'files' => null
+)</code>
+					</pre>
+					<a href="javascript:;" class="expand-pre">+ Expand code</a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="bg-area">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-md-offset-3 text-center">
+						<h2>Nice, isn't it?</h2>
+						<div class="text">
+							<p>A fancy configuration of a Fileuploader plugin. Just let your mind to design your own input!</p>
+						</div>
+						<input type="file" name="files" id="fileuploader3">
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- attributes -->
+		<div id="attributes" class="container page-section">
+            <div class="row">
+                <div class="col-md-12">
+					<h2>Input attributes</h2>
+					<hr>
+					<div class="text">
+						<p>You can configurate the Fileuploader not only in Javascript but also setting some input attributes in HTML.</p>
+						<p class="text-warning"><b>Example:</b> &lt;input type="file" name="files" data-fileuploader-limit="2"></p>
+					</div>
+                    <pre style="max-height: none;">
+						<code>
+<i>&lt;!-- limit option {Number} --></i>
+data-fileuploader-limit="2"
+
+<i>&lt;!-- maxSize option {Number} --></i>
+data-fileuploader-maxSize="3"
+
+<i>&lt;!-- fileMaxSize option {Number} --></i>
+data-fileuploader-fileMaxSize="1"
+
+<i>&lt;!-- extensions option {Comma spliced String} --></i>
+data-fileuploader-fileMaxSize="jpg, png, gif"
+
+<i>&lt;!-- theme option {String} --></i>
+data-fileuploader-theme="default"
+
+<i>&lt;!-- listInput option {String} --></i>
+data-fileuploader-listInput="myCustomName"
+
+<i>&lt;!-- files option {JSON String} --></i>
+data-fileuploader-files='"[{"name":"filename1.txt","size":1024,"type":"text/plain","file":"uploads/filename1.txt"}]"'</code>
+					</pre>
+				</div>
+			</div>
+		</div>
+		
+		<!-- api -->
+		<div id="api" class="container page-section">
+            <div class="row">
+                <div class="col-md-12">
+					<h2>Api</h2>
+					<div class="text">
+						<p>Available methods are listed below. <b>Don't forget</b> that you will need to set <u>enableApi</u> on true to activate the Api methods.</p>
+					</div>
+                    <pre>
+						<code>
+var api = $.fileuploader.getInstance(file_input_element);
+
+<i>// open browser file explorer to choosed files</i>
+api.open();
+
+<i>// get Fileuploader options</i>
+api.getOptions();
+
+<i>// get Fileuploader parent element</i>
+api.getParentEl();
+
+<i>// get Fileuploader input element</i>
+api.getInputEl();
+
+<i>// get Fileuploader new/generated input element</i>
+api.getNewInputEl();
+
+<i>// get Fileuploader thumbnails list element</i>
+api.getListEl();
+
+<i>// get Fileuploader listInput element</i>
+api.getListInputEl();
+
+<i>// get Fileuploader file items</i>
+api.getFiles();
+
+<i>// get Fileuploader choosed file items</i>
+api.getChoosedFiles();
+
+<i>// get Fileuploader appended file items</i>
+api.getAppendedFiles();
+
+<i>// get Fileuploader uploaded file items</i>
+api.getUploadedFiles();
+
+<i>// get Fileuploader list of files using custom key</i>
+<i>// @param toJSON {Boolean} - Parse the Array to JSON?</i>
+<i>// @param customItemKey {String} - Generate a list with only a file attribute (ex: name, url)?</i>
+api.getFileList(toJSON, customItemKey);
+
+<i>// set Fileuploader option</i>
+api.setOption(key, value);
+
+<i>// get an Fileuploader item data by giving an item HTML element</i>
+api.findFile(itemHtmlElement);
+
+<i>// append file (Object) or files(Array with Objects)</i>
+api.append(file);
+
+<i>// remove an item by giving an item Object or item HTML element</i>
+api.remove(item);
+
+<i>// reset the Fileuploader input</i>
+api.reset();
+
+<i>// disable Fileuploader input</i>
+api.disable(also_lock_item_remove_startUpload_retry_action);
+
+<i>// enable Fileuploader input</i>
+api.enable();
+
+<i>// return true if there are no files</i>
+api.isEmpty();
+
+<i>// return true if the input is disabled</i>
+api.isDisabled();
+
+<i>// return true if the input is rendered</i>
+api.isRendered();
+
+<i>// return the plugin mode ('default', 'addMore', 'upload')</i>
+api.getPluginMode();
+
+<i>// generate a text with variables</i>
+api.assets.textParse(myText, myObjectWithVariables);
+
+<i>// destroy Fileuploader</i>
+api.destroy();</code>
+					</pre>
+					<a href="javascript:;" class="expand-pre">+ Expand code</a>
+				</div>
+			</div>
+			<div id="php-documentation" class="row">
+                <div class="col-md-12">
+					<b>PHP Api</b>
+					<hr>
+					<div class="text">
+						<p>Available methods are listed below.</p>
+					</div>
+                    <pre>
+						<code>
+&lt;?php
+	include('class.fileuploader.php');
+
+	<i>// initialize the FileUploader</i>
+	$FileUploader = new FileUploader('input_file_name', array(
+		<i>// Options will go here</i>
+	));
+
+	<i>// call to upload the files</i>
+	$upload = $FileUploader->upload();
+
+	if($upload['isSuccess']) {
+		<i>// get the uploaded files</i>
+		$files = $upload['files'];
+	}
+	if($upload['hasWarnings']) {
+		<i>// get the warnings</i>
+		$warnings = $upload['warnings'];
+	};
+
+	<i>// get listInput value</i>
+	$FileUploader->getListInput();
+
+        <i>// get removed list</i>
+        <i>// give a String parameter (ex: 'file' or 'name' or 'data.url') to get a file by a custom input attribute. Default is 'file'</i>
+        <i>// note that FileUploader will not remove your appended files that were removed on Front-End</i>
+        <i>// to remove them, please use this example: </i>
+        <i>// foreach($FileUploader->getRemovedFiles('file') as $key=>$value) {</i>
+        <i>//     unlink('../uploads/' . $value['name']);</i>
+        <i>// }</i>
+	$FileUploader->getRemovedFiles();
+
+	<i>// get the list of the files</i>
+	<i>// without parameter it will return an array with appended and uploaded files</i>
+	<i>// give a String parameter (ex: 'file' or 'name' or 'data.url') to generate a custom input list of the files</i>
+	<i>// example: you can store the files in the MySQL using this function</i>
+	<i>// $myFilesForSql = implode('|', $FileUploader->getFileList('name'));</i>
+	<i>// $myFilesForSql = json_encode($FileUploader->getFileList('name'));</i>
+	$FileUploader->getFileList();
+
+	<i>// get the HTML generated input</i>
+	$FileUploader->generateInput();
+?></code>
+					</pre>
+					<a href="javascript:;" class="expand-pre">+ Expand code</a>
+				</div>
+			</div>
+		</div>
+		
+		<!-- variables -->
+		<div id="variables" class="container page-section">
+            <div class="row">
+                <div class="col-md-12">
+					<h2>Text Variables</h2>
+					<hr>
+					<div class="text">
+						<p>You can use this inline variables in each text option. Just write <b>${variable_name}</b> to transform it. <b>Don't forget!</b> that instead of using text variables you can set an option to function and using the function arguments, return a custom text or HTML code (see captions.feedback). This feature can be also customized by you to generate a content using API.assets.textParese(text, {your data}).</p>
+						<p class="text-warning"><b>Example:</b> 'Only ${limit} files are allowed to be uploaded.'</p>
+					</div>
+                    <pre>
+						<code>
+<i>&lt;!-- limit option --></i>
+<i>&lt;!-- always available --></i>
+${limit}
+
+<i>&lt;!-- maxSize option --></i>
+<i>&lt;!-- always available --></i>
+${maxSize}
+
+<i>&lt;!-- fileMaxSize option --></i>
+<i>&lt;!-- always available --></i>
+${fileMaxSize}
+
+<i>&lt;!-- extensions option --></i>
+<i>&lt;!-- always available --></i>
+${extensions}
+
+<i>&lt;!-- clipboardPaste option --></i>
+<i>&lt;!-- only for captions.paste --></i>
+${ms}
+
+<i>&lt;!-- number of choosed/appended files --></i>
+<i>&lt;!-- only for captions.feedback and captions.feedback2 --></i>
+${length}
+
+<i>&lt;!-- file name --></i>
+<i>&lt;!-- only in thumbnails.item, thumbnails.item2, captions.removeConfirmation, captions.errors.fileSize and captions.errors.fileName --></i>
+${name}
+
+<i>&lt;!-- file title (file name without extension) --></i>
+<i>&lt;!-- only in thumbnails.item, thumbnails.item2, captions.removeConfirmation, captions.errors.fileSize and captions.errors.fileName --></i>
+${title}
+
+<i>&lt;!-- file extension --></i>
+<i>&lt;!-- only in thumbnails.item, thumbnails.item2, captions.removeConfirmation, captions.errors.fileSize and captions.errors.fileName --></i>
+${extension}
+
+<i>&lt;!-- file size --></i>
+<i>&lt;!-- only in thumbnails.item, thumbnails.item2, captions.removeConfirmation, captions.errors.fileSize and captions.errors.fileName --></i>
+${size}
+
+<i>&lt;!-- file size (formatted in bytes, kbs, mbs...) --></i>
+<i>&lt;!-- only in thumbnails.item, thumbnails.item2, captions.removeConfirmation, captions.errors.fileSize and captions.errors.fileName --></i>
+${size2}
+
+<i>&lt;!-- file type (audio/mp3) --></i>
+<i>&lt;!-- only in thumbnails.item, thumbnails.item2, captions.removeConfirmation, captions.errors.fileSize and captions.errors.fileName --></i>
+${type}
+
+<i>&lt;!-- file format (audio) --></i>
+<i>&lt;!-- only in thumbnails.item, thumbnails.item2, captions.removeConfirmation, captions.errors.fileSize and captions.errors.fileName --></i>
+${format}
+
+<i>&lt;!-- file data --></i>
+<i>&lt;!-- only in thumbnails.item, thumbnails.item2, captions.removeConfirmation, captions.errors.fileSize and captions.errors.fileName --></i>
+${data.my_custom_data_key}
+
+<i>&lt;!-- file icon HTML element --></i>
+<i>&lt;!-- remember that a file-like icon is also available, just remove the comments in css file from the line /* item icon like file */ --></i>
+<i>&lt;!-- only in thumbnails.item and thumbnails.item2 --></i>
+${icon}
+
+<i>&lt;!-- file thumbnail / file icon (for not image files) holder HTML element --></i>
+<i>&lt;!-- only in thumbnails.item and thumbnails.item2 --></i>
+${image}</code>
+					</pre>
+					<a href="javascript:;" class="expand-pre">+ Expand code</a>
+				</div>
+			</div>
+		</div>
+      
+        <!-- class attributes -->
+		<div id="class_attributes" class="container page-section">
+            <div class="row">
+                <div class="col-md-12">
+					<h2>Element classes</h2>
+					<hr>
+					<div class="text">
+						<p>In some situations the plugin will set a specific class attribute to a HTML element to improve the design and animations role in the upload process. Using this classes, you can easier configurate the Fileuploader plugin with CSS.</p>
+					</div>
+					<br>
+					<b>Parent Element (.fileuploader)</b>
+                    <pre>
+						<code>
+<i>/* Theme class */</i>
+.fileuploader-theme-{fileuploader theme option}
+
+<i>/* Focus state */</i>
+.fileuploader-focused
+
+<i>/* Disabled state */</i>
+.fileuploader-disabled
+
+<i>/* Uploading state */</i>
+.fileuploader-is-uploading</code>
+					</pre>
+					<br>
+					<b>Input Element (.fileuploader-input)</b>
+                    <pre>
+						<code>
+<i>/* Dragging state */</i>
+.fileuploader-dragging</code>
+					</pre>
+						
+					<br>
+					<b>Item Element (.fileuploader-item)</b>
+                    <pre>
+						<code>
+<i>/* File type */</i>
+.file-type-{file type (ex: image, audio, text-plain)}
+
+<i>/* File extension */</i>
+.file-ext-{file extension (ext: jpg, mp3, txt)}
+
+<i>/* File upload states */</i>
+.upload-pending, .upload-loading, .upload-cancelled, .upload-failed, .upload-success
+
+<i>/* ============== elements that are in the item ============== */</i>
+<i>/* File image holder with loading state */</i>
+.fileuploader-item-image.fileuploader-loading
+
+<i>/* File image holder with unsupported image format */</i>
+.fileupload-no-thumbnail
+
+<i>/* File icon */</i>
+.fileuploader-item-icon
+
+<i>/* File progressbar */</i>
+.fileuploader-progressbar .bar</code>
+                    </pre>
+					
+					<br>
+					<b>Action icons</b>
+					<pre>
+<code>
+<i>/* remove icon */</i>
+.fileuploader-action-remove
+
+<i>/* start the upload icon */</i>
+.fileuploader-action-start
+
+<i>/* success icon */</i>
+.fileuploader-action-success
+
+<i>/* download icon */</i>
+.fileuploader-action-download
+
+<i>/* upload retry icon */</i>
+.fileuploader-action-retry</code>
+					</pre>
+					
+					<br>
+					<b>Like-file icon?</b>
+					<pre>
+<code>
+Yes, just find in jquery.fileuploader.css file the <i>/* item icon like file */</i> line and remove the comments below.</code>
+					</pre>
+					
+					<br>
+					<b>Own file icon?</b>
+					<pre>
+<code>
+<i>/* It's easy, just follow this example: */</i>
+.file-type-audio .fileuploader-item-icon {
+	background-color: #000 !important;
+}
+.file-type-audio .fileuploader-item-icon i {
+	color: #fff;
+}</code>
+					</pre>
+				</div>
+			</div>
+		</div>
+		
+        <!-- contact -->
+		<div class="contact bg-area page-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-md-offset-3 text-center">
+						<h2>Any questions?</h2>
+						<p>If you have any further questions about the Fileuploader plugin or you want to hire me for a more complex project (ex. file manager), you can write me an email on:</p>
+						<a href="mailto:contact@innostudio.de"><b>contact@innostudio.de</b></a>
+					</div>
+				</div>
+			</div>
+		</div>
+        
+        <!-- license -->
+		<div id="license" class="container page-section">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 text-center">
+					<h2>License</h2>
+					<hr>
+					<div class="text">
+                        <p>A <b>regular license</b> is required if you are using this plugin in more than one of your projects (including sites for your customers). A <b>commercial license</b> code is required by including this plugin in commercial applications (including sites, themes and apps you plan to sell). Sharing the source code or selling it particullary is not allowed. <br><br> If you want to try the Fileuploader or you are planning to use this plugin only in <b><u>ONE</u></b> (for the next using you will need to pay for a regular lincese) personal and non-commercial project without supporting it you can <a href="http://innostudio.de/fileuploader/#download">download it</a> too.</p>
+                        <br>
+                        <a href="http://innostudio.de/fileuploader/#download" class="button">Get a License</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+		
+		<div class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						Crafted with passion by <a href="http://innostudio.de/" target="_blank">Iulian Galciuc</a>
+					</div>
+					<div class="col-md-6 text-right">
+						<a href="http://innostudio.de/fileuploader/">Fileuploader page</a>
+					</div>
+				</div>
+			</div>
+		</div>
+        
+        <!-- js -->
+		<script src="http://code.jquery.com/jquery-3.1.1.min.js" crossorigin="anonymous"></script>
+		<script src="src/jquery.fileuploader.min.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+				$('#fileuploader2').fileuploader();
+				
+				$('#fileuploader3').fileuploader({
+					extensions: ['jpg', 'jpeg', 'png', 'gif', 'bmp'],
+					changeInput: ' ',
+					theme: 'thumbnails',
+					enableApi: true,
+					addMore: true,
+                    files: [{
+                        name: 'young-woman-1745173_640.jpg',
+                        size: 87.399,
+                        type: 'image/jpeg',
+                        file: 'examples/appended-files/uploads/young-woman-1745173_640.jpg',
+                    }],
+					thumbnails: {
+						box: '<div class="fileuploader-items">\
+								  <ul class="fileuploader-items-list">\
+									  <li class="fileuploader-thumbnails-input"><div class="fileuploader-thumbnails-input-inner">+</div></li>\
+								  </ul>\
+							  </div>',
+						item: '<li class="fileuploader-item">\
+								   <div class="fileuploader-item-inner">\
+									   <div class="thumbnail-holder">${image}</div>\
+									   <div class="actions-holder">\
+										   <a class="fileuploader-action fileuploader-action-remove" title="Remove"><i class="remove"></i></a>\
+									   </div>\
+									   <div class="progress-holder">${progressBar}</div>\
+								   </div>\
+							   </li>',
+						item2: '<li class="fileuploader-item">\
+								   <div class="fileuploader-item-inner">\
+									   <div class="thumbnail-holder">${image}</div>\
+									   <div class="actions-holder">\
+										   <a class="fileuploader-action fileuploader-action-remove" title="Remove"><i class="remove"></i></a>\
+									   </div>\
+								   </div>\
+							   </li>',
+						startImageRenderer: false,
+						canvasImage: false,
+						_selectors: {
+							list: '.fileuploader-items-list',
+							item: '.fileuploader-item',
+							start: '.fileuploader-action-start',
+							retry: '.fileuploader-action-retry',
+							remove: '.fileuploader-action-remove'
+						},
+						onItemShow: function(item, listEl) {
+							var plusInput = listEl.find('.fileuploader-thumbnails-input');
+
+							plusInput.insertAfter(item.html);
+
+							if(item.format == 'image') {
+								item.html.find('.fileuploader-item-icon').hide();
+							}
+						}
+					},
+					afterRender: function(listEl, parentEl, newInputEl, inputEl) {
+						var plusInput = listEl.find('.fileuploader-thumbnails-input'),
+							api = $.fileuploader.getInstance(inputEl.get(0));
+
+						plusInput.on('click', function() {
+							api.open();
+						});
+					},
+					upload: {
+						url: 'documentation.html',
+						data: null,
+						type: 'POST',
+						enctype: 'multipart/form-data',
+						start: true,
+						synchron: true,
+						beforeSend: null,
+						onSuccess: function(data, item) {
+							setTimeout(function() {
+								item.html.find('.progress-holder').hide();
+								item.renderImage();
+							}, 400);
+						},
+						onError: function(item) {
+							item.html.find('.progress-holder').hide();
+							item.html.find('.fileuploader-item-icon i').text('Failed!');
+
+							setTimeout(function() {
+								item.remove();
+							}, 1500);
+						},
+						onProgress: function(data, item) {
+							var progressBar = item.html.find('.progress-holder');
+
+							if(progressBar.length > 0) {
+								progressBar.show();
+								progressBar.find('.fileuploader-progressbar .bar').width(data.percentage + "%");
+							}
+						}
+					},
+					dragDrop: {
+						container: '.fileuploader-thumbnails-input'
+					}
+				});
+			
+				$('.expand-pre').on('click', function() {
+					$(this).prev('pre').css('max-height', 'none');
+					$(this).remove();
+				});
+            });
+        </script>
+    </body>
+</html>

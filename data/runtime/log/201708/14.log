@@ -1,0 +1,1798 @@
+---------------------------------------------------------------
+[ 2017-08-14T17:38:52+08:00 ] 172.16.0.5 139.205.129.94 GET /admin/draws/all_draw_page.html
+[ info ] card.dcwen.top/admin/draws/all_draw_page.html [运行时间：0.010316s][吞吐率：96.94req/s] [内存消耗：804.89kb] [文件加载：63]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'draws',
+    2 => 'all_draw_page',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.81 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://card.dcwen.top/',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=p5dttfimgn46rhshtd88jcck40; UID=doEZK',
+)
+[ info ] [ PARAM ] array (
+  '/admin/draws/all_draw_page_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Draws->all_draw_page[ /var/www/card/app/admin/controller/Draws.php ]
+[ info ] [ VIEW ] /var/www/card/app/admin/view/draws/all_draw_page.html [ array (
+  0 => 'pages',
+  1 => 'allDrawList',
+  2 => 'allDrawNums',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000297s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_users` [ RunTime:0.001437s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000251s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_menu` [ RunTime:0.000770s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_menu` WHERE  `module` = 'admin'  AND `controller` = 'Draws'  AND `method` = 'all_draw_page' LIMIT 1 [ RunTime:0.000205s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_draw` [ RunTime:0.000519s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_draw` LIMIT 1 [ RunTime:0.000101s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_draw` ORDER BY draw_date desc LIMIT 0,10 [ RunTime:0.000109s ]
+---------------------------------------------------------------
+[ 2017-08-14T17:38:52+08:00 ] 172.16.0.5 139.205.129.94 GET /admin/profile/home_page.html
+[ info ] card.dcwen.top/admin/profile/home_page.html [运行时间：0.016727s][吞吐率：59.78req/s] [内存消耗：851.18kb] [文件加载：63]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'profile',
+    2 => 'home_page',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.81 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://card.dcwen.top/',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=p5dttfimgn46rhshtd88jcck40; UID=mtVaW',
+)
+[ info ] [ PARAM ] array (
+  '/admin/profile/home_page_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Profile->home_page[ /var/www/card/app/admin/controller/Profile.php ]
+[ info ] [ VIEW ] /var/www/card/app/admin/view/profile/home_page.html [ array (
+  0 => 'pages',
+  1 => 'profileList',
+  2 => 'profileNums',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000214s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_users` [ RunTime:0.000818s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000200s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_menu` [ RunTime:0.000506s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_menu` WHERE  `module` = 'admin'  AND `controller` = 'Profile'  AND `method` = 'home_page' LIMIT 1 [ RunTime:0.000148s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_profile` [ RunTime:0.000575s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_profile` LIMIT 1 [ RunTime:0.000111s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_profile` ORDER BY date desc LIMIT 0,10 [ RunTime:0.000114s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = '41'  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000173s ]
+[ sql ] [ SQL ] SELECT SUM(money) AS tp_sum FROM `edd_profile` WHERE  `user_id` = 41 LIMIT 1 [ RunTime:0.000118s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_draw` [ RunTime:0.000455s ]
+[ sql ] [ SQL ] SELECT SUM(draw_money) AS tp_sum FROM `edd_draw` WHERE  `user_id` = 41 LIMIT 1 [ RunTime:0.000113s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_player` [ RunTime:0.000495s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 1 LIMIT 1 [ RunTime:0.000112s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_pay_log` [ RunTime:0.000461s ]
+[ sql ] [ SQL ] SELECT `pay_money` FROM `edd_pay_log` WHERE  `pay_id` = 27 LIMIT 1 [ RunTime:0.000124s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = '41'  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000126s ]
+[ sql ] [ SQL ] SELECT SUM(money) AS tp_sum FROM `edd_profile` WHERE  `user_id` = 41 LIMIT 1 [ RunTime:0.000116s ]
+[ sql ] [ SQL ] SELECT SUM(draw_money) AS tp_sum FROM `edd_draw` WHERE  `user_id` = 41 LIMIT 1 [ RunTime:0.000179s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 1 LIMIT 1 [ RunTime:0.000111s ]
+[ sql ] [ SQL ] SELECT `pay_money` FROM `edd_pay_log` WHERE  `pay_id` = 26 LIMIT 1 [ RunTime:0.000144s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = '41'  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000151s ]
+[ sql ] [ SQL ] SELECT SUM(money) AS tp_sum FROM `edd_profile` WHERE  `user_id` = 41 LIMIT 1 [ RunTime:0.000113s ]
+[ sql ] [ SQL ] SELECT SUM(draw_money) AS tp_sum FROM `edd_draw` WHERE  `user_id` = 41 LIMIT 1 [ RunTime:0.000111s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 1 LIMIT 1 [ RunTime:0.000105s ]
+[ sql ] [ SQL ] SELECT `pay_money` FROM `edd_pay_log` WHERE  `pay_id` = 25 LIMIT 1 [ RunTime:0.000110s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = '41'  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000147s ]
+[ sql ] [ SQL ] SELECT SUM(money) AS tp_sum FROM `edd_profile` WHERE  `user_id` = 41 LIMIT 1 [ RunTime:0.000109s ]
+[ sql ] [ SQL ] SELECT SUM(draw_money) AS tp_sum FROM `edd_draw` WHERE  `user_id` = 41 LIMIT 1 [ RunTime:0.000113s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 1 LIMIT 1 [ RunTime:0.000113s ]
+[ sql ] [ SQL ] SELECT `pay_money` FROM `edd_pay_log` WHERE  `pay_id` = 24 LIMIT 1 [ RunTime:0.000108s ]
+---------------------------------------------------------------
+[ 2017-08-14T17:39:07+08:00 ] 172.16.0.5 139.205.129.94 GET /admin/draws/all_draw_page.html
+[ info ] card.dcwen.top/admin/draws/all_draw_page.html [运行时间：0.008876s][吞吐率：112.66req/s] [内存消耗：804.57kb] [文件加载：63]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'draws',
+    2 => 'all_draw_page',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.81 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://card.dcwen.top/',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=p5dttfimgn46rhshtd88jcck40; UID=DKavc',
+)
+[ info ] [ PARAM ] array (
+  '/admin/draws/all_draw_page_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Draws->all_draw_page[ /var/www/card/app/admin/controller/Draws.php ]
+[ info ] [ VIEW ] /var/www/card/app/admin/view/draws/all_draw_page.html [ array (
+  0 => 'pages',
+  1 => 'allDrawList',
+  2 => 'allDrawNums',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000262s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_users` [ RunTime:0.000809s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000221s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_menu` [ RunTime:0.000597s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_menu` WHERE  `module` = 'admin'  AND `controller` = 'Draws'  AND `method` = 'all_draw_page' LIMIT 1 [ RunTime:0.000156s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_draw` [ RunTime:0.000481s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_draw` LIMIT 1 [ RunTime:0.000106s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_draw` ORDER BY draw_date desc LIMIT 0,10 [ RunTime:0.000149s ]
+---------------------------------------------------------------
+[ 2017-08-14T17:39:08+08:00 ] 172.16.0.5 139.205.129.94 GET /admin/profile/home_page.html
+[ info ] card.dcwen.top/admin/profile/home_page.html [运行时间：0.017242s][吞吐率：58.00req/s] [内存消耗：851.18kb] [文件加载：63]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'profile',
+    2 => 'home_page',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.81 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://card.dcwen.top/',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=p5dttfimgn46rhshtd88jcck40; UID=yZ54h',
+)
+[ info ] [ PARAM ] array (
+  '/admin/profile/home_page_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Profile->home_page[ /var/www/card/app/admin/controller/Profile.php ]
+[ info ] [ VIEW ] /var/www/card/app/admin/view/profile/home_page.html [ array (
+  0 => 'pages',
+  1 => 'profileList',
+  2 => 'profileNums',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000268s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_users` [ RunTime:0.000750s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000184s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_menu` [ RunTime:0.000527s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_menu` WHERE  `module` = 'admin'  AND `controller` = 'Profile'  AND `method` = 'home_page' LIMIT 1 [ RunTime:0.000194s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_profile` [ RunTime:0.000466s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_profile` LIMIT 1 [ RunTime:0.000100s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_profile` ORDER BY date desc LIMIT 0,10 [ RunTime:0.000106s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = '41'  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000147s ]
+[ sql ] [ SQL ] SELECT SUM(money) AS tp_sum FROM `edd_profile` WHERE  `user_id` = 41 LIMIT 1 [ RunTime:0.000115s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_draw` [ RunTime:0.000466s ]
+[ sql ] [ SQL ] SELECT SUM(draw_money) AS tp_sum FROM `edd_draw` WHERE  `user_id` = 41 LIMIT 1 [ RunTime:0.000120s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_player` [ RunTime:0.000511s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 1 LIMIT 1 [ RunTime:0.000118s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_pay_log` [ RunTime:0.000538s ]
+[ sql ] [ SQL ] SELECT `pay_money` FROM `edd_pay_log` WHERE  `pay_id` = 27 LIMIT 1 [ RunTime:0.000118s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = '41'  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000126s ]
+[ sql ] [ SQL ] SELECT SUM(money) AS tp_sum FROM `edd_profile` WHERE  `user_id` = 41 LIMIT 1 [ RunTime:0.000111s ]
+[ sql ] [ SQL ] SELECT SUM(draw_money) AS tp_sum FROM `edd_draw` WHERE  `user_id` = 41 LIMIT 1 [ RunTime:0.000131s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 1 LIMIT 1 [ RunTime:0.000112s ]
+[ sql ] [ SQL ] SELECT `pay_money` FROM `edd_pay_log` WHERE  `pay_id` = 26 LIMIT 1 [ RunTime:0.000106s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = '41'  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000155s ]
+[ sql ] [ SQL ] SELECT SUM(money) AS tp_sum FROM `edd_profile` WHERE  `user_id` = 41 LIMIT 1 [ RunTime:0.000123s ]
+[ sql ] [ SQL ] SELECT SUM(draw_money) AS tp_sum FROM `edd_draw` WHERE  `user_id` = 41 LIMIT 1 [ RunTime:0.000111s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 1 LIMIT 1 [ RunTime:0.000110s ]
+[ sql ] [ SQL ] SELECT `pay_money` FROM `edd_pay_log` WHERE  `pay_id` = 25 LIMIT 1 [ RunTime:0.000111s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = '41'  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000119s ]
+[ sql ] [ SQL ] SELECT SUM(money) AS tp_sum FROM `edd_profile` WHERE  `user_id` = 41 LIMIT 1 [ RunTime:0.000109s ]
+[ sql ] [ SQL ] SELECT SUM(draw_money) AS tp_sum FROM `edd_draw` WHERE  `user_id` = 41 LIMIT 1 [ RunTime:0.000123s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 1 LIMIT 1 [ RunTime:0.000107s ]
+[ sql ] [ SQL ] SELECT `pay_money` FROM `edd_pay_log` WHERE  `pay_id` = 24 LIMIT 1 [ RunTime:0.000104s ]
+---------------------------------------------------------------
+[ 2017-08-14T17:39:12+08:00 ] 172.16.0.5 139.205.129.94 GET /admin/draws/all_draw_page.html
+[ info ] card.dcwen.top/admin/draws/all_draw_page.html [运行时间：0.010917s][吞吐率：91.60req/s] [内存消耗：804.57kb] [文件加载：63]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'draws',
+    2 => 'all_draw_page',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.81 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://card.dcwen.top/',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=p5dttfimgn46rhshtd88jcck40; UID=cCn41',
+)
+[ info ] [ PARAM ] array (
+  '/admin/draws/all_draw_page_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Draws->all_draw_page[ /var/www/card/app/admin/controller/Draws.php ]
+[ info ] [ VIEW ] /var/www/card/app/admin/view/draws/all_draw_page.html [ array (
+  0 => 'pages',
+  1 => 'allDrawList',
+  2 => 'allDrawNums',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000340s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_users` [ RunTime:0.001933s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000243s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_menu` [ RunTime:0.000764s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_menu` WHERE  `module` = 'admin'  AND `controller` = 'Draws'  AND `method` = 'all_draw_page' LIMIT 1 [ RunTime:0.000213s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_draw` [ RunTime:0.000678s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_draw` LIMIT 1 [ RunTime:0.000144s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_draw` ORDER BY draw_date desc LIMIT 0,10 [ RunTime:0.000153s ]
+---------------------------------------------------------------
+[ 2017-08-14T17:39:13+08:00 ] 172.16.0.5 139.205.129.94 GET /admin/pay/home_page.html
+[ info ] card.dcwen.top/admin/pay/home_page.html [运行时间：0.019219s][吞吐率：52.03req/s] [内存消耗：868.45kb] [文件加载：63]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'pay',
+    2 => 'home_page',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.81 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://card.dcwen.top/',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=p5dttfimgn46rhshtd88jcck40; UID=4oizz',
+)
+[ info ] [ PARAM ] array (
+  '/admin/pay/home_page_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Pay->home_page[ /var/www/card/app/admin/controller/Pay.php ]
+[ info ] [ VIEW ] /var/www/card/app/admin/view/pay/home_page.html [ array (
+  0 => 'payNums',
+  1 => 'pages',
+  2 => 'payList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000209s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_users` [ RunTime:0.000776s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000182s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_menu` [ RunTime:0.000523s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_menu` WHERE  `module` = 'admin'  AND `controller` = 'Pay'  AND `method` = 'home_page' LIMIT 1 [ RunTime:0.000145s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_pay_log` [ RunTime:0.000472s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_pay_log` LIMIT 1 [ RunTime:0.000096s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_pay_log` ORDER BY pay_date desc LIMIT 0,10 [ RunTime:0.000112s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_player` [ RunTime:0.000478s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 4 LIMIT 1 [ RunTime:0.000126s ]
+[ sql ] [ SQL ] SELECT `diamond` FROM `edd_player` WHERE  `player_id` = 4 LIMIT 1 [ RunTime:0.000108s ]
+[ sql ] [ SQL ] SELECT SUM(diamond_nums) AS tp_sum FROM `edd_pay_log` WHERE  `player_id` = '4' LIMIT 1 [ RunTime:0.000119s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_room` [ RunTime:0.000462s ]
+[ sql ] [ SQL ] SELECT SUM(room_charge) AS tp_sum FROM `edd_room` WHERE  `room_owner` = 4 LIMIT 1 [ RunTime:0.000113s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 2 LIMIT 1 [ RunTime:0.000153s ]
+[ sql ] [ SQL ] SELECT `diamond` FROM `edd_player` WHERE  `player_id` = 2 LIMIT 1 [ RunTime:0.000104s ]
+[ sql ] [ SQL ] SELECT SUM(diamond_nums) AS tp_sum FROM `edd_pay_log` WHERE  `player_id` = '2' LIMIT 1 [ RunTime:0.000108s ]
+[ sql ] [ SQL ] SELECT SUM(room_charge) AS tp_sum FROM `edd_room` WHERE  `room_owner` = 2 LIMIT 1 [ RunTime:0.000109s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 1 LIMIT 1 [ RunTime:0.000105s ]
+[ sql ] [ SQL ] SELECT `diamond` FROM `edd_player` WHERE  `player_id` = 1 LIMIT 1 [ RunTime:0.000102s ]
+[ sql ] [ SQL ] SELECT SUM(diamond_nums) AS tp_sum FROM `edd_pay_log` WHERE  `player_id` = '1' LIMIT 1 [ RunTime:0.000115s ]
+[ sql ] [ SQL ] SELECT SUM(room_charge) AS tp_sum FROM `edd_room` WHERE  `room_owner` = 1 LIMIT 1 [ RunTime:0.000106s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 1 LIMIT 1 [ RunTime:0.000110s ]
+[ sql ] [ SQL ] SELECT `diamond` FROM `edd_player` WHERE  `player_id` = 1 LIMIT 1 [ RunTime:0.000110s ]
+[ sql ] [ SQL ] SELECT SUM(diamond_nums) AS tp_sum FROM `edd_pay_log` WHERE  `player_id` = '1' LIMIT 1 [ RunTime:0.000109s ]
+[ sql ] [ SQL ] SELECT SUM(room_charge) AS tp_sum FROM `edd_room` WHERE  `room_owner` = 1 LIMIT 1 [ RunTime:0.000105s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 1 LIMIT 1 [ RunTime:0.000105s ]
+[ sql ] [ SQL ] SELECT `diamond` FROM `edd_player` WHERE  `player_id` = 1 LIMIT 1 [ RunTime:0.000104s ]
+[ sql ] [ SQL ] SELECT SUM(diamond_nums) AS tp_sum FROM `edd_pay_log` WHERE  `player_id` = '1' LIMIT 1 [ RunTime:0.000108s ]
+[ sql ] [ SQL ] SELECT SUM(room_charge) AS tp_sum FROM `edd_room` WHERE  `room_owner` = 1 LIMIT 1 [ RunTime:0.000103s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 1 LIMIT 1 [ RunTime:0.000106s ]
+[ sql ] [ SQL ] SELECT `diamond` FROM `edd_player` WHERE  `player_id` = 1 LIMIT 1 [ RunTime:0.000103s ]
+[ sql ] [ SQL ] SELECT SUM(diamond_nums) AS tp_sum FROM `edd_pay_log` WHERE  `player_id` = '1' LIMIT 1 [ RunTime:0.000108s ]
+[ sql ] [ SQL ] SELECT SUM(room_charge) AS tp_sum FROM `edd_room` WHERE  `room_owner` = 1 LIMIT 1 [ RunTime:0.000109s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 3 LIMIT 1 [ RunTime:0.000105s ]
+[ sql ] [ SQL ] SELECT `diamond` FROM `edd_player` WHERE  `player_id` = 3 LIMIT 1 [ RunTime:0.000102s ]
+[ sql ] [ SQL ] SELECT SUM(diamond_nums) AS tp_sum FROM `edd_pay_log` WHERE  `player_id` = '3' LIMIT 1 [ RunTime:0.000116s ]
+[ sql ] [ SQL ] SELECT SUM(room_charge) AS tp_sum FROM `edd_room` WHERE  `room_owner` = 3 LIMIT 1 [ RunTime:0.000105s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 3 LIMIT 1 [ RunTime:0.000115s ]
+[ sql ] [ SQL ] SELECT `diamond` FROM `edd_player` WHERE  `player_id` = 3 LIMIT 1 [ RunTime:0.000115s ]
+[ sql ] [ SQL ] SELECT SUM(diamond_nums) AS tp_sum FROM `edd_pay_log` WHERE  `player_id` = '3' LIMIT 1 [ RunTime:0.000108s ]
+[ sql ] [ SQL ] SELECT SUM(room_charge) AS tp_sum FROM `edd_room` WHERE  `room_owner` = 3 LIMIT 1 [ RunTime:0.000106s ]
+---------------------------------------------------------------
+[ 2017-08-14T17:39:13+08:00 ] 172.16.0.5 139.205.129.94 GET /admin/player/player_home_page.html
+[ info ] card.dcwen.top/admin/player/player_home_page.html [运行时间：0.011996s][吞吐率：83.36req/s] [内存消耗：832.45kb] [文件加载：63]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'player',
+    2 => 'player_home_page',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.81 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://card.dcwen.top/',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=p5dttfimgn46rhshtd88jcck40; UID=rNHci',
+)
+[ info ] [ PARAM ] array (
+  '/admin/player/player_home_page_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Player->player_home_page[ /var/www/card/app/admin/controller/Player.php ]
+[ info ] [ VIEW ] /var/www/card/app/admin/view/player/player_home_page.html [ array (
+  0 => 'playersNums',
+  1 => 'playersList',
+  2 => 'pages',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000295s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_users` [ RunTime:0.000795s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000182s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_menu` [ RunTime:0.000549s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_menu` WHERE  `module` = 'admin'  AND `controller` = 'Player'  AND `method` = 'player_home_page' LIMIT 1 [ RunTime:0.000155s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_player` [ RunTime:0.000486s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_player` LIMIT 1 [ RunTime:0.000106s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_player` ORDER BY create_time desc [ RunTime:0.000119s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = '41'  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000151s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = '0'  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000186s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = '2' LIMIT 1 [ RunTime:0.000155s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = '0'  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000154s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = '3' LIMIT 1 [ RunTime:0.000164s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = '0'  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000149s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = '4' LIMIT 1 [ RunTime:0.000142s ]
+---------------------------------------------------------------
+[ 2017-08-14T17:39:15+08:00 ] 172.16.0.5 139.205.129.94 GET /admin/profile/home_page.html
+[ info ] card.dcwen.top/admin/profile/home_page.html [运行时间：0.016410s][吞吐率：60.94req/s] [内存消耗：851.19kb] [文件加载：63]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'profile',
+    2 => 'home_page',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.81 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://card.dcwen.top/',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=p5dttfimgn46rhshtd88jcck40; UID=LVfyv',
+)
+[ info ] [ PARAM ] array (
+  '/admin/profile/home_page_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Profile->home_page[ /var/www/card/app/admin/controller/Profile.php ]
+[ info ] [ VIEW ] /var/www/card/app/admin/view/profile/home_page.html [ array (
+  0 => 'pages',
+  1 => 'profileList',
+  2 => 'profileNums',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000227s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_users` [ RunTime:0.000719s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000178s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_menu` [ RunTime:0.000511s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_menu` WHERE  `module` = 'admin'  AND `controller` = 'Profile'  AND `method` = 'home_page' LIMIT 1 [ RunTime:0.000152s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_profile` [ RunTime:0.000475s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_profile` LIMIT 1 [ RunTime:0.000104s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_profile` ORDER BY date desc LIMIT 0,10 [ RunTime:0.000108s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = '41'  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000141s ]
+[ sql ] [ SQL ] SELECT SUM(money) AS tp_sum FROM `edd_profile` WHERE  `user_id` = 41 LIMIT 1 [ RunTime:0.000114s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_draw` [ RunTime:0.000457s ]
+[ sql ] [ SQL ] SELECT SUM(draw_money) AS tp_sum FROM `edd_draw` WHERE  `user_id` = 41 LIMIT 1 [ RunTime:0.000122s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_player` [ RunTime:0.000463s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 1 LIMIT 1 [ RunTime:0.000139s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_pay_log` [ RunTime:0.000515s ]
+[ sql ] [ SQL ] SELECT `pay_money` FROM `edd_pay_log` WHERE  `pay_id` = 27 LIMIT 1 [ RunTime:0.000111s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = '41'  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000137s ]
+[ sql ] [ SQL ] SELECT SUM(money) AS tp_sum FROM `edd_profile` WHERE  `user_id` = 41 LIMIT 1 [ RunTime:0.000182s ]
+[ sql ] [ SQL ] SELECT SUM(draw_money) AS tp_sum FROM `edd_draw` WHERE  `user_id` = 41 LIMIT 1 [ RunTime:0.000111s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 1 LIMIT 1 [ RunTime:0.000107s ]
+[ sql ] [ SQL ] SELECT `pay_money` FROM `edd_pay_log` WHERE  `pay_id` = 26 LIMIT 1 [ RunTime:0.000106s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = '41'  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000119s ]
+[ sql ] [ SQL ] SELECT SUM(money) AS tp_sum FROM `edd_profile` WHERE  `user_id` = 41 LIMIT 1 [ RunTime:0.000111s ]
+[ sql ] [ SQL ] SELECT SUM(draw_money) AS tp_sum FROM `edd_draw` WHERE  `user_id` = 41 LIMIT 1 [ RunTime:0.000137s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 1 LIMIT 1 [ RunTime:0.000108s ]
+[ sql ] [ SQL ] SELECT `pay_money` FROM `edd_pay_log` WHERE  `pay_id` = 25 LIMIT 1 [ RunTime:0.000106s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = '41'  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000126s ]
+[ sql ] [ SQL ] SELECT SUM(money) AS tp_sum FROM `edd_profile` WHERE  `user_id` = 41 LIMIT 1 [ RunTime:0.000109s ]
+[ sql ] [ SQL ] SELECT SUM(draw_money) AS tp_sum FROM `edd_draw` WHERE  `user_id` = 41 LIMIT 1 [ RunTime:0.000107s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 1 LIMIT 1 [ RunTime:0.000105s ]
+[ sql ] [ SQL ] SELECT `pay_money` FROM `edd_pay_log` WHERE  `pay_id` = 24 LIMIT 1 [ RunTime:0.000103s ]
+---------------------------------------------------------------
+[ 2017-08-14T17:39:16+08:00 ] 172.16.0.5 139.205.129.94 GET /admin/draws/all_draw_page.html
+[ info ] card.dcwen.top/admin/draws/all_draw_page.html [运行时间：0.007323s][吞吐率：136.56req/s] [内存消耗：804.56kb] [文件加载：63]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'draws',
+    2 => 'all_draw_page',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.81 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://card.dcwen.top/',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=p5dttfimgn46rhshtd88jcck40; UID=qNWW1',
+)
+[ info ] [ PARAM ] array (
+  '/admin/draws/all_draw_page_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Draws->all_draw_page[ /var/www/card/app/admin/controller/Draws.php ]
+[ info ] [ VIEW ] /var/www/card/app/admin/view/draws/all_draw_page.html [ array (
+  0 => 'pages',
+  1 => 'allDrawList',
+  2 => 'allDrawNums',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000218s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_users` [ RunTime:0.000711s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000175s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_menu` [ RunTime:0.000508s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_menu` WHERE  `module` = 'admin'  AND `controller` = 'Draws'  AND `method` = 'all_draw_page' LIMIT 1 [ RunTime:0.000146s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_draw` [ RunTime:0.000452s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_draw` LIMIT 1 [ RunTime:0.000099s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_draw` ORDER BY draw_date desc LIMIT 0,10 [ RunTime:0.000104s ]
+---------------------------------------------------------------
+[ 2017-08-14T17:39:16+08:00 ] 172.16.0.5 139.205.129.94 GET /admin/pay/home_page.html
+[ info ] card.dcwen.top/admin/pay/home_page.html [运行时间：0.021622s][吞吐率：46.25req/s] [内存消耗：868.45kb] [文件加载：63]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'pay',
+    2 => 'home_page',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.81 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://card.dcwen.top/',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=p5dttfimgn46rhshtd88jcck40; UID=Mefjv',
+)
+[ info ] [ PARAM ] array (
+  '/admin/pay/home_page_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Pay->home_page[ /var/www/card/app/admin/controller/Pay.php ]
+[ info ] [ VIEW ] /var/www/card/app/admin/view/pay/home_page.html [ array (
+  0 => 'payNums',
+  1 => 'pages',
+  2 => 'payList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000225s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_users` [ RunTime:0.000823s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000257s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_menu` [ RunTime:0.000552s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_menu` WHERE  `module` = 'admin'  AND `controller` = 'Pay'  AND `method` = 'home_page' LIMIT 1 [ RunTime:0.000166s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_pay_log` [ RunTime:0.000533s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_pay_log` LIMIT 1 [ RunTime:0.000101s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_pay_log` ORDER BY pay_date desc LIMIT 0,10 [ RunTime:0.000120s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_player` [ RunTime:0.000523s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 4 LIMIT 1 [ RunTime:0.000120s ]
+[ sql ] [ SQL ] SELECT `diamond` FROM `edd_player` WHERE  `player_id` = 4 LIMIT 1 [ RunTime:0.000109s ]
+[ sql ] [ SQL ] SELECT SUM(diamond_nums) AS tp_sum FROM `edd_pay_log` WHERE  `player_id` = '4' LIMIT 1 [ RunTime:0.000122s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_room` [ RunTime:0.000493s ]
+[ sql ] [ SQL ] SELECT SUM(room_charge) AS tp_sum FROM `edd_room` WHERE  `room_owner` = 4 LIMIT 1 [ RunTime:0.000128s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 2 LIMIT 1 [ RunTime:0.000120s ]
+[ sql ] [ SQL ] SELECT `diamond` FROM `edd_player` WHERE  `player_id` = 2 LIMIT 1 [ RunTime:0.000107s ]
+[ sql ] [ SQL ] SELECT SUM(diamond_nums) AS tp_sum FROM `edd_pay_log` WHERE  `player_id` = '2' LIMIT 1 [ RunTime:0.000123s ]
+[ sql ] [ SQL ] SELECT SUM(room_charge) AS tp_sum FROM `edd_room` WHERE  `room_owner` = 2 LIMIT 1 [ RunTime:0.000116s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 1 LIMIT 1 [ RunTime:0.000144s ]
+[ sql ] [ SQL ] SELECT `diamond` FROM `edd_player` WHERE  `player_id` = 1 LIMIT 1 [ RunTime:0.000122s ]
+[ sql ] [ SQL ] SELECT SUM(diamond_nums) AS tp_sum FROM `edd_pay_log` WHERE  `player_id` = '1' LIMIT 1 [ RunTime:0.000115s ]
+[ sql ] [ SQL ] SELECT SUM(room_charge) AS tp_sum FROM `edd_room` WHERE  `room_owner` = 1 LIMIT 1 [ RunTime:0.000118s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 1 LIMIT 1 [ RunTime:0.000117s ]
+[ sql ] [ SQL ] SELECT `diamond` FROM `edd_player` WHERE  `player_id` = 1 LIMIT 1 [ RunTime:0.000108s ]
+[ sql ] [ SQL ] SELECT SUM(diamond_nums) AS tp_sum FROM `edd_pay_log` WHERE  `player_id` = '1' LIMIT 1 [ RunTime:0.000119s ]
+[ sql ] [ SQL ] SELECT SUM(room_charge) AS tp_sum FROM `edd_room` WHERE  `room_owner` = 1 LIMIT 1 [ RunTime:0.000111s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 1 LIMIT 1 [ RunTime:0.000113s ]
+[ sql ] [ SQL ] SELECT `diamond` FROM `edd_player` WHERE  `player_id` = 1 LIMIT 1 [ RunTime:0.000114s ]
+[ sql ] [ SQL ] SELECT SUM(diamond_nums) AS tp_sum FROM `edd_pay_log` WHERE  `player_id` = '1' LIMIT 1 [ RunTime:0.000120s ]
+[ sql ] [ SQL ] SELECT SUM(room_charge) AS tp_sum FROM `edd_room` WHERE  `room_owner` = 1 LIMIT 1 [ RunTime:0.000109s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 1 LIMIT 1 [ RunTime:0.000115s ]
+[ sql ] [ SQL ] SELECT `diamond` FROM `edd_player` WHERE  `player_id` = 1 LIMIT 1 [ RunTime:0.000127s ]
+[ sql ] [ SQL ] SELECT SUM(diamond_nums) AS tp_sum FROM `edd_pay_log` WHERE  `player_id` = '1' LIMIT 1 [ RunTime:0.000122s ]
+[ sql ] [ SQL ] SELECT SUM(room_charge) AS tp_sum FROM `edd_room` WHERE  `room_owner` = 1 LIMIT 1 [ RunTime:0.000142s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 3 LIMIT 1 [ RunTime:0.000128s ]
+[ sql ] [ SQL ] SELECT `diamond` FROM `edd_player` WHERE  `player_id` = 3 LIMIT 1 [ RunTime:0.000116s ]
+[ sql ] [ SQL ] SELECT SUM(diamond_nums) AS tp_sum FROM `edd_pay_log` WHERE  `player_id` = '3' LIMIT 1 [ RunTime:0.000276s ]
+[ sql ] [ SQL ] SELECT SUM(room_charge) AS tp_sum FROM `edd_room` WHERE  `room_owner` = 3 LIMIT 1 [ RunTime:0.000112s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 3 LIMIT 1 [ RunTime:0.000114s ]
+[ sql ] [ SQL ] SELECT `diamond` FROM `edd_player` WHERE  `player_id` = 3 LIMIT 1 [ RunTime:0.000160s ]
+[ sql ] [ SQL ] SELECT SUM(diamond_nums) AS tp_sum FROM `edd_pay_log` WHERE  `player_id` = '3' LIMIT 1 [ RunTime:0.000124s ]
+[ sql ] [ SQL ] SELECT SUM(room_charge) AS tp_sum FROM `edd_room` WHERE  `room_owner` = 3 LIMIT 1 [ RunTime:0.000122s ]
+---------------------------------------------------------------
+[ 2017-08-14T17:39:17+08:00 ] 172.16.0.5 139.205.129.94 GET /admin/player/player_home_page.html
+[ info ] card.dcwen.top/admin/player/player_home_page.html [运行时间：0.010953s][吞吐率：91.30req/s] [内存消耗：832.45kb] [文件加载：63]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'player',
+    2 => 'player_home_page',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.81 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://card.dcwen.top/',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=p5dttfimgn46rhshtd88jcck40; UID=F37tq',
+)
+[ info ] [ PARAM ] array (
+  '/admin/player/player_home_page_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Player->player_home_page[ /var/www/card/app/admin/controller/Player.php ]
+[ info ] [ VIEW ] /var/www/card/app/admin/view/player/player_home_page.html [ array (
+  0 => 'playersNums',
+  1 => 'playersList',
+  2 => 'pages',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000213s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_users` [ RunTime:0.000763s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000203s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_menu` [ RunTime:0.000508s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_menu` WHERE  `module` = 'admin'  AND `controller` = 'Player'  AND `method` = 'player_home_page' LIMIT 1 [ RunTime:0.000147s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_player` [ RunTime:0.000499s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_player` LIMIT 1 [ RunTime:0.000098s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_player` ORDER BY create_time desc [ RunTime:0.000119s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = '41'  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000136s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = '0'  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000122s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = '2' LIMIT 1 [ RunTime:0.000136s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = '0'  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000121s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = '3' LIMIT 1 [ RunTime:0.000126s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = '0'  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000123s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = '4' LIMIT 1 [ RunTime:0.000126s ]
+---------------------------------------------------------------
+[ 2017-08-14T17:41:35+08:00 ] 172.16.0.5 139.205.129.94 POST /connect
+[ info ] card.dcwen.top/connect [运行时间：0.096486s][吞吐率：10.36req/s] [内存消耗：709.66kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'controller',
+  'controller' => 'home/Game/connect',
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0.1; SM-G9350 Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/48.0.2564.106 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'card.dcwen.top',
+  'content-length' => '51',
+)
+[ info ] [ PARAM ] array (
+  '/connect' => '',
+  'client_id' => '7f0000010b5400000001',
+  'cid' => 'gLu5-',
+  'type' => 'inner',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Game->connect[ /var/www/card/app/home/controller/Game.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000256s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_options` [ RunTime:0.000903s ]
+[ sql ] [ SQL ] SELECT `is_close` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.000164s ]
+---------------------------------------------------------------
+[ 2017-08-14T17:41:52+08:00 ] 172.16.0.5 139.205.129.94 POST /connect
+[ info ] card.dcwen.top/connect [运行时间：0.014071s][吞吐率：71.07req/s] [内存消耗：709.66kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'controller',
+  'controller' => 'home/Game/connect',
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0.1; SM-G9350 Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/48.0.2564.106 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'card.dcwen.top',
+  'content-length' => '51',
+)
+[ info ] [ PARAM ] array (
+  '/connect' => '',
+  'client_id' => '7f0000010b5700000001',
+  'cid' => 'gLu5-',
+  'type' => 'inner',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Game->connect[ /var/www/card/app/home/controller/Game.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000207s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_options` [ RunTime:0.000842s ]
+[ sql ] [ SQL ] SELECT `is_close` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.000201s ]
+---------------------------------------------------------------
+[ 2017-08-14T17:42:32+08:00 ] 172.16.0.5 139.205.129.94 POST /connect
+[ info ] card.dcwen.top/connect [运行时间：0.018230s][吞吐率：54.85req/s] [内存消耗：709.66kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'controller',
+  'controller' => 'home/Game/connect',
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0.1; SM-G9350 Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/48.0.2564.106 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'card.dcwen.top',
+  'content-length' => '51',
+)
+[ info ] [ PARAM ] array (
+  '/connect' => '',
+  'client_id' => '7f0000010b5600000003',
+  'cid' => 'gLu5-',
+  'type' => 'inner',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Game->connect[ /var/www/card/app/home/controller/Game.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000287s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_options` [ RunTime:0.001082s ]
+[ sql ] [ SQL ] SELECT `is_close` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.000223s ]
+---------------------------------------------------------------
+[ 2017-08-14T17:42:50+08:00 ] 172.16.0.5 139.205.129.94 POST /connect
+[ info ] card.dcwen.top/connect [运行时间：0.099291s][吞吐率：10.07req/s] [内存消耗：709.66kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'controller',
+  'controller' => 'home/Game/connect',
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0.1; SM-G9350 Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/48.0.2564.106 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'card.dcwen.top',
+  'content-length' => '51',
+)
+[ info ] [ PARAM ] array (
+  '/connect' => '',
+  'client_id' => '7f0000010b5500000003',
+  'cid' => 'gLu5-',
+  'type' => 'inner',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Game->connect[ /var/www/card/app/home/controller/Game.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000233s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_options` [ RunTime:0.000677s ]
+[ sql ] [ SQL ] SELECT `is_close` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.000142s ]
+---------------------------------------------------------------
+[ 2017-08-14T17:46:14+08:00 ] 172.16.0.5 139.205.129.94 POST /connect
+[ info ] card.dcwen.top/connect [运行时间：0.060644s][吞吐率：16.49req/s] [内存消耗：709.66kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'controller',
+  'controller' => 'home/Game/connect',
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0.1; SM-G9350 Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/48.0.2564.106 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'card.dcwen.top',
+  'content-length' => '51',
+)
+[ info ] [ PARAM ] array (
+  '/connect' => '',
+  'client_id' => '7f0000010b5400000002',
+  'cid' => 'gLu5-',
+  'type' => 'inner',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Game->connect[ /var/www/card/app/home/controller/Game.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000222s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_options` [ RunTime:0.000784s ]
+[ sql ] [ SQL ] SELECT `is_close` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.000167s ]
+---------------------------------------------------------------
+[ 2017-08-14T17:46:52+08:00 ] 172.16.0.5 139.205.129.94 POST /connect
+[ info ] card.dcwen.top/connect [运行时间：0.061016s][吞吐率：16.39req/s] [内存消耗：709.66kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'controller',
+  'controller' => 'home/Game/connect',
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0.1; SM-G9350 Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/48.0.2564.106 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'card.dcwen.top',
+  'content-length' => '51',
+)
+[ info ] [ PARAM ] array (
+  '/connect' => '',
+  'client_id' => '7f0000010b5600000004',
+  'cid' => 'gLu5-',
+  'type' => 'inner',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Game->connect[ /var/www/card/app/home/controller/Game.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000228s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_options` [ RunTime:0.000745s ]
+[ sql ] [ SQL ] SELECT `is_close` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.000201s ]
+---------------------------------------------------------------
+[ 2017-08-14T17:47:15+08:00 ] 172.16.0.5 139.205.129.94 POST /connect
+[ info ] card.dcwen.top/connect [运行时间：0.015326s][吞吐率：65.25req/s] [内存消耗：709.66kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'controller',
+  'controller' => 'home/Game/connect',
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0.1; SM-G9350 Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/48.0.2564.106 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'card.dcwen.top',
+  'content-length' => '51',
+)
+[ info ] [ PARAM ] array (
+  '/connect' => '',
+  'client_id' => '7f0000010b5500000004',
+  'cid' => 'gLu5-',
+  'type' => 'inner',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Game->connect[ /var/www/card/app/home/controller/Game.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000242s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_options` [ RunTime:0.000760s ]
+[ sql ] [ SQL ] SELECT `is_close` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.000174s ]
+---------------------------------------------------------------
+[ 2017-08-14T17:47:42+08:00 ] 172.16.0.5 139.205.129.94 POST /connect
+[ info ] card.dcwen.top/connect [运行时间：0.090532s][吞吐率：11.05req/s] [内存消耗：709.66kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'controller',
+  'controller' => 'home/Game/connect',
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0.1; SM-G9350 Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/48.0.2564.106 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'card.dcwen.top',
+  'content-length' => '51',
+)
+[ info ] [ PARAM ] array (
+  '/connect' => '',
+  'client_id' => '7f0000010b5600000005',
+  'cid' => 'gLu5-',
+  'type' => 'inner',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Game->connect[ /var/www/card/app/home/controller/Game.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000226s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_options` [ RunTime:0.000693s ]
+[ sql ] [ SQL ] SELECT `is_close` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.000148s ]
+---------------------------------------------------------------
+[ 2017-08-14T17:47:53+08:00 ] 172.16.0.5 139.205.129.94 POST /connect
+[ info ] card.dcwen.top/connect [运行时间：0.013769s][吞吐率：72.63req/s] [内存消耗：709.66kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'controller',
+  'controller' => 'home/Game/connect',
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0.1; SM-G9350 Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/48.0.2564.106 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'card.dcwen.top',
+  'content-length' => '51',
+)
+[ info ] [ PARAM ] array (
+  '/connect' => '',
+  'client_id' => '7f0000010b5400000004',
+  'cid' => 'gLu5-',
+  'type' => 'inner',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Game->connect[ /var/www/card/app/home/controller/Game.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000233s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_options` [ RunTime:0.000768s ]
+[ sql ] [ SQL ] SELECT `is_close` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.000147s ]
+---------------------------------------------------------------
+[ 2017-08-14T17:49:45+08:00 ] 172.16.0.5 139.205.129.94 POST /connect
+[ info ] card.dcwen.top/connect [运行时间：0.094331s][吞吐率：10.60req/s] [内存消耗：709.66kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'controller',
+  'controller' => 'home/Game/connect',
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0.1; SM-G9350 Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/48.0.2564.106 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'card.dcwen.top',
+  'content-length' => '51',
+)
+[ info ] [ PARAM ] array (
+  '/connect' => '',
+  'client_id' => '7f0000010b5500000005',
+  'cid' => 'gLu5-',
+  'type' => 'inner',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Game->connect[ /var/www/card/app/home/controller/Game.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000238s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_options` [ RunTime:0.000657s ]
+[ sql ] [ SQL ] SELECT `is_close` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.000147s ]
+---------------------------------------------------------------
+[ 2017-08-14T17:50:25+08:00 ] 172.16.0.5 139.205.129.94 POST /connect
+[ info ] card.dcwen.top/connect [运行时间：0.017162s][吞吐率：58.27req/s] [内存消耗：709.66kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'controller',
+  'controller' => 'home/Game/connect',
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0.1; SM-G9350 Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/48.0.2564.106 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'card.dcwen.top',
+  'content-length' => '51',
+)
+[ info ] [ PARAM ] array (
+  '/connect' => '',
+  'client_id' => '7f0000010b5700000007',
+  'cid' => 'gLu5-',
+  'type' => 'inner',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Game->connect[ /var/www/card/app/home/controller/Game.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000306s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_options` [ RunTime:0.000896s ]
+[ sql ] [ SQL ] SELECT `is_close` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.000186s ]
+---------------------------------------------------------------
+[ 2017-08-14T17:51:45+08:00 ] 172.16.0.5 139.205.129.94 POST /index.php/home/Game/prepare
+[ info ] card.dcwen.top/index.php/home/Game/prepare [运行时间：0.083474s][吞吐率：11.98req/s] [内存消耗：712.70kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'Game',
+    2 => 'prepare',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top',
+  'connection' => 'keep-alive',
+  'content-length' => '62',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://card.dcwen.top',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.81 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://card.dcwen.top/home/game/ppage',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=p5dttfimgn46rhshtd88jcck40; UID=Pb1Bl',
+)
+[ info ] [ PARAM ] array (
+  'room_id' => '47',
+  'client_id' => '7f0000010b5600000007',
+  'cid' => 'KbEBh',
+  'type' => 'inner',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Game->prepare[ /var/www/card/app/home/controller/Game.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000234s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_options` [ RunTime:0.000724s ]
+[ sql ] [ SQL ] SELECT `is_close` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.000185s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_room` [ RunTime:0.000544s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_room` WHERE  `room_id` = 47 LIMIT 1 [ RunTime:0.000188s ]
+---------------------------------------------------------------
+[ 2017-08-14T17:56:10+08:00 ] 172.16.0.5 139.205.129.94 POST /connect
+[ info ] card.dcwen.top/connect [运行时间：0.892639s][吞吐率：1.12req/s] [内存消耗：709.66kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'controller',
+  'controller' => 'home/Game/connect',
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0.1; SM-G9350 Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/48.0.2564.106 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'card.dcwen.top',
+  'content-length' => '51',
+)
+[ info ] [ PARAM ] array (
+  '/connect' => '',
+  'client_id' => '7f0000010b5600000008',
+  'cid' => 'gLu5-',
+  'type' => 'inner',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Game->connect[ /var/www/card/app/home/controller/Game.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000206s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_options` [ RunTime:0.000689s ]
+[ sql ] [ SQL ] SELECT `is_close` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.000157s ]
+---------------------------------------------------------------
+[ 2017-08-14T17:56:47+08:00 ] 172.16.0.5 139.205.129.94 POST /connect
+[ info ] card.dcwen.top/connect [运行时间：0.083111s][吞吐率：12.03req/s] [内存消耗：709.67kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'controller',
+  'controller' => 'home/Game/connect',
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0.1; SM-G9350 Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/48.0.2564.106 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'card.dcwen.top',
+  'content-length' => '51',
+)
+[ info ] [ PARAM ] array (
+  '/connect' => '',
+  'client_id' => '7f0000010b5700000008',
+  'cid' => 'gLu5-',
+  'type' => 'inner',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Game->connect[ /var/www/card/app/home/controller/Game.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000242s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_options` [ RunTime:0.000679s ]
+[ sql ] [ SQL ] SELECT `is_close` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.000148s ]
+---------------------------------------------------------------
+[ 2017-08-14T17:57:17+08:00 ] 172.16.0.5 139.205.129.94 POST /connect
+[ info ] card.dcwen.top/connect [运行时间：0.016987s][吞吐率：58.87req/s] [内存消耗：709.66kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'controller',
+  'controller' => 'home/Game/connect',
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0.1; SM-G9350 Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/48.0.2564.106 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'card.dcwen.top',
+  'content-length' => '51',
+)
+[ info ] [ PARAM ] array (
+  '/connect' => '',
+  'client_id' => '7f0000010b5400000006',
+  'cid' => 'gLu5-',
+  'type' => 'inner',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Game->connect[ /var/www/card/app/home/controller/Game.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000438s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_options` [ RunTime:0.000905s ]
+[ sql ] [ SQL ] SELECT `is_close` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.000192s ]
+---------------------------------------------------------------
+[ 2017-08-14T17:57:50+08:00 ] 172.16.0.5 139.205.129.94 POST /connect
+[ info ] card.dcwen.top/connect [运行时间：0.061681s][吞吐率：16.21req/s] [内存消耗：709.66kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'controller',
+  'controller' => 'home/Game/connect',
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0.1; SM-G9350 Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/48.0.2564.106 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'card.dcwen.top',
+  'content-length' => '51',
+)
+[ info ] [ PARAM ] array (
+  '/connect' => '',
+  'client_id' => '7f0000010b5600000009',
+  'cid' => 'gLu5-',
+  'type' => 'inner',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Game->connect[ /var/www/card/app/home/controller/Game.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000238s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_options` [ RunTime:0.000702s ]
+[ sql ] [ SQL ] SELECT `is_close` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.000158s ]
+---------------------------------------------------------------
+[ 2017-08-14T17:58:14+08:00 ] 172.16.0.5 139.205.129.94 POST /connect
+[ info ] card.dcwen.top/connect [运行时间：0.021564s][吞吐率：46.37req/s] [内存消耗：709.66kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'controller',
+  'controller' => 'home/Game/connect',
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0.1; SM-G9350 Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/48.0.2564.106 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'card.dcwen.top',
+  'content-length' => '51',
+)
+[ info ] [ PARAM ] array (
+  '/connect' => '',
+  'client_id' => '7f0000010b5500000009',
+  'cid' => 'gLu5-',
+  'type' => 'inner',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Game->connect[ /var/www/card/app/home/controller/Game.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000305s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_options` [ RunTime:0.001063s ]
+[ sql ] [ SQL ] SELECT `is_close` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.000230s ]
+---------------------------------------------------------------
+[ 2017-08-14T17:58:37+08:00 ] 172.16.0.5 139.205.129.94 POST /connect
+[ info ] card.dcwen.top/connect [运行时间：0.099570s][吞吐率：10.04req/s] [内存消耗：709.67kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'controller',
+  'controller' => 'home/Game/connect',
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0.1; SM-G9350 Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/48.0.2564.106 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'card.dcwen.top',
+  'content-length' => '51',
+)
+[ info ] [ PARAM ] array (
+  '/connect' => '',
+  'client_id' => '7f0000010b570000000a',
+  'cid' => 'gLu5-',
+  'type' => 'inner',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Game->connect[ /var/www/card/app/home/controller/Game.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000268s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_options` [ RunTime:0.001012s ]
+[ sql ] [ SQL ] SELECT `is_close` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.000904s ]
+---------------------------------------------------------------
+[ 2017-08-14T17:58:54+08:00 ] 172.16.0.5 139.205.129.94 POST /connect
+[ info ] card.dcwen.top/connect [运行时间：0.018604s][吞吐率：53.75req/s] [内存消耗：709.66kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'controller',
+  'controller' => 'home/Game/connect',
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0.1; SM-G9350 Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/48.0.2564.106 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'card.dcwen.top',
+  'content-length' => '51',
+)
+[ info ] [ PARAM ] array (
+  '/connect' => '',
+  'client_id' => '7f0000010b5400000008',
+  'cid' => 'gLu5-',
+  'type' => 'inner',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Game->connect[ /var/www/card/app/home/controller/Game.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000299s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_options` [ RunTime:0.000961s ]
+[ sql ] [ SQL ] SELECT `is_close` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.000212s ]
+---------------------------------------------------------------
+[ 2017-08-14T18:04:07+08:00 ] 172.16.0.5 139.205.129.94 POST /connect
+[ info ] card.dcwen.top/connect [运行时间：0.082666s][吞吐率：12.10req/s] [内存消耗：709.66kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'controller',
+  'controller' => 'home/Game/connect',
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0.1; SM-G9350 Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/48.0.2564.106 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'card.dcwen.top',
+  'content-length' => '51',
+)
+[ info ] [ PARAM ] array (
+  '/connect' => '',
+  'client_id' => '7f0000010b550000000a',
+  'cid' => 'gLu5-',
+  'type' => 'inner',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Game->connect[ /var/www/card/app/home/controller/Game.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000204s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_options` [ RunTime:0.000675s ]
+[ sql ] [ SQL ] SELECT `is_close` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.000165s ]
+---------------------------------------------------------------
+[ 2017-08-14T18:04:23+08:00 ] 172.16.0.5 139.205.129.94 POST /connect
+[ info ] card.dcwen.top/connect [运行时间：0.015745s][吞吐率：63.51req/s] [内存消耗：709.66kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'controller',
+  'controller' => 'home/Game/connect',
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0.1; SM-G9350 Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/48.0.2564.106 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'card.dcwen.top',
+  'content-length' => '51',
+)
+[ info ] [ PARAM ] array (
+  '/connect' => '',
+  'client_id' => '7f0000010b5400000009',
+  'cid' => 'gLu5-',
+  'type' => 'inner',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Game->connect[ /var/www/card/app/home/controller/Game.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000326s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_options` [ RunTime:0.000702s ]
+[ sql ] [ SQL ] SELECT `is_close` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.000164s ]
+---------------------------------------------------------------
+[ 2017-08-14T18:16:51+08:00 ] 172.16.0.5 139.205.129.94 POST /connect
+[ info ] card.dcwen.top/connect [运行时间：0.088361s][吞吐率：11.32req/s] [内存消耗：709.66kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'controller',
+  'controller' => 'home/Game/connect',
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0.1; SM-G9350 Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/48.0.2564.106 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'card.dcwen.top',
+  'content-length' => '51',
+)
+[ info ] [ PARAM ] array (
+  '/connect' => '',
+  'client_id' => '7f0000010b560000000d',
+  'cid' => 'gLu5-',
+  'type' => 'inner',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Game->connect[ /var/www/card/app/home/controller/Game.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000274s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_options` [ RunTime:0.000714s ]
+[ sql ] [ SQL ] SELECT `is_close` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.000188s ]
+---------------------------------------------------------------
+[ 2017-08-14T18:20:21+08:00 ] 172.16.0.5 139.205.129.94 POST /connect
+[ info ] card.dcwen.top/connect [运行时间：0.065112s][吞吐率：15.36req/s] [内存消耗：709.66kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'controller',
+  'controller' => 'home/Game/connect',
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0.1; SM-G9350 Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/48.0.2564.106 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'card.dcwen.top',
+  'content-length' => '51',
+)
+[ info ] [ PARAM ] array (
+  '/connect' => '',
+  'client_id' => '7f0000010b570000000c',
+  'cid' => 'gLu5-',
+  'type' => 'inner',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Game->connect[ /var/www/card/app/home/controller/Game.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000213s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_options` [ RunTime:0.000690s ]
+[ sql ] [ SQL ] SELECT `is_close` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.000148s ]
+---------------------------------------------------------------
+[ 2017-08-14T18:23:14+08:00 ] 172.16.0.5 139.205.129.94 POST /connect
+[ info ] card.dcwen.top/connect [运行时间：0.061263s][吞吐率：16.32req/s] [内存消耗：709.66kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'controller',
+  'controller' => 'home/Game/connect',
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0.1; SM-G9350 Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/48.0.2564.106 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'card.dcwen.top',
+  'content-length' => '51',
+)
+[ info ] [ PARAM ] array (
+  '/connect' => '',
+  'client_id' => '7f0000010b550000000d',
+  'cid' => 'gLu5-',
+  'type' => 'inner',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Game->connect[ /var/www/card/app/home/controller/Game.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000212s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_options` [ RunTime:0.000745s ]
+[ sql ] [ SQL ] SELECT `is_close` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.000169s ]
+---------------------------------------------------------------
+[ 2017-08-14T18:24:20+08:00 ] 172.16.0.5 139.205.129.94 POST /connect
+[ info ] card.dcwen.top/connect [运行时间：0.101462s][吞吐率：9.86req/s] [内存消耗：709.66kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'controller',
+  'controller' => 'home/Game/connect',
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0.1; SM-G9350 Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/48.0.2564.106 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'card.dcwen.top',
+  'content-length' => '51',
+)
+[ info ] [ PARAM ] array (
+  '/connect' => '',
+  'client_id' => '7f0000010b540000000a',
+  'cid' => 'gLu5-',
+  'type' => 'inner',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Game->connect[ /var/www/card/app/home/controller/Game.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000208s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_options` [ RunTime:0.000742s ]
+[ sql ] [ SQL ] SELECT `is_close` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.000155s ]
+---------------------------------------------------------------
+[ 2017-08-14T18:24:35+08:00 ] 172.16.0.5 139.205.129.94 POST /connect
+[ info ] card.dcwen.top/connect [运行时间：0.086095s][吞吐率：11.62req/s] [内存消耗：709.66kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'controller',
+  'controller' => 'home/Game/connect',
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0.1; SM-G9350 Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/48.0.2564.106 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'card.dcwen.top',
+  'content-length' => '51',
+)
+[ info ] [ PARAM ] array (
+  '/connect' => '',
+  'client_id' => '7f0000010b560000000f',
+  'cid' => 'gLu5-',
+  'type' => 'inner',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Game->connect[ /var/www/card/app/home/controller/Game.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000277s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_options` [ RunTime:0.000795s ]
+[ sql ] [ SQL ] SELECT `is_close` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.000192s ]
+---------------------------------------------------------------
+[ 2017-08-14T18:25:09+08:00 ] 172.16.0.5 139.205.129.94 POST /connect
+[ info ] card.dcwen.top/connect [运行时间：0.015304s][吞吐率：65.34req/s] [内存消耗：709.66kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'controller',
+  'controller' => 'home/Game/connect',
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0.1; SM-G9350 Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/48.0.2564.106 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'card.dcwen.top',
+  'content-length' => '51',
+)
+[ info ] [ PARAM ] array (
+  '/connect' => '',
+  'client_id' => '7f0000010b550000000e',
+  'cid' => 'gLu5-',
+  'type' => 'inner',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Game->connect[ /var/www/card/app/home/controller/Game.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000213s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_options` [ RunTime:0.001023s ]
+[ sql ] [ SQL ] SELECT `is_close` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.000168s ]
+---------------------------------------------------------------
+[ 2017-08-14T18:26:48+08:00 ] 172.16.0.5 139.205.129.94 POST /connect
+[ info ] card.dcwen.top/connect [运行时间：0.083297s][吞吐率：12.01req/s] [内存消耗：709.66kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'controller',
+  'controller' => 'home/Game/connect',
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0.1; SM-G9350 Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/48.0.2564.106 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'card.dcwen.top',
+  'content-length' => '51',
+)
+[ info ] [ PARAM ] array (
+  '/connect' => '',
+  'client_id' => '7f0000010b5600000010',
+  'cid' => 'gLu5-',
+  'type' => 'inner',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Game->connect[ /var/www/card/app/home/controller/Game.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000242s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_options` [ RunTime:0.000760s ]
+[ sql ] [ SQL ] SELECT `is_close` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.000164s ]
+---------------------------------------------------------------
+[ 2017-08-14T18:28:56+08:00 ] 172.16.0.5 139.205.129.94 POST /connect
+[ info ] card.dcwen.top/connect [运行时间：0.060693s][吞吐率：16.48req/s] [内存消耗：709.66kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'controller',
+  'controller' => 'home/Game/connect',
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0.1; SM-G9350 Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/48.0.2564.106 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'card.dcwen.top',
+  'content-length' => '51',
+)
+[ info ] [ PARAM ] array (
+  '/connect' => '',
+  'client_id' => '7f0000010b540000000b',
+  'cid' => 'gLu5-',
+  'type' => 'inner',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Game->connect[ /var/www/card/app/home/controller/Game.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000270s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_options` [ RunTime:0.000667s ]
+[ sql ] [ SQL ] SELECT `is_close` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.000211s ]
+---------------------------------------------------------------
+[ 2017-08-14T18:30:17+08:00 ] 172.16.0.5 139.205.129.94 POST /connect
+[ info ] card.dcwen.top/connect [运行时间：0.077374s][吞吐率：12.92req/s] [内存消耗：709.66kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'controller',
+  'controller' => 'home/Game/connect',
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0.1; SM-G9350 Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/48.0.2564.106 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'card.dcwen.top',
+  'content-length' => '51',
+)
+[ info ] [ PARAM ] array (
+  '/connect' => '',
+  'client_id' => '7f0000010b5700000011',
+  'cid' => 'gLu5-',
+  'type' => 'inner',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Game->connect[ /var/www/card/app/home/controller/Game.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000294s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_options` [ RunTime:0.000705s ]
+[ sql ] [ SQL ] SELECT `is_close` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.000150s ]
+---------------------------------------------------------------
+[ 2017-08-14T18:32:05+08:00 ] 172.16.0.5 139.205.129.94 POST /connect
+[ info ] card.dcwen.top/connect [运行时间：0.095332s][吞吐率：10.49req/s] [内存消耗：709.66kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'controller',
+  'controller' => 'home/Game/connect',
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0.1; SM-G9350 Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/48.0.2564.106 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'card.dcwen.top',
+  'content-length' => '51',
+)
+[ info ] [ PARAM ] array (
+  '/connect' => '',
+  'client_id' => '7f0000010b5600000011',
+  'cid' => 'gLu5-',
+  'type' => 'inner',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Game->connect[ /var/www/card/app/home/controller/Game.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000237s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_options` [ RunTime:0.000677s ]
+[ sql ] [ SQL ] SELECT `is_close` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.000152s ]
+---------------------------------------------------------------
+[ 2017-08-14T18:32:29+08:00 ] 172.16.0.5 139.205.129.94 POST /connect
+[ info ] card.dcwen.top/connect [运行时间：0.015546s][吞吐率：64.32req/s] [内存消耗：709.66kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'controller',
+  'controller' => 'home/Game/connect',
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0.1; SM-G9350 Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/48.0.2564.106 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'card.dcwen.top',
+  'content-length' => '51',
+)
+[ info ] [ PARAM ] array (
+  '/connect' => '',
+  'client_id' => '7f0000010b5700000012',
+  'cid' => 'gLu5-',
+  'type' => 'inner',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Game->connect[ /var/www/card/app/home/controller/Game.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000231s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_options` [ RunTime:0.000664s ]
+[ sql ] [ SQL ] SELECT `is_close` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.000144s ]
+---------------------------------------------------------------
+[ 2017-08-14T18:32:41+08:00 ] 172.16.0.5 139.205.129.94 POST /connect
+[ info ] card.dcwen.top/connect [运行时间：0.059171s][吞吐率：16.90req/s] [内存消耗：709.66kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'controller',
+  'controller' => 'home/Game/connect',
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'charset' => 'UTF-8',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0.1; SM-G9350 Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/48.0.2564.106 Mobile Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'card.dcwen.top',
+  'content-length' => '51',
+)
+[ info ] [ PARAM ] array (
+  '/connect' => '',
+  'client_id' => '7f0000010b5600000012',
+  'cid' => 'gLu5-',
+  'type' => 'inner',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Game->connect[ /var/www/card/app/home/controller/Game.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000271s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_options` [ RunTime:0.000799s ]
+[ sql ] [ SQL ] SELECT `is_close` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.000158s ]

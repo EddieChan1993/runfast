@@ -1,0 +1,71 @@
+{extend name='public:content'/}
+{block name='title'}玩家管理{/block}
+{block name='content'}
+<div class="animated fadeIn col-md-9">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">玩家列表</h3>
+            <ul class="panel-controls">
+                <label class="label label-info">{$playersNums}</label>
+            </ul>
+        </div>
+        <div class="panel-body">
+            <table class="table table-hover">
+                <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>昵称</th>
+                    <th>头像</th>
+                    <th>地区</th>
+                    <th>现有钻石</th>
+                    <th>上级</th>
+                    <th>已创房间</th>
+                    <th>创建时间</th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody>
+                {volist name='playersList' id='v'}
+                <tr class="del_tr">
+                    <td><strong>{:str_pad($v.player_id,8,'0',STR_PAD_LEFT)}</strong></td>
+                    <td>{:userTextEncode($v.name)}</td>
+                    <td width="60px" style="background: url('{$v.avatar}');background-size: contain;background-repeat: no-repeat"></td>
+                    <td width="200px">{$v.addr}</td>
+                    <td><span class="label label-info">{$v.diamond}</span></td>
+                    <td>{:up_agency($v.users_id,$v.player_id)}</td>
+                    <td><strong>{$v.player_id|all_room}</strong></td>
+                    <td>{$v.create_time|tranTime}</td>
+                    <td width="150px">
+                        <a title="查看【{:userTextEncode($v.name)}】所建房间" data-url="{:url('admin/player/room_home_page',['room_owner'=>$v.player_id])}" onclick="show_room(this)"  class="btn btn-default btn-rounded btn-sm"><span class="fa fa-search"></span></a>
+                        <button data-url="{:url('admin/player/del_player_think',['player_id'=>$v.player_id])}" onClick="delete_row(this);" class="btn btn-danger btn-rounded btn-sm" ><span class="fa fa-trash-o"></span></button>
+                    </td>
+                </tr>
+                {/volist}
+                </tbody>
+            </table>
+        </div>
+        <div class="panel-footer">
+           {$pages}
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    var url,title;
+    function show_room(dom) {
+        url = $(dom).attr('data-url');
+        title = $(dom).attr('title');
+        layer.open({
+            title:title,
+            type: 2,
+            offset: '40px',
+            closeBtn: 0,
+            area:'1200px',
+            shadeClose: true,
+            content: url,
+            success: function(layero, index) {
+                layer.iframeAuto(index);
+            }
+        });
+    }
+</script>
+{/block}

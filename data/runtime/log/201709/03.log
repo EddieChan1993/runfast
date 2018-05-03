@@ -1,0 +1,2034 @@
+---------------------------------------------------------------
+[ 2017-09-03T10:05:13+08:00 ] 172.16.0.5 110.188.254.41 POST /player_info
+[ info ] card.dcwen.top/player_info [运行时间：0.085151s][吞吐率：11.74req/s] [内存消耗：727.98kb] [文件加载：55]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'controller',
+  'controller' => 'home/Player/get_player_info',
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top',
+  'user-agent' => '00.00.16 (iPhone; iOS 10.3.2; zh_CN)',
+  'content-type' => 'application/x-www-form-urlencoded; charset=utf-8',
+  'content-length' => '9',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  '/player_info' => '',
+  'cid' => 'v04m6',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Player->get_player_info[ /var/www/card/app/home/controller/Player.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001443s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_options` [ RunTime:0.000752s ]
+[ sql ] [ SQL ] SELECT `is_close` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.000176s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_player` [ RunTime:0.000647s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_player` WHERE  `player_id` = 9 LIMIT 1 [ RunTime:0.000145s ]
+---------------------------------------------------------------
+[ 2017-09-03T10:05:14+08:00 ] 172.16.0.5 110.188.254.41 POST /player_info
+[ info ] card.dcwen.top/player_info [运行时间：0.026890s][吞吐率：37.19req/s] [内存消耗：709.84kb] [文件加载：55]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'controller',
+  'controller' => 'home/Player/get_player_info',
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top',
+  'user-agent' => '00.00.16 (iPhone; iOS 10.3.2; zh_CN)',
+  'content-type' => 'application/x-www-form-urlencoded; charset=utf-8',
+  'content-length' => '9',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  '/player_info' => '',
+  'cid' => '6AkYD',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Player->get_player_info[ /var/www/card/app/home/controller/Player.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005540s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_options` [ RunTime:0.000780s ]
+[ sql ] [ SQL ] SELECT `is_close` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.000159s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_player` [ RunTime:0.000502s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_player` WHERE  `player_id` = 9 LIMIT 1 [ RunTime:0.000160s ]
+---------------------------------------------------------------
+[ 2017-09-03T10:05:14+08:00 ] 172.16.0.5 110.188.254.41 POST /news_show
+[ info ] card.dcwen.top/news_show [运行时间：0.024154s][吞吐率：41.40req/s] [内存消耗：544.78kb] [文件加载：48]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'controller',
+  'controller' => 'home/Home/home_page',
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top',
+  'content-length' => '0',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip',
+  'user-agent' => '00.00.16 (iPhone; iOS 10.3.2; zh_CN)',
+)
+[ info ] [ PARAM ] array (
+  '/news_show' => '',
+)
+[ info ] [ RUN ] app\home\controller\Home->home_page[ /var/www/card/app/home/controller/Home.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-03T10:05:14+08:00 ] 172.16.0.5 110.188.254.41 POST /room_page
+[ info ] card.dcwen.top/room_page [运行时间：0.035585s][吞吐率：28.10req/s] [内存消耗：739.91kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'controller',
+  'controller' => 'home/Room/room_page',
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top',
+  'user-agent' => '00.00.16 (iPhone; iOS 10.3.2; zh_CN)',
+  'content-type' => 'application/x-www-form-urlencoded; charset=utf-8',
+  'content-length' => '9',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  '/room_page' => '',
+  'cid' => '6AkYD',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Room->room_page[ /var/www/card/app/home/controller/Room.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004799s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_options` [ RunTime:0.000552s ]
+[ sql ] [ SQL ] SELECT `is_close` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.000337s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_room` [ RunTime:0.001315s ]
+[ sql ] [ SQL ] SELECT `room_id`,`round_times`,`room_code` FROM `edd_room` WHERE  `room_owner` = 9  AND `del_time` = '0' [ RunTime:0.000154s ]
+---------------------------------------------------------------
+[ 2017-09-03T10:05:14+08:00 ] 172.16.0.5 110.188.254.41 POST /connect
+[ info ] card.dcwen.top/connect [运行时间：0.014033s][吞吐率：71.26req/s] [内存消耗：731.04kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'controller',
+  'controller' => 'home/Game/connect',
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top',
+  'user-agent' => '00.00.16 (iPhone; iOS 10.3.2; zh_CN)',
+  'content-type' => 'application/x-www-form-urlencoded; charset=utf-8',
+  'content-length' => '52',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  '/connect' => '',
+  'client_id' => '7f0000010fa200000039',
+  'cid' => 'F57tq',
+  'type' => 'outter',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Game->connect[ /var/www/card/app/home/controller/Game.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001417s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_options` [ RunTime:0.000718s ]
+[ sql ] [ SQL ] SELECT `is_close` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.000168s ]
+---------------------------------------------------------------
+[ 2017-09-03T10:05:21+08:00 ] 172.16.0.5 110.188.254.41 POST /goods_show
+[ info ] card.dcwen.top/goods_show [运行时间：0.011589s][吞吐率：86.29req/s] [内存消耗：716.92kb] [文件加载：53]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'controller',
+  'controller' => 'home/Goods/home_page',
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top',
+  'user-agent' => '00.00.16 (iPhone; iOS 10.3.2; zh_CN)',
+  'content-type' => 'application/x-www-form-urlencoded; charset=utf-8',
+  'content-length' => '9',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  '/goods_show' => '',
+  'cid' => 'F57tq',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Goods->home_page[ /var/www/card/app/home/controller/Goods.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000173s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_options` [ RunTime:0.000702s ]
+[ sql ] [ SQL ] SELECT `is_close` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.000167s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_player` [ RunTime:0.000553s ]
+[ sql ] [ SQL ] SELECT `users_id` FROM `edd_player` WHERE  `player_id` = 9 LIMIT 1 [ RunTime:0.000204s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_users` [ RunTime:0.000702s ]
+[ sql ] [ SQL ] SELECT `user_rank` FROM `edd_users` WHERE  `player_id` = 9 LIMIT 1 [ RunTime:0.000187s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_rank` [ RunTime:0.001039s ]
+[ sql ] [ SQL ] SELECT `self_account` FROM `edd_rank` WHERE  `rank_id` = 2 LIMIT 1 [ RunTime:0.000226s ]
+---------------------------------------------------------------
+[ 2017-09-03T10:05:21+08:00 ] 172.16.0.5 110.188.254.41 POST /recharge_list
+[ info ] card.dcwen.top/recharge_list [运行时间：0.017774s][吞吐率：56.26req/s] [内存消耗：691.77kb] [文件加载：53]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'controller',
+  'controller' => 'home/Goods/recharge_list',
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top',
+  'user-agent' => '00.00.16 (iPhone; iOS 10.3.2; zh_CN)',
+  'content-type' => 'application/x-www-form-urlencoded; charset=utf-8',
+  'content-length' => '16',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  '/recharge_list' => '',
+  'cid' => 'F57tq',
+  'page' => '1',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Goods->recharge_list[ /var/www/card/app/home/controller/Goods.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004369s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_options` [ RunTime:0.000587s ]
+[ sql ] [ SQL ] SELECT `is_close` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.000721s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_pay_log` [ RunTime:0.001066s ]
+[ sql ] [ SQL ] SELECT `order_sn`,`pay_money`,`diamond_nums`,`pay_date`,`player_id` FROM `edd_pay_log` WHERE  `player_id` = '9' ORDER BY pay_date desc LIMIT 0,6 [ RunTime:0.000287s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_player` [ RunTime:0.000584s ]
+[ sql ] [ SQL ] SELECT `users_id` FROM `edd_player` WHERE  `player_id` = 9 LIMIT 1 [ RunTime:0.000128s ]
+[ sql ] [ SQL ] SELECT `users_id` FROM `edd_player` WHERE  `player_id` = 9 LIMIT 1 [ RunTime:0.000118s ]
+[ sql ] [ SQL ] SELECT `users_id` FROM `edd_player` WHERE  `player_id` = 9 LIMIT 1 [ RunTime:0.000123s ]
+[ sql ] [ SQL ] SELECT `users_id` FROM `edd_player` WHERE  `player_id` = 9 LIMIT 1 [ RunTime:0.000116s ]
+[ sql ] [ SQL ] SELECT `users_id` FROM `edd_player` WHERE  `player_id` = 9 LIMIT 1 [ RunTime:0.000114s ]
+[ sql ] [ SQL ] SELECT `users_id` FROM `edd_player` WHERE  `player_id` = 9 LIMIT 1 [ RunTime:0.000114s ]
+---------------------------------------------------------------
+[ 2017-09-03T20:48:45+08:00 ] 172.16.0.5 139.205.177.85 GET /home/game/page
+[ info ] card.dcwen.top/home/game/page [运行时间：0.006624s][吞吐率：150.97req/s] [内存消耗：726.81kb] [文件加载：58]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'game',
+    2 => 'page',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  '/home/game/page' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Game->page[ /var/www/card/app/home/controller/Game.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000231s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_options` [ RunTime:0.000717s ]
+[ sql ] [ SQL ] SELECT `is_close` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.000175s ]
+---------------------------------------------------------------
+[ 2017-09-03T20:48:45+08:00 ] 172.16.0.5 139.205.177.85 GET /favicon.ico
+[ info ] card.dcwen.top/favicon.ico [运行时间：0.006192s][吞吐率：161.50req/s] [内存消耗：441.53kb] [文件加载：41]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon.ico',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://card.dcwen.top/home/game/page',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  '/favicon_ico' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-03T20:48:51+08:00 ] 172.16.0.5 139.205.177.85 GET /
+[ info ] card.dcwen.top/ [运行时间：0.010654s][吞吐率：93.86req/s] [内存消耗：545.90kb] [文件加载：53]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-03T20:48:51+08:00 ] 172.16.0.5 139.205.177.85 GET /admin/login/show_login.html
+[ info ] card.dcwen.top/admin/login/show_login.html [运行时间：0.010702s][吞吐率：93.44req/s] [内存消耗：1,732.07kb] [文件加载：59]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'show_login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=66240u4tm9v9s5hjvlvl1gn965',
+)
+[ info ] [ PARAM ] array (
+  '/admin/login/show_login_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Login->show_login[ /var/www/card/app/admin/controller/Login.php ]
+[ info ] [ VIEW ] /var/www/card/app/admin/view/login/login_page.html [ array (
+) ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000224s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_options` [ RunTime:0.000767s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.000173s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.000134s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.000120s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_widgets` [ RunTime:0.000564s ]
+[ sql ] [ SQL ] SELECT `wid_params` FROM `edd_widgets` WHERE  `wid_key` = 'lsm_verify' LIMIT 1 [ RunTime:0.000145s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.000145s ]
+---------------------------------------------------------------
+[ 2017-09-03T20:49:21+08:00 ] 172.16.0.5 139.205.177.85 GET /
+[ info ] card.dcwen.top/ [运行时间：0.002939s][吞吐率：340.25req/s] [内存消耗：539.96kb] [文件加载：53]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=66240u4tm9v9s5hjvlvl1gn965',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-03T20:49:21+08:00 ] 172.16.0.5 139.205.177.85 GET /admin/login/show_login.html
+[ info ] card.dcwen.top/admin/login/show_login.html [运行时间：0.010942s][吞吐率：91.39req/s] [内存消耗：1,728.09kb] [文件加载：59]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'show_login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=66240u4tm9v9s5hjvlvl1gn965',
+)
+[ info ] [ PARAM ] array (
+  '/admin/login/show_login_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Login->show_login[ /var/www/card/app/admin/controller/Login.php ]
+[ info ] [ VIEW ] /var/www/card/app/admin/view/login/login_page.html [ array (
+) ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002130s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_options` [ RunTime:0.000868s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.000193s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.000134s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.000131s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_widgets` [ RunTime:0.000647s ]
+[ sql ] [ SQL ] SELECT `wid_params` FROM `edd_widgets` WHERE  `wid_key` = 'lsm_verify' LIMIT 1 [ RunTime:0.000142s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.000146s ]
+---------------------------------------------------------------
+[ 2017-09-03T20:49:27+08:00 ] 172.16.0.5 139.205.177.85 GET /admin/login/favicon.ico
+[ info ] card.dcwen.top/admin/login/favicon.ico [运行时间：0.004229s][吞吐率：236.46req/s] [内存消耗：513.04kb] [文件加载：52]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'favicon.ico',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://card.dcwen.top/admin/login/show_login.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=66240u4tm9v9s5hjvlvl1gn965',
+)
+[ info ] [ PARAM ] array (
+  '/admin/login/favicon_ico' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-09-03T20:49:33+08:00 ] 172.16.0.5 139.205.177.85 POST /admin/login/login_in.html
+[ info ] card.dcwen.top/admin/login/login_in.html [运行时间：0.073663s][吞吐率：13.58req/s] [内存消耗：762.42kb] [文件加载：62]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'login_in',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top',
+  'connection' => 'keep-alive',
+  'content-length' => '349',
+  'accept' => '*/*',
+  'origin' => 'http://card.dcwen.top',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://card.dcwen.top/admin/login/show_login.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=66240u4tm9v9s5hjvlvl1gn965',
+)
+[ info ] [ PARAM ] array (
+  '/admin/login/login_in_html' => '',
+  'username' => 'admin',
+  'password' => 'admin123',
+  'luotest_response' => 'i-hkGqWXJ1rAcwjpkQOdfuQVwR9-7drHoKnGcu3olBPDTaz-IPJw7O_ChtmdSd5xIlkc1n9drDfcUGpiqKv8TvBWziSFWOAnwK0yFzER8V046IzGwrI2Q2s0OwY3cRL-8ZaQtSgMYENXGZ5C0zQ8UO_zudTRbZcVkScyWJUFLbKKOddlNgku8K_tZuPf66uGffpyXjTF0lt76eDRJgFaeYKzaAytItCbzLHFv1aaqlL6VoHpLVo2AZm2nBN9VZjQKlM8MsheOFvyhw3O8DFrPaCMdKqtEXBYaHOG18cI5V4',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Login->login_in[ /var/www/card/app/admin/controller/Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000281s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_widgets` [ RunTime:0.000732s ]
+[ sql ] [ SQL ] SELECT `wid_params` FROM `edd_widgets` WHERE  `wid_key` = 'lsm_verify' LIMIT 1 [ RunTime:0.000170s ]
+[ sql ] [ SQL ] SELECT `wid_params` FROM `edd_widgets` WHERE  `wid_key` = 'lsm_verify' LIMIT 1 [ RunTime:0.000119s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_users` [ RunTime:0.000803s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `user_login` = 'admin' LIMIT 1 [ RunTime:0.000323s ]
+[ sql ] [ SQL ] UPDATE `edd_users`  SET `last_login_time`='1504442973',`last_login_ip`='139.205.177.85',`user_hits`=128  WHERE  `id` = 1 [ RunTime:0.000485s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000254s ]
+---------------------------------------------------------------
+[ 2017-09-03T20:49:34+08:00 ] 172.16.0.5 139.205.177.85 GET /admin/index/index.html
+[ info ] card.dcwen.top/admin/index/index.html [运行时间：0.041528s][吞吐率：24.08req/s] [内存消耗：968.20kb] [文件加载：63]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://card.dcwen.top/admin/login/show_login.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=66240u4tm9v9s5hjvlvl1gn965; UID=4oizz',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/index_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->index[ /var/www/card/app/admin/controller/Index.php ]
+[ info ] [ VIEW ] /var/www/card/app/admin/view/public/base.html [ array (
+  0 => 'self',
+  1 => 'role_name',
+  2 => 'menuAuth',
+  3 => 'url',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000241s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_users` [ RunTime:0.000756s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000189s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_menu` [ RunTime:0.000611s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_menu` WHERE  `module` = 'admin'  AND `controller` = 'Index'  AND `method` = 'index' LIMIT 1 [ RunTime:0.000177s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000161s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000282s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000217s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_role_user` [ RunTime:0.000498s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_role_user` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000126s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_role` [ RunTime:0.000524s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000142s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_menu` WHERE  `id` IN (216,305,218,310,309,308,217,307,306,249,346,331,304,322,252,330,329,321,320,319,250,312,311,211,318,317,316,265,267,325,324,323,266,315,314,313,347,336,337,344,345,328,327,326,334)  AND `status` = 1  AND `type` = 0 ORDER BY listorder desc [ RunTime:0.000335s ]
+[ sql ] [ SQL ] SELECT `module`,`controller`,`method` FROM `edd_menu` WHERE  `id` = 345 LIMIT 1 [ RunTime:0.000138s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_options` [ RunTime:0.000582s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.000131s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.000123s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000143s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000132s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000133s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000129s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000134s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000140s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000125s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000121s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000125s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000122s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000144s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000123s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000142s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000155s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000144s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000122s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000131s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000123s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000121s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000157s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000125s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000154s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000121s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000125s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000122s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000123s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000120s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000137s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000121s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000120s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000123s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000121s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000121s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000132s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000133s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000133s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000133s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000198s ]
+---------------------------------------------------------------
+[ 2017-09-03T20:49:34+08:00 ] 172.16.0.5 139.205.177.85 GET /admin/alldata/show_page.html
+[ info ] card.dcwen.top/admin/alldata/show_page.html [运行时间：0.017156s][吞吐率：58.29req/s] [内存消耗：877.36kb] [文件加载：63]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'alldata',
+    2 => 'show_page',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://card.dcwen.top/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=66240u4tm9v9s5hjvlvl1gn965; UID=DKavc',
+)
+[ info ] [ PARAM ] array (
+  '/admin/alldata/show_page_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Alldata->show_page[ /var/www/card/app/admin/controller/Alldata.php ]
+[ info ] [ VIEW ] /var/www/card/app/admin/view/alldata/all_data_page.html [ array (
+  0 => 'all_player',
+  1 => 'today_room_nums',
+  2 => 'now_week_pay',
+  3 => 'now_week_draw',
+  4 => 'now_week_profile',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001342s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_users` [ RunTime:0.000723s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000214s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_menu` [ RunTime:0.000520s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_menu` WHERE  `module` = 'admin'  AND `controller` = 'Alldata'  AND `method` = 'show_page' LIMIT 1 [ RunTime:0.000171s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_player` [ RunTime:0.000479s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_player` LIMIT 1 [ RunTime:0.000114s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_room` [ RunTime:0.000476s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  ( `room_date` > '1504368000' and `room_date` < '1504454400' ) LIMIT 1 [ RunTime:0.000225s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_pay_log` [ RunTime:0.000484s ]
+[ sql ] [ SQL ] SELECT SUM(pay_money) AS tp_sum FROM `edd_pay_log` WHERE  ( `pay_date` > '1504454400' and `pay_date` < '1505059199' ) LIMIT 1 [ RunTime:0.000242s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_draw` [ RunTime:0.000467s ]
+[ sql ] [ SQL ] SELECT SUM(draw_money) AS tp_sum FROM `edd_draw` WHERE  ( `draw_date` > '1504454400' and `draw_date` < '1505059199' ) LIMIT 1 [ RunTime:0.000450s ]
+[ sql ] [ SQL ] SELECT SUM(pay_money) AS tp_sum FROM `edd_pay_log` LIMIT 1 [ RunTime:0.000094s ]
+[ sql ] [ SQL ] SELECT SUM(draw_money) AS tp_sum FROM `edd_draw` LIMIT 1 [ RunTime:0.000103s ]
+[ sql ] [ SQL ] SELECT SUM(pay_money) AS tp_sum FROM `edd_pay_log` LIMIT 1 [ RunTime:0.000086s ]
+[ sql ] [ SQL ] SELECT SUM(draw_money) AS tp_sum FROM `edd_draw` LIMIT 1 [ RunTime:0.000098s ]
+---------------------------------------------------------------
+[ 2017-09-03T20:49:35+08:00 ] 172.16.0.5 139.205.177.85 GET /admin/index/get_php_ext.html
+[ info ] card.dcwen.top/admin/index/get_php_ext.html [运行时间：0.006266s][吞吐率：159.59req/s] [内存消耗：813.79kb] [文件加载：61]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'get_php_ext',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36',
+  'referer' => 'http://card.dcwen.top/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=66240u4tm9v9s5hjvlvl1gn965; UID=NbbCi',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/get_php_ext_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->get_php_ext[ /var/www/card/app/admin/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000211s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_users` [ RunTime:0.000748s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000174s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_menu` [ RunTime:0.000566s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_menu` WHERE  `module` = 'admin'  AND `controller` = 'Index'  AND `method` = 'get_php_ext' LIMIT 1 [ RunTime:0.000149s ]
+---------------------------------------------------------------
+[ 2017-09-03T20:49:36+08:00 ] 172.16.0.5 139.205.177.85 POST /admin/alldata/data_chat.html
+[ info ] card.dcwen.top/admin/alldata/data_chat.html [运行时间：0.012754s][吞吐率：78.41req/s] [内存消耗：825.42kb] [文件加载：60]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'alldata',
+    2 => 'data_chat',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://card.dcwen.top',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36',
+  'referer' => 'http://card.dcwen.top/admin/alldata/show_page.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=66240u4tm9v9s5hjvlvl1gn965; UID=nxVVd',
+)
+[ info ] [ PARAM ] array (
+  '/admin/alldata/data_chat_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Alldata->data_chat[ /var/www/card/app/admin/controller/Alldata.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001376s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_users` [ RunTime:0.000722s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000187s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_menu` [ RunTime:0.000524s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_menu` WHERE  `module` = 'admin'  AND `controller` = 'Alldata'  AND `method` = 'data_chat' LIMIT 1 [ RunTime:0.000162s ]
+[ sql ] [ SQL ] SELECT FROM_UNIXTIME(room_date,'%Y-%u') week,COUNT(room_id) room_nums  FROM edd_room GROUP BY week [ RunTime:0.000134s ]
+[ sql ] [ SQL ] SELECT FROM_UNIXTIME(pay_date,'%Y-%m') month,sum(pay_money) pay_money  FROM edd_pay_log GROUP BY month [ RunTime:0.000101s ]
+[ sql ] [ SQL ] SELECT FROM_UNIXTIME(draw_date,'%Y-%m') month,sum(draw_money) draw_money  FROM edd_draw GROUP BY month [ RunTime:0.000104s ]
+---------------------------------------------------------------
+[ 2017-09-03T20:49:36+08:00 ] 172.16.0.5 139.205.177.85 POST /admin/alldata/connect.html
+[ info ] card.dcwen.top/admin/alldata/connect.html [运行时间：0.015063s][吞吐率：66.39req/s] [内存消耗：833.97kb] [文件加载：60]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'alldata',
+    2 => 'connect',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top',
+  'connection' => 'keep-alive',
+  'content-length' => '41',
+  'accept' => '*/*',
+  'origin' => 'http://card.dcwen.top',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://card.dcwen.top/admin/alldata/show_page.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=66240u4tm9v9s5hjvlvl1gn965; UID=TdmCs',
+)
+[ info ] [ PARAM ] array (
+  '/admin/alldata/connect_html' => '',
+  'name' => 'admin',
+  'client_id' => '7f0000010fa20000003a',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Alldata->connect[ /var/www/card/app/admin/controller/Alldata.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001425s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_users` [ RunTime:0.000739s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000203s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_menu` [ RunTime:0.000533s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_menu` WHERE  `module` = 'admin'  AND `controller` = 'Alldata'  AND `method` = 'connect' LIMIT 1 [ RunTime:0.000192s ]
+---------------------------------------------------------------
+[ 2017-09-03T20:49:43+08:00 ] 172.16.0.5 139.205.177.85 GET /admin/alldata/show_page.html
+[ info ] card.dcwen.top/admin/alldata/show_page.html [运行时间：0.011771s][吞吐率：84.95req/s] [内存消耗：873.60kb] [文件加载：63]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'alldata',
+    2 => 'show_page',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://card.dcwen.top/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=66240u4tm9v9s5hjvlvl1gn965; UID=hMI46',
+)
+[ info ] [ PARAM ] array (
+  '/admin/alldata/show_page_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Alldata->show_page[ /var/www/card/app/admin/controller/Alldata.php ]
+[ info ] [ VIEW ] /var/www/card/app/admin/view/alldata/all_data_page.html [ array (
+  0 => 'all_player',
+  1 => 'today_room_nums',
+  2 => 'now_week_pay',
+  3 => 'now_week_draw',
+  4 => 'now_week_profile',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000204s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_users` [ RunTime:0.000823s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000185s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_menu` [ RunTime:0.000507s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_menu` WHERE  `module` = 'admin'  AND `controller` = 'Alldata'  AND `method` = 'show_page' LIMIT 1 [ RunTime:0.000155s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_player` [ RunTime:0.000487s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_player` LIMIT 1 [ RunTime:0.000098s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_room` [ RunTime:0.000477s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  ( `room_date` > '1504368000' and `room_date` < '1504454400' ) LIMIT 1 [ RunTime:0.000127s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_pay_log` [ RunTime:0.000461s ]
+[ sql ] [ SQL ] SELECT SUM(pay_money) AS tp_sum FROM `edd_pay_log` WHERE  ( `pay_date` > '1504454400' and `pay_date` < '1505059199' ) LIMIT 1 [ RunTime:0.000129s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_draw` [ RunTime:0.000461s ]
+[ sql ] [ SQL ] SELECT SUM(draw_money) AS tp_sum FROM `edd_draw` WHERE  ( `draw_date` > '1504454400' and `draw_date` < '1505059199' ) LIMIT 1 [ RunTime:0.000124s ]
+[ sql ] [ SQL ] SELECT SUM(pay_money) AS tp_sum FROM `edd_pay_log` LIMIT 1 [ RunTime:0.000098s ]
+[ sql ] [ SQL ] SELECT SUM(draw_money) AS tp_sum FROM `edd_draw` LIMIT 1 [ RunTime:0.000089s ]
+[ sql ] [ SQL ] SELECT SUM(pay_money) AS tp_sum FROM `edd_pay_log` LIMIT 1 [ RunTime:0.000120s ]
+[ sql ] [ SQL ] SELECT SUM(draw_money) AS tp_sum FROM `edd_draw` LIMIT 1 [ RunTime:0.000088s ]
+---------------------------------------------------------------
+[ 2017-09-03T20:49:43+08:00 ] 172.16.0.5 139.205.177.85 POST /admin/alldata/data_chat.html
+[ info ] card.dcwen.top/admin/alldata/data_chat.html [运行时间：0.008547s][吞吐率：117.00req/s] [内存消耗：825.44kb] [文件加载：60]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'alldata',
+    2 => 'data_chat',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://card.dcwen.top',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36',
+  'referer' => 'http://card.dcwen.top/admin/alldata/show_page.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=66240u4tm9v9s5hjvlvl1gn965; UID=frI35',
+)
+[ info ] [ PARAM ] array (
+  '/admin/alldata/data_chat_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Alldata->data_chat[ /var/www/card/app/admin/controller/Alldata.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000267s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_users` [ RunTime:0.001016s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000243s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_menu` [ RunTime:0.000762s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_menu` WHERE  `module` = 'admin'  AND `controller` = 'Alldata'  AND `method` = 'data_chat' LIMIT 1 [ RunTime:0.000212s ]
+[ sql ] [ SQL ] SELECT FROM_UNIXTIME(room_date,'%Y-%u') week,COUNT(room_id) room_nums  FROM edd_room GROUP BY week [ RunTime:0.000182s ]
+[ sql ] [ SQL ] SELECT FROM_UNIXTIME(pay_date,'%Y-%m') month,sum(pay_money) pay_money  FROM edd_pay_log GROUP BY month [ RunTime:0.000146s ]
+[ sql ] [ SQL ] SELECT FROM_UNIXTIME(draw_date,'%Y-%m') month,sum(draw_money) draw_money  FROM edd_draw GROUP BY month [ RunTime:0.000144s ]
+---------------------------------------------------------------
+[ 2017-09-03T20:49:43+08:00 ] 172.16.0.5 139.205.177.85 POST /admin/alldata/connect.html
+[ info ] card.dcwen.top/admin/alldata/connect.html [运行时间：0.008666s][吞吐率：115.39req/s] [内存消耗：833.97kb] [文件加载：60]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'alldata',
+    2 => 'connect',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top',
+  'connection' => 'keep-alive',
+  'content-length' => '41',
+  'accept' => '*/*',
+  'origin' => 'http://card.dcwen.top',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://card.dcwen.top/admin/alldata/show_page.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=66240u4tm9v9s5hjvlvl1gn965; UID=W8aOr',
+)
+[ info ] [ PARAM ] array (
+  '/admin/alldata/connect_html' => '',
+  'name' => 'admin',
+  'client_id' => '7f0000010fa100000033',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Alldata->connect[ /var/www/card/app/admin/controller/Alldata.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000198s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_users` [ RunTime:0.000749s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000176s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_menu` [ RunTime:0.000511s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_menu` WHERE  `module` = 'admin'  AND `controller` = 'Alldata'  AND `method` = 'connect' LIMIT 1 [ RunTime:0.000165s ]
+---------------------------------------------------------------
+[ 2017-09-03T20:49:44+08:00 ] 172.16.0.5 139.205.177.85 GET /admin/player/player_home_page.html
+[ info ] card.dcwen.top/admin/player/player_home_page.html [运行时间：0.031197s][吞吐率：32.05req/s] [内存消耗：927.57kb] [文件加载：63]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'player',
+    2 => 'player_home_page',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://card.dcwen.top/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=66240u4tm9v9s5hjvlvl1gn965; UID=QhgmF',
+)
+[ info ] [ PARAM ] array (
+  '/admin/player/player_home_page_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Player->player_home_page[ /var/www/card/app/admin/controller/Player.php ]
+[ info ] [ VIEW ] /var/www/card/app/admin/view/player/player_home_page.html [ array (
+  0 => 'playersNums',
+  1 => 'playersList',
+  2 => 'pages',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000219s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_users` [ RunTime:0.000785s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000205s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_menu` [ RunTime:0.000612s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_menu` WHERE  `module` = 'admin'  AND `controller` = 'Player'  AND `method` = 'player_home_page' LIMIT 1 [ RunTime:0.000170s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_player` [ RunTime:0.000575s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_player` LIMIT 1 [ RunTime:0.000122s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_player` ORDER BY player_id desc [ RunTime:0.000261s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = null  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000252s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = 14 LIMIT 1 [ RunTime:0.000231s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_room` [ RunTime:0.000585s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  `room_owner` = 14 LIMIT 1 [ RunTime:0.000191s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = '0'  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000234s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = 13 LIMIT 1 [ RunTime:0.000264s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  `room_owner` = 13 LIMIT 1 [ RunTime:0.000197s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = '0'  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000137s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = 12 LIMIT 1 [ RunTime:0.000244s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  `room_owner` = 12 LIMIT 1 [ RunTime:0.000200s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = null  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000142s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = 11 LIMIT 1 [ RunTime:0.000219s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  `room_owner` = 11 LIMIT 1 [ RunTime:0.000187s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = null  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000148s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = 10 LIMIT 1 [ RunTime:0.000207s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  `room_owner` = 10 LIMIT 1 [ RunTime:0.000190s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = '0'  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000156s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = 9 LIMIT 1 [ RunTime:0.000219s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  `room_owner` = 9 LIMIT 1 [ RunTime:0.000188s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = null  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000145s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = 8 LIMIT 1 [ RunTime:0.000203s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  `room_owner` = 8 LIMIT 1 [ RunTime:0.000194s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = '0'  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000154s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = 7 LIMIT 1 [ RunTime:0.000234s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  `room_owner` = 7 LIMIT 1 [ RunTime:0.000201s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = '0'  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000141s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = 4 LIMIT 1 [ RunTime:0.000291s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  `room_owner` = 4 LIMIT 1 [ RunTime:0.000193s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = '0'  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000150s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = 3 LIMIT 1 [ RunTime:0.000206s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  `room_owner` = 3 LIMIT 1 [ RunTime:0.000197s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = '0'  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000130s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = 2 LIMIT 1 [ RunTime:0.000212s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  `room_owner` = 2 LIMIT 1 [ RunTime:0.000191s ]
+[ sql ] [ SQL ] SELECT `user_login` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ru` ON `ru`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ru`.`role_id` WHERE  `u`.`id` = '0'  AND `r`.`id` = 2 LIMIT 1 [ RunTime:0.000131s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `player_id` = 1 LIMIT 1 [ RunTime:0.000213s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` WHERE  `room_owner` = 1 LIMIT 1 [ RunTime:0.000210s ]
+---------------------------------------------------------------
+[ 2017-09-03T20:49:47+08:00 ] 172.16.0.5 139.205.177.85 GET /admin/pay/home_page.html
+[ info ] card.dcwen.top/admin/pay/home_page.html [运行时间：0.026960s][吞吐率：37.09req/s] [内存消耗：924.88kb] [文件加载：63]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'pay',
+    2 => 'home_page',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://card.dcwen.top/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=66240u4tm9v9s5hjvlvl1gn965; UID=DKavc',
+)
+[ info ] [ PARAM ] array (
+  '/admin/pay/home_page_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Pay->home_page[ /var/www/card/app/admin/controller/Pay.php ]
+[ info ] [ VIEW ] /var/www/card/app/admin/view/pay/home_page.html [ array (
+  0 => 'payNums',
+  1 => 'pages',
+  2 => 'payList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000201s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_users` [ RunTime:0.000820s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000175s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_menu` [ RunTime:0.000511s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_menu` WHERE  `module` = 'admin'  AND `controller` = 'Pay'  AND `method` = 'home_page' LIMIT 1 [ RunTime:0.000194s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_pay_log` [ RunTime:0.000476s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_pay_log` LIMIT 1 [ RunTime:0.000159s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_pay_log` ORDER BY pay_date desc LIMIT 0,10 [ RunTime:0.000345s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_player` [ RunTime:0.000614s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 1 LIMIT 1 [ RunTime:0.000198s ]
+[ sql ] [ SQL ] SELECT `diamond` FROM `edd_player` WHERE  `player_id` = 1 LIMIT 1 [ RunTime:0.000194s ]
+[ sql ] [ SQL ] SELECT SUM(diamond_nums) AS tp_sum FROM `edd_pay_log` WHERE  `player_id` = '1' LIMIT 1 [ RunTime:0.000200s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_room` [ RunTime:0.000495s ]
+[ sql ] [ SQL ] SELECT SUM(room_charge) AS tp_sum FROM `edd_room` WHERE  `room_owner` = 1 LIMIT 1 [ RunTime:0.000178s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 1 LIMIT 1 [ RunTime:0.000127s ]
+[ sql ] [ SQL ] SELECT `diamond` FROM `edd_player` WHERE  `player_id` = 1 LIMIT 1 [ RunTime:0.000135s ]
+[ sql ] [ SQL ] SELECT SUM(diamond_nums) AS tp_sum FROM `edd_pay_log` WHERE  `player_id` = '1' LIMIT 1 [ RunTime:0.000110s ]
+[ sql ] [ SQL ] SELECT SUM(room_charge) AS tp_sum FROM `edd_room` WHERE  `room_owner` = 1 LIMIT 1 [ RunTime:0.000127s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 14 LIMIT 1 [ RunTime:0.000168s ]
+[ sql ] [ SQL ] SELECT `diamond` FROM `edd_player` WHERE  `player_id` = 14 LIMIT 1 [ RunTime:0.000156s ]
+[ sql ] [ SQL ] SELECT SUM(diamond_nums) AS tp_sum FROM `edd_pay_log` WHERE  `player_id` = '14' LIMIT 1 [ RunTime:0.000309s ]
+[ sql ] [ SQL ] SELECT SUM(room_charge) AS tp_sum FROM `edd_room` WHERE  `room_owner` = 14 LIMIT 1 [ RunTime:0.000172s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 12 LIMIT 1 [ RunTime:0.000177s ]
+[ sql ] [ SQL ] SELECT `diamond` FROM `edd_player` WHERE  `player_id` = 12 LIMIT 1 [ RunTime:0.000156s ]
+[ sql ] [ SQL ] SELECT SUM(diamond_nums) AS tp_sum FROM `edd_pay_log` WHERE  `player_id` = '12' LIMIT 1 [ RunTime:0.000193s ]
+[ sql ] [ SQL ] SELECT SUM(room_charge) AS tp_sum FROM `edd_room` WHERE  `room_owner` = 12 LIMIT 1 [ RunTime:0.000177s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 13 LIMIT 1 [ RunTime:0.000166s ]
+[ sql ] [ SQL ] SELECT `diamond` FROM `edd_player` WHERE  `player_id` = 13 LIMIT 1 [ RunTime:0.000179s ]
+[ sql ] [ SQL ] SELECT SUM(diamond_nums) AS tp_sum FROM `edd_pay_log` WHERE  `player_id` = '13' LIMIT 1 [ RunTime:0.000266s ]
+[ sql ] [ SQL ] SELECT SUM(room_charge) AS tp_sum FROM `edd_room` WHERE  `room_owner` = 13 LIMIT 1 [ RunTime:0.000220s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 13 LIMIT 1 [ RunTime:0.000111s ]
+[ sql ] [ SQL ] SELECT `diamond` FROM `edd_player` WHERE  `player_id` = 13 LIMIT 1 [ RunTime:0.000113s ]
+[ sql ] [ SQL ] SELECT SUM(diamond_nums) AS tp_sum FROM `edd_pay_log` WHERE  `player_id` = '13' LIMIT 1 [ RunTime:0.000109s ]
+[ sql ] [ SQL ] SELECT SUM(room_charge) AS tp_sum FROM `edd_room` WHERE  `room_owner` = 13 LIMIT 1 [ RunTime:0.000109s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 13 LIMIT 1 [ RunTime:0.000141s ]
+[ sql ] [ SQL ] SELECT `diamond` FROM `edd_player` WHERE  `player_id` = 13 LIMIT 1 [ RunTime:0.000128s ]
+[ sql ] [ SQL ] SELECT SUM(diamond_nums) AS tp_sum FROM `edd_pay_log` WHERE  `player_id` = '13' LIMIT 1 [ RunTime:0.000110s ]
+[ sql ] [ SQL ] SELECT SUM(room_charge) AS tp_sum FROM `edd_room` WHERE  `room_owner` = 13 LIMIT 1 [ RunTime:0.000136s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 9 LIMIT 1 [ RunTime:0.000160s ]
+[ sql ] [ SQL ] SELECT `diamond` FROM `edd_player` WHERE  `player_id` = 9 LIMIT 1 [ RunTime:0.000156s ]
+[ sql ] [ SQL ] SELECT SUM(diamond_nums) AS tp_sum FROM `edd_pay_log` WHERE  `player_id` = '9' LIMIT 1 [ RunTime:0.000235s ]
+[ sql ] [ SQL ] SELECT SUM(room_charge) AS tp_sum FROM `edd_room` WHERE  `room_owner` = 9 LIMIT 1 [ RunTime:0.000178s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 9 LIMIT 1 [ RunTime:0.000112s ]
+[ sql ] [ SQL ] SELECT `diamond` FROM `edd_player` WHERE  `player_id` = 9 LIMIT 1 [ RunTime:0.000112s ]
+[ sql ] [ SQL ] SELECT SUM(diamond_nums) AS tp_sum FROM `edd_pay_log` WHERE  `player_id` = '9' LIMIT 1 [ RunTime:0.000120s ]
+[ sql ] [ SQL ] SELECT SUM(room_charge) AS tp_sum FROM `edd_room` WHERE  `room_owner` = 9 LIMIT 1 [ RunTime:0.000190s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 9 LIMIT 1 [ RunTime:0.000107s ]
+[ sql ] [ SQL ] SELECT `diamond` FROM `edd_player` WHERE  `player_id` = 9 LIMIT 1 [ RunTime:0.000113s ]
+[ sql ] [ SQL ] SELECT SUM(diamond_nums) AS tp_sum FROM `edd_pay_log` WHERE  `player_id` = '9' LIMIT 1 [ RunTime:0.000113s ]
+[ sql ] [ SQL ] SELECT SUM(room_charge) AS tp_sum FROM `edd_room` WHERE  `room_owner` = 9 LIMIT 1 [ RunTime:0.000107s ]
+---------------------------------------------------------------
+[ 2017-09-03T20:49:48+08:00 ] 172.16.0.5 139.205.177.85 GET /admin/draws/all_draw_page.html
+[ info ] card.dcwen.top/admin/draws/all_draw_page.html [运行时间：0.011553s][吞吐率：86.56req/s] [内存消耗：829.99kb] [文件加载：63]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'draws',
+    2 => 'all_draw_page',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://card.dcwen.top/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=66240u4tm9v9s5hjvlvl1gn965; UID=VmsIN',
+)
+[ info ] [ PARAM ] array (
+  '/admin/draws/all_draw_page_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Draws->all_draw_page[ /var/www/card/app/admin/controller/Draws.php ]
+[ info ] [ VIEW ] /var/www/card/app/admin/view/draws/all_draw_page.html [ array (
+  0 => 'pages',
+  1 => 'allDrawList',
+  2 => 'allDrawNums',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000315s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_users` [ RunTime:0.000930s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000188s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_menu` [ RunTime:0.000604s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_menu` WHERE  `module` = 'admin'  AND `controller` = 'Draws'  AND `method` = 'all_draw_page' LIMIT 1 [ RunTime:0.000225s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_draw` [ RunTime:0.000717s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_draw` LIMIT 1 [ RunTime:0.000130s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_draw` ORDER BY draw_date desc LIMIT 0,10 [ RunTime:0.000150s ]
+---------------------------------------------------------------
+[ 2017-09-03T20:49:49+08:00 ] 172.16.0.5 139.205.177.85 GET /admin/pay/home_page.html
+[ info ] card.dcwen.top/admin/pay/home_page.html [运行时间：0.027653s][吞吐率：36.16req/s] [内存消耗：921.18kb] [文件加载：63]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'pay',
+    2 => 'home_page',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://card.dcwen.top/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=66240u4tm9v9s5hjvlvl1gn965; UID=ksM99',
+)
+[ info ] [ PARAM ] array (
+  '/admin/pay/home_page_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Pay->home_page[ /var/www/card/app/admin/controller/Pay.php ]
+[ info ] [ VIEW ] /var/www/card/app/admin/view/pay/home_page.html [ array (
+  0 => 'payNums',
+  1 => 'pages',
+  2 => 'payList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001375s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_users` [ RunTime:0.000743s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000186s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_menu` [ RunTime:0.000521s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_menu` WHERE  `module` = 'admin'  AND `controller` = 'Pay'  AND `method` = 'home_page' LIMIT 1 [ RunTime:0.000166s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_pay_log` [ RunTime:0.000457s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_pay_log` LIMIT 1 [ RunTime:0.000102s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_pay_log` ORDER BY pay_date desc LIMIT 0,10 [ RunTime:0.000114s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_player` [ RunTime:0.000484s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 1 LIMIT 1 [ RunTime:0.000110s ]
+[ sql ] [ SQL ] SELECT `diamond` FROM `edd_player` WHERE  `player_id` = 1 LIMIT 1 [ RunTime:0.000107s ]
+[ sql ] [ SQL ] SELECT SUM(diamond_nums) AS tp_sum FROM `edd_pay_log` WHERE  `player_id` = '1' LIMIT 1 [ RunTime:0.000113s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_room` [ RunTime:0.000514s ]
+[ sql ] [ SQL ] SELECT SUM(room_charge) AS tp_sum FROM `edd_room` WHERE  `room_owner` = 1 LIMIT 1 [ RunTime:0.000117s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 1 LIMIT 1 [ RunTime:0.000109s ]
+[ sql ] [ SQL ] SELECT `diamond` FROM `edd_player` WHERE  `player_id` = 1 LIMIT 1 [ RunTime:0.000104s ]
+[ sql ] [ SQL ] SELECT SUM(diamond_nums) AS tp_sum FROM `edd_pay_log` WHERE  `player_id` = '1' LIMIT 1 [ RunTime:0.000145s ]
+[ sql ] [ SQL ] SELECT SUM(room_charge) AS tp_sum FROM `edd_room` WHERE  `room_owner` = 1 LIMIT 1 [ RunTime:0.000109s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 14 LIMIT 1 [ RunTime:0.000109s ]
+[ sql ] [ SQL ] SELECT `diamond` FROM `edd_player` WHERE  `player_id` = 14 LIMIT 1 [ RunTime:0.000110s ]
+[ sql ] [ SQL ] SELECT SUM(diamond_nums) AS tp_sum FROM `edd_pay_log` WHERE  `player_id` = '14' LIMIT 1 [ RunTime:0.000109s ]
+[ sql ] [ SQL ] SELECT SUM(room_charge) AS tp_sum FROM `edd_room` WHERE  `room_owner` = 14 LIMIT 1 [ RunTime:0.000116s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 12 LIMIT 1 [ RunTime:0.000116s ]
+[ sql ] [ SQL ] SELECT `diamond` FROM `edd_player` WHERE  `player_id` = 12 LIMIT 1 [ RunTime:0.000104s ]
+[ sql ] [ SQL ] SELECT SUM(diamond_nums) AS tp_sum FROM `edd_pay_log` WHERE  `player_id` = '12' LIMIT 1 [ RunTime:0.000112s ]
+[ sql ] [ SQL ] SELECT SUM(room_charge) AS tp_sum FROM `edd_room` WHERE  `room_owner` = 12 LIMIT 1 [ RunTime:0.000107s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 13 LIMIT 1 [ RunTime:0.000105s ]
+[ sql ] [ SQL ] SELECT `diamond` FROM `edd_player` WHERE  `player_id` = 13 LIMIT 1 [ RunTime:0.000104s ]
+[ sql ] [ SQL ] SELECT SUM(diamond_nums) AS tp_sum FROM `edd_pay_log` WHERE  `player_id` = '13' LIMIT 1 [ RunTime:0.000136s ]
+[ sql ] [ SQL ] SELECT SUM(room_charge) AS tp_sum FROM `edd_room` WHERE  `room_owner` = 13 LIMIT 1 [ RunTime:0.000107s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 13 LIMIT 1 [ RunTime:0.000106s ]
+[ sql ] [ SQL ] SELECT `diamond` FROM `edd_player` WHERE  `player_id` = 13 LIMIT 1 [ RunTime:0.000104s ]
+[ sql ] [ SQL ] SELECT SUM(diamond_nums) AS tp_sum FROM `edd_pay_log` WHERE  `player_id` = '13' LIMIT 1 [ RunTime:0.000112s ]
+[ sql ] [ SQL ] SELECT SUM(room_charge) AS tp_sum FROM `edd_room` WHERE  `room_owner` = 13 LIMIT 1 [ RunTime:0.000116s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 13 LIMIT 1 [ RunTime:0.000112s ]
+[ sql ] [ SQL ] SELECT `diamond` FROM `edd_player` WHERE  `player_id` = 13 LIMIT 1 [ RunTime:0.000102s ]
+[ sql ] [ SQL ] SELECT SUM(diamond_nums) AS tp_sum FROM `edd_pay_log` WHERE  `player_id` = '13' LIMIT 1 [ RunTime:0.000116s ]
+[ sql ] [ SQL ] SELECT SUM(room_charge) AS tp_sum FROM `edd_room` WHERE  `room_owner` = 13 LIMIT 1 [ RunTime:0.000105s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 9 LIMIT 1 [ RunTime:0.000105s ]
+[ sql ] [ SQL ] SELECT `diamond` FROM `edd_player` WHERE  `player_id` = 9 LIMIT 1 [ RunTime:0.000113s ]
+[ sql ] [ SQL ] SELECT SUM(diamond_nums) AS tp_sum FROM `edd_pay_log` WHERE  `player_id` = '9' LIMIT 1 [ RunTime:0.000107s ]
+[ sql ] [ SQL ] SELECT SUM(room_charge) AS tp_sum FROM `edd_room` WHERE  `room_owner` = 9 LIMIT 1 [ RunTime:0.000117s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 9 LIMIT 1 [ RunTime:0.000120s ]
+[ sql ] [ SQL ] SELECT `diamond` FROM `edd_player` WHERE  `player_id` = 9 LIMIT 1 [ RunTime:0.000103s ]
+[ sql ] [ SQL ] SELECT SUM(diamond_nums) AS tp_sum FROM `edd_pay_log` WHERE  `player_id` = '9' LIMIT 1 [ RunTime:0.000117s ]
+[ sql ] [ SQL ] SELECT SUM(room_charge) AS tp_sum FROM `edd_room` WHERE  `room_owner` = 9 LIMIT 1 [ RunTime:0.000105s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 9 LIMIT 1 [ RunTime:0.000107s ]
+[ sql ] [ SQL ] SELECT `diamond` FROM `edd_player` WHERE  `player_id` = 9 LIMIT 1 [ RunTime:0.000124s ]
+[ sql ] [ SQL ] SELECT SUM(diamond_nums) AS tp_sum FROM `edd_pay_log` WHERE  `player_id` = '9' LIMIT 1 [ RunTime:0.000111s ]
+[ sql ] [ SQL ] SELECT SUM(room_charge) AS tp_sum FROM `edd_room` WHERE  `room_owner` = 9 LIMIT 1 [ RunTime:0.000107s ]
+---------------------------------------------------------------
+[ 2017-09-03T20:49:56+08:00 ] 172.16.0.5 139.205.177.85 GET /admin/draws/all_draw_page.html
+[ info ] card.dcwen.top/admin/draws/all_draw_page.html [运行时间：0.014906s][吞吐率：67.09req/s] [内存消耗：826.26kb] [文件加载：63]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'draws',
+    2 => 'all_draw_page',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://card.dcwen.top/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=66240u4tm9v9s5hjvlvl1gn965; UID=Pb1Bl',
+)
+[ info ] [ PARAM ] array (
+  '/admin/draws/all_draw_page_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Draws->all_draw_page[ /var/www/card/app/admin/controller/Draws.php ]
+[ info ] [ VIEW ] /var/www/card/app/admin/view/draws/all_draw_page.html [ array (
+  0 => 'pages',
+  1 => 'allDrawList',
+  2 => 'allDrawNums',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001375s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_users` [ RunTime:0.000774s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000233s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_menu` [ RunTime:0.000555s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_menu` WHERE  `module` = 'admin'  AND `controller` = 'Draws'  AND `method` = 'all_draw_page' LIMIT 1 [ RunTime:0.000204s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_draw` [ RunTime:0.000553s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_draw` LIMIT 1 [ RunTime:0.000110s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_draw` ORDER BY draw_date desc LIMIT 0,10 [ RunTime:0.000155s ]
+---------------------------------------------------------------
+[ 2017-09-03T20:49:57+08:00 ] 172.16.0.5 139.205.177.85 GET /admin/draws/all_draw_page.html
+[ info ] card.dcwen.top/admin/draws/all_draw_page.html [运行时间：0.007359s][吞吐率：135.89req/s] [内存消耗：826.27kb] [文件加载：63]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'draws',
+    2 => 'all_draw_page',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://card.dcwen.top/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=66240u4tm9v9s5hjvlvl1gn965; UID=qNWW1',
+)
+[ info ] [ PARAM ] array (
+  '/admin/draws/all_draw_page_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Draws->all_draw_page[ /var/www/card/app/admin/controller/Draws.php ]
+[ info ] [ VIEW ] /var/www/card/app/admin/view/draws/all_draw_page.html [ array (
+  0 => 'pages',
+  1 => 'allDrawList',
+  2 => 'allDrawNums',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000211s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_users` [ RunTime:0.000702s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000192s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_menu` [ RunTime:0.000575s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_menu` WHERE  `module` = 'admin'  AND `controller` = 'Draws'  AND `method` = 'all_draw_page' LIMIT 1 [ RunTime:0.000158s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_draw` [ RunTime:0.000460s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_draw` LIMIT 1 [ RunTime:0.000099s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_draw` ORDER BY draw_date desc LIMIT 0,10 [ RunTime:0.000104s ]
+---------------------------------------------------------------
+[ 2017-09-03T20:49:58+08:00 ] 172.16.0.5 139.205.177.85 GET /admin/player/show_all_room.html
+[ info ] card.dcwen.top/admin/player/show_all_room.html [运行时间：0.012528s][吞吐率：79.82req/s] [内存消耗：854.77kb] [文件加载：63]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'player',
+    2 => 'show_all_room',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://card.dcwen.top/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=66240u4tm9v9s5hjvlvl1gn965; UID=gLO5-',
+)
+[ info ] [ PARAM ] array (
+  '/admin/player/show_all_room_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Player->show_all_room[ /var/www/card/app/admin/controller/Player.php ]
+[ info ] [ VIEW ] /var/www/card/app/admin/view/player/all_room_page.html [ array (
+  0 => 'room',
+  1 => 'pages',
+  2 => 'roomNums',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000221s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_users` [ RunTime:0.000674s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000185s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_menu` [ RunTime:0.000505s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_menu` WHERE  `module` = 'admin'  AND `controller` = 'Player'  AND `method` = 'show_all_room' LIMIT 1 [ RunTime:0.000149s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_room` [ RunTime:0.000483s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room` LIMIT 1 [ RunTime:0.000134s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_room` ORDER BY room_date desc LIMIT 0,10 [ RunTime:0.000190s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_room_round` [ RunTime:0.000465s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_room_round` WHERE  `room_id` = 393 LIMIT 1 [ RunTime:0.000127s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_player` [ RunTime:0.000476s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` IN (11,7,13,9) [ RunTime:0.000214s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room_round` WHERE  `room_id` = 393 LIMIT 1 [ RunTime:0.000241s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_room_round` WHERE  `room_id` = 392 LIMIT 1 [ RunTime:0.000156s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` IN (13,9,11,7) [ RunTime:0.000196s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room_round` WHERE  `room_id` = 392 LIMIT 1 [ RunTime:0.000113s ]
+---------------------------------------------------------------
+[ 2017-09-03T20:50:02+08:00 ] 172.16.0.5 139.205.177.85 GET /admin/player/rounds/room_id/393.html
+[ info ] card.dcwen.top/admin/player/rounds/room_id/393.html [运行时间：0.019358s][吞吐率：51.66req/s] [内存消耗：905.97kb] [文件加载：64]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'player',
+    2 => 'rounds',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://card.dcwen.top/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=66240u4tm9v9s5hjvlvl1gn965; UID=qNWW1',
+)
+[ info ] [ PARAM ] array (
+  '/admin/player/rounds/room_id/393_html' => '',
+  'room_id' => '393',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Player->rounds[ /var/www/card/app/admin/controller/Player.php ]
+[ info ] [ VIEW ] /var/www/card/app/admin/view/player/round_info_page.html [ array (
+  0 => 'round_info',
+  1 => 'pages',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000275s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_users` [ RunTime:0.000798s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000239s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_menu` [ RunTime:0.000580s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_menu` WHERE  `module` = 'admin'  AND `controller` = 'Player'  AND `method` = 'rounds' LIMIT 1 [ RunTime:0.000213s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_room_round` [ RunTime:0.000513s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_room_round` WHERE  `room_id` = 393 LIMIT 1 [ RunTime:0.000168s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_room_round` WHERE  `room_id` = 393 ORDER BY round_start desc LIMIT 0,10 [ RunTime:0.000150s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_player` [ RunTime:0.000547s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 7 LIMIT 1 [ RunTime:0.000208s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 7 LIMIT 1 [ RunTime:0.000188s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 7 LIMIT 1 [ RunTime:0.000124s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 11 LIMIT 1 [ RunTime:0.000198s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 7 LIMIT 1 [ RunTime:0.000136s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 13 LIMIT 1 [ RunTime:0.000129s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 13 LIMIT 1 [ RunTime:0.000127s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 11 LIMIT 1 [ RunTime:0.000122s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 7 LIMIT 1 [ RunTime:0.000119s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 11 LIMIT 1 [ RunTime:0.000121s ]
+---------------------------------------------------------------
+[ 2017-09-03T20:50:06+08:00 ] 172.16.0.5 139.205.177.85 GET /admin/player/round_info/round_id/10/room_id/393.html
+[ info ] card.dcwen.top/admin/player/round_info/round_id/10/room_id/393.html [运行时间：0.017210s][吞吐率：58.11req/s] [内存消耗：927.14kb] [文件加载：63]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'player',
+    2 => 'round_info',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://card.dcwen.top/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=66240u4tm9v9s5hjvlvl1gn965; UID=vY4m6',
+)
+[ info ] [ PARAM ] array (
+  '/admin/player/round_info/round_id/10/room_id/393_html' => '',
+  'round_id' => '10',
+  'room_id' => '393',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Player->round_info[ /var/www/card/app/admin/controller/Player.php ]
+[ info ] [ VIEW ] /var/www/card/app/admin/view/player/round_detail_page.html [ array (
+  0 => 'round_detail',
+  1 => 'player_log',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000224s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_users` [ RunTime:0.000670s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000173s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_menu` [ RunTime:0.000506s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_menu` WHERE  `module` = 'admin'  AND `controller` = 'Player'  AND `method` = 'round_info' LIMIT 1 [ RunTime:0.000148s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_round` [ RunTime:0.000470s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_round` WHERE  `round_id` = 10  AND `room_id` = 393 [ RunTime:0.000130s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_player_log` [ RunTime:0.000449s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_player_log` WHERE  `round_id` = 10  AND `room_id` = '393' [ RunTime:0.000128s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_player` [ RunTime:0.000484s ]
+[ sql ] [ SQL ] SELECT `avatar` FROM `edd_player` WHERE  `player_id` = 11 LIMIT 1 [ RunTime:0.000179s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 11 LIMIT 1 [ RunTime:0.000118s ]
+[ sql ] [ SQL ] SELECT `avatar` FROM `edd_player` WHERE  `player_id` = 7 LIMIT 1 [ RunTime:0.000178s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 7 LIMIT 1 [ RunTime:0.000108s ]
+[ sql ] [ SQL ] SELECT `avatar` FROM `edd_player` WHERE  `player_id` = 13 LIMIT 1 [ RunTime:0.000164s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 13 LIMIT 1 [ RunTime:0.000105s ]
+[ sql ] [ SQL ] SELECT `avatar` FROM `edd_player` WHERE  `player_id` = 9 LIMIT 1 [ RunTime:0.000221s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 9 LIMIT 1 [ RunTime:0.000105s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 7 LIMIT 1 [ RunTime:0.000106s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 7 LIMIT 1 [ RunTime:0.000117s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 13 LIMIT 1 [ RunTime:0.000103s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 13 LIMIT 1 [ RunTime:0.000102s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 9 LIMIT 1 [ RunTime:0.000101s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 11 LIMIT 1 [ RunTime:0.000103s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 11 LIMIT 1 [ RunTime:0.000102s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 7 LIMIT 1 [ RunTime:0.000101s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 13 LIMIT 1 [ RunTime:0.000103s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 9 LIMIT 1 [ RunTime:0.000101s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 9 LIMIT 1 [ RunTime:0.000135s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 11 LIMIT 1 [ RunTime:0.000123s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 11 LIMIT 1 [ RunTime:0.000103s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 7 LIMIT 1 [ RunTime:0.000103s ]
+---------------------------------------------------------------
+[ 2017-09-03T20:50:10+08:00 ] 172.16.0.5 139.205.177.85 GET /admin/player/round_info/round_id/10/room_id/393.html
+[ info ] card.dcwen.top/admin/player/round_info/round_id/10/room_id/393.html [运行时间：0.019053s][吞吐率：52.48req/s] [内存消耗：924.75kb] [文件加载：63]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'player',
+    2 => 'round_info',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://card.dcwen.top/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=66240u4tm9v9s5hjvlvl1gn965; UID=5viWV',
+)
+[ info ] [ PARAM ] array (
+  '/admin/player/round_info/round_id/10/room_id/393_html' => '',
+  'round_id' => '10',
+  'room_id' => '393',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Player->round_info[ /var/www/card/app/admin/controller/Player.php ]
+[ info ] [ VIEW ] /var/www/card/app/admin/view/player/round_detail_page.html [ array (
+  0 => 'round_detail',
+  1 => 'player_log',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000317s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_users` [ RunTime:0.001099s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000294s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_menu` [ RunTime:0.000742s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_menu` WHERE  `module` = 'admin'  AND `controller` = 'Player'  AND `method` = 'round_info' LIMIT 1 [ RunTime:0.000224s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_round` [ RunTime:0.000799s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_round` WHERE  `round_id` = 10  AND `room_id` = 393 [ RunTime:0.000183s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_player_log` [ RunTime:0.000458s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_player_log` WHERE  `round_id` = 10  AND `room_id` = '393' [ RunTime:0.000129s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_player` [ RunTime:0.000470s ]
+[ sql ] [ SQL ] SELECT `avatar` FROM `edd_player` WHERE  `player_id` = 11 LIMIT 1 [ RunTime:0.000115s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 11 LIMIT 1 [ RunTime:0.000107s ]
+[ sql ] [ SQL ] SELECT `avatar` FROM `edd_player` WHERE  `player_id` = 7 LIMIT 1 [ RunTime:0.000111s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 7 LIMIT 1 [ RunTime:0.000115s ]
+[ sql ] [ SQL ] SELECT `avatar` FROM `edd_player` WHERE  `player_id` = 13 LIMIT 1 [ RunTime:0.000107s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 13 LIMIT 1 [ RunTime:0.000103s ]
+[ sql ] [ SQL ] SELECT `avatar` FROM `edd_player` WHERE  `player_id` = 9 LIMIT 1 [ RunTime:0.000103s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 9 LIMIT 1 [ RunTime:0.000108s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 7 LIMIT 1 [ RunTime:0.000104s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 7 LIMIT 1 [ RunTime:0.000104s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 13 LIMIT 1 [ RunTime:0.000107s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 13 LIMIT 1 [ RunTime:0.000103s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 9 LIMIT 1 [ RunTime:0.000102s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 11 LIMIT 1 [ RunTime:0.000104s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 11 LIMIT 1 [ RunTime:0.000139s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 7 LIMIT 1 [ RunTime:0.000104s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 13 LIMIT 1 [ RunTime:0.000102s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 9 LIMIT 1 [ RunTime:0.000103s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 9 LIMIT 1 [ RunTime:0.000102s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 11 LIMIT 1 [ RunTime:0.000114s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 11 LIMIT 1 [ RunTime:0.000106s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 7 LIMIT 1 [ RunTime:0.000102s ]
+---------------------------------------------------------------
+[ 2017-09-03T20:50:16+08:00 ] 172.16.0.5 139.205.177.85 GET /admin/player/round_info/round_id/9/room_id/393.html
+[ info ] card.dcwen.top/admin/player/round_info/round_id/9/room_id/393.html [运行时间：0.023741s][吞吐率：42.12req/s] [内存消耗：930.01kb] [文件加载：63]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'player',
+    2 => 'round_info',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://card.dcwen.top/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=66240u4tm9v9s5hjvlvl1gn965; UID=iFP5S',
+)
+[ info ] [ PARAM ] array (
+  '/admin/player/round_info/round_id/9/room_id/393_html' => '',
+  'round_id' => '9',
+  'room_id' => '393',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Player->round_info[ /var/www/card/app/admin/controller/Player.php ]
+[ info ] [ VIEW ] /var/www/card/app/admin/view/player/round_detail_page.html [ array (
+  0 => 'round_detail',
+  1 => 'player_log',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001323s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_users` [ RunTime:0.000712s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000185s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_menu` [ RunTime:0.000842s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_menu` WHERE  `module` = 'admin'  AND `controller` = 'Player'  AND `method` = 'round_info' LIMIT 1 [ RunTime:0.000150s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_round` [ RunTime:0.000470s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_round` WHERE  `round_id` = 9  AND `room_id` = 393 [ RunTime:0.000132s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_player_log` [ RunTime:0.000451s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_player_log` WHERE  `round_id` = 9  AND `room_id` = '393' [ RunTime:0.000131s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_player` [ RunTime:0.000508s ]
+[ sql ] [ SQL ] SELECT `avatar` FROM `edd_player` WHERE  `player_id` = 11 LIMIT 1 [ RunTime:0.000127s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 11 LIMIT 1 [ RunTime:0.000106s ]
+[ sql ] [ SQL ] SELECT `avatar` FROM `edd_player` WHERE  `player_id` = 7 LIMIT 1 [ RunTime:0.000108s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 7 LIMIT 1 [ RunTime:0.000104s ]
+[ sql ] [ SQL ] SELECT `avatar` FROM `edd_player` WHERE  `player_id` = 13 LIMIT 1 [ RunTime:0.000133s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 13 LIMIT 1 [ RunTime:0.000139s ]
+[ sql ] [ SQL ] SELECT `avatar` FROM `edd_player` WHERE  `player_id` = 9 LIMIT 1 [ RunTime:0.000130s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 9 LIMIT 1 [ RunTime:0.000110s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 7 LIMIT 1 [ RunTime:0.000106s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 7 LIMIT 1 [ RunTime:0.000134s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 13 LIMIT 1 [ RunTime:0.000153s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 9 LIMIT 1 [ RunTime:0.000104s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 13 LIMIT 1 [ RunTime:0.000102s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 13 LIMIT 1 [ RunTime:0.000113s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 9 LIMIT 1 [ RunTime:0.000103s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 11 LIMIT 1 [ RunTime:0.000101s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 11 LIMIT 1 [ RunTime:0.000102s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 7 LIMIT 1 [ RunTime:0.000106s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 13 LIMIT 1 [ RunTime:0.000102s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 9 LIMIT 1 [ RunTime:0.000102s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 11 LIMIT 1 [ RunTime:0.000108s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 11 LIMIT 1 [ RunTime:0.000131s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 11 LIMIT 1 [ RunTime:0.000103s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 7 LIMIT 1 [ RunTime:0.000102s ]
+---------------------------------------------------------------
+[ 2017-09-03T20:50:18+08:00 ] 172.16.0.5 139.205.177.85 GET /admin/player/round_info/round_id/8/room_id/393.html
+[ info ] card.dcwen.top/admin/player/round_info/round_id/8/room_id/393.html [运行时间：0.016254s][吞吐率：61.52req/s] [内存消耗：922.22kb] [文件加载：63]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'player',
+    2 => 'round_info',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://card.dcwen.top/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=66240u4tm9v9s5hjvlvl1gn965; UID=Z8ryu',
+)
+[ info ] [ PARAM ] array (
+  '/admin/player/round_info/round_id/8/room_id/393_html' => '',
+  'round_id' => '8',
+  'room_id' => '393',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Player->round_info[ /var/www/card/app/admin/controller/Player.php ]
+[ info ] [ VIEW ] /var/www/card/app/admin/view/player/round_detail_page.html [ array (
+  0 => 'round_detail',
+  1 => 'player_log',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000230s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_users` [ RunTime:0.000881s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000190s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_menu` [ RunTime:0.000521s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_menu` WHERE  `module` = 'admin'  AND `controller` = 'Player'  AND `method` = 'round_info' LIMIT 1 [ RunTime:0.000165s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_round` [ RunTime:0.000487s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_round` WHERE  `round_id` = 8  AND `room_id` = 393 [ RunTime:0.000133s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_player_log` [ RunTime:0.000457s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_player_log` WHERE  `round_id` = 8  AND `room_id` = '393' [ RunTime:0.000132s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_player` [ RunTime:0.000503s ]
+[ sql ] [ SQL ] SELECT `avatar` FROM `edd_player` WHERE  `player_id` = 11 LIMIT 1 [ RunTime:0.000132s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 11 LIMIT 1 [ RunTime:0.000133s ]
+[ sql ] [ SQL ] SELECT `avatar` FROM `edd_player` WHERE  `player_id` = 7 LIMIT 1 [ RunTime:0.000123s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 7 LIMIT 1 [ RunTime:0.000106s ]
+[ sql ] [ SQL ] SELECT `avatar` FROM `edd_player` WHERE  `player_id` = 13 LIMIT 1 [ RunTime:0.000128s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 13 LIMIT 1 [ RunTime:0.000165s ]
+[ sql ] [ SQL ] SELECT `avatar` FROM `edd_player` WHERE  `player_id` = 9 LIMIT 1 [ RunTime:0.000108s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 9 LIMIT 1 [ RunTime:0.000148s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 11 LIMIT 1 [ RunTime:0.000106s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 7 LIMIT 1 [ RunTime:0.000116s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 13 LIMIT 1 [ RunTime:0.000121s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 9 LIMIT 1 [ RunTime:0.000103s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 11 LIMIT 1 [ RunTime:0.000103s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 11 LIMIT 1 [ RunTime:0.000125s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 13 LIMIT 1 [ RunTime:0.000103s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 13 LIMIT 1 [ RunTime:0.000104s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 9 LIMIT 1 [ RunTime:0.000104s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 7 LIMIT 1 [ RunTime:0.000103s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 7 LIMIT 1 [ RunTime:0.000107s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 7 LIMIT 1 [ RunTime:0.000104s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 7 LIMIT 1 [ RunTime:0.000105s ]
+---------------------------------------------------------------
+[ 2017-09-03T20:50:20+08:00 ] 172.16.0.5 139.205.177.85 GET /admin/player/round_info/round_id/7/room_id/393.html
+[ info ] card.dcwen.top/admin/player/round_info/round_id/7/room_id/393.html [运行时间：0.015896s][吞吐率：62.91req/s] [内存消耗：917.13kb] [文件加载：63]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'player',
+    2 => 'round_info',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://card.dcwen.top/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=66240u4tm9v9s5hjvlvl1gn965; UID=F37tq',
+)
+[ info ] [ PARAM ] array (
+  '/admin/player/round_info/round_id/7/room_id/393_html' => '',
+  'round_id' => '7',
+  'room_id' => '393',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Player->round_info[ /var/www/card/app/admin/controller/Player.php ]
+[ info ] [ VIEW ] /var/www/card/app/admin/view/player/round_detail_page.html [ array (
+  0 => 'round_detail',
+  1 => 'player_log',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000265s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_users` [ RunTime:0.000762s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000175s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_menu` [ RunTime:0.000528s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_menu` WHERE  `module` = 'admin'  AND `controller` = 'Player'  AND `method` = 'round_info' LIMIT 1 [ RunTime:0.000199s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_round` [ RunTime:0.000499s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_round` WHERE  `round_id` = 7  AND `room_id` = 393 [ RunTime:0.000140s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_player_log` [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_player_log` WHERE  `round_id` = 7  AND `room_id` = '393' [ RunTime:0.000139s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_player` [ RunTime:0.000492s ]
+[ sql ] [ SQL ] SELECT `avatar` FROM `edd_player` WHERE  `player_id` = 11 LIMIT 1 [ RunTime:0.000116s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 11 LIMIT 1 [ RunTime:0.000107s ]
+[ sql ] [ SQL ] SELECT `avatar` FROM `edd_player` WHERE  `player_id` = 7 LIMIT 1 [ RunTime:0.000133s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 7 LIMIT 1 [ RunTime:0.000122s ]
+[ sql ] [ SQL ] SELECT `avatar` FROM `edd_player` WHERE  `player_id` = 13 LIMIT 1 [ RunTime:0.000117s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 13 LIMIT 1 [ RunTime:0.000129s ]
+[ sql ] [ SQL ] SELECT `avatar` FROM `edd_player` WHERE  `player_id` = 9 LIMIT 1 [ RunTime:0.000108s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 9 LIMIT 1 [ RunTime:0.000116s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 7 LIMIT 1 [ RunTime:0.000113s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 7 LIMIT 1 [ RunTime:0.000106s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 13 LIMIT 1 [ RunTime:0.000104s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 9 LIMIT 1 [ RunTime:0.000112s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 9 LIMIT 1 [ RunTime:0.000118s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 11 LIMIT 1 [ RunTime:0.000120s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 11 LIMIT 1 [ RunTime:0.000112s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 11 LIMIT 1 [ RunTime:0.000104s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 13 LIMIT 1 [ RunTime:0.000102s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 11 LIMIT 1 [ RunTime:0.000137s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 11 LIMIT 1 [ RunTime:0.000105s ]
+---------------------------------------------------------------
+[ 2017-09-03T20:50:21+08:00 ] 172.16.0.5 139.205.177.85 GET /admin/player/round_info/round_id/6/room_id/393.html
+[ info ] card.dcwen.top/admin/player/round_info/round_id/6/room_id/393.html [运行时间：0.017914s][吞吐率：55.82req/s] [内存消耗：917.17kb] [文件加载：63]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'player',
+    2 => 'round_info',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://card.dcwen.top/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=66240u4tm9v9s5hjvlvl1gn965; UID=gLO5-',
+)
+[ info ] [ PARAM ] array (
+  '/admin/player/round_info/round_id/6/room_id/393_html' => '',
+  'round_id' => '6',
+  'room_id' => '393',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Player->round_info[ /var/www/card/app/admin/controller/Player.php ]
+[ info ] [ VIEW ] /var/www/card/app/admin/view/player/round_detail_page.html [ array (
+  0 => 'round_detail',
+  1 => 'player_log',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000213s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_users` [ RunTime:0.000763s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000182s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_menu` [ RunTime:0.000554s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_menu` WHERE  `module` = 'admin'  AND `controller` = 'Player'  AND `method` = 'round_info' LIMIT 1 [ RunTime:0.000198s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_round` [ RunTime:0.000480s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_round` WHERE  `round_id` = 6  AND `room_id` = 393 [ RunTime:0.001108s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_player_log` [ RunTime:0.000469s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_player_log` WHERE  `round_id` = 6  AND `room_id` = '393' [ RunTime:0.001525s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_player` [ RunTime:0.000583s ]
+[ sql ] [ SQL ] SELECT `avatar` FROM `edd_player` WHERE  `player_id` = 11 LIMIT 1 [ RunTime:0.000119s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 11 LIMIT 1 [ RunTime:0.000110s ]
+[ sql ] [ SQL ] SELECT `avatar` FROM `edd_player` WHERE  `player_id` = 7 LIMIT 1 [ RunTime:0.000111s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 7 LIMIT 1 [ RunTime:0.000117s ]
+[ sql ] [ SQL ] SELECT `avatar` FROM `edd_player` WHERE  `player_id` = 13 LIMIT 1 [ RunTime:0.000159s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 13 LIMIT 1 [ RunTime:0.000108s ]
+[ sql ] [ SQL ] SELECT `avatar` FROM `edd_player` WHERE  `player_id` = 9 LIMIT 1 [ RunTime:0.000110s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 9 LIMIT 1 [ RunTime:0.000106s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 13 LIMIT 1 [ RunTime:0.000111s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 9 LIMIT 1 [ RunTime:0.000106s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 11 LIMIT 1 [ RunTime:0.000128s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 11 LIMIT 1 [ RunTime:0.000105s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 7 LIMIT 1 [ RunTime:0.000103s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 7 LIMIT 1 [ RunTime:0.000103s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 7 LIMIT 1 [ RunTime:0.000105s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 13 LIMIT 1 [ RunTime:0.000102s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 11 LIMIT 1 [ RunTime:0.000104s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 11 LIMIT 1 [ RunTime:0.000104s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 7 LIMIT 1 [ RunTime:0.000133s ]
+---------------------------------------------------------------
+[ 2017-09-03T20:50:23+08:00 ] 172.16.0.5 139.205.177.85 GET /admin/player/round_info/round_id/5/room_id/393.html
+[ info ] card.dcwen.top/admin/player/round_info/round_id/5/room_id/393.html [运行时间：0.018469s][吞吐率：54.15req/s] [内存消耗：932.64kb] [文件加载：63]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'player',
+    2 => 'round_info',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://card.dcwen.top/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=66240u4tm9v9s5hjvlvl1gn965; UID=luy%3DV',
+)
+[ info ] [ PARAM ] array (
+  '/admin/player/round_info/round_id/5/room_id/393_html' => '',
+  'round_id' => '5',
+  'room_id' => '393',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Player->round_info[ /var/www/card/app/admin/controller/Player.php ]
+[ info ] [ VIEW ] /var/www/card/app/admin/view/player/round_detail_page.html [ array (
+  0 => 'round_detail',
+  1 => 'player_log',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000220s ] mysql:dbname=runfast;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_users` [ RunTime:0.000754s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000186s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_menu` [ RunTime:0.000539s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_menu` WHERE  `module` = 'admin'  AND `controller` = 'Player'  AND `method` = 'round_info' LIMIT 1 [ RunTime:0.000217s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_round` [ RunTime:0.000494s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_round` WHERE  `round_id` = 5  AND `room_id` = 393 [ RunTime:0.000430s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_player_log` [ RunTime:0.000456s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_player_log` WHERE  `round_id` = 5  AND `room_id` = '393' [ RunTime:0.000718s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_player` [ RunTime:0.000481s ]
+[ sql ] [ SQL ] SELECT `avatar` FROM `edd_player` WHERE  `player_id` = 11 LIMIT 1 [ RunTime:0.000117s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 11 LIMIT 1 [ RunTime:0.000108s ]
+[ sql ] [ SQL ] SELECT `avatar` FROM `edd_player` WHERE  `player_id` = 7 LIMIT 1 [ RunTime:0.000109s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 7 LIMIT 1 [ RunTime:0.000125s ]
+[ sql ] [ SQL ] SELECT `avatar` FROM `edd_player` WHERE  `player_id` = 13 LIMIT 1 [ RunTime:0.000119s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 13 LIMIT 1 [ RunTime:0.000109s ]
+[ sql ] [ SQL ] SELECT `avatar` FROM `edd_player` WHERE  `player_id` = 9 LIMIT 1 [ RunTime:0.000122s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 9 LIMIT 1 [ RunTime:0.000114s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 13 LIMIT 1 [ RunTime:0.000124s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 13 LIMIT 1 [ RunTime:0.000148s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 9 LIMIT 1 [ RunTime:0.000107s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 9 LIMIT 1 [ RunTime:0.000106s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 11 LIMIT 1 [ RunTime:0.000104s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 7 LIMIT 1 [ RunTime:0.000103s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 9 LIMIT 1 [ RunTime:0.000144s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 11 LIMIT 1 [ RunTime:0.000106s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 11 LIMIT 1 [ RunTime:0.000104s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 7 LIMIT 1 [ RunTime:0.000104s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 7 LIMIT 1 [ RunTime:0.000110s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 13 LIMIT 1 [ RunTime:0.000102s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 13 LIMIT 1 [ RunTime:0.000104s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 9 LIMIT 1 [ RunTime:0.000102s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 7 LIMIT 1 [ RunTime:0.000102s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 7 LIMIT 1 [ RunTime:0.000119s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_player` WHERE  `player_id` = 13 LIMIT 1 [ RunTime:0.000106s ]

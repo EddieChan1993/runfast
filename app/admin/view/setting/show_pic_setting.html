@@ -1,0 +1,52 @@
+{extend name='public:content'/}
+{block name='title'}游戏图片{/block}
+{block name='content'}
+<div class="animated fadeIn col-md-7">
+    <div class="panel panel-default">
+        <form id="edit_form" action="{:url('admin/Setting/edit_pic_game')}" method="post" class="form-horizontal">
+        <div class="panel-body">
+                <div class="form-group">
+                <label class="col-md-2 control-label">牌背面图片</label>
+                <div class="col-md-9">
+                    <div class="gallery">
+                        <a class="gallery-item"  href="javascript:void('')" title="Space picture 2" data-gallery>
+                            <div class="image" >
+                                <input name="option_value[card_pic]" hidden type="text" value="{$card_pic|default=''}" id="inp2">
+                                <img src="{:is_img($card_pic)}" alt="Space picture 2"/>
+                                <ul class="gallery-item-controls">
+                                    <li onclick="upload_single('inp2','game_pic')"><i class="fa fa-cloud-upload"></i></li>
+                                    <li onclick="del_pic('inp2')"><i class="fa fa-times"></i></li>
+                                </ul>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                </div>
+                <div hidden class="form-group">
+                <label class="col-md-2 control-label">桌布图片</label>
+                <div class="col-md-9">
+                <div class="gallery">
+                    <a class="gallery-item"  href="javascript:void('')" title="Space picture 2" data-gallery>
+                        <div class="image" >
+                            <input name="option_value[table_pic]" hidden value="{$table_pic|default=''}" type="text" id="inp">
+                            <img src="{:is_img($table_pic)}" alt="Space picture 2"/>
+                            <ul class="gallery-item-controls">
+                                <li onclick="upload_single('inp','game_pic')"><i class="fa fa-cloud-upload"></i></li>
+                                <li onclick="del_pic('inp')"><i class="fa fa-times"></i></li>
+                            </ul>
+                        </div>
+                    </a>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel-footer">
+            <button class="btn btn-info pull-right">保存修改<span class="fa fa-floppy-o fa-right"></span></button>
+        </div>
+        </form>
+    </div>
+</div>
+<script type="text/javascript">
+
+</script>
+{/block}

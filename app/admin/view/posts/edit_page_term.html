@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    {include file='public:head_in' /}
+    <link rel="stylesheet" type="text/css" href="__ADMIN__/plugins/check-tree/checktree.css" />
+    <script type="text/javascript" src="__ADMIN__/plugins/check-tree/tree.js"></script>
+</head>
+<body>
+<div class="panel panel-default">
+    <form id="edit_form" action="{:url('admin/Posts/edit_think_term')}" method="post" class="form-horizontal">
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-xs-6">
+                    <div class="form-group">
+                        <input hidden name="term_id" type="text" value="{$term_id}">
+                        <label class="col-xs-3 control-label">上级</label>
+                        <div class="col-xs-9">
+                            <select name="path" class="form-control select">
+                                <option value="0">作为一级菜单</option>
+                                {volist name='termList' id='v'}
+                                    <option {:is_selected($v.term_id,$path)} value="{$v.term_id}">{$v.lefthtml}{$v.name}</option>
+                                {/volist}
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-xs-3 control-label">分类名称</label>
+                        <div class="col-xs-9">
+                            <div class="input-group">
+                                <span class="input-group-addon"><span class="fa fa-pencil"></span></span>
+                                <input value="{$name}" type="text" name="name" class="form-control"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-xs-3 control-label">描述</label>
+                        <div class="col-xs-9 col-xs-12">
+                            <textarea name="description" class="form-control" rows="5">{$description}</textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel-footer">
+            <button class="btn btn-info pull-right">保存修改<span class="fa fa-floppy-o fa-right"></span></button>
+        </div>
+    </form>
+</div>
+</body>
+</html>

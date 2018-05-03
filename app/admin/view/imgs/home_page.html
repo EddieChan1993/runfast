@@ -1,0 +1,47 @@
+{extend name='public:content'/}
+{block name='title'}图库管理{/block}
+{block name='content'}
+<div class="row animated fadeIn">
+    <div class="row">
+        <div class="col-md-8">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">图库列表</h3>
+                        <button class="btn btn-success btn-rounded btn-sm">{$imgNums}</button>
+                    </div>
+                    <div class="panel-body tab-content">
+                        <table class="table table-hover">
+                            <thead>
+                            <tr>
+                                <th>图片</th>
+                                <th>大小</th>
+                                <th>上传时间</th>
+                                <th>操作者</th>
+                                <th>操作ip</th>
+                                <th></th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            {volist name='imgList' id='v'}
+                            <tr class="del_tr">
+                                <td style="background: url({$v.img_path});background-repeat: no-repeat;background-size: contain"></td>
+                                <td>{$v.img_size}</td>
+                                <td>{$v.upload_date|tranTime}</td>
+                                <td>{:get_users($v.user_id)['user_login']}</td>
+                                <td>{$v.ip}</td>
+                                <td>
+                                    <button onClick="delete_row(this);" data-url="{:url('admin/Imgs/del_think',['img_id'=>$v.img_id])}" class="btn btn-danger btn-rounded btn-sm" ><span class="fa fa-trash-o"></span></button>
+                                </td>
+                            </tr>
+                            {/volist}
+                            </tbody>
+                        </table>
+                        {$pages}
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+</script>
+{/block}

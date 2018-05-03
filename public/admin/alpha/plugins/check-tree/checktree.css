@@ -1,0 +1,53 @@
+/* Some formatting for the menu UL tags themselves; remove margins */
+ul.checktree, ul.checktree ul {
+ list-style-type: none;
+ padding: 0;
+ margin: 0;
+ font: 10px sans-serif;
+ padding: 0 0 0 16px;
+}
+
+
+ul.checktree li {
+ background: url(images/node.gif) no-repeat;
+ margin: 0;
+ padding: 0 0 0 0px;
+ cursor: default;
+}
+/*ul.checktree li.last {
+ background-image: url(images/node-last.gif);
+}
+ul.checktree li.plus {
+ background-image: url(images/plus.gif);
+}
+ul.checktree li.plus-last {
+ background-image: url(images/plus-last.gif);
+}
+ul.checktree li.minus {
+ background-image: url(images/minus.gif);
+}
+ul.checktree li.minus-last {
+ background-image: url(images/minus-last.gif);
+}
+*/
+ul.showtime li i#bjgl{
+	width: 16px;
+    height: 16px;
+    display: block;
+    float: left;
+}
+ul.showtime{
+	display: none;
+}
+ul.showtime li i#bjgl.plus {
+ background:url(images/plus.gif) no-repeat;
+}
+ul.showtime li i#bjgl.minus {
+ background: url(images/minus.gif)  no-repeat;
+}
+/* The check-count SPANs. */
+ul.checktree span.count {
+ text-indent: 5pt;
+ color: #999;
+ font-style: italic;
+}

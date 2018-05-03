@@ -1,0 +1,26 @@
+---------------------------------------------------------------
+[ 2017-10-06T05:31:53+08:00 ] 172.16.0.5 180.97.79.157 GET /
+[ info ] card.dcwen.top/ [运行时间：0.008766s][吞吐率：114.07req/s] [内存消耗：541.97kb] [文件加载：53]
+[ info ] [ LANG ] /var/www/card/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'card.dcwen.top',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File

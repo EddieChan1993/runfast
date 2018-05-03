@@ -1,0 +1,65 @@
+{extend name='public:content'/}
+{block name='title'}提现申请{/block}
+{block name='content'}
+<link rel="stylesheet" type="text/css" href="__ADMIN__/p-extra/edit-boot/css/bootstrap-editable.css" />
+<script src="__ADMIN__/p-extra/edit-boot/js/bootstrap-editable.min.js"></script>
+<div class="animated fadeIn col-md-9">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">提现列表</h3>
+            <ul class="panel-controls">
+                <label class="label label-info">{$allDrawNums}</label>
+            </ul>
+        </div>
+        <div class="panel-body">
+            <table class="table table-hover">
+                <thead>
+                <tr>
+                    <th>提现代理</th>
+                    <th>代理当前金额</th>
+                    <th>提现金额</th>
+                    <th>提现时间</th>
+                    <th>提现状态</th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody>
+                {volist name='allDrawList' id='v'}
+                <tr class="del_tr">
+                    <td>{:get_agency($v.user_id,'user_login')}</td>
+                    <td><span class="label label-warning">{:get_money($v.user_id)}</span></td>
+                    <td><span class="label label-info"><strong>{$v.draw_money}</strong></span></td>
+                    <td>{$v.draw_date|tranTime}</td>
+                    <td><span class="draw_type" data-pk="{$v.draw_id}">{:draw_type_encode($v.draw_type)}</span></td>
+                    <td>
+                        <button data-url="{:url('admin/draws/del_all_think',['draw_id'=>$v.draw_id])}" onClick="delete_row(this);" class="btn btn-danger btn-rounded btn-sm" ><span class="fa fa-trash-o"></span></button>
+                    </td>
+                </tr>
+                {/volist}
+                </tbody>
+            </table>
+        </div>
+        <div class="panel-footer">
+            {$pages}
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $(".draw_type").editable({
+        type: 'select',
+        mode: 'outline',
+        source:['未通过','已通过'],
+        placement: 'top',
+        url: '{:url("admin/Draws/edit_all_think")}',
+        name: 'b',
+        success:function (res) {
+            if(res.code) {
+                m_success(res.msg);
+            }else{
+                m_error(res.msg);
+            }
+        }
+    });
+
+</script>
+{/block}
